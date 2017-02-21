@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp clean && gulp build && webpack && karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
