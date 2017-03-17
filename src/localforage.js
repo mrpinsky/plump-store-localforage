@@ -17,7 +17,7 @@ export class LocalForageStore extends KeyValueStore {
 
   _keys(typeName) {
     return Bluebird.resolve(localforage.keys())
-    .then((keyArray) => keyArray.filter((k) => k.indexOf(`${typeName}:store:`) === 0));
+    .then((keyArray) => keyArray.filter((k) => k.indexOf(`${typeName}:attributes:`) === 0));
   }
 
   _get(k) {
