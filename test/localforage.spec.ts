@@ -2,7 +2,9 @@
 /* eslint no-shadow: 0 */
 
 import { LocalForageStore } from '../src/index';
-import { testSuite } from 'plump/test/storageTests';
+import { testSuite } from './storageTests';
+
+// import 'mocha';
 
 testSuite({
   describe, it, before, after,
