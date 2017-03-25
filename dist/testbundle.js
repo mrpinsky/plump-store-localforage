@@ -73,7 +73,7 @@
 "use strict";
 
 var root_1 = __webpack_require__(7);
-var toSubscriber_1 = __webpack_require__(397);
+var toSubscriber_1 = __webpack_require__(398);
 var observable_1 = __webpack_require__(26);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
@@ -224,7 +224,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var isFunction_1 = __webpack_require__(32);
 var Subscription_1 = __webpack_require__(4);
-var Observer_1 = __webpack_require__(59);
+var Observer_1 = __webpack_require__(62);
 var rxSubscriber_1 = __webpack_require__(27);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -520,12 +520,12 @@ exports.OuterSubscriber = OuterSubscriber;
 "use strict";
 
 var root_1 = __webpack_require__(7);
-var isArrayLike_1 = __webpack_require__(83);
-var isPromise_1 = __webpack_require__(85);
-var isObject_1 = __webpack_require__(84);
+var isArrayLike_1 = __webpack_require__(86);
+var isPromise_1 = __webpack_require__(88);
+var isObject_1 = __webpack_require__(87);
 var Observable_1 = __webpack_require__(0);
 var iterator_1 = __webpack_require__(22);
-var InnerSubscriber_1 = __webpack_require__(124);
+var InnerSubscriber_1 = __webpack_require__(125);
 var observable_1 = __webpack_require__(26);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
@@ -604,11 +604,11 @@ exports.subscribeToResult = subscribeToResult;
 "use strict";
 
 var isArray_1 = __webpack_require__(11);
-var isObject_1 = __webpack_require__(84);
+var isObject_1 = __webpack_require__(87);
 var isFunction_1 = __webpack_require__(32);
 var tryCatch_1 = __webpack_require__(8);
 var errorObject_1 = __webpack_require__(6);
-var UnsubscriptionError_1 = __webpack_require__(81);
+var UnsubscriptionError_1 = __webpack_require__(84);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -811,7 +811,7 @@ var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(1);
 var Subscription_1 = __webpack_require__(4);
 var ObjectUnsubscribedError_1 = __webpack_require__(30);
-var SubjectSubscription_1 = __webpack_require__(60);
+var SubjectSubscription_1 = __webpack_require__(63);
 var rxSubscriber_1 = __webpack_require__(27);
 /**
  * @class SubjectSubscriber<T>
@@ -6976,7 +6976,7 @@ module.exports = ret;
 
 },{"./es5":13}]},{},[4])(4)
 });                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(57), __webpack_require__(23), __webpack_require__(45).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(60), __webpack_require__(23), __webpack_require__(45).setImmediate))
 
 /***/ }),
 /* 16 */
@@ -7045,7 +7045,7 @@ module.exports = {
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(61);
+var ConnectableObservable_1 = __webpack_require__(64);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -7108,7 +7108,7 @@ exports.MulticastOperator = MulticastOperator;
 
 "use strict";
 
-var isOptionObject = __webpack_require__(118);
+var isOptionObject = __webpack_require__(120);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 var propIsEnumerable = Object.propertyIsEnumerable;
 var globalThis = this;
@@ -7407,7 +7407,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var root_1 = __webpack_require__(7);
-var Action_1 = __webpack_require__(378);
+var Action_1 = __webpack_require__(379);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -7554,7 +7554,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Scheduler_1 = __webpack_require__(125);
+var Scheduler_1 = __webpack_require__(126);
 var AsyncScheduler = (function (_super) {
     __extends(AsyncScheduler, _super);
     function AsyncScheduler() {
@@ -8033,9 +8033,9 @@ exports.isNumeric = isNumeric;
 // This is (almost) directly from Node.js utils
 // https://github.com/joyent/node/blob/f8c335d0caf47f16d31413f89aa28eda3878e3aa/lib/util.js
 
-var getName = __webpack_require__(49);
-var getProperties = __webpack_require__(107);
-var getEnumerableProperties = __webpack_require__(104);
+var getName = __webpack_require__(52);
+var getProperties = __webpack_require__(109);
+var getEnumerableProperties = __webpack_require__(106);
 
 module.exports = inspect;
 
@@ -8374,17 +8374,17 @@ function objectToString(o) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var plump_1 = __webpack_require__(121);
+var plump_1 = __webpack_require__(122);
 exports.Plump = plump_1.Plump;
-var model_1 = __webpack_require__(120);
+var model_1 = __webpack_require__(121);
 exports.Model = model_1.Model;
-var storage_1 = __webpack_require__(55);
+var storage_1 = __webpack_require__(58);
 exports.Storage = storage_1.Storage;
-var memory_1 = __webpack_require__(123);
+var memory_1 = __webpack_require__(124);
 exports.MemoryStore = memory_1.MemoryStore;
-var keyValueStore_1 = __webpack_require__(54);
+var keyValueStore_1 = __webpack_require__(57);
 exports.KeyValueStore = keyValueStore_1.KeyValueStore;
-var relationship_1 = __webpack_require__(122);
+var relationship_1 = __webpack_require__(123);
 exports.Relationship = relationship_1.Relationship;
 
 //# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaUNBQWdDO0FBQXZCLHdCQUFBLEtBQUssQ0FBQTtBQUNkLGlDQUFnQztBQUF2Qix3QkFBQSxLQUFLLENBQUE7QUFDZCw2Q0FBNEM7QUFBbkMsNEJBQUEsT0FBTyxDQUFBO0FBQ2hCLDJDQUErQztBQUF0QywrQkFBQSxXQUFXLENBQUE7QUFDcEIseURBQXdEO0FBQS9DLHdDQUFBLGFBQWEsQ0FBQTtBQUN0QiwrQ0FBOEM7QUFBckMsc0NBQUEsWUFBWSxDQUFBIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHsgUGx1bXAgfSBmcm9tICcuL3BsdW1wJztcbmV4cG9ydCB7IE1vZGVsIH0gZnJvbSAnLi9tb2RlbCc7XG5leHBvcnQgeyBTdG9yYWdlIH0gZnJvbSAnLi9zdG9yYWdlL3N0b3JhZ2UnO1xuZXhwb3J0IHsgTWVtb3J5U3RvcmUgfSBmcm9tICcuL3N0b3JhZ2UvbWVtb3J5JztcbmV4cG9ydCB7IEtleVZhbHVlU3RvcmUgfSBmcm9tICcuL3N0b3JhZ2Uva2V5VmFsdWVTdG9yZSc7XG5leHBvcnQgeyBSZWxhdGlvbnNoaXAgfSBmcm9tICcuL3JlbGF0aW9uc2hpcCc7XG5leHBvcnQge1xuICBNb2RlbERhdGEsXG4gIFJlbGF0aW9uc2hpcFNjaGVtYSxcbiAgUmVsYXRpb25zaGlwSXRlbSxcbiAgUmVsYXRpb25zaGlwRGVsdGEsXG4gIE1vZGVsU2NoZW1hLFxuICBNb2RlbFJlZmVyZW5jZSxcbiAgSW5kZWZpbml0ZU1vZGVsRGF0YSxcbiAgTW9kZWxEZWx0YSxcbiAgRGlydHlNb2RlbCxcbiAgRGlydHlWYWx1ZXNcbn0gZnJvbSAnLi9kYXRhVHlwZXMnO1xuIl19
@@ -8402,11 +8402,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(5);
-var queue_1 = __webpack_require__(77);
+var queue_1 = __webpack_require__(80);
 var Subscription_1 = __webpack_require__(4);
 var observeOn_1 = __webpack_require__(42);
 var ObjectUnsubscribedError_1 = __webpack_require__(30);
-var SubjectSubscription_1 = __webpack_require__(60);
+var SubjectSubscription_1 = __webpack_require__(63);
 /**
  * @class ReplaySubject<T>
  */
@@ -8516,12 +8516,11 @@ var Observable_1 = __webpack_require__(0);
 exports.Observable = Observable_1.Observable;
 // statics
 /* tslint:disable:no-use-before-declare */
-__webpack_require__(126);
 __webpack_require__(127);
 __webpack_require__(128);
 __webpack_require__(129);
 __webpack_require__(130);
-__webpack_require__(133);
+__webpack_require__(131);
 __webpack_require__(134);
 __webpack_require__(135);
 __webpack_require__(136);
@@ -8531,21 +8530,21 @@ __webpack_require__(139);
 __webpack_require__(140);
 __webpack_require__(141);
 __webpack_require__(142);
-__webpack_require__(147);
 __webpack_require__(143);
+__webpack_require__(148);
 __webpack_require__(144);
 __webpack_require__(145);
 __webpack_require__(146);
-__webpack_require__(148);
-__webpack_require__(151);
+__webpack_require__(147);
 __webpack_require__(149);
-__webpack_require__(150);
 __webpack_require__(152);
+__webpack_require__(150);
+__webpack_require__(151);
+__webpack_require__(153);
 //dom
-__webpack_require__(131);
 __webpack_require__(132);
+__webpack_require__(133);
 //operators
-__webpack_require__(155);
 __webpack_require__(156);
 __webpack_require__(157);
 __webpack_require__(158);
@@ -8558,21 +8557,21 @@ __webpack_require__(164);
 __webpack_require__(165);
 __webpack_require__(166);
 __webpack_require__(167);
-__webpack_require__(173);
 __webpack_require__(168);
+__webpack_require__(174);
 __webpack_require__(169);
 __webpack_require__(170);
 __webpack_require__(171);
 __webpack_require__(172);
-__webpack_require__(174);
+__webpack_require__(173);
 __webpack_require__(175);
 __webpack_require__(176);
 __webpack_require__(177);
-__webpack_require__(180);
+__webpack_require__(178);
 __webpack_require__(181);
 __webpack_require__(182);
-__webpack_require__(178);
 __webpack_require__(183);
+__webpack_require__(179);
 __webpack_require__(184);
 __webpack_require__(185);
 __webpack_require__(186);
@@ -8580,12 +8579,12 @@ __webpack_require__(187);
 __webpack_require__(188);
 __webpack_require__(189);
 __webpack_require__(190);
-__webpack_require__(153);
-__webpack_require__(154);
 __webpack_require__(191);
+__webpack_require__(154);
+__webpack_require__(155);
 __webpack_require__(192);
-__webpack_require__(179);
 __webpack_require__(193);
+__webpack_require__(180);
 __webpack_require__(194);
 __webpack_require__(195);
 __webpack_require__(196);
@@ -8603,9 +8602,9 @@ __webpack_require__(207);
 __webpack_require__(208);
 __webpack_require__(209);
 __webpack_require__(210);
-__webpack_require__(212);
 __webpack_require__(211);
 __webpack_require__(213);
+__webpack_require__(212);
 __webpack_require__(214);
 __webpack_require__(215);
 __webpack_require__(216);
@@ -8645,6 +8644,7 @@ __webpack_require__(249);
 __webpack_require__(250);
 __webpack_require__(251);
 __webpack_require__(252);
+__webpack_require__(253);
 /* tslint:disable:no-unused-variable */
 var Subscription_1 = __webpack_require__(4);
 exports.Subscription = Subscription_1.Subscription;
@@ -8654,9 +8654,9 @@ var AsyncSubject_1 = __webpack_require__(24);
 exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
 var ReplaySubject_1 = __webpack_require__(36);
 exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
-var BehaviorSubject_1 = __webpack_require__(58);
+var BehaviorSubject_1 = __webpack_require__(61);
 exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
-var ConnectableObservable_1 = __webpack_require__(61);
+var ConnectableObservable_1 = __webpack_require__(64);
 exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
 var Notification_1 = __webpack_require__(19);
 exports.Notification = Notification_1.Notification;
@@ -8666,26 +8666,26 @@ var ArgumentOutOfRangeError_1 = __webpack_require__(28);
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
 var ObjectUnsubscribedError_1 = __webpack_require__(30);
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
-var TimeoutError_1 = __webpack_require__(80);
+var TimeoutError_1 = __webpack_require__(83);
 exports.TimeoutError = TimeoutError_1.TimeoutError;
-var UnsubscriptionError_1 = __webpack_require__(81);
+var UnsubscriptionError_1 = __webpack_require__(84);
 exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
-var timeInterval_1 = __webpack_require__(73);
+var timeInterval_1 = __webpack_require__(76);
 exports.TimeInterval = timeInterval_1.TimeInterval;
-var timestamp_1 = __webpack_require__(74);
+var timestamp_1 = __webpack_require__(77);
 exports.Timestamp = timestamp_1.Timestamp;
-var TestScheduler_1 = __webpack_require__(388);
+var TestScheduler_1 = __webpack_require__(389);
 exports.TestScheduler = TestScheduler_1.TestScheduler;
-var VirtualTimeScheduler_1 = __webpack_require__(75);
+var VirtualTimeScheduler_1 = __webpack_require__(78);
 exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
-var AjaxObservable_1 = __webpack_require__(64);
+var AjaxObservable_1 = __webpack_require__(67);
 exports.AjaxResponse = AjaxObservable_1.AjaxResponse;
 exports.AjaxError = AjaxObservable_1.AjaxError;
 exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
-var asap_1 = __webpack_require__(76);
+var asap_1 = __webpack_require__(79);
 var async_1 = __webpack_require__(9);
-var queue_1 = __webpack_require__(77);
-var animationFrame_1 = __webpack_require__(385);
+var queue_1 = __webpack_require__(80);
+var animationFrame_1 = __webpack_require__(386);
 var rxSubscriber_1 = __webpack_require__(27);
 var iterator_1 = __webpack_require__(22);
 var observable_1 = __webpack_require__(26);
@@ -9775,7 +9775,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(398);
+__webpack_require__(399);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
@@ -9789,11617 +9789,13 @@ module.exports = __webpack_require__(401);
 
 /***/ }),
 /* 47 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-/*!
- * assertion-error
- * Copyright(c) 2013 Jake Luer <jake@qualiancy.com>
- * MIT Licensed
- */
-
-/*!
- * Return a function that will copy properties from
- * one object to another excluding any originally
- * listed. Returned function will create a new `{}`.
- *
- * @param {String} excluded properties ...
- * @return {Function}
- */
-
-function exclude () {
-  var excludes = [].slice.call(arguments);
-
-  function excludeProps (res, obj) {
-    Object.keys(obj).forEach(function (key) {
-      if (!~excludes.indexOf(key)) res[key] = obj[key];
-    });
-  }
-
-  return function extendExclude () {
-    var args = [].slice.call(arguments)
-      , i = 0
-      , res = {};
-
-    for (; i < args.length; i++) {
-      excludeProps(res, args[i]);
-    }
-
-    return res;
-  };
-};
-
-/*!
- * Primary Exports
- */
-
-module.exports = AssertionError;
-
-/**
- * ### AssertionError
- *
- * An extension of the JavaScript `Error` constructor for
- * assertion and validation scenarios.
- *
- * @param {String} message
- * @param {Object} properties to include (optional)
- * @param {callee} start stack function (optional)
- */
-
-function AssertionError (message, _props, ssf) {
-  var extend = exclude('name', 'message', 'stack', 'constructor', 'toJSON')
-    , props = extend(_props || {});
-
-  // default values
-  this.message = message || 'Unspecified AssertionError';
-  this.showDiff = false;
-
-  // copy from properties
-  for (var key in props) {
-    this[key] = props[key];
-  }
-
-  // capture stack trace
-  ssf = ssf || arguments.callee;
-  if (ssf && Error.captureStackTrace) {
-    Error.captureStackTrace(this, ssf);
-  } else {
-    try {
-      throw new Error();
-    } catch(e) {
-      this.stack = e.stack;
-    }
-  }
-}
-
-/*!
- * Inherit from Error.prototype
- */
-
-AssertionError.prototype = Object.create(Error.prototype);
-
-/*!
- * Statically set name
- */
-
-AssertionError.prototype.name = 'AssertionError';
-
-/*!
- * Ensure correct constructor
- */
-
-AssertionError.prototype.constructor = AssertionError;
-
-/**
- * Allow errors to be converted to JSON for static transfer.
- *
- * @param {Boolean} include stack (default: `true`)
- * @return {Object} object that can be `JSON.stringify`
- */
-
-AssertionError.prototype.toJSON = function (stack) {
-  var extend = exclude('constructor', 'toJSON', 'stack')
-    , props = extend({ name: this.name }, this);
-
-  // include stack if exists and not turned off
-  if (false !== stack && this.stack) {
-    props.stack = this.stack;
-  }
-
-  return props;
-};
+module.exports = __webpack_require__(96);
 
 
 /***/ }),
 /* 48 */
-/***/ (function(module, exports) {
-
-/*!
- * Chai - getActual utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * # getActual(object, [actual])
- *
- * Returns the `actual` value for an Assertion
- *
- * @param {Object} object (constructed Assertion)
- * @param {Arguments} chai.Assertion.prototype.assert arguments
- * @namespace Utils
- * @name getActual
- */
-
-module.exports = function (obj, args) {
-  return args.length > 4 ? args[4] : obj._obj;
-};
-
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports) {
-
-/*!
- * Chai - getName utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * # getName(func)
- *
- * Gets the name of a function, in a cross-browser way.
- *
- * @param {Function} a function (usually a constructor)
- * @namespace Utils
- * @name getName
- */
-
-module.exports = function (func) {
-  if (func.name) return func.name;
-
-  var match = /^\s?function ([^(]*)\(/.exec(func);
-  return match && match[1] ? match[1] : "";
-};
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - getPathInfo utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-var hasProperty = __webpack_require__(51);
-
-/**
- * ### .getPathInfo(path, object)
- *
- * This allows the retrieval of property info in an
- * object given a string path.
- *
- * The path info consists of an object with the
- * following properties:
- *
- * * parent - The parent object of the property referenced by `path`
- * * name - The name of the final property, a number if it was an array indexer
- * * value - The value of the property, if it exists, otherwise `undefined`
- * * exists - Whether the property exists or not
- *
- * @param {String} path
- * @param {Object} object
- * @returns {Object} info
- * @namespace Utils
- * @name getPathInfo
- * @api public
- */
-
-module.exports = function getPathInfo(path, obj) {
-  var parsed = parsePath(path),
-      last = parsed[parsed.length - 1];
-
-  var info = {
-    parent: parsed.length > 1 ? _getPathValue(parsed, obj, parsed.length - 1) : obj,
-    name: last.p || last.i,
-    value: _getPathValue(parsed, obj)
-  };
-  info.exists = hasProperty(info.name, info.parent);
-
-  return info;
-};
-
-
-/*!
- * ## parsePath(path)
- *
- * Helper function used to parse string object
- * paths. Use in conjunction with `_getPathValue`.
- *
- *      var parsed = parsePath('myobject.property.subprop');
- *
- * ### Paths:
- *
- * * Can be as near infinitely deep and nested
- * * Arrays are also valid using the formal `myobject.document[3].property`.
- * * Literal dots and brackets (not delimiter) must be backslash-escaped.
- *
- * @param {String} path
- * @returns {Object} parsed
- * @api private
- */
-
-function parsePath (path) {
-  var str = path.replace(/([^\\])\[/g, '$1.[')
-    , parts = str.match(/(\\\.|[^.]+?)+/g);
-  return parts.map(function (value) {
-    var re = /^\[(\d+)\]$/
-      , mArr = re.exec(value);
-    if (mArr) return { i: parseFloat(mArr[1]) };
-    else return { p: value.replace(/\\([.\[\]])/g, '$1') };
-  });
-}
-
-
-/*!
- * ## _getPathValue(parsed, obj)
- *
- * Helper companion function for `.parsePath` that returns
- * the value located at the parsed address.
- *
- *      var value = getPathValue(parsed, obj);
- *
- * @param {Object} parsed definition from `parsePath`.
- * @param {Object} object to search against
- * @param {Number} object to search against
- * @returns {Object|Undefined} value
- * @api private
- */
-
-function _getPathValue (parsed, obj, index) {
-  var tmp = obj
-    , res;
-
-  index = (index === undefined ? parsed.length : index);
-
-  for (var i = 0, l = index; i < l; i++) {
-    var part = parsed[i];
-    if (tmp) {
-      if ('undefined' !== typeof part.p)
-        tmp = tmp[part.p];
-      else if ('undefined' !== typeof part.i)
-        tmp = tmp[part.i];
-      if (i == (l - 1)) res = tmp;
-    } else {
-      res = undefined;
-    }
-  }
-  return res;
-}
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - hasProperty utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-var type = __webpack_require__(46);
-
-/**
- * ### .hasProperty(object, name)
- *
- * This allows checking whether an object has
- * named property or numeric array index.
- *
- * Basically does the same thing as the `in`
- * operator but works properly with natives
- * and null/undefined values.
- *
- *     var obj = {
- *         arr: ['a', 'b', 'c']
- *       , str: 'Hello'
- *     }
- *
- * The following would be the results.
- *
- *     hasProperty('str', obj);  // true
- *     hasProperty('constructor', obj);  // true
- *     hasProperty('bar', obj);  // false
- *
- *     hasProperty('length', obj.str); // true
- *     hasProperty(1, obj.str);  // true
- *     hasProperty(5, obj.str);  // false
- *
- *     hasProperty('length', obj.arr);  // true
- *     hasProperty(2, obj.arr);  // true
- *     hasProperty(3, obj.arr);  // false
- *
- * @param {Objuect} object
- * @param {String|Number} name
- * @returns {Boolean} whether it exists
- * @namespace Utils
- * @name getPathInfo
- * @api public
- */
-
-var literals = {
-    'number': Number
-  , 'string': String
-};
-
-module.exports = function hasProperty(name, obj) {
-  var ot = type(obj);
-
-  // Bad Object, obviously no props at all
-  if(ot === 'null' || ot === 'undefined')
-    return false;
-
-  // The `in` operator does not work with certain literals
-  // box these before the check
-  if(literals[ot] && typeof obj !== 'object')
-    obj = new literals[ot](obj);
-
-  return name in obj;
-};
-
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - flag utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/*!
- * Module dependancies
- */
-
-var inspect = __webpack_require__(34);
-var config = __webpack_require__(16);
-
-/**
- * ### .objDisplay (object)
- *
- * Determines if an object or an array matches
- * criteria to be inspected in-line for error
- * messages or should be truncated.
- *
- * @param {Mixed} javascript object to inspect
- * @name objDisplay
- * @namespace Utils
- * @api public
- */
-
-module.exports = function (obj) {
-  var str = inspect(obj)
-    , type = Object.prototype.toString.call(obj);
-
-  if (config.truncateThreshold && str.length >= config.truncateThreshold) {
-    if (type === '[object Function]') {
-      return !obj.name || obj.name === ''
-        ? '[Function]'
-        : '[Function: ' + obj.name + ']';
-    } else if (type === '[object Array]') {
-      return '[ Array(' + obj.length + ') ]';
-    } else if (type === '[object Object]') {
-      var keys = Object.keys(obj)
-        , kstr = keys.length > 2
-          ? keys.splice(0, 2).join(', ') + ', ...'
-          : keys.join(', ');
-      return '{ Object (' + kstr + ') }';
-    } else {
-      return str;
-    }
-  } else {
-    return str;
-  }
-};
-
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports) {
-
-/*!
- * Chai - transferFlags utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * ### transferFlags(assertion, object, includeAll = true)
- *
- * Transfer all the flags for `assertion` to `object`. If
- * `includeAll` is set to `false`, then the base Chai
- * assertion flags (namely `object`, `ssfi`, and `message`)
- * will not be transferred.
- *
- *
- *     var newAssertion = new Assertion();
- *     utils.transferFlags(assertion, newAssertion);
- *
- *     var anotherAsseriton = new Assertion(myObj);
- *     utils.transferFlags(assertion, anotherAssertion, false);
- *
- * @param {Assertion} assertion the assertion to transfer the flags from
- * @param {Object} object the object to transfer the flags to; usually a new assertion
- * @param {Boolean} includeAll
- * @namespace Utils
- * @name transferFlags
- * @api private
- */
-
-module.exports = function (assertion, object, includeAll) {
-  var flags = assertion.__flags || (assertion.__flags = Object.create(null));
-
-  if (!object.__flags) {
-    object.__flags = Object.create(null);
-  }
-
-  includeAll = arguments.length === 3 ? includeAll : true;
-
-  for (var flag in flags) {
-    if (includeAll ||
-        (flag !== 'object' && flag !== 'ssfi' && flag != 'message')) {
-      object.__flags[flag] = flags[flag];
-    }
-  }
-};
-
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var Bluebird = __webpack_require__(15);
-var mergeOptions = __webpack_require__(18);
-var storage_1 = __webpack_require__(55);
-function saneNumber(i) {
-    return ((typeof i === 'number') && (!isNaN(i)) && (i !== Infinity) && (i !== -Infinity));
-}
-var KeyValueStore = (function (_super) {
-    __extends(KeyValueStore, _super);
-    function KeyValueStore() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.maxKeys = {};
-        return _this;
-    }
-    KeyValueStore.prototype.allocateId = function (typeName) {
-        this.maxKeys[typeName] = this.maxKeys[typeName] + 1;
-        return Bluebird.resolve(this.maxKeys[typeName]);
-    };
-    KeyValueStore.prototype.writeAttributes = function (inputValue) {
-        var _this = this;
-        var value = this.validateInput(inputValue);
-        delete value.relationships;
-        // trim out relationships for a direct write.
-        return Bluebird.resolve()
-            .then(function () {
-            if (!_this.terminal) {
-                throw new Error('Cannot create new content in a non-terminal store');
-            }
-        })
-            .then(function () {
-            if ((value.id === undefined) || (value.id === null)) {
-                return _this.allocateId(value.typeName)
-                    .then(function (n) {
-                    return mergeOptions({}, value, { id: n, relationships: {} }); // if new.
-                });
-            }
-            else {
-                // if not new, get current (including relationships) and merge
-                var thisId = typeof value.id === 'string' ? parseInt(value.id, 10) : value.id;
-                if (saneNumber(thisId) && thisId > _this.maxKeys[value.typeName]) {
-                    _this.maxKeys[value.typeName] = thisId;
-                }
-                return _this._get(_this.keyString(value)).then(function (current) { return mergeOptions({}, current, value); });
-            }
-        })
-            .then(function (toSave) {
-            return _this._set(_this.keyString(toSave), toSave)
-                .then(function () {
-                _this.fireWriteUpdate(Object.assign({}, toSave, { invalidate: ['attributes'] }));
-                return toSave;
-            });
-        });
-    };
-    KeyValueStore.prototype.readAttributes = function (value) {
-        return this._get(this.keyString(value))
-            .then(function (d) {
-            if (d && d.attributes && Object.keys(d.attributes).length > 0) {
-                return d;
-            }
-            else {
-                return null;
-            }
-        });
-    };
-    KeyValueStore.prototype.cache = function (value) {
-        var _this = this;
-        if ((value.id === undefined) || (value.id === null)) {
-            return Bluebird.reject('Cannot cache data without an id - write it to a terminal first');
-        }
-        else {
-            return this._get(this.keyString(value))
-                .then(function (current) {
-                var newVal = mergeOptions(current || {}, value);
-                return _this._set(_this.keyString(value), newVal);
-            });
-        }
-    };
-    KeyValueStore.prototype.cacheAttributes = function (value) {
-        var _this = this;
-        if ((value.id === undefined) || (value.id === null)) {
-            return Bluebird.reject('Cannot cache data without an id - write it to a terminal first');
-        }
-        else {
-            return this._get(this.keyString(value))
-                .then(function (current) {
-                return _this._set(_this.keyString(value), {
-                    typeName: value.typeName,
-                    id: value.id,
-                    attributes: value.attributes,
-                    relationships: current.relationships || {},
-                });
-            });
-        }
-    };
-    KeyValueStore.prototype.cacheRelationship = function (value) {
-        var _this = this;
-        if ((value.id === undefined) || (value.id === null)) {
-            return Bluebird.reject('Cannot cache data without an id - write it to a terminal first');
-        }
-        else {
-            return this._get(this.keyString(value))
-                .then(function (current) {
-                return _this._set(_this.keyString(value), {
-                    typeName: value.typeName,
-                    id: value.id,
-                    attributes: current.attributes || {},
-                    relationships: value.relationships,
-                });
-            });
-        }
-    };
-    KeyValueStore.prototype.readRelationship = function (value, relName) {
-        var _this = this;
-        return this._get(this.keyString(value))
-            .then(function (v) {
-            var retVal = Object.assign({}, v);
-            if (!v) {
-                if (_this.terminal) {
-                    return { typeName: value.typeName, id: value.id, relationships: (_a = {}, _a[relName] = [], _a) };
-                }
-                else {
-                    return null;
-                }
-            }
-            else if (!v.relationships && _this.terminal) {
-                retVal.relationships = (_b = {}, _b[relName] = [], _b);
-            }
-            else if (!retVal.relationships[relName] && _this.terminal) {
-                retVal.relationships[relName] = [];
-            }
-            return retVal;
-            var _a, _b;
-        });
-    };
-    KeyValueStore.prototype.delete = function (value) {
-        var _this = this;
-        return this._del(this.keyString(value))
-            .then(function () {
-            if (_this.terminal) {
-                _this.fireWriteUpdate({ id: value.id, typeName: value.typeName, invalidate: ['attributes', 'relationships'] });
-            }
-        });
-    };
-    KeyValueStore.prototype.wipe = function (value, field) {
-        var _this = this;
-        var ks = this.keyString(value);
-        return this._get(ks)
-            .then(function (val) {
-            if (val === null) {
-                return null;
-            }
-            var newVal = Object.assign({}, val);
-            if (field === 'attributes') {
-                delete newVal.attributes;
-            }
-            else if (field === 'relationships') {
-                delete newVal.relationships;
-            }
-            else if (field.indexOf('relationships.') === 0) {
-                delete newVal.relationships[field.split('.')[1]];
-                if (Object.keys(newVal.relationships).length === 0) {
-                    delete newVal.relationships;
-                }
-            }
-            else {
-                throw new Error("Cannot delete field " + field + " - unknown format");
-            }
-            return _this._set(ks, newVal);
-        });
-    };
-    KeyValueStore.prototype.writeRelationshipItem = function (value, relName, child) {
-        var _this = this;
-        var schema = this.getSchema(value.typeName);
-        var relSchema = schema.relationships[relName].type;
-        var otherRelType = relSchema.sides[relName].otherType;
-        var otherRelName = relSchema.sides[relName].otherName;
-        var thisKeyString = this.keyString(value);
-        var otherKeyString = this.keyString({ typeName: otherRelType, id: child.id });
-        return Bluebird.all([
-            this._get(thisKeyString),
-            this._get(otherKeyString),
-        ])
-            .then(function (_a) {
-            var thisItemResolved = _a[0], otherItemResolved = _a[1];
-            var thisItem = thisItemResolved;
-            if (!thisItem) {
-                thisItem = {
-                    id: child.id,
-                    typeName: otherRelType,
-                    attributes: {},
-                    relationships: {},
-                };
-            }
-            var otherItem = otherItemResolved;
-            if (!otherItem) {
-                otherItem = {
-                    id: child.id,
-                    typeName: otherRelType,
-                    attributes: {},
-                    relationships: {},
-                };
-            }
-            var newChild = { id: child.id };
-            var newParent = { id: value.id };
-            if (!thisItem.relationships[relName]) {
-                thisItem.relationships[relName] = [];
-            }
-            if (!otherItem.relationships[otherRelName]) {
-                otherItem.relationships[otherRelName] = [];
-            }
-            if (relSchema.extras && child.meta) {
-                newParent.meta = {};
-                newChild.meta = {};
-                for (var extra in child.meta) {
-                    if (extra in relSchema.extras) {
-                        newChild.meta[extra] = child.meta[extra];
-                        newParent.meta[extra] = child.meta[extra];
-                    }
-                }
-            }
-            var thisIdx = thisItem.relationships[relName].findIndex(function (item) { return item.id === child.id; });
-            var otherIdx = otherItem.relationships[otherRelName].findIndex(function (item) { return item.id === value.id; });
-            if (thisIdx < 0) {
-                thisItem.relationships[relName].push(newChild);
-            }
-            else {
-                thisItem.relationships[relName][thisIdx] = newChild;
-            }
-            if (otherIdx < 0) {
-                otherItem.relationships[otherRelName].push(newParent);
-            }
-            else {
-                otherItem.relationships[otherRelName][otherIdx] = newParent;
-            }
-            return Bluebird.all([
-                _this._set(_this.keyString(thisItem), thisItem),
-                _this._set(_this.keyString(otherItem), otherItem),
-            ]).then(function () {
-                _this.fireWriteUpdate(Object.assign(thisItem, { invalidate: ["relationships." + relName] }));
-                _this.fireWriteUpdate(Object.assign(otherItem, { invalidate: ["relationships." + otherRelName] }));
-            })
-                .then(function () { return thisItem; });
-        });
-    };
-    KeyValueStore.prototype.deleteRelationshipItem = function (value, relName, child) {
-        var _this = this;
-        var schema = this.getSchema(value.typeName);
-        var relSchema = schema.relationships[relName].type;
-        var otherRelType = relSchema.sides[relName].otherType;
-        var otherRelName = relSchema.sides[relName].otherName;
-        var thisKeyString = this.keyString(value);
-        var otherKeyString = this.keyString({ typeName: otherRelType, id: child.id });
-        return Bluebird.all([
-            this._get(thisKeyString),
-            this._get(otherKeyString),
-        ])
-            .then(function (_a) {
-            var thisItem = _a[0], otherItem = _a[1];
-            if (!thisItem.relationships[relName]) {
-                thisItem.relationships[relName] = [];
-            }
-            if (!otherItem.relationships[otherRelName]) {
-                otherItem.relationships[otherRelName] = [];
-            }
-            var thisIdx = thisItem.relationships[relName].findIndex(function (item) { return item.id === child.id; });
-            var otherIdx = otherItem.relationships[otherRelName].findIndex(function (item) { return item.id === value.id; });
-            if (thisIdx >= 0) {
-                thisItem.relationships[relName].splice(thisIdx, 1);
-            }
-            if (otherIdx >= 0) {
-                otherItem.relationships[otherRelName].splice(otherIdx, 1);
-            }
-            return Bluebird.all([
-                _this._set(_this.keyString(thisItem), thisItem),
-                _this._set(_this.keyString(otherItem), otherItem),
-            ]).then(function () {
-                _this.fireWriteUpdate(Object.assign(thisItem, { invalidate: ["relationships." + relName] }));
-                _this.fireWriteUpdate(Object.assign(otherItem, { invalidate: ["relationships." + otherRelName] }));
-            })
-                .then(function () { return thisItem; });
-        });
-    };
-    KeyValueStore.prototype.addSchema = function (t) {
-        var _this = this;
-        return _super.prototype.addSchema.call(this, t)
-            .then(function () {
-            _this.maxKeys[t.typeName] = 0;
-        });
-    };
-    KeyValueStore.prototype.keyString = function (value) {
-        return value.typeName + ":" + value.id;
-    };
-    return KeyValueStore;
-}(storage_1.Storage));
-exports.KeyValueStore = KeyValueStore;
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,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Q0FBQztJQUVELGlDQUFTLEdBQVQsVUFBVSxDQUEwQztRQUFwRCxpQkFLQztRQUpDLE1BQU0sQ0FBQyxpQkFBTSxTQUFTLFlBQUMsQ0FBQyxDQUFDO2FBQ3hCLElBQUksQ0FBQztZQUNKLEtBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUMvQixDQUFDLENBQUMsQ0FBQztJQUNMLENBQUM7SUFFRCxpQ0FBUyxHQUFULFVBQVUsS0FBcUI7UUFDN0IsTUFBTSxDQUFJLEtBQUssQ0FBQyxRQUFRLFNBQUksS0FBSyxDQUFDLEVBQUksQ0FBQztJQUN6QyxDQUFDO0lBQ0gsb0JBQUM7QUFBRCxDQW5SQSxBQW1SQyxDQW5SMkMsaUJBQU8sR0FtUmxEO0FBblJxQixzQ0FBYSIsImZpbGUiOiJzdG9yYWdlL2tleVZhbHVlU3RvcmUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBCbHVlYmlyZCBmcm9tICdibHVlYmlyZCc7XG5pbXBvcnQgKiBhcyBtZXJnZU9wdGlvbnMgZnJvbSAnbWVyZ2Utb3B0aW9ucyc7XG5cbmltcG9ydCB7IFN0b3JhZ2UgfSBmcm9tICcuL3N0b3JhZ2UnO1xuaW1wb3J0IHtcbiAgSW5kZWZpbml0ZU1vZGVsRGF0YSxcbiAgTW9kZWxEYXRhLFxuICBNb2RlbFJlZmVyZW5jZSxcbiAgTW9kZWxTY2hlbWEsXG4gIFJlbGF0aW9uc2hpcEl0ZW0sXG59IGZyb20gJy4uL2RhdGFUeXBlcyc7XG5cbmZ1bmN0aW9uIHNhbmVOdW1iZXIoaSkge1xuICByZXR1cm4gKCh0eXBlb2YgaSA9PT0gJ251bWJlcicpICYmICghaXNOYU4oaSkpICYmIChpICE9PSBJbmZpbml0eSkgJiYgKGkgIT09IC1JbmZpbml0eSkpO1xufVxuXG5leHBvcnQgYWJzdHJhY3QgY2xhc3MgS2V5VmFsdWVTdG9yZSBleHRlbmRzIFN0b3JhZ2Uge1xuICBwcm90ZWN0ZWQgbWF4S2V5czogeyBbdHlwZU5hbWU6IHN0cmluZ106IG51bWJlciB9ID0ge307XG5cbiAgYWJzdHJhY3QgX2tleXModHlwZU5hbWU6IHN0cmluZyk6IEJsdWViaXJkPHN0cmluZ1tdPjtcbiAgYWJzdHJhY3QgX2dldChrOiBzdHJpbmcpOiBCbHVlYmlyZDxNb2RlbERhdGEgfCBudWxsPjtcbiAgYWJzdHJhY3QgX3NldChrOiBzdHJpbmcsIHY6IE1vZGVsRGF0YSk6IEJsdWViaXJkPE1vZGVsRGF0YT47XG4gIGFic3RyYWN0IF9kZWwoazogc3RyaW5nKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcblxuICBhbGxvY2F0ZUlkKHR5cGVOYW1lOiBzdHJpbmcpIHtcbiAgICB0aGlzLm1heEtleXNbdHlwZU5hbWVdID0gdGhpcy5tYXhLZXlzW3R5cGVOYW1lXSArIDE7XG4gICAgcmV0dXJuIEJsdWViaXJkLnJlc29sdmUodGhpcy5tYXhLZXlzW3R5cGVOYW1lXSk7XG4gIH1cblxuICB3cml0ZUF0dHJpYnV0ZXMoaW5wdXRWYWx1ZTogSW5kZWZpbml0ZU1vZGVsRGF0YSkge1xuICAgIGNvbnN0IHZhbHVlID0gdGhpcy52YWxpZGF0ZUlucHV0KGlucHV0VmFsdWUpO1xuICAgIGRlbGV0ZSB2YWx1ZS5yZWxhdGlvbnNoaXBzO1xuICAgIC8vIHRyaW0gb3V0IHJlbGF0aW9uc2hpcHMgZm9yIGEgZGlyZWN0IHdyaXRlLlxuICAgIHJldHVybiBCbHVlYmlyZC5yZXNvbHZlKClcbiAgICAudGhlbigoKSA9PiB7XG4gICAgICBpZiAoIXRoaXMudGVybWluYWwpIHtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdDYW5ub3QgY3JlYXRlIG5ldyBjb250ZW50IGluIGEgbm9uLXRlcm1pbmFsIHN0b3JlJyk7XG4gICAgICB9XG4gICAgfSlcbiAgICAudGhlbigoKSA9PiB7XG4gICAgICBpZiAoKHZhbHVlLmlkID09PSB1bmRlZmluZWQpIHx8ICh2YWx1ZS5pZCA9PT0gbnVsbCkpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuYWxsb2NhdGVJZCh2YWx1ZS50eXBlTmFtZSlcbiAgICAgICAgLnRoZW4oKG4pID0+IHtcbiAgICAgICAgICByZXR1cm4gbWVyZ2VPcHRpb25zKHt9LCB2YWx1ZSwgeyBpZDogbiwgcmVsYXRpb25zaGlwczoge30gfSk7IC8vIGlmIG5ldy5cbiAgICAgICAgfSk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICAvLyBpZiBub3QgbmV3LCBnZXQgY3VycmVudCAoaW5jbHVkaW5nIHJlbGF0aW9uc2hpcHMpIGFuZCBtZXJnZVxuICAgICAgICBjb25zdCB0aGlzSWQgPSB0eXBlb2YgdmFsdWUuaWQgPT09ICdzdHJpbmcnID8gcGFyc2VJbnQodmFsdWUuaWQsIDEwKSA6IHZhbHVlLmlkO1xuICAgICAgICBpZiAoc2FuZU51bWJlcih0aGlzSWQpICYmIHRoaXNJZCA+IHRoaXMubWF4S2V5c1t2YWx1ZS50eXBlTmFtZV0pIHtcbiAgICAgICAgICB0aGlzLm1heEtleXNbdmFsdWUudHlwZU5hbWVdID0gdGhpc0lkO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiB0aGlzLl9nZXQodGhpcy5rZXlTdHJpbmcodmFsdWUgYXMgTW9kZWxSZWZlcmVuY2UpKS50aGVuKGN1cnJlbnQgPT4gbWVyZ2VPcHRpb25zKHt9LCBjdXJyZW50LCB2YWx1ZSkpO1xuICAgICAgfVxuICAgIH0pXG4gICAgLnRoZW4oKHRvU2F2ZSkgPT4ge1xuICAgICAgcmV0dXJuIHRoaXMuX3NldCh0aGlzLmtleVN0cmluZyh0b1NhdmUpLCB0b1NhdmUpXG4gICAgICAudGhlbigoKSA9PiB7XG4gICAgICAgIHRoaXMuZmlyZVdyaXRlVXBkYXRlKE9iamVjdC5hc3NpZ24oe30sIHRvU2F2ZSwgeyBpbnZhbGlkYXRlOiBbJ2F0dHJpYnV0ZXMnXSB9KSk7XG4gICAgICAgIHJldHVybiB0b1NhdmU7XG4gICAgICB9KTtcbiAgICB9KTtcbiAgfVxuXG4gIHJlYWRBdHRyaWJ1dGVzKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSk6IEJsdWViaXJkPE1vZGVsRGF0YT4ge1xuICAgIHJldHVybiB0aGlzLl9nZXQodGhpcy5rZXlTdHJpbmcodmFsdWUpKVxuICAgIC50aGVuKGQgPT4ge1xuICAgICAgaWYgKGQgJiYgZC5hdHRyaWJ1dGVzICYmIE9iamVjdC5rZXlzKGQuYXR0cmlidXRlcykubGVuZ3RoID4gMCkge1xuICAgICAgICByZXR1cm4gZDtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIHJldHVybiBudWxsO1xuICAgICAgfVxuICAgIH0pO1xuICB9XG5cbiAgY2FjaGUodmFsdWU6IE1vZGVsRGF0YSkge1xuICAgIGlmICgodmFsdWUuaWQgPT09IHVuZGVmaW5lZCkgfHwgKHZhbHVlLmlkID09PSBudWxsKSkge1xuICAgICAgcmV0dXJuIEJsdWViaXJkLnJlamVjdCgnQ2Fubm90IGNhY2hlIGRhdGEgd2l0aG91dCBhbiBpZCAtIHdyaXRlIGl0IHRvIGEgdGVybWluYWwgZmlyc3QnKTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIHRoaXMuX2dldCh0aGlzLmtleVN0cmluZyh2YWx1ZSkpXG4gICAgICAudGhlbigoY3VycmVudCkgPT4ge1xuICAgICAgICBjb25zdCBuZXdWYWwgPSBtZXJnZU9wdGlvbnMoY3VycmVudCB8fCB7fSwgdmFsdWUpO1xuICAgICAgICByZXR1cm4gdGhpcy5fc2V0KHRoaXMua2V5U3RyaW5nKHZhbHVlKSwgbmV3VmFsKTtcbiAgICAgIH0pO1xuICAgIH1cbiAgfVxuXG4gIGNhY2hlQXR0cmlidXRlcyh2YWx1ZTogTW9kZWxEYXRhKSB7XG4gICAgaWYgKCh2YWx1ZS5pZCA9PT0gdW5kZWZpbmVkKSB8fCAodmFsdWUuaWQgPT09IG51bGwpKSB7XG4gICAgICByZXR1cm4gQmx1ZWJpcmQucmVqZWN0KCdDYW5ub3QgY2FjaGUgZGF0YSB3aXRob3V0IGFuIGlkIC0gd3JpdGUgaXQgdG8gYSB0ZXJtaW5hbCBmaXJzdCcpO1xuICAgIH0gZWxzZSB7XG4gICAgICByZXR1cm4gdGhpcy5fZ2V0KHRoaXMua2V5U3RyaW5nKHZhbHVlKSlcbiAgICAgIC50aGVuKChjdXJyZW50KSA9PiB7XG4gICAgICAgIHJldHVybiB0aGlzLl9zZXQodGhpcy5rZXlTdHJpbmcodmFsdWUpLCB7XG4gICAgICAgICAgdHlwZU5hbWU6IHZhbHVlLnR5cGVOYW1lLFxuICAgICAgICAgIGlkOiB2YWx1ZS5pZCxcbiAgICAgICAgICBhdHRyaWJ1dGVzOiB2YWx1ZS5hdHRyaWJ1dGVzLFxuICAgICAgICAgIHJlbGF0aW9uc2hpcHM6IGN1cnJlbnQucmVsYXRpb25zaGlwcyB8fCB7fSxcbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICB9XG4gIH1cblxuICBjYWNoZVJlbGF0aW9uc2hpcCh2YWx1ZTogTW9kZWxEYXRhKSB7XG4gICAgaWYgKCh2YWx1ZS5pZCA9PT0gdW5kZWZpbmVkKSB8fCAodmFsdWUuaWQgPT09IG51bGwpKSB7XG4gICAgICByZXR1cm4gQmx1ZWJpcmQucmVqZWN0KCdDYW5ub3QgY2FjaGUgZGF0YSB3aXRob3V0IGFuIGlkIC0gd3JpdGUgaXQgdG8gYSB0ZXJtaW5hbCBmaXJzdCcpO1xuICAgIH0gZWxzZSB7XG4gICAgICByZXR1cm4gdGhpcy5fZ2V0KHRoaXMua2V5U3RyaW5nKHZhbHVlKSlcbiAgICAgIC50aGVuKChjdXJyZW50KSA9PiB7XG4gICAgICAgIHJldHVybiB0aGlzLl9zZXQodGhpcy5rZXlTdHJpbmcodmFsdWUpLCB7XG4gICAgICAgICAgdHlwZU5hbWU6IHZhbHVlLnR5cGVOYW1lLFxuICAgICAgICAgIGlkOiB2YWx1ZS5pZCxcbiAgICAgICAgICBhdHRyaWJ1dGVzOiBjdXJyZW50LmF0dHJpYnV0ZXMgfHwge30sXG4gICAgICAgICAgcmVsYXRpb25zaGlwczogdmFsdWUucmVsYXRpb25zaGlwcyxcbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICB9XG4gIH1cblxuICByZWFkUmVsYXRpb25zaGlwKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSwgcmVsTmFtZTogc3RyaW5nKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPiB7XG4gICAgcmV0dXJuIHRoaXMuX2dldCh0aGlzLmtleVN0cmluZyh2YWx1ZSkpXG4gICAgLnRoZW4oKHYpID0+IHtcbiAgICAgIGNvbnN0IHJldFZhbCA9IE9iamVjdC5hc3NpZ24oe30sIHYpO1xuICAgICAgaWYgKCF2KSB7XG4gICAgICAgIGlmICh0aGlzLnRlcm1pbmFsKSB7XG4gICAgICAgICAgcmV0dXJuIHsgdHlwZU5hbWU6IHZhbHVlLnR5cGVOYW1lLCBpZDogdmFsdWUuaWQsIHJlbGF0aW9uc2hpcHM6IHsgW3JlbE5hbWVdOiBbXSB9IH07XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgcmV0dXJuIG51bGw7XG4gICAgICAgIH1cbiAgICAgIH0gZWxzZSBpZiAoIXYucmVsYXRpb25zaGlwcyAmJiB0aGlzLnRlcm1pbmFsKSB7XG4gICAgICAgIHJldFZhbC5yZWxhdGlvbnNoaXBzID0geyBbcmVsTmFtZV06IFtdIH07XG4gICAgICB9IGVsc2UgaWYgKCFyZXRWYWwucmVsYXRpb25zaGlwc1tyZWxOYW1lXSAmJiB0aGlzLnRlcm1pbmFsKSB7XG4gICAgICAgIHJldFZhbC5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdID0gW107XG4gICAgICB9XG4gICAgICByZXR1cm4gcmV0VmFsO1xuICAgIH0pO1xuICB9XG5cbiAgZGVsZXRlKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSkge1xuICAgIHJldHVybiB0aGlzLl9kZWwodGhpcy5rZXlTdHJpbmcodmFsdWUpKVxuICAgIC50aGVuKCgpID0+IHtcbiAgICAgIGlmICh0aGlzLnRlcm1pbmFsKSB7XG4gICAgICAgIHRoaXMuZmlyZVdyaXRlVXBkYXRlKHsgaWQ6IHZhbHVlLmlkLCB0eXBlTmFtZTogdmFsdWUudHlwZU5hbWUsIGludmFsaWRhdGU6IFsnYXR0cmlidXRlcycsICdyZWxhdGlvbnNoaXBzJ10gfSk7XG4gICAgICB9XG4gICAgfSk7XG4gIH1cblxuICB3aXBlKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSwgZmllbGQ6IHN0cmluZykge1xuICAgIGNvbnN0IGtzID0gdGhpcy5rZXlTdHJpbmcodmFsdWUpO1xuICAgIHJldHVybiB0aGlzLl9nZXQoa3MpXG4gICAgLnRoZW4oKHZhbCkgPT4ge1xuICAgICAgaWYgKHZhbCA9PT0gbnVsbCkge1xuICAgICAgICByZXR1cm4gbnVsbDtcbiAgICAgIH1cbiAgICAgIGNvbnN0IG5ld1ZhbCA9IE9iamVjdC5hc3NpZ24oe30sIHZhbCk7XG4gICAgICBpZiAoZmllbGQgPT09ICdhdHRyaWJ1dGVzJykge1xuICAgICAgICBkZWxldGUgbmV3VmFsLmF0dHJpYnV0ZXM7XG4gICAgICB9IGVsc2UgaWYgKGZpZWxkID09PSAncmVsYXRpb25zaGlwcycpIHtcbiAgICAgICAgZGVsZXRlIG5ld1ZhbC5yZWxhdGlvbnNoaXBzO1xuICAgICAgfSBlbHNlIGlmIChmaWVsZC5pbmRleE9mKCdyZWxhdGlvbnNoaXBzLicpID09PSAwKSB7XG4gICAgICAgIGRlbGV0ZSBuZXdWYWwucmVsYXRpb25zaGlwc1tmaWVsZC5zcGxpdCgnLicpWzFdXTtcbiAgICAgICAgaWYgKE9iamVjdC5rZXlzKG5ld1ZhbC5yZWxhdGlvbnNoaXBzKS5sZW5ndGggPT09IDApIHtcbiAgICAgICAgICBkZWxldGUgbmV3VmFsLnJlbGF0aW9uc2hpcHM7XG4gICAgICAgIH1cbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgQ2Fubm90IGRlbGV0ZSBmaWVsZCAke2ZpZWxkfSAtIHVua25vd24gZm9ybWF0YCk7XG4gICAgICB9XG4gICAgICByZXR1cm4gdGhpcy5fc2V0KGtzLCBuZXdWYWwpO1xuICAgIH0pO1xuICB9XG5cbiAgd3JpdGVSZWxhdGlvbnNoaXBJdGVtKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSwgcmVsTmFtZTogc3RyaW5nLCBjaGlsZDogUmVsYXRpb25zaGlwSXRlbSkge1xuICAgIGNvbnN0IHNjaGVtYSA9IHRoaXMuZ2V0U2NoZW1hKHZhbHVlLnR5cGVOYW1lKTtcbiAgICBjb25zdCByZWxTY2hlbWEgPSBzY2hlbWEucmVsYXRpb25zaGlwc1tyZWxOYW1lXS50eXBlO1xuICAgIGNvbnN0IG90aGVyUmVsVHlwZSA9IHJlbFNjaGVtYS5zaWRlc1tyZWxOYW1lXS5vdGhlclR5cGU7XG4gICAgY29uc3Qgb3RoZXJSZWxOYW1lID0gcmVsU2NoZW1hLnNpZGVzW3JlbE5hbWVdLm90aGVyTmFtZTtcbiAgICBjb25zdCB0aGlzS2V5U3RyaW5nID0gdGhpcy5rZXlTdHJpbmcodmFsdWUpO1xuICAgIGNvbnN0IG90aGVyS2V5U3RyaW5nID0gdGhpcy5rZXlTdHJpbmcoeyB0eXBlTmFtZTogb3RoZXJSZWxUeXBlLCBpZDogY2hpbGQuaWQgfSk7XG4gICAgcmV0dXJuIEJsdWViaXJkLmFsbChbXG4gICAgICB0aGlzLl9nZXQodGhpc0tleVN0cmluZyksXG4gICAgICB0aGlzLl9nZXQob3RoZXJLZXlTdHJpbmcpLFxuICAgIF0pXG4gICAgLnRoZW4oKFt0aGlzSXRlbVJlc29sdmVkLCBvdGhlckl0ZW1SZXNvbHZlZF0pID0+IHtcbiAgICAgIGxldCB0aGlzSXRlbSA9IHRoaXNJdGVtUmVzb2x2ZWQ7XG4gICAgICBpZiAoIXRoaXNJdGVtKSB7XG4gICAgICAgIHRoaXNJdGVtID0ge1xuICAgICAgICAgIGlkOiBjaGlsZC5pZCxcbiAgICAgICAgICB0eXBlTmFtZTogb3RoZXJSZWxUeXBlLFxuICAgICAgICAgIGF0dHJpYnV0ZXM6IHt9LFxuICAgICAgICAgIHJlbGF0aW9uc2hpcHM6IHt9LFxuICAgICAgICB9O1xuICAgICAgfVxuICAgICAgbGV0IG90aGVySXRlbSA9IG90aGVySXRlbVJlc29sdmVkO1xuICAgICAgaWYgKCFvdGhlckl0ZW0pIHtcbiAgICAgICAgb3RoZXJJdGVtID0ge1xuICAgICAgICAgIGlkOiBjaGlsZC5pZCxcbiAgICAgICAgICB0eXBlTmFtZTogb3RoZXJSZWxUeXBlLFxuICAgICAgICAgIGF0dHJpYnV0ZXM6IHt9LFxuICAgICAgICAgIHJlbGF0aW9uc2hpcHM6IHt9LFxuICAgICAgICB9O1xuICAgICAgfVxuICAgICAgY29uc3QgbmV3Q2hpbGQ6IFJlbGF0aW9uc2hpcEl0ZW0gPSB7IGlkOiBjaGlsZC5pZCB9O1xuICAgICAgY29uc3QgbmV3UGFyZW50OiBSZWxhdGlvbnNoaXBJdGVtID0geyBpZDogdmFsdWUuaWQgfTtcbiAgICAgIGlmICghdGhpc0l0ZW0ucmVsYXRpb25zaGlwc1tyZWxOYW1lXSkge1xuICAgICAgICB0aGlzSXRlbS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdID0gW107XG4gICAgICB9XG4gICAgICBpZiAoIW90aGVySXRlbS5yZWxhdGlvbnNoaXBzW290aGVyUmVsTmFtZV0pIHtcbiAgICAgICAgb3RoZXJJdGVtLnJlbGF0aW9uc2hpcHNbb3RoZXJSZWxOYW1lXSA9IFtdO1xuICAgICAgfVxuICAgICAgaWYgKHJlbFNjaGVtYS5leHRyYXMgJiYgY2hpbGQubWV0YSkge1xuICAgICAgICBuZXdQYXJlbnQubWV0YSA9IHt9O1xuICAgICAgICBuZXdDaGlsZC5tZXRhID0ge307XG4gICAgICAgIGZvciAoY29uc3QgZXh0cmEgaW4gY2hpbGQubWV0YSkge1xuICAgICAgICAgIGlmIChleHRyYSBpbiByZWxTY2hlbWEuZXh0cmFzKSB7XG4gICAgICAgICAgICBuZXdDaGlsZC5tZXRhW2V4dHJhXSA9IGNoaWxkLm1ldGFbZXh0cmFdO1xuICAgICAgICAgICAgbmV3UGFyZW50Lm1ldGFbZXh0cmFdID0gY2hpbGQubWV0YVtleHRyYV07XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIGNvbnN0IHRoaXNJZHggPSB0aGlzSXRlbS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdLmZpbmRJbmRleChpdGVtID0+IGl0ZW0uaWQgPT09IGNoaWxkLmlkKTtcbiAgICAgIGNvbnN0IG90aGVySWR4ID0gb3RoZXJJdGVtLnJlbGF0aW9uc2hpcHNbb3RoZXJSZWxOYW1lXS5maW5kSW5kZXgoaXRlbSA9PiBpdGVtLmlkID09PSB2YWx1ZS5pZCk7XG4gICAgICBpZiAodGhpc0lkeCA8IDApIHtcbiAgICAgICAgdGhpc0l0ZW0ucmVsYXRpb25zaGlwc1tyZWxOYW1lXS5wdXNoKG5ld0NoaWxkKTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIHRoaXNJdGVtLnJlbGF0aW9uc2hpcHNbcmVsTmFtZV1bdGhpc0lkeF0gPSBuZXdDaGlsZDtcbiAgICAgIH1cbiAgICAgIGlmIChvdGhlcklkeCA8IDApIHtcbiAgICAgICAgb3RoZXJJdGVtLnJlbGF0aW9uc2hpcHNbb3RoZXJSZWxOYW1lXS5wdXNoKG5ld1BhcmVudCk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICBvdGhlckl0ZW0ucmVsYXRpb25zaGlwc1tvdGhlclJlbE5hbWVdW290aGVySWR4XSA9IG5ld1BhcmVudDtcbiAgICAgIH1cblxuICAgICAgcmV0dXJuIEJsdWViaXJkLmFsbChbXG4gICAgICAgIHRoaXMuX3NldCh0aGlzLmtleVN0cmluZyh0aGlzSXRlbSksIHRoaXNJdGVtKSxcbiAgICAgICAgdGhpcy5fc2V0KHRoaXMua2V5U3RyaW5nKG90aGVySXRlbSksIG90aGVySXRlbSksXG4gICAgICBdKS50aGVuKCgpID0+IHtcbiAgICAgICAgdGhpcy5maXJlV3JpdGVVcGRhdGUoT2JqZWN0LmFzc2lnbih0aGlzSXRlbSwgeyBpbnZhbGlkYXRlOiBbYHJlbGF0aW9uc2hpcHMuJHtyZWxOYW1lfWBdIH0pKTtcbiAgICAgICAgdGhpcy5maXJlV3JpdGVVcGRhdGUoT2JqZWN0LmFzc2lnbihvdGhlckl0ZW0sIHsgaW52YWxpZGF0ZTogW2ByZWxhdGlvbnNoaXBzLiR7b3RoZXJSZWxOYW1lfWBdIH0pKTtcbiAgICAgIH0pXG4gICAgICAudGhlbigoKSA9PiB0aGlzSXRlbSk7XG4gICAgfSk7XG4gIH1cblxuICBkZWxldGVSZWxhdGlvbnNoaXBJdGVtKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSwgcmVsTmFtZTogc3RyaW5nLCBjaGlsZDogUmVsYXRpb25zaGlwSXRlbSkge1xuICAgIGNvbnN0IHNjaGVtYSA9IHRoaXMuZ2V0U2NoZW1hKHZhbHVlLnR5cGVOYW1lKTtcbiAgICBjb25zdCByZWxTY2hlbWEgPSBzY2hlbWEucmVsYXRpb25zaGlwc1tyZWxOYW1lXS50eXBlO1xuICAgIGNvbnN0IG90aGVyUmVsVHlwZSA9IHJlbFNjaGVtYS5zaWRlc1tyZWxOYW1lXS5vdGhlclR5cGU7XG4gICAgY29uc3Qgb3RoZXJSZWxOYW1lID0gcmVsU2NoZW1hLnNpZGVzW3JlbE5hbWVdLm90aGVyTmFtZTtcbiAgICBjb25zdCB0aGlzS2V5U3RyaW5nID0gdGhpcy5rZXlTdHJpbmcodmFsdWUpO1xuICAgIGNvbnN0IG90aGVyS2V5U3RyaW5nID0gdGhpcy5rZXlTdHJpbmcoeyB0eXBlTmFtZTogb3RoZXJSZWxUeXBlLCBpZDogY2hpbGQuaWQgfSk7XG4gICAgcmV0dXJuIEJsdWViaXJkLmFsbChbXG4gICAgICB0aGlzLl9nZXQodGhpc0tleVN0cmluZyksXG4gICAgICB0aGlzLl9nZXQob3RoZXJLZXlTdHJpbmcpLFxuICAgIF0pXG4gICAgLnRoZW4oKFt0aGlzSXRlbSwgb3RoZXJJdGVtXSkgPT4ge1xuICAgICAgaWYgKCF0aGlzSXRlbS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdKSB7XG4gICAgICAgIHRoaXNJdGVtLnJlbGF0aW9uc2hpcHNbcmVsTmFtZV0gPSBbXTtcbiAgICAgIH1cbiAgICAgIGlmICghb3RoZXJJdGVtLnJlbGF0aW9uc2hpcHNbb3RoZXJSZWxOYW1lXSkge1xuICAgICAgICBvdGhlckl0ZW0ucmVsYXRpb25zaGlwc1tvdGhlclJlbE5hbWVdID0gW107XG4gICAgICB9XG4gICAgICBjb25zdCB0aGlzSWR4ID0gdGhpc0l0ZW0ucmVsYXRpb25zaGlwc1tyZWxOYW1lXS5maW5kSW5kZXgoaXRlbSA9PiBpdGVtLmlkID09PSBjaGlsZC5pZCk7XG4gICAgICBjb25zdCBvdGhlcklkeCA9IG90aGVySXRlbS5yZWxhdGlvbnNoaXBzW290aGVyUmVsTmFtZV0uZmluZEluZGV4KGl0ZW0gPT4gaXRlbS5pZCA9PT0gdmFsdWUuaWQpO1xuICAgICAgaWYgKHRoaXNJZHggPj0gMCkge1xuICAgICAgICB0aGlzSXRlbS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdLnNwbGljZSh0aGlzSWR4LCAxKTtcbiAgICAgIH1cbiAgICAgIGlmIChvdGhlcklkeCA+PSAwKSB7XG4gICAgICAgIG90aGVySXRlbS5yZWxhdGlvbnNoaXBzW290aGVyUmVsTmFtZV0uc3BsaWNlKG90aGVySWR4LCAxKTtcbiAgICAgIH1cblxuICAgICAgcmV0dXJuIEJsdWViaXJkLmFsbChbXG4gICAgICAgIHRoaXMuX3NldCh0aGlzLmtleVN0cmluZyh0aGlzSXRlbSksIHRoaXNJdGVtKSxcbiAgICAgICAgdGhpcy5fc2V0KHRoaXMua2V5U3RyaW5nKG90aGVySXRlbSksIG90aGVySXRlbSksXG4gICAgICBdKS50aGVuKCgpID0+IHtcbiAgICAgICAgdGhpcy5maXJlV3JpdGVVcGRhdGUoT2JqZWN0LmFzc2lnbih0aGlzSXRlbSwgeyBpbnZhbGlkYXRlOiBbYHJlbGF0aW9uc2hpcHMuJHtyZWxOYW1lfWBdIH0pKTtcbiAgICAgICAgdGhpcy5maXJlV3JpdGVVcGRhdGUoT2JqZWN0LmFzc2lnbihvdGhlckl0ZW0sIHsgaW52YWxpZGF0ZTogW2ByZWxhdGlvbnNoaXBzLiR7b3RoZXJSZWxOYW1lfWBdIH0pKTtcbiAgICAgIH0pXG4gICAgICAudGhlbigoKSA9PiB0aGlzSXRlbSk7XG4gICAgfSk7XG4gIH1cblxuICBhZGRTY2hlbWEodDoge3R5cGVOYW1lOiBzdHJpbmcsIHNjaGVtYTogTW9kZWxTY2hlbWF9KSB7XG4gICAgcmV0dXJuIHN1cGVyLmFkZFNjaGVtYSh0KVxuICAgIC50aGVuKCgpID0+IHtcbiAgICAgIHRoaXMubWF4S2V5c1t0LnR5cGVOYW1lXSA9IDA7XG4gICAgfSk7XG4gIH1cblxuICBrZXlTdHJpbmcodmFsdWU6IE1vZGVsUmVmZXJlbmNlKSB7XG4gICAgcmV0dXJuIGAke3ZhbHVlLnR5cGVOYW1lfToke3ZhbHVlLmlkfWA7XG4gIH1cbn1cbiJdfQ==
-
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* eslint no-unused-vars: 0 */
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var Bluebird = __webpack_require__(15);
-var mergeOptions = __webpack_require__(18);
-var util_1 = __webpack_require__(56);
-var Rx_1 = __webpack_require__(37);
-// type: an object that defines the type. typically this will be
-// part of the Model class hierarchy, but Storage objects call no methods
-// on the type object. We only are interested in Type.$name, Type.$id and Type.$schema.
-// Note that Type.$id is the *name of the id field* on instances
-//    and NOT the actual id field (e.g., in most cases, Type.$id === 'id').
-// id: unique id. Often an integer, but not necessary (could be an oid)
-// hasMany relationships are treated like id arrays. So, add / remove / has
-// just stores and removes integers.
-var Storage = (function () {
-    // protected types: Model[]; TODO: figure this out
-    function Storage(opts) {
-        // a "terminal" storage facility is the end of the storage chain.
-        // usually sql on the server side and rest on the client side, it *must*
-        // receive the writes, and is the final authoritative answer on whether
-        // something is 404.
-        if (opts === void 0) { opts = {}; }
-        this.types = {};
-        this.readSubject = new Rx_1.Subject();
-        this.writeSubject = new Rx_1.Subject();
-        // terminal facilities are also the only ones that can authoritatively answer
-        // authorization questions, but the design may allow for authorization to be
-        // cached.
-        this.terminal = opts.terminal || false;
-        this.read$ = this.readSubject.asObservable();
-        this.write$ = this.writeSubject.asObservable();
-    }
-    Storage.prototype.query = function (q) {
-        // q: {type: string, query: any}
-        // q.query is impl defined - a string for sql (raw sql)
-        return Bluebird.reject(new Error('Query not implemented'));
-    };
-    // convenience function used internally
-    // read a bunch of relationships and merge them together.
-    Storage.prototype.readRelationships = function (item, relationships) {
-        var _this = this;
-        return Bluebird.all(relationships.map(function (r) { return _this.readRelationship(item, r); }))
-            .then(function (rA) {
-            return rA.reduce(function (a, r) { return mergeOptions(a, r || {}); }, { typeName: item.typeName, id: item.id, attributes: {}, relationships: {} });
-        });
-    };
-    Storage.prototype.read = function (item, opts) {
-        var _this = this;
-        if (opts === void 0) { opts = ['attributes']; }
-        var schema = this.getSchema(item.typeName);
-        var keys = (opts && !Array.isArray(opts) ? [opts] : opts);
-        return this.readAttributes(item)
-            .then(function (attributes) {
-            if (!attributes) {
-                return null;
-            }
-            else {
-                if (attributes.id && attributes.attributes && !attributes.attributes[schema.idAttribute]) {
-                    attributes.attributes[schema.idAttribute] = attributes.id; // eslint-disable-line no-param-reassign
-                }
-                var relsWanted = (keys.indexOf('relationships') >= 0)
-                    ? Object.keys(schema.relationships)
-                    : keys.map(function (k) { return k.split('.'); })
-                        .filter(function (ka) { return ka[0] === 'relationships'; })
-                        .map(function (ka) { return ka[1]; });
-                var relsToFetch = relsWanted.filter(function (relName) { return !attributes.relationships[relName]; });
-                // readAttributes can return relationship data, so don't fetch those
-                if (relsToFetch.length > 0) {
-                    return _this.readRelationships(item, relsToFetch)
-                        .then(function (rels) {
-                        return mergeOptions(attributes, rels);
-                    });
-                }
-                else {
-                    return attributes;
-                }
-            }
-        }).then(function (result) {
-            if (result) {
-                _this.fireReadUpdate(result);
-            }
-            return result;
-        });
-    };
-    Storage.prototype.bulkRead = function (item) {
-        // override this if you want to do any special pre-processing
-        // for reading from the store prior to a REST service event
-        return this.read(item).then(function (data) {
-            return { data: data, included: [] };
-        });
-    };
-    Storage.prototype.hot = function (item) {
-        // t: type, id: id (integer).
-        // if hot, then consider this value authoritative, no need to go down
-        // the datastore chain. Consider a memorystorage used as a top-level cache.
-        // if the memstore has the value, it's hot and up-to-date. OTOH, a
-        // localstorage cache may be an out-of-date value (updated since last seen)
-        // this design lets hot be set by type and id. In particular, the goal for the
-        // front-end is to have profile objects be hot-cached in the memstore, but nothing
-        // else (in order to not run the browser out of memory)
-        return false;
-    };
-    // hook a non-terminal store into a terminal store.
-    Storage.prototype.wire = function (store, shutdownSignal) {
-        var _this = this;
-        if (this.terminal) {
-            throw new Error('Cannot wire a terminal store into another store');
-        }
-        else {
-            // TODO: figure out where the type data comes from.
-            store.read$.takeUntil(shutdownSignal).subscribe(function (v) {
-                _this.cache(v);
-            });
-            store.write$.takeUntil(shutdownSignal).subscribe(function (v) {
-                v.invalidate.forEach(function (invalid) {
-                    _this.wipe(v, invalid);
-                });
-            });
-        }
-    };
-    Storage.prototype.validateInput = function (value, opts) {
-        if (opts === void 0) { opts = {}; }
-        var type = this.getSchema(value.typeName);
-        return util_1.validateInput(type, value);
-    };
-    // store type info data on the store itself
-    Storage.prototype.getSchema = function (t) {
-        if (typeof t === 'string') {
-            return this.types[t];
-        }
-        else if (t['schema']) {
-            return t.schema;
-        }
-        else {
-            return t;
-        }
-    };
-    Storage.prototype.addSchema = function (t) {
-        this.types[t.typeName] = t.schema;
-        return Bluebird.resolve();
-    };
-    Storage.prototype.addSchemas = function (a) {
-        var _this = this;
-        return Bluebird.all(a.map(function (t) { return _this.addSchema(t); })).then(function () { });
-    };
-    Storage.prototype.fireWriteUpdate = function (val) {
-        this.writeSubject.next(val);
-        return Bluebird.resolve(val);
-    };
-    Storage.prototype.fireReadUpdate = function (val) {
-        this.readSubject.next(val);
-        return Bluebird.resolve(val);
-    };
-    return Storage;
-}());
-exports.Storage = Storage;
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,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LEdBQUcsQ0FBQyxDQUFDLE1BQU0sQ0FBQztRQUNsQyxNQUFNLENBQUMsUUFBUSxDQUFDLE9BQU8sRUFBRSxDQUFDO0lBQzVCLENBQUM7SUFFRCw0QkFBVSxHQUFWLFVBQVcsQ0FBQztRQUFaLGlCQUlDO1FBSEMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQ2pCLENBQUMsQ0FBQyxHQUFHLENBQUMsVUFBQSxDQUFDLElBQUksT0FBQSxLQUFJLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxFQUFqQixDQUFpQixDQUFDLENBQzlCLENBQUMsSUFBSSxDQUFDLGNBQWlCLENBQUMsQ0FBQyxDQUFDO0lBQzdCLENBQUM7SUFHRCxpQ0FBZSxHQUFmLFVBQWdCLEdBQWU7UUFDN0IsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7UUFDNUIsTUFBTSxDQUFDLFFBQVEsQ0FBQyxPQUFPLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDL0IsQ0FBQztJQUVELGdDQUFjLEdBQWQsVUFBZSxHQUFjO1FBQzNCLElBQUksQ0FBQyxXQUFXLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQzNCLE1BQU0sQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQy9CLENBQUM7SUFDSCxjQUFDO0FBQUQsQ0FqTEEsQUFpTEMsSUFBQTtBQWpMcUIsMEJBQU8iLCJmaWxlIjoic3RvcmFnZS9zdG9yYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyogZXNsaW50IG5vLXVudXNlZC12YXJzOiAwICovXG5cbmltcG9ydCAqIGFzIEJsdWViaXJkIGZyb20gJ2JsdWViaXJkJztcbmltcG9ydCAqIGFzIG1lcmdlT3B0aW9ucyBmcm9tICdtZXJnZS1vcHRpb25zJztcbmltcG9ydCB7IHZhbGlkYXRlSW5wdXQgfSBmcm9tICcuLi91dGlsJztcbmltcG9ydCB7IFN1YmplY3QsIE9ic2VydmFibGUgfSBmcm9tICdyeGpzL1J4JztcbmltcG9ydCB7XG4gIEluZGVmaW5pdGVNb2RlbERhdGEsXG4gIE1vZGVsRGF0YSxcbiAgTW9kZWxEZWx0YSxcbiAgTW9kZWxTY2hlbWEsXG4gIE1vZGVsUmVmZXJlbmNlLFxuICBSZWxhdGlvbnNoaXBJdGVtLFxufSBmcm9tICcuLi9kYXRhVHlwZXMnO1xuXG4vLyB0eXBlOiBhbiBvYmplY3QgdGhhdCBkZWZpbmVzIHRoZSB0eXBlLiB0eXBpY2FsbHkgdGhpcyB3aWxsIGJlXG4vLyBwYXJ0IG9mIHRoZSBNb2RlbCBjbGFzcyBoaWVyYXJjaHksIGJ1dCBTdG9yYWdlIG9iamVjdHMgY2FsbCBubyBtZXRob2RzXG4vLyBvbiB0aGUgdHlwZSBvYmplY3QuIFdlIG9ubHkgYXJlIGludGVyZXN0ZWQgaW4gVHlwZS4kbmFtZSwgVHlwZS4kaWQgYW5kIFR5cGUuJHNjaGVtYS5cbi8vIE5vdGUgdGhhdCBUeXBlLiRpZCBpcyB0aGUgKm5hbWUgb2YgdGhlIGlkIGZpZWxkKiBvbiBpbnN0YW5jZXNcbi8vICAgIGFuZCBOT1QgdGhlIGFjdHVhbCBpZCBmaWVsZCAoZS5nLiwgaW4gbW9zdCBjYXNlcywgVHlwZS4kaWQgPT09ICdpZCcpLlxuLy8gaWQ6IHVuaXF1ZSBpZC4gT2Z0ZW4gYW4gaW50ZWdlciwgYnV0IG5vdCBuZWNlc3NhcnkgKGNvdWxkIGJlIGFuIG9pZClcblxuXG4vLyBoYXNNYW55IHJlbGF0aW9uc2hpcHMgYXJlIHRyZWF0ZWQgbGlrZSBpZCBhcnJheXMuIFNvLCBhZGQgLyByZW1vdmUgLyBoYXNcbi8vIGp1c3Qgc3RvcmVzIGFuZCByZW1vdmVzIGludGVnZXJzLlxuXG5leHBvcnQgYWJzdHJhY3QgY2xhc3MgU3RvcmFnZSB7XG5cbiAgdGVybWluYWw6IGJvb2xlYW47XG4gIHJlYWQkOiBPYnNlcnZhYmxlPE1vZGVsRGF0YT47XG4gIHdyaXRlJDogT2JzZXJ2YWJsZTxNb2RlbERlbHRhPjtcbiAgcHJvdGVjdGVkIHR5cGVzOiB7IFt0eXBlOiBzdHJpbmddOiBNb2RlbFNjaGVtYX0gPSB7fTtcbiAgcHJpdmF0ZSByZWFkU3ViamVjdCA9IG5ldyBTdWJqZWN0KCk7XG4gIHByaXZhdGUgd3JpdGVTdWJqZWN0ID0gbmV3IFN1YmplY3QoKTtcbiAgLy8gcHJvdGVjdGVkIHR5cGVzOiBNb2RlbFtdOyBUT0RPOiBmaWd1cmUgdGhpcyBvdXRcblxuICBjb25zdHJ1Y3RvcihvcHRzOiBhbnkgPSB7fSkge1xuICAgIC8vIGEgXCJ0ZXJtaW5hbFwiIHN0b3JhZ2UgZmFjaWxpdHkgaXMgdGhlIGVuZCBvZiB0aGUgc3RvcmFnZSBjaGFpbi5cbiAgICAvLyB1c3VhbGx5IHNxbCBvbiB0aGUgc2VydmVyIHNpZGUgYW5kIHJlc3Qgb24gdGhlIGNsaWVudCBzaWRlLCBpdCAqbXVzdCpcbiAgICAvLyByZWNlaXZlIHRoZSB3cml0ZXMsIGFuZCBpcyB0aGUgZmluYWwgYXV0aG9yaXRhdGl2ZSBhbnN3ZXIgb24gd2hldGhlclxuICAgIC8vIHNvbWV0aGluZyBpcyA0MDQuXG5cbiAgICAvLyB0ZXJtaW5hbCBmYWNpbGl0aWVzIGFyZSBhbHNvIHRoZSBvbmx5IG9uZXMgdGhhdCBjYW4gYXV0aG9yaXRhdGl2ZWx5IGFuc3dlclxuICAgIC8vIGF1dGhvcml6YXRpb24gcXVlc3Rpb25zLCBidXQgdGhlIGRlc2lnbiBtYXkgYWxsb3cgZm9yIGF1dGhvcml6YXRpb24gdG8gYmVcbiAgICAvLyBjYWNoZWQuXG4gICAgdGhpcy50ZXJtaW5hbCA9IG9wdHMudGVybWluYWwgfHwgZmFsc2U7XG4gICAgdGhpcy5yZWFkJCA9IHRoaXMucmVhZFN1YmplY3QuYXNPYnNlcnZhYmxlKCk7XG4gICAgdGhpcy53cml0ZSQgPSB0aGlzLndyaXRlU3ViamVjdC5hc09ic2VydmFibGUoKTtcbiAgfVxuXG4gIC8vIEFic3RyYWN0IC0gYWxsIHN0b3JlcyBtdXN0IHByb3ZpZGUgYmVsb3c6XG5cbiAgYWJzdHJhY3QgYWxsb2NhdGVJZCh0eXBlTmFtZTogc3RyaW5nKTogQmx1ZWJpcmQ8c3RyaW5nIHwgbnVtYmVyPjtcbiAgYWJzdHJhY3Qgd3JpdGVBdHRyaWJ1dGVzKHZhbHVlOiBJbmRlZmluaXRlTW9kZWxEYXRhKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcbiAgYWJzdHJhY3QgcmVhZEF0dHJpYnV0ZXModmFsdWU6IE1vZGVsUmVmZXJlbmNlKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcbiAgYWJzdHJhY3QgY2FjaGUodmFsdWU6IE1vZGVsRGF0YSk6IEJsdWViaXJkPE1vZGVsRGF0YT47XG4gIGFic3RyYWN0IGNhY2hlQXR0cmlidXRlcyh2YWx1ZTogTW9kZWxEYXRhKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcbiAgYWJzdHJhY3QgY2FjaGVSZWxhdGlvbnNoaXAodmFsdWU6IE1vZGVsRGF0YSk6IEJsdWViaXJkPE1vZGVsRGF0YT47XG4gIGFic3RyYWN0IHJlYWRSZWxhdGlvbnNoaXAodmFsdWU6IE1vZGVsUmVmZXJlbmNlLCBrZXk/OiBzdHJpbmcgfCBzdHJpbmdbXSk6IEJsdWViaXJkPE1vZGVsRGF0YSB8IFJlbGF0aW9uc2hpcEl0ZW1bXT47XG4gIGFic3RyYWN0IHdpcGUodmFsdWU6IE1vZGVsUmVmZXJlbmNlLCBrZXk/OiBzdHJpbmcgfCBzdHJpbmdbXSk6IHZvaWQ7XG4gIGFic3RyYWN0IGRlbGV0ZSh2YWx1ZTogTW9kZWxSZWZlcmVuY2UpOiBCbHVlYmlyZDx2b2lkPjtcbiAgYWJzdHJhY3Qgd3JpdGVSZWxhdGlvbnNoaXBJdGVtKFxuICAgIHZhbHVlOiBNb2RlbFJlZmVyZW5jZSxcbiAgICByZWxhdGlvbnNoaXBUaXRsZTogc3RyaW5nLFxuICAgIGNoaWxkOiB7aWQ6IHN0cmluZyB8IG51bWJlcn1cbiAgKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcbiAgYWJzdHJhY3QgZGVsZXRlUmVsYXRpb25zaGlwSXRlbShcbiAgICB2YWx1ZTogTW9kZWxSZWZlcmVuY2UsXG4gICAgcmVsYXRpb25zaGlwVGl0bGU6IHN0cmluZyxcbiAgICBjaGlsZDoge2lkOiBzdHJpbmcgfCBudW1iZXJ9XG4gICk6IEJsdWViaXJkPE1vZGVsRGF0YT47XG5cblxuICBxdWVyeShxKSB7XG4gICAgLy8gcToge3R5cGU6IHN0cmluZywgcXVlcnk6IGFueX1cbiAgICAvLyBxLnF1ZXJ5IGlzIGltcGwgZGVmaW5lZCAtIGEgc3RyaW5nIGZvciBzcWwgKHJhdyBzcWwpXG4gICAgcmV0dXJuIEJsdWViaXJkLnJlamVjdChuZXcgRXJyb3IoJ1F1ZXJ5IG5vdCBpbXBsZW1lbnRlZCcpKTtcbiAgfVxuXG4gIC8vIGNvbnZlbmllbmNlIGZ1bmN0aW9uIHVzZWQgaW50ZXJuYWxseVxuICAvLyByZWFkIGEgYnVuY2ggb2YgcmVsYXRpb25zaGlwcyBhbmQgbWVyZ2UgdGhlbSB0b2dldGhlci5cbiAgcmVhZFJlbGF0aW9uc2hpcHMoaXRlbTogTW9kZWxSZWZlcmVuY2UsIHJlbGF0aW9uc2hpcHM6IHN0cmluZ1tdKSB7XG4gICAgcmV0dXJuIEJsdWViaXJkLmFsbChyZWxhdGlvbnNoaXBzLm1hcChyID0+IHRoaXMucmVhZFJlbGF0aW9uc2hpcChpdGVtLCByKSkpXG4gICAgLnRoZW4ockEgPT5cbiAgICAgIHJBLnJlZHVjZShcbiAgICAgICAgKGEsIHIpID0+IG1lcmdlT3B0aW9ucyhhLCByIHx8IHt9KSxcbiAgICAgICAgeyB0eXBlTmFtZTogaXRlbS50eXBlTmFtZSwgaWQ6IGl0ZW0uaWQsIGF0dHJpYnV0ZXM6IHt9LCByZWxhdGlvbnNoaXBzOiB7fSB9XG4gICAgICApXG4gICAgKTtcbiAgfVxuXG4gIHJlYWQoaXRlbTogTW9kZWxSZWZlcmVuY2UsIG9wdHM6IHN0cmluZyB8IHN0cmluZ1tdID0gWydhdHRyaWJ1dGVzJ10pIHtcbiAgICBjb25zdCBzY2hlbWEgPSB0aGlzLmdldFNjaGVtYShpdGVtLnR5cGVOYW1lKTtcbiAgICBjb25zdCBrZXlzID0gKG9wdHMgJiYgIUFycmF5LmlzQXJyYXkob3B0cykgPyBbb3B0c10gOiBvcHRzKSBhcyBzdHJpbmdbXTtcbiAgICByZXR1cm4gdGhpcy5yZWFkQXR0cmlidXRlcyhpdGVtKVxuICAgIC50aGVuKGF0dHJpYnV0ZXMgPT4ge1xuICAgICAgaWYgKCFhdHRyaWJ1dGVzKSB7XG4gICAgICAgIHJldHVybiBudWxsO1xuICAgICAgfSBlbHNlIHtcbiAgICAgICAgaWYgKGF0dHJpYnV0ZXMuaWQgJiYgYXR0cmlidXRlcy5hdHRyaWJ1dGVzICYmICFhdHRyaWJ1dGVzLmF0dHJpYnV0ZXNbc2NoZW1hLmlkQXR0cmlidXRlXSkge1xuICAgICAgICAgIGF0dHJpYnV0ZXMuYXR0cmlidXRlc1tzY2hlbWEuaWRBdHRyaWJ1dGVdID0gYXR0cmlidXRlcy5pZDsgLy8gZXNsaW50LWRpc2FibGUtbGluZSBuby1wYXJhbS1yZWFzc2lnblxuICAgICAgICB9XG4gICAgICAgIGNvbnN0IHJlbHNXYW50ZWQgPSAoa2V5cy5pbmRleE9mKCdyZWxhdGlvbnNoaXBzJykgPj0gMClcbiAgICAgICAgICA/IE9iamVjdC5rZXlzKHNjaGVtYS5yZWxhdGlvbnNoaXBzKVxuICAgICAgICAgIDoga2V5cy5tYXAoayA9PiBrLnNwbGl0KCcuJykpXG4gICAgICAgICAgICAuZmlsdGVyKGthID0+IGthWzBdID09PSAncmVsYXRpb25zaGlwcycpXG4gICAgICAgICAgICAubWFwKGthID0+IGthWzFdKTtcbiAgICAgICAgY29uc3QgcmVsc1RvRmV0Y2ggPSByZWxzV2FudGVkLmZpbHRlcihyZWxOYW1lID0+ICFhdHRyaWJ1dGVzLnJlbGF0aW9uc2hpcHNbcmVsTmFtZV0pO1xuICAgICAgICAvLyByZWFkQXR0cmlidXRlcyBjYW4gcmV0dXJuIHJlbGF0aW9uc2hpcCBkYXRhLCBzbyBkb24ndCBmZXRjaCB0aG9zZVxuICAgICAgICBpZiAocmVsc1RvRmV0Y2gubGVuZ3RoID4gMCkge1xuICAgICAgICAgIHJldHVybiB0aGlzLnJlYWRSZWxhdGlvbnNoaXBzKGl0ZW0sIHJlbHNUb0ZldGNoKVxuICAgICAgICAgIC50aGVuKHJlbHMgPT4ge1xuICAgICAgICAgICAgcmV0dXJuIG1lcmdlT3B0aW9ucyhhdHRyaWJ1dGVzLCByZWxzKTtcbiAgICAgICAgICB9KTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICByZXR1cm4gYXR0cmlidXRlcztcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH0pLnRoZW4oKHJlc3VsdCkgPT4ge1xuICAgICAgaWYgKHJlc3VsdCkge1xuICAgICAgICB0aGlzLmZpcmVSZWFkVXBkYXRlKHJlc3VsdCk7XG4gICAgICB9XG4gICAgICByZXR1cm4gcmVzdWx0O1xuICAgIH0pO1xuICB9XG5cbiAgYnVsa1JlYWQoaXRlbTogTW9kZWxSZWZlcmVuY2UpIHtcbiAgICAvLyBvdmVycmlkZSB0aGlzIGlmIHlvdSB3YW50IHRvIGRvIGFueSBzcGVjaWFsIHByZS1wcm9jZXNzaW5nXG4gICAgLy8gZm9yIHJlYWRpbmcgZnJvbSB0aGUgc3RvcmUgcHJpb3IgdG8gYSBSRVNUIHNlcnZpY2UgZXZlbnRcbiAgICByZXR1cm4gdGhpcy5yZWFkKGl0ZW0pLnRoZW4oZGF0YSA9PiB7XG4gICAgICByZXR1cm4geyBkYXRhLCBpbmNsdWRlZDogW10gfTtcbiAgICB9KTtcbiAgfVxuXG5cbiAgaG90KGl0ZW06IE1vZGVsUmVmZXJlbmNlKTogYm9vbGVhbiB7XG4gICAgLy8gdDogdHlwZSwgaWQ6IGlkIChpbnRlZ2VyKS5cbiAgICAvLyBpZiBob3QsIHRoZW4gY29uc2lkZXIgdGhpcyB2YWx1ZSBhdXRob3JpdGF0aXZlLCBubyBuZWVkIHRvIGdvIGRvd25cbiAgICAvLyB0aGUgZGF0YXN0b3JlIGNoYWluLiBDb25zaWRlciBhIG1lbW9yeXN0b3JhZ2UgdXNlZCBhcyBhIHRvcC1sZXZlbCBjYWNoZS5cbiAgICAvLyBpZiB0aGUgbWVtc3RvcmUgaGFzIHRoZSB2YWx1ZSwgaXQncyBob3QgYW5kIHVwLXRvLWRhdGUuIE9UT0gsIGFcbiAgICAvLyBsb2NhbHN0b3JhZ2UgY2FjaGUgbWF5IGJlIGFuIG91dC1vZi1kYXRlIHZhbHVlICh1cGRhdGVkIHNpbmNlIGxhc3Qgc2VlbilcblxuICAgIC8vIHRoaXMgZGVzaWduIGxldHMgaG90IGJlIHNldCBieSB0eXBlIGFuZCBpZC4gSW4gcGFydGljdWxhciwgdGhlIGdvYWwgZm9yIHRoZVxuICAgIC8vIGZyb250LWVuZCBpcyB0byBoYXZlIHByb2ZpbGUgb2JqZWN0cyBiZSBob3QtY2FjaGVkIGluIHRoZSBtZW1zdG9yZSwgYnV0IG5vdGhpbmdcbiAgICAvLyBlbHNlIChpbiBvcmRlciB0byBub3QgcnVuIHRoZSBicm93c2VyIG91dCBvZiBtZW1vcnkpXG4gICAgcmV0dXJuIGZhbHNlO1xuICB9XG5cbiAgLy8gaG9vayBhIG5vbi10ZXJtaW5hbCBzdG9yZSBpbnRvIGEgdGVybWluYWwgc3RvcmUuXG4gIHdpcmUoc3RvcmUsIHNodXRkb3duU2lnbmFsKSB7XG4gICAgaWYgKHRoaXMudGVybWluYWwpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcignQ2Fubm90IHdpcmUgYSB0ZXJtaW5hbCBzdG9yZSBpbnRvIGFub3RoZXIgc3RvcmUnKTtcbiAgICB9IGVsc2Uge1xuICAgICAgLy8gVE9ETzogZmlndXJlIG91dCB3aGVyZSB0aGUgdHlwZSBkYXRhIGNvbWVzIGZyb20uXG4gICAgICBzdG9yZS5yZWFkJC50YWtlVW50aWwoc2h1dGRvd25TaWduYWwpLnN1YnNjcmliZSgodikgPT4ge1xuICAgICAgICB0aGlzLmNhY2hlKHYpO1xuICAgICAgfSk7XG4gICAgICBzdG9yZS53cml0ZSQudGFrZVVudGlsKHNodXRkb3duU2lnbmFsKS5zdWJzY3JpYmUoKHYpID0+IHtcbiAgICAgICAgdi5pbnZhbGlkYXRlLmZvckVhY2goKGludmFsaWQpID0+IHtcbiAgICAgICAgICB0aGlzLndpcGUodiwgaW52YWxpZCk7XG4gICAgICAgIH0pO1xuICAgICAgfSk7XG4gICAgfVxuICB9XG5cbiAgdmFsaWRhdGVJbnB1dCh2YWx1ZTogSW5kZWZpbml0ZU1vZGVsRGF0YSwgb3B0cyA9IHt9KSB7XG4gICAgY29uc3QgdHlwZSA9IHRoaXMuZ2V0U2NoZW1hKHZhbHVlLnR5cGVOYW1lKTtcbiAgICByZXR1cm4gdmFsaWRhdGVJbnB1dCh0eXBlLCB2YWx1ZSk7XG4gIH1cblxuICAvLyBzdG9yZSB0eXBlIGluZm8gZGF0YSBvbiB0aGUgc3RvcmUgaXRzZWxmXG5cbiAgZ2V0U2NoZW1hKHQ6IHtzY2hlbWE6IE1vZGVsU2NoZW1hfSB8IE1vZGVsU2NoZW1hIHwgc3RyaW5nKTogTW9kZWxTY2hlbWEge1xuICAgIGlmICh0eXBlb2YgdCA9PT0gJ3N0cmluZycpIHtcbiAgICAgIHJldHVybiB0aGlzLnR5cGVzW3RdO1xuICAgIH0gZWxzZSBpZiAodFsnc2NoZW1hJ10pIHtcbiAgICAgIHJldHVybiAodCBhcyB7c2NoZW1hOiBNb2RlbFNjaGVtYX0pLnNjaGVtYTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIHQgYXMgTW9kZWxTY2hlbWE7XG4gICAgfVxuICB9XG5cbiAgYWRkU2NoZW1hKHQ6IHt0eXBlTmFtZTogc3RyaW5nLCBzY2hlbWE6IE1vZGVsU2NoZW1hfSkge1xuICAgIHRoaXMudHlwZXNbdC50eXBlTmFtZV0gPSB0LnNjaGVtYTtcbiAgICByZXR1cm4gQmx1ZWJpcmQucmVzb2x2ZSgpO1xuICB9XG5cbiAgYWRkU2NoZW1hcyhhKTogQmx1ZWJpcmQ8dm9pZD4ge1xuICAgIHJldHVybiBCbHVlYmlyZC5hbGwoXG4gICAgICBhLm1hcCh0ID0+IHRoaXMuYWRkU2NoZW1hKHQpKVxuICAgICkudGhlbigoKSA9PiB7Lyogbm9vcCAqL30pO1xuICB9XG5cblxuICBmaXJlV3JpdGVVcGRhdGUodmFsOiBNb2RlbERlbHRhKSB7XG4gICAgdGhpcy53cml0ZVN1YmplY3QubmV4dCh2YWwpO1xuICAgIHJldHVybiBCbHVlYmlyZC5yZXNvbHZlKHZhbCk7XG4gIH1cblxuICBmaXJlUmVhZFVwZGF0ZSh2YWw6IE1vZGVsRGF0YSkge1xuICAgIHRoaXMucmVhZFN1YmplY3QubmV4dCh2YWwpO1xuICAgIHJldHVybiBCbHVlYmlyZC5yZXNvbHZlKHZhbCk7XG4gIH1cbn1cbiJdfQ==
-
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var mergeOptions = __webpack_require__(18);
-function validateInput(schema, value) {
-    var retVal = { typeName: value.typeName, id: value.id, attributes: {}, relationships: {} };
-    var typeAttrs = Object.keys(schema.attributes || {});
-    var valAttrs = Object.keys(value.attributes || {});
-    var typeRels = Object.keys(schema.relationships || {});
-    var valRels = Object.keys(value.relationships || {});
-    var invalidAttrs = valAttrs.filter(function (item) { return typeAttrs.indexOf(item) < 0; });
-    var invalidRels = valRels.filter(function (item) { return typeRels.indexOf(item) < 0; });
-    if (invalidAttrs.length > 0) {
-        throw new Error("Invalid attributes on value object: " + JSON.stringify(invalidAttrs));
-    }
-    if (invalidRels.length > 0) {
-        throw new Error("Invalid relationships on value object: " + JSON.stringify(invalidRels));
-    }
-    for (var attrName in schema.attributes) {
-        if (!value.attributes[attrName] && (schema.attributes[attrName].default !== undefined)) {
-            if (Array.isArray(schema.attributes[attrName].default)) {
-                retVal.attributes[attrName] = schema.attributes[attrName].default.concat();
-            }
-            else if (typeof schema.attributes[attrName].default === 'object') {
-                retVal.attributes[attrName] = Object.assign({}, schema.attributes[attrName].default);
-            }
-            else {
-                retVal.attributes[attrName] = schema.attributes[attrName].default;
-            }
-        }
-    }
-    for (var relName in schema.relationships) {
-        if (value.relationships && value.relationships[relName] && !Array.isArray(value.relationships[relName])) {
-            throw new Error("relation " + relName + " is not an array");
-        }
-    }
-    return mergeOptions({}, value, retVal);
-}
-exports.validateInput = validateInput;
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,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QyxRQUFRLENBQUMsQ0FBQyxPQUFPLENBQUM7WUFDcEUsQ0FBQztRQUNILENBQUM7SUFDSCxDQUFDO0lBRUQsR0FBRyxDQUFDLENBQUMsSUFBTSxPQUFPLElBQUksTUFBTSxDQUFDLGFBQWEsQ0FBQyxDQUFDLENBQUM7UUFDM0MsRUFBRSxDQUFDLENBQUMsS0FBSyxDQUFDLGFBQWEsSUFBSSxLQUFLLENBQUMsYUFBYSxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsYUFBYSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDO1lBQ3hHLE1BQU0sSUFBSSxLQUFLLENBQUMsY0FBWSxPQUFPLHFCQUFrQixDQUFDLENBQUM7UUFDekQsQ0FBQztJQUNILENBQUM7SUFDRCxNQUFNLENBQUMsWUFBWSxDQUFDLEVBQUUsRUFBRSxLQUFLLEVBQUUsTUFBTSxDQUFDLENBQUM7QUFDekMsQ0FBQztBQXJDRCxzQ0FxQ0MiLCJmaWxlIjoidXRpbC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIG1lcmdlT3B0aW9ucyBmcm9tICdtZXJnZS1vcHRpb25zJztcblxuaW1wb3J0IHsgTW9kZWxEYXRhLCBJbmRlZmluaXRlTW9kZWxEYXRhLCBNb2RlbFNjaGVtYSB9IGZyb20gJy4vZGF0YVR5cGVzJztcblxuZXhwb3J0IGZ1bmN0aW9uIHZhbGlkYXRlSW5wdXQoc2NoZW1hOiBNb2RlbFNjaGVtYSwgdmFsdWU6IEluZGVmaW5pdGVNb2RlbERhdGEpOiBNb2RlbERhdGEge1xuICBjb25zdCByZXRWYWwgPSB7IHR5cGVOYW1lOiB2YWx1ZS50eXBlTmFtZSwgaWQ6IHZhbHVlLmlkLCBhdHRyaWJ1dGVzOiB7fSwgcmVsYXRpb25zaGlwczoge30gfTtcbiAgY29uc3QgdHlwZUF0dHJzID0gT2JqZWN0LmtleXMoc2NoZW1hLmF0dHJpYnV0ZXMgfHwge30pO1xuICBjb25zdCB2YWxBdHRycyA9IE9iamVjdC5rZXlzKHZhbHVlLmF0dHJpYnV0ZXMgfHwge30pO1xuICBjb25zdCB0eXBlUmVscyA9IE9iamVjdC5rZXlzKHNjaGVtYS5yZWxhdGlvbnNoaXBzIHx8IHt9KTtcbiAgY29uc3QgdmFsUmVscyA9IE9iamVjdC5rZXlzKHZhbHVlLnJlbGF0aW9uc2hpcHMgfHwge30pO1xuXG4gIGNvbnN0IGludmFsaWRBdHRycyA9IHZhbEF0dHJzLmZpbHRlcihpdGVtID0+IHR5cGVBdHRycy5pbmRleE9mKGl0ZW0pIDwgMCk7XG4gIGNvbnN0IGludmFsaWRSZWxzID0gdmFsUmVscy5maWx0ZXIoaXRlbSA9PiB0eXBlUmVscy5pbmRleE9mKGl0ZW0pIDwgMCk7XG5cbiAgaWYgKGludmFsaWRBdHRycy5sZW5ndGggPiAwKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKGBJbnZhbGlkIGF0dHJpYnV0ZXMgb24gdmFsdWUgb2JqZWN0OiAke0pTT04uc3RyaW5naWZ5KGludmFsaWRBdHRycyl9YCk7XG4gIH1cblxuICBpZiAoaW52YWxpZFJlbHMubGVuZ3RoID4gMCkge1xuICAgIHRocm93IG5ldyBFcnJvcihgSW52YWxpZCByZWxhdGlvbnNoaXBzIG9uIHZhbHVlIG9iamVjdDogJHtKU09OLnN0cmluZ2lmeShpbnZhbGlkUmVscyl9YCk7XG4gIH1cblxuXG4gIGZvciAoY29uc3QgYXR0ck5hbWUgaW4gc2NoZW1hLmF0dHJpYnV0ZXMpIHtcbiAgICBpZiAoIXZhbHVlLmF0dHJpYnV0ZXNbYXR0ck5hbWVdICYmIChzY2hlbWEuYXR0cmlidXRlc1thdHRyTmFtZV0uZGVmYXVsdCAhPT0gdW5kZWZpbmVkKSkge1xuICAgICAgaWYgKEFycmF5LmlzQXJyYXkoc2NoZW1hLmF0dHJpYnV0ZXNbYXR0ck5hbWVdLmRlZmF1bHQpKSB7XG4gICAgICAgIHJldFZhbC5hdHRyaWJ1dGVzW2F0dHJOYW1lXSA9IChzY2hlbWEuYXR0cmlidXRlc1thdHRyTmFtZV0uZGVmYXVsdCBhcyBhbnlbXSkuY29uY2F0KCk7XG4gICAgICB9IGVsc2UgaWYgKHR5cGVvZiBzY2hlbWEuYXR0cmlidXRlc1thdHRyTmFtZV0uZGVmYXVsdCA9PT0gJ29iamVjdCcpIHtcbiAgICAgICAgcmV0VmFsLmF0dHJpYnV0ZXNbYXR0ck5hbWVdID0gT2JqZWN0LmFzc2lnbih7fSwgc2NoZW1hLmF0dHJpYnV0ZXNbYXR0ck5hbWVdLmRlZmF1bHQpO1xuICAgICAgfSBlbHNlIHtcbiAgICAgICAgcmV0VmFsLmF0dHJpYnV0ZXNbYXR0ck5hbWVdID0gc2NoZW1hLmF0dHJpYnV0ZXNbYXR0ck5hbWVdLmRlZmF1bHQ7XG4gICAgICB9XG4gICAgfVxuICB9XG5cbiAgZm9yIChjb25zdCByZWxOYW1lIGluIHNjaGVtYS5yZWxhdGlvbnNoaXBzKSB7XG4gICAgaWYgKHZhbHVlLnJlbGF0aW9uc2hpcHMgJiYgdmFsdWUucmVsYXRpb25zaGlwc1tyZWxOYW1lXSAmJiAhQXJyYXkuaXNBcnJheSh2YWx1ZS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdKSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGByZWxhdGlvbiAke3JlbE5hbWV9IGlzIG5vdCBhbiBhcnJheWApO1xuICAgIH1cbiAgfVxuICByZXR1cm4gbWVyZ2VPcHRpb25zKHt9LCB2YWx1ZSwgcmV0VmFsKTtcbn1cbiJdfQ==
-
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subject_1 = __webpack_require__(5);
-var ObjectUnsubscribedError_1 = __webpack_require__(30);
-/**
- * @class BehaviorSubject<T>
- */
-var BehaviorSubject = (function (_super) {
-    __extends(BehaviorSubject, _super);
-    function BehaviorSubject(_value) {
-        _super.call(this);
-        this._value = _value;
-    }
-    Object.defineProperty(BehaviorSubject.prototype, "value", {
-        get: function () {
-            return this.getValue();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    BehaviorSubject.prototype._subscribe = function (subscriber) {
-        var subscription = _super.prototype._subscribe.call(this, subscriber);
-        if (subscription && !subscription.closed) {
-            subscriber.next(this._value);
-        }
-        return subscription;
-    };
-    BehaviorSubject.prototype.getValue = function () {
-        if (this.hasError) {
-            throw this.thrownError;
-        }
-        else if (this.closed) {
-            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
-        }
-        else {
-            return this._value;
-        }
-    };
-    BehaviorSubject.prototype.next = function (value) {
-        _super.prototype.next.call(this, this._value = value);
-    };
-    return BehaviorSubject;
-}(Subject_1.Subject));
-exports.BehaviorSubject = BehaviorSubject;
-//# sourceMappingURL=BehaviorSubject.js.map
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-exports.empty = {
-    closed: true,
-    next: function (value) { },
-    error: function (err) { throw err; },
-    complete: function () { }
-};
-//# sourceMappingURL=Observer.js.map
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subscription_1 = __webpack_require__(4);
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var SubjectSubscription = (function (_super) {
-    __extends(SubjectSubscription, _super);
-    function SubjectSubscription(subject, subscriber) {
-        _super.call(this);
-        this.subject = subject;
-        this.subscriber = subscriber;
-        this.closed = false;
-    }
-    SubjectSubscription.prototype.unsubscribe = function () {
-        if (this.closed) {
-            return;
-        }
-        this.closed = true;
-        var subject = this.subject;
-        var observers = subject.observers;
-        this.subject = null;
-        if (!observers || observers.length === 0 || subject.isStopped || subject.closed) {
-            return;
-        }
-        var subscriberIndex = observers.indexOf(this.subscriber);
-        if (subscriberIndex !== -1) {
-            observers.splice(subscriberIndex, 1);
-        }
-    };
-    return SubjectSubscription;
-}(Subscription_1.Subscription));
-exports.SubjectSubscription = SubjectSubscription;
-//# sourceMappingURL=SubjectSubscription.js.map
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subject_1 = __webpack_require__(5);
-var Observable_1 = __webpack_require__(0);
-var Subscriber_1 = __webpack_require__(1);
-var Subscription_1 = __webpack_require__(4);
-/**
- * @class ConnectableObservable<T>
- */
-var ConnectableObservable = (function (_super) {
-    __extends(ConnectableObservable, _super);
-    function ConnectableObservable(source, subjectFactory) {
-        _super.call(this);
-        this.source = source;
-        this.subjectFactory = subjectFactory;
-        this._refCount = 0;
-    }
-    ConnectableObservable.prototype._subscribe = function (subscriber) {
-        return this.getSubject().subscribe(subscriber);
-    };
-    ConnectableObservable.prototype.getSubject = function () {
-        var subject = this._subject;
-        if (!subject || subject.isStopped) {
-            this._subject = this.subjectFactory();
-        }
-        return this._subject;
-    };
-    ConnectableObservable.prototype.connect = function () {
-        var connection = this._connection;
-        if (!connection) {
-            connection = this._connection = new Subscription_1.Subscription();
-            connection.add(this.source
-                .subscribe(new ConnectableSubscriber(this.getSubject(), this)));
-            if (connection.closed) {
-                this._connection = null;
-                connection = Subscription_1.Subscription.EMPTY;
-            }
-            else {
-                this._connection = connection;
-            }
-        }
-        return connection;
-    };
-    ConnectableObservable.prototype.refCount = function () {
-        return this.lift(new RefCountOperator(this));
-    };
-    return ConnectableObservable;
-}(Observable_1.Observable));
-exports.ConnectableObservable = ConnectableObservable;
-exports.connectableObservableDescriptor = {
-    operator: { value: null },
-    _refCount: { value: 0, writable: true },
-    _subscribe: { value: ConnectableObservable.prototype._subscribe },
-    getSubject: { value: ConnectableObservable.prototype.getSubject },
-    connect: { value: ConnectableObservable.prototype.connect },
-    refCount: { value: ConnectableObservable.prototype.refCount }
-};
-var ConnectableSubscriber = (function (_super) {
-    __extends(ConnectableSubscriber, _super);
-    function ConnectableSubscriber(destination, connectable) {
-        _super.call(this, destination);
-        this.connectable = connectable;
-    }
-    ConnectableSubscriber.prototype._error = function (err) {
-        this._unsubscribe();
-        _super.prototype._error.call(this, err);
-    };
-    ConnectableSubscriber.prototype._complete = function () {
-        this._unsubscribe();
-        _super.prototype._complete.call(this);
-    };
-    ConnectableSubscriber.prototype._unsubscribe = function () {
-        var connectable = this.connectable;
-        if (connectable) {
-            this.connectable = null;
-            var connection = connectable._connection;
-            connectable._refCount = 0;
-            connectable._subject = null;
-            connectable._connection = null;
-            if (connection) {
-                connection.unsubscribe();
-            }
-        }
-    };
-    return ConnectableSubscriber;
-}(Subject_1.SubjectSubscriber));
-var RefCountOperator = (function () {
-    function RefCountOperator(connectable) {
-        this.connectable = connectable;
-    }
-    RefCountOperator.prototype.call = function (subscriber, source) {
-        var connectable = this.connectable;
-        connectable._refCount++;
-        var refCounter = new RefCountSubscriber(subscriber, connectable);
-        var subscription = source.subscribe(refCounter);
-        if (!refCounter.closed) {
-            refCounter.connection = connectable.connect();
-        }
-        return subscription;
-    };
-    return RefCountOperator;
-}());
-var RefCountSubscriber = (function (_super) {
-    __extends(RefCountSubscriber, _super);
-    function RefCountSubscriber(destination, connectable) {
-        _super.call(this, destination);
-        this.connectable = connectable;
-    }
-    RefCountSubscriber.prototype._unsubscribe = function () {
-        var connectable = this.connectable;
-        if (!connectable) {
-            this.connection = null;
-            return;
-        }
-        this.connectable = null;
-        var refCount = connectable._refCount;
-        if (refCount <= 0) {
-            this.connection = null;
-            return;
-        }
-        connectable._refCount = refCount - 1;
-        if (refCount > 1) {
-            this.connection = null;
-            return;
-        }
-        ///
-        // Compare the local RefCountSubscriber's connection Subscription to the
-        // connection Subscription on the shared ConnectableObservable. In cases
-        // where the ConnectableObservable source synchronously emits values, and
-        // the RefCountSubscriber's downstream Observers synchronously unsubscribe,
-        // execution continues to here before the RefCountOperator has a chance to
-        // supply the RefCountSubscriber with the shared connection Subscription.
-        // For example:
-        // ```
-        // Observable.range(0, 10)
-        //   .publish()
-        //   .refCount()
-        //   .take(5)
-        //   .subscribe();
-        // ```
-        // In order to account for this case, RefCountSubscriber should only dispose
-        // the ConnectableObservable's shared connection Subscription if the
-        // connection Subscription exists, *and* either:
-        //   a. RefCountSubscriber doesn't have a reference to the shared connection
-        //      Subscription yet, or,
-        //   b. RefCountSubscriber's connection Subscription reference is identical
-        //      to the shared connection Subscription
-        ///
-        var connection = this.connection;
-        var sharedConnection = connectable._connection;
-        this.connection = null;
-        if (sharedConnection && (!connection || sharedConnection === connection)) {
-            sharedConnection.unsubscribe();
-        }
-    };
-    return RefCountSubscriber;
-}(Subscriber_1.Subscriber));
-//# sourceMappingURL=ConnectableObservable.js.map
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var isArray_1 = __webpack_require__(11);
-var isArrayLike_1 = __webpack_require__(83);
-var isPromise_1 = __webpack_require__(85);
-var PromiseObservable_1 = __webpack_require__(63);
-var IteratorObservable_1 = __webpack_require__(264);
-var ArrayObservable_1 = __webpack_require__(10);
-var ArrayLikeObservable_1 = __webpack_require__(253);
-var iterator_1 = __webpack_require__(22);
-var Observable_1 = __webpack_require__(0);
-var observeOn_1 = __webpack_require__(42);
-var observable_1 = __webpack_require__(26);
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @extends {Ignored}
- * @hide true
- */
-var FromObservable = (function (_super) {
-    __extends(FromObservable, _super);
-    function FromObservable(ish, scheduler) {
-        _super.call(this, null);
-        this.ish = ish;
-        this.scheduler = scheduler;
-    }
-    /**
-     * Creates an Observable from an Array, an array-like object, a Promise, an
-     * iterable object, or an Observable-like object.
-     *
-     * <span class="informal">Converts almost anything to an Observable.</span>
-     *
-     * <img src="./img/from.png" width="100%">
-     *
-     * Convert various other objects and data types into Observables. `from`
-     * converts a Promise or an array-like or an
-     * [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#iterable)
-     * object into an Observable that emits the items in that promise or array or
-     * iterable. A String, in this context, is treated as an array of characters.
-     * Observable-like objects (contains a function named with the ES2015 Symbol
-     * for Observable) can also be converted through this operator.
-     *
-     * @example <caption>Converts an array to an Observable</caption>
-     * var array = [10, 20, 30];
-     * var result = Rx.Observable.from(array);
-     * result.subscribe(x => console.log(x));
-     *
-     * // Results in the following:
-     * // 10 20 30
-     *
-     * @example <caption>Convert an infinite iterable (from a generator) to an Observable</caption>
-     * function* generateDoubles(seed) {
-     *   var i = seed;
-     *   while (true) {
-     *     yield i;
-     *     i = 2 * i; // double it
-     *   }
-     * }
-     *
-     * var iterator = generateDoubles(3);
-     * var result = Rx.Observable.from(iterator).take(10);
-     * result.subscribe(x => console.log(x));
-     *
-     * // Results in the following:
-     * // 3 6 12 24 48 96 192 384 768 1536
-     *
-     * @see {@link create}
-     * @see {@link fromEvent}
-     * @see {@link fromEventPattern}
-     * @see {@link fromPromise}
-     *
-     * @param {ObservableInput<T>} ish A subscribable object, a Promise, an
-     * Observable-like, an Array, an iterable or an array-like object to be
-     * converted.
-     * @param {Scheduler} [scheduler] The scheduler on which to schedule the
-     * emissions of values.
-     * @return {Observable<T>} The Observable whose values are originally from the
-     * input object that was converted.
-     * @static true
-     * @name from
-     * @owner Observable
-     */
-    FromObservable.create = function (ish, scheduler) {
-        if (ish != null) {
-            if (typeof ish[observable_1.$$observable] === 'function') {
-                if (ish instanceof Observable_1.Observable && !scheduler) {
-                    return ish;
-                }
-                return new FromObservable(ish, scheduler);
-            }
-            else if (isArray_1.isArray(ish)) {
-                return new ArrayObservable_1.ArrayObservable(ish, scheduler);
-            }
-            else if (isPromise_1.isPromise(ish)) {
-                return new PromiseObservable_1.PromiseObservable(ish, scheduler);
-            }
-            else if (typeof ish[iterator_1.$$iterator] === 'function' || typeof ish === 'string') {
-                return new IteratorObservable_1.IteratorObservable(ish, scheduler);
-            }
-            else if (isArrayLike_1.isArrayLike(ish)) {
-                return new ArrayLikeObservable_1.ArrayLikeObservable(ish, scheduler);
-            }
-        }
-        throw new TypeError((ish !== null && typeof ish || ish) + ' is not observable');
-    };
-    FromObservable.prototype._subscribe = function (subscriber) {
-        var ish = this.ish;
-        var scheduler = this.scheduler;
-        if (scheduler == null) {
-            return ish[observable_1.$$observable]().subscribe(subscriber);
-        }
-        else {
-            return ish[observable_1.$$observable]().subscribe(new observeOn_1.ObserveOnSubscriber(subscriber, scheduler, 0));
-        }
-    };
-    return FromObservable;
-}(Observable_1.Observable));
-exports.FromObservable = FromObservable;
-//# sourceMappingURL=FromObservable.js.map
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var root_1 = __webpack_require__(7);
-var Observable_1 = __webpack_require__(0);
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @extends {Ignored}
- * @hide true
- */
-var PromiseObservable = (function (_super) {
-    __extends(PromiseObservable, _super);
-    function PromiseObservable(promise, scheduler) {
-        _super.call(this);
-        this.promise = promise;
-        this.scheduler = scheduler;
-    }
-    /**
-     * Converts a Promise to an Observable.
-     *
-     * <span class="informal">Returns an Observable that just emits the Promise's
-     * resolved value, then completes.</span>
-     *
-     * Converts an ES2015 Promise or a Promises/A+ spec compliant Promise to an
-     * Observable. If the Promise resolves with a value, the output Observable
-     * emits that resolved value as a `next`, and then completes. If the Promise
-     * is rejected, then the output Observable emits the corresponding Error.
-     *
-     * @example <caption>Convert the Promise returned by Fetch to an Observable</caption>
-     * var result = Rx.Observable.fromPromise(fetch('http://myserver.com/'));
-     * result.subscribe(x => console.log(x), e => console.error(e));
-     *
-     * @see {@link bindCallback}
-     * @see {@link from}
-     *
-     * @param {Promise<T>} promise The promise to be converted.
-     * @param {Scheduler} [scheduler] An optional IScheduler to use for scheduling
-     * the delivery of the resolved value (or the rejection).
-     * @return {Observable<T>} An Observable which wraps the Promise.
-     * @static true
-     * @name fromPromise
-     * @owner Observable
-     */
-    PromiseObservable.create = function (promise, scheduler) {
-        return new PromiseObservable(promise, scheduler);
-    };
-    PromiseObservable.prototype._subscribe = function (subscriber) {
-        var _this = this;
-        var promise = this.promise;
-        var scheduler = this.scheduler;
-        if (scheduler == null) {
-            if (this._isScalar) {
-                if (!subscriber.closed) {
-                    subscriber.next(this.value);
-                    subscriber.complete();
-                }
-            }
-            else {
-                promise.then(function (value) {
-                    _this.value = value;
-                    _this._isScalar = true;
-                    if (!subscriber.closed) {
-                        subscriber.next(value);
-                        subscriber.complete();
-                    }
-                }, function (err) {
-                    if (!subscriber.closed) {
-                        subscriber.error(err);
-                    }
-                })
-                    .then(null, function (err) {
-                    // escape the promise trap, throw unhandled errors
-                    root_1.root.setTimeout(function () { throw err; });
-                });
-            }
-        }
-        else {
-            if (this._isScalar) {
-                if (!subscriber.closed) {
-                    return scheduler.schedule(dispatchNext, 0, { value: this.value, subscriber: subscriber });
-                }
-            }
-            else {
-                promise.then(function (value) {
-                    _this.value = value;
-                    _this._isScalar = true;
-                    if (!subscriber.closed) {
-                        subscriber.add(scheduler.schedule(dispatchNext, 0, { value: value, subscriber: subscriber }));
-                    }
-                }, function (err) {
-                    if (!subscriber.closed) {
-                        subscriber.add(scheduler.schedule(dispatchError, 0, { err: err, subscriber: subscriber }));
-                    }
-                })
-                    .then(null, function (err) {
-                    // escape the promise trap, throw unhandled errors
-                    root_1.root.setTimeout(function () { throw err; });
-                });
-            }
-        }
-    };
-    return PromiseObservable;
-}(Observable_1.Observable));
-exports.PromiseObservable = PromiseObservable;
-function dispatchNext(arg) {
-    var value = arg.value, subscriber = arg.subscriber;
-    if (!subscriber.closed) {
-        subscriber.next(value);
-        subscriber.complete();
-    }
-}
-function dispatchError(arg) {
-    var err = arg.err, subscriber = arg.subscriber;
-    if (!subscriber.closed) {
-        subscriber.error(err);
-    }
-}
-//# sourceMappingURL=PromiseObservable.js.map
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var root_1 = __webpack_require__(7);
-var tryCatch_1 = __webpack_require__(8);
-var errorObject_1 = __webpack_require__(6);
-var Observable_1 = __webpack_require__(0);
-var Subscriber_1 = __webpack_require__(1);
-var map_1 = __webpack_require__(41);
-function getCORSRequest() {
-    if (root_1.root.XMLHttpRequest) {
-        return new root_1.root.XMLHttpRequest();
-    }
-    else if (!!root_1.root.XDomainRequest) {
-        return new root_1.root.XDomainRequest();
-    }
-    else {
-        throw new Error('CORS is not supported by your browser');
-    }
-}
-function getXMLHttpRequest() {
-    if (root_1.root.XMLHttpRequest) {
-        return new root_1.root.XMLHttpRequest();
-    }
-    else {
-        var progId = void 0;
-        try {
-            var progIds = ['Msxml2.XMLHTTP', 'Microsoft.XMLHTTP', 'Msxml2.XMLHTTP.4.0'];
-            for (var i = 0; i < 3; i++) {
-                try {
-                    progId = progIds[i];
-                    if (new root_1.root.ActiveXObject(progId)) {
-                        break;
-                    }
-                }
-                catch (e) {
-                }
-            }
-            return new root_1.root.ActiveXObject(progId);
-        }
-        catch (e) {
-            throw new Error('XMLHttpRequest is not supported by your browser');
-        }
-    }
-}
-function ajaxGet(url, headers) {
-    if (headers === void 0) { headers = null; }
-    return new AjaxObservable({ method: 'GET', url: url, headers: headers });
-}
-exports.ajaxGet = ajaxGet;
-;
-function ajaxPost(url, body, headers) {
-    return new AjaxObservable({ method: 'POST', url: url, body: body, headers: headers });
-}
-exports.ajaxPost = ajaxPost;
-;
-function ajaxDelete(url, headers) {
-    return new AjaxObservable({ method: 'DELETE', url: url, headers: headers });
-}
-exports.ajaxDelete = ajaxDelete;
-;
-function ajaxPut(url, body, headers) {
-    return new AjaxObservable({ method: 'PUT', url: url, body: body, headers: headers });
-}
-exports.ajaxPut = ajaxPut;
-;
-function ajaxPatch(url, body, headers) {
-    return new AjaxObservable({ method: 'PATCH', url: url, body: body, headers: headers });
-}
-exports.ajaxPatch = ajaxPatch;
-;
-function ajaxGetJSON(url, headers) {
-    return new AjaxObservable({ method: 'GET', url: url, responseType: 'json', headers: headers })
-        .lift(new map_1.MapOperator(function (x, index) { return x.response; }, null));
-}
-exports.ajaxGetJSON = ajaxGetJSON;
-;
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @extends {Ignored}
- * @hide true
- */
-var AjaxObservable = (function (_super) {
-    __extends(AjaxObservable, _super);
-    function AjaxObservable(urlOrRequest) {
-        _super.call(this);
-        var request = {
-            async: true,
-            createXHR: function () {
-                return this.crossDomain ? getCORSRequest.call(this) : getXMLHttpRequest();
-            },
-            crossDomain: false,
-            withCredentials: false,
-            headers: {},
-            method: 'GET',
-            responseType: 'json',
-            timeout: 0
-        };
-        if (typeof urlOrRequest === 'string') {
-            request.url = urlOrRequest;
-        }
-        else {
-            for (var prop in urlOrRequest) {
-                if (urlOrRequest.hasOwnProperty(prop)) {
-                    request[prop] = urlOrRequest[prop];
-                }
-            }
-        }
-        this.request = request;
-    }
-    AjaxObservable.prototype._subscribe = function (subscriber) {
-        return new AjaxSubscriber(subscriber, this.request);
-    };
-    /**
-     * Creates an observable for an Ajax request with either a request object with
-     * url, headers, etc or a string for a URL.
-     *
-     * @example
-     * source = Rx.Observable.ajax('/products');
-     * source = Rx.Observable.ajax({ url: 'products', method: 'GET' });
-     *
-     * @param {string|Object} request Can be one of the following:
-     *   A string of the URL to make the Ajax call.
-     *   An object with the following properties
-     *   - url: URL of the request
-     *   - body: The body of the request
-     *   - method: Method of the request, such as GET, POST, PUT, PATCH, DELETE
-     *   - async: Whether the request is async
-     *   - headers: Optional headers
-     *   - crossDomain: true if a cross domain request, else false
-     *   - createXHR: a function to override if you need to use an alternate
-     *   XMLHttpRequest implementation.
-     *   - resultSelector: a function to use to alter the output value type of
-     *   the Observable. Gets {@link AjaxResponse} as an argument.
-     * @return {Observable} An observable sequence containing the XMLHttpRequest.
-     * @static true
-     * @name ajax
-     * @owner Observable
-    */
-    AjaxObservable.create = (function () {
-        var create = function (urlOrRequest) {
-            return new AjaxObservable(urlOrRequest);
-        };
-        create.get = ajaxGet;
-        create.post = ajaxPost;
-        create.delete = ajaxDelete;
-        create.put = ajaxPut;
-        create.patch = ajaxPatch;
-        create.getJSON = ajaxGetJSON;
-        return create;
-    })();
-    return AjaxObservable;
-}(Observable_1.Observable));
-exports.AjaxObservable = AjaxObservable;
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var AjaxSubscriber = (function (_super) {
-    __extends(AjaxSubscriber, _super);
-    function AjaxSubscriber(destination, request) {
-        _super.call(this, destination);
-        this.request = request;
-        this.done = false;
-        var headers = request.headers = request.headers || {};
-        // force CORS if requested
-        if (!request.crossDomain && !headers['X-Requested-With']) {
-            headers['X-Requested-With'] = 'XMLHttpRequest';
-        }
-        // ensure content type is set
-        if (!('Content-Type' in headers) && !(root_1.root.FormData && request.body instanceof root_1.root.FormData) && typeof request.body !== 'undefined') {
-            headers['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
-        }
-        // properly serialize body
-        request.body = this.serializeBody(request.body, request.headers['Content-Type']);
-        this.send();
-    }
-    AjaxSubscriber.prototype.next = function (e) {
-        this.done = true;
-        var _a = this, xhr = _a.xhr, request = _a.request, destination = _a.destination;
-        var response = new AjaxResponse(e, xhr, request);
-        destination.next(response);
-    };
-    AjaxSubscriber.prototype.send = function () {
-        var _a = this, request = _a.request, _b = _a.request, user = _b.user, method = _b.method, url = _b.url, async = _b.async, password = _b.password, headers = _b.headers, body = _b.body;
-        var createXHR = request.createXHR;
-        var xhr = tryCatch_1.tryCatch(createXHR).call(request);
-        if (xhr === errorObject_1.errorObject) {
-            this.error(errorObject_1.errorObject.e);
-        }
-        else {
-            this.xhr = xhr;
-            // set up the events before open XHR
-            // https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
-            // You need to add the event listeners before calling open() on the request.
-            // Otherwise the progress events will not fire.
-            this.setupEvents(xhr, request);
-            // open XHR
-            var result = void 0;
-            if (user) {
-                result = tryCatch_1.tryCatch(xhr.open).call(xhr, method, url, async, user, password);
-            }
-            else {
-                result = tryCatch_1.tryCatch(xhr.open).call(xhr, method, url, async);
-            }
-            if (result === errorObject_1.errorObject) {
-                this.error(errorObject_1.errorObject.e);
-                return null;
-            }
-            // timeout, responseType and withCredentials can be set once the XHR is open
-            xhr.timeout = request.timeout;
-            xhr.responseType = request.responseType;
-            if ('withCredentials' in xhr) {
-                xhr.withCredentials = !!request.withCredentials;
-            }
-            // set headers
-            this.setHeaders(xhr, headers);
-            // finally send the request
-            result = body ? tryCatch_1.tryCatch(xhr.send).call(xhr, body) : tryCatch_1.tryCatch(xhr.send).call(xhr);
-            if (result === errorObject_1.errorObject) {
-                this.error(errorObject_1.errorObject.e);
-                return null;
-            }
-        }
-        return xhr;
-    };
-    AjaxSubscriber.prototype.serializeBody = function (body, contentType) {
-        if (!body || typeof body === 'string') {
-            return body;
-        }
-        else if (root_1.root.FormData && body instanceof root_1.root.FormData) {
-            return body;
-        }
-        if (contentType) {
-            var splitIndex = contentType.indexOf(';');
-            if (splitIndex !== -1) {
-                contentType = contentType.substring(0, splitIndex);
-            }
-        }
-        switch (contentType) {
-            case 'application/x-www-form-urlencoded':
-                return Object.keys(body).map(function (key) { return (encodeURI(key) + "=" + encodeURI(body[key])); }).join('&');
-            case 'application/json':
-                return JSON.stringify(body);
-            default:
-                return body;
-        }
-    };
-    AjaxSubscriber.prototype.setHeaders = function (xhr, headers) {
-        for (var key in headers) {
-            if (headers.hasOwnProperty(key)) {
-                xhr.setRequestHeader(key, headers[key]);
-            }
-        }
-    };
-    AjaxSubscriber.prototype.setupEvents = function (xhr, request) {
-        var progressSubscriber = request.progressSubscriber;
-        function xhrTimeout(e) {
-            var _a = xhrTimeout, subscriber = _a.subscriber, progressSubscriber = _a.progressSubscriber, request = _a.request;
-            if (progressSubscriber) {
-                progressSubscriber.error(e);
-            }
-            subscriber.error(new AjaxTimeoutError(this, request)); //TODO: Make betterer.
-        }
-        ;
-        xhr.ontimeout = xhrTimeout;
-        xhrTimeout.request = request;
-        xhrTimeout.subscriber = this;
-        xhrTimeout.progressSubscriber = progressSubscriber;
-        if (xhr.upload && 'withCredentials' in xhr) {
-            if (progressSubscriber) {
-                var xhrProgress_1;
-                xhrProgress_1 = function (e) {
-                    var progressSubscriber = xhrProgress_1.progressSubscriber;
-                    progressSubscriber.next(e);
-                };
-                if (root_1.root.XDomainRequest) {
-                    xhr.onprogress = xhrProgress_1;
-                }
-                else {
-                    xhr.upload.onprogress = xhrProgress_1;
-                }
-                xhrProgress_1.progressSubscriber = progressSubscriber;
-            }
-            var xhrError_1;
-            xhrError_1 = function (e) {
-                var _a = xhrError_1, progressSubscriber = _a.progressSubscriber, subscriber = _a.subscriber, request = _a.request;
-                if (progressSubscriber) {
-                    progressSubscriber.error(e);
-                }
-                subscriber.error(new AjaxError('ajax error', this, request));
-            };
-            xhr.onerror = xhrError_1;
-            xhrError_1.request = request;
-            xhrError_1.subscriber = this;
-            xhrError_1.progressSubscriber = progressSubscriber;
-        }
-        function xhrReadyStateChange(e) {
-            var _a = xhrReadyStateChange, subscriber = _a.subscriber, progressSubscriber = _a.progressSubscriber, request = _a.request;
-            if (this.readyState === 4) {
-                // normalize IE9 bug (http://bugs.jquery.com/ticket/1450)
-                var status_1 = this.status === 1223 ? 204 : this.status;
-                var response = (this.responseType === 'text' ? (this.response || this.responseText) : this.response);
-                // fix status code when it is 0 (0 status is undocumented).
-                // Occurs when accessing file resources or on Android 4.1 stock browser
-                // while retrieving files from application cache.
-                if (status_1 === 0) {
-                    status_1 = response ? 200 : 0;
-                }
-                if (200 <= status_1 && status_1 < 300) {
-                    if (progressSubscriber) {
-                        progressSubscriber.complete();
-                    }
-                    subscriber.next(e);
-                    subscriber.complete();
-                }
-                else {
-                    if (progressSubscriber) {
-                        progressSubscriber.error(e);
-                    }
-                    subscriber.error(new AjaxError('ajax error ' + status_1, this, request));
-                }
-            }
-        }
-        ;
-        xhr.onreadystatechange = xhrReadyStateChange;
-        xhrReadyStateChange.subscriber = this;
-        xhrReadyStateChange.progressSubscriber = progressSubscriber;
-        xhrReadyStateChange.request = request;
-    };
-    AjaxSubscriber.prototype.unsubscribe = function () {
-        var _a = this, done = _a.done, xhr = _a.xhr;
-        if (!done && xhr && xhr.readyState !== 4 && typeof xhr.abort === 'function') {
-            xhr.abort();
-        }
-        _super.prototype.unsubscribe.call(this);
-    };
-    return AjaxSubscriber;
-}(Subscriber_1.Subscriber));
-exports.AjaxSubscriber = AjaxSubscriber;
-/**
- * A normalized AJAX response.
- *
- * @see {@link ajax}
- *
- * @class AjaxResponse
- */
-var AjaxResponse = (function () {
-    function AjaxResponse(originalEvent, xhr, request) {
-        this.originalEvent = originalEvent;
-        this.xhr = xhr;
-        this.request = request;
-        this.status = xhr.status;
-        this.responseType = xhr.responseType || request.responseType;
-        switch (this.responseType) {
-            case 'json':
-                if ('response' in xhr) {
-                    //IE does not support json as responseType, parse it internally
-                    this.response = xhr.responseType ? xhr.response : JSON.parse(xhr.response || xhr.responseText || 'null');
-                }
-                else {
-                    this.response = JSON.parse(xhr.responseText || 'null');
-                }
-                break;
-            case 'xml':
-                this.response = xhr.responseXML;
-                break;
-            case 'text':
-            default:
-                this.response = ('response' in xhr) ? xhr.response : xhr.responseText;
-                break;
-        }
-    }
-    return AjaxResponse;
-}());
-exports.AjaxResponse = AjaxResponse;
-/**
- * A normalized AJAX error.
- *
- * @see {@link ajax}
- *
- * @class AjaxError
- */
-var AjaxError = (function (_super) {
-    __extends(AjaxError, _super);
-    function AjaxError(message, xhr, request) {
-        _super.call(this, message);
-        this.message = message;
-        this.xhr = xhr;
-        this.request = request;
-        this.status = xhr.status;
-    }
-    return AjaxError;
-}(Error));
-exports.AjaxError = AjaxError;
-/**
- * @see {@link ajax}
- *
- * @class AjaxTimeoutError
- */
-var AjaxTimeoutError = (function (_super) {
-    __extends(AjaxTimeoutError, _super);
-    function AjaxTimeoutError(xhr, request) {
-        _super.call(this, 'ajax timeout', xhr, request);
-    }
-    return AjaxTimeoutError;
-}(AjaxError));
-exports.AjaxTimeoutError = AjaxTimeoutError;
-//# sourceMappingURL=AjaxObservable.js.map
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subscriber_1 = __webpack_require__(1);
-var tryCatch_1 = __webpack_require__(8);
-var errorObject_1 = __webpack_require__(6);
-/* tslint:enable:max-line-length */
-/**
- * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.
- *
- * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
- *
- * If a comparator function is not provided, an equality check is used by default.
- *
- * @example <caption>A simple example with numbers</caption>
- * Observable.of(1, 1, 2, 2, 2, 1, 1, 2, 3, 3, 4)
- *   .distinctUntilChanged()
- *   .subscribe(x => console.log(x)); // 1, 2, 1, 2, 3, 4
- *
- * @example <caption>An example using a compare function</caption>
- * interface Person {
- *    age: number,
- *    name: string
- * }
- *
- * Observable.of<Person>(
- *     { age: 4, name: 'Foo'},
- *     { age: 7, name: 'Bar'},
- *     { age: 5, name: 'Foo'})
- *     { age: 6, name: 'Foo'})
- *     .distinctUntilChanged((p: Person, q: Person) => p.name === q.name)
- *     .subscribe(x => console.log(x));
- *
- * // displays:
- * // { age: 4, name: 'Foo' }
- * // { age: 7, name: 'Bar' }
- * // { age: 5, name: 'Foo' }
- *
- * @see {@link distinct}
- * @see {@link distinctUntilKeyChanged}
- *
- * @param {function} [compare] Optional comparison function called to test if an item is distinct from the previous item in the source.
- * @return {Observable} An Observable that emits items from the source Observable with distinct values.
- * @method distinctUntilChanged
- * @owner Observable
- */
-function distinctUntilChanged(compare, keySelector) {
-    return this.lift(new DistinctUntilChangedOperator(compare, keySelector));
-}
-exports.distinctUntilChanged = distinctUntilChanged;
-var DistinctUntilChangedOperator = (function () {
-    function DistinctUntilChangedOperator(compare, keySelector) {
-        this.compare = compare;
-        this.keySelector = keySelector;
-    }
-    DistinctUntilChangedOperator.prototype.call = function (subscriber, source) {
-        return source.subscribe(new DistinctUntilChangedSubscriber(subscriber, this.compare, this.keySelector));
-    };
-    return DistinctUntilChangedOperator;
-}());
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var DistinctUntilChangedSubscriber = (function (_super) {
-    __extends(DistinctUntilChangedSubscriber, _super);
-    function DistinctUntilChangedSubscriber(destination, compare, keySelector) {
-        _super.call(this, destination);
-        this.keySelector = keySelector;
-        this.hasKey = false;
-        if (typeof compare === 'function') {
-            this.compare = compare;
-        }
-    }
-    DistinctUntilChangedSubscriber.prototype.compare = function (x, y) {
-        return x === y;
-    };
-    DistinctUntilChangedSubscriber.prototype._next = function (value) {
-        var keySelector = this.keySelector;
-        var key = value;
-        if (keySelector) {
-            key = tryCatch_1.tryCatch(this.keySelector)(value);
-            if (key === errorObject_1.errorObject) {
-                return this.destination.error(errorObject_1.errorObject.e);
-            }
-        }
-        var result = false;
-        if (this.hasKey) {
-            result = tryCatch_1.tryCatch(this.compare)(this.key, key);
-            if (result === errorObject_1.errorObject) {
-                return this.destination.error(errorObject_1.errorObject.e);
-            }
-        }
-        else {
-            this.hasKey = true;
-        }
-        if (Boolean(result) === false) {
-            this.key = key;
-            this.destination.next(value);
-        }
-    };
-    return DistinctUntilChangedSubscriber;
-}(Subscriber_1.Subscriber));
-//# sourceMappingURL=distinctUntilChanged.js.map
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subscriber_1 = __webpack_require__(1);
-/* tslint:enable:max-line-length */
-/**
- * Filter items emitted by the source Observable by only emitting those that
- * satisfy a specified predicate.
- *
- * <span class="informal">Like
- * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),
- * it only emits a value from the source if it passes a criterion function.</span>
- *
- * <img src="./img/filter.png" width="100%">
- *
- * Similar to the well-known `Array.prototype.filter` method, this operator
- * takes values from the source Observable, passes them through a `predicate`
- * function and only emits those values that yielded `true`.
- *
- * @example <caption>Emit only click events whose target was a DIV element</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');
- * clicksOnDivs.subscribe(x => console.log(x));
- *
- * @see {@link distinct}
- * @see {@link distinctUntilChanged}
- * @see {@link distinctUntilKeyChanged}
- * @see {@link ignoreElements}
- * @see {@link partition}
- * @see {@link skip}
- *
- * @param {function(value: T, index: number): boolean} predicate A function that
- * evaluates each value emitted by the source Observable. If it returns `true`,
- * the value is emitted, if `false` the value is not passed to the output
- * Observable. The `index` parameter is the number `i` for the i-th source
- * emission that has happened since the subscription, starting from the number
- * `0`.
- * @param {any} [thisArg] An optional argument to determine the value of `this`
- * in the `predicate` function.
- * @return {Observable} An Observable of values from the source that were
- * allowed by the `predicate` function.
- * @method filter
- * @owner Observable
- */
-function filter(predicate, thisArg) {
-    return this.lift(new FilterOperator(predicate, thisArg));
-}
-exports.filter = filter;
-var FilterOperator = (function () {
-    function FilterOperator(predicate, thisArg) {
-        this.predicate = predicate;
-        this.thisArg = thisArg;
-    }
-    FilterOperator.prototype.call = function (subscriber, source) {
-        return source.subscribe(new FilterSubscriber(subscriber, this.predicate, this.thisArg));
-    };
-    return FilterOperator;
-}());
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var FilterSubscriber = (function (_super) {
-    __extends(FilterSubscriber, _super);
-    function FilterSubscriber(destination, predicate, thisArg) {
-        _super.call(this, destination);
-        this.predicate = predicate;
-        this.thisArg = thisArg;
-        this.count = 0;
-        this.predicate = predicate;
-    }
-    // the try catch block below is left specifically for
-    // optimization and perf reasons. a tryCatcher is not necessary here.
-    FilterSubscriber.prototype._next = function (value) {
-        var result;
-        try {
-            result = this.predicate.call(this.thisArg, value, this.count++);
-        }
-        catch (err) {
-            this.destination.error(err);
-            return;
-        }
-        if (result) {
-            this.destination.next(value);
-        }
-    };
-    return FilterSubscriber;
-}(Subscriber_1.Subscriber));
-//# sourceMappingURL=filter.js.map
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subscriber_1 = __webpack_require__(1);
-/* tslint:enable:max-line-length */
-/**
- * Emits only the first value emitted by the source Observable that meets some
- * condition.
- *
- * <span class="informal">Finds the first value that passes some test and emits
- * that.</span>
- *
- * <img src="./img/find.png" width="100%">
- *
- * `find` searches for the first item in the source Observable that matches the
- * specified condition embodied by the `predicate`, and returns the first
- * occurrence in the source. Unlike {@link first}, the `predicate` is required
- * in `find`, and does not emit an error if a valid value is not found.
- *
- * @example <caption>Find and emit the first click that happens on a DIV element</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var result = clicks.find(ev => ev.target.tagName === 'DIV');
- * result.subscribe(x => console.log(x));
- *
- * @see {@link filter}
- * @see {@link first}
- * @see {@link findIndex}
- * @see {@link take}
- *
- * @param {function(value: T, index: number, source: Observable<T>): boolean} predicate
- * A function called with each item to test for condition matching.
- * @param {any} [thisArg] An optional argument to determine the value of `this`
- * in the `predicate` function.
- * @return {Observable<T>} An Observable of the first item that matches the
- * condition.
- * @method find
- * @owner Observable
- */
-function find(predicate, thisArg) {
-    if (typeof predicate !== 'function') {
-        throw new TypeError('predicate is not a function');
-    }
-    return this.lift(new FindValueOperator(predicate, this, false, thisArg));
-}
-exports.find = find;
-var FindValueOperator = (function () {
-    function FindValueOperator(predicate, source, yieldIndex, thisArg) {
-        this.predicate = predicate;
-        this.source = source;
-        this.yieldIndex = yieldIndex;
-        this.thisArg = thisArg;
-    }
-    FindValueOperator.prototype.call = function (observer, source) {
-        return source.subscribe(new FindValueSubscriber(observer, this.predicate, this.source, this.yieldIndex, this.thisArg));
-    };
-    return FindValueOperator;
-}());
-exports.FindValueOperator = FindValueOperator;
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var FindValueSubscriber = (function (_super) {
-    __extends(FindValueSubscriber, _super);
-    function FindValueSubscriber(destination, predicate, source, yieldIndex, thisArg) {
-        _super.call(this, destination);
-        this.predicate = predicate;
-        this.source = source;
-        this.yieldIndex = yieldIndex;
-        this.thisArg = thisArg;
-        this.index = 0;
-    }
-    FindValueSubscriber.prototype.notifyComplete = function (value) {
-        var destination = this.destination;
-        destination.next(value);
-        destination.complete();
-    };
-    FindValueSubscriber.prototype._next = function (value) {
-        var _a = this, predicate = _a.predicate, thisArg = _a.thisArg;
-        var index = this.index++;
-        try {
-            var result = predicate.call(thisArg || this, value, index, this.source);
-            if (result) {
-                this.notifyComplete(this.yieldIndex ? index : value);
-            }
-        }
-        catch (err) {
-            this.destination.error(err);
-        }
-    };
-    FindValueSubscriber.prototype._complete = function () {
-        this.notifyComplete(this.yieldIndex ? -1 : undefined);
-    };
-    return FindValueSubscriber;
-}(Subscriber_1.Subscriber));
-exports.FindValueSubscriber = FindValueSubscriber;
-//# sourceMappingURL=find.js.map
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var ArrayObservable_1 = __webpack_require__(10);
-var mergeAll_1 = __webpack_require__(25);
-var isScheduler_1 = __webpack_require__(12);
-/* tslint:enable:max-line-length */
-/**
- * Creates an output Observable which concurrently emits all values from every
- * given input Observable.
- *
- * <span class="informal">Flattens multiple Observables together by blending
- * their values into one Observable.</span>
- *
- * <img src="./img/merge.png" width="100%">
- *
- * `merge` subscribes to each given input Observable (either the source or an
- * Observable given as argument), and simply forwards (without doing any
- * transformation) all the values from all the input Observables to the output
- * Observable. The output Observable only completes once all input Observables
- * have completed. Any error delivered by an input Observable will be immediately
- * emitted on the output Observable.
- *
- * @example <caption>Merge together two Observables: 1s interval and clicks</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var timer = Rx.Observable.interval(1000);
- * var clicksOrTimer = clicks.merge(timer);
- * clicksOrTimer.subscribe(x => console.log(x));
- *
- * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>
- * var timer1 = Rx.Observable.interval(1000).take(10);
- * var timer2 = Rx.Observable.interval(2000).take(6);
- * var timer3 = Rx.Observable.interval(500).take(10);
- * var concurrent = 2; // the argument
- * var merged = timer1.merge(timer2, timer3, concurrent);
- * merged.subscribe(x => console.log(x));
- *
- * @see {@link mergeAll}
- * @see {@link mergeMap}
- * @see {@link mergeMapTo}
- * @see {@link mergeScan}
- *
- * @param {ObservableInput} other An input Observable to merge with the source
- * Observable. More than one input Observables may be given as argument.
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
- * Observables being subscribed to concurrently.
- * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
- * concurrency of input Observables.
- * @return {Observable} An Observable that emits items that are the result of
- * every input Observable.
- * @method merge
- * @owner Observable
- */
-function merge() {
-    var observables = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        observables[_i - 0] = arguments[_i];
-    }
-    return this.lift.call(mergeStatic.apply(void 0, [this].concat(observables)));
-}
-exports.merge = merge;
-/* tslint:enable:max-line-length */
-/**
- * Creates an output Observable which concurrently emits all values from every
- * given input Observable.
- *
- * <span class="informal">Flattens multiple Observables together by blending
- * their values into one Observable.</span>
- *
- * <img src="./img/merge.png" width="100%">
- *
- * `merge` subscribes to each given input Observable (as arguments), and simply
- * forwards (without doing any transformation) all the values from all the input
- * Observables to the output Observable. The output Observable only completes
- * once all input Observables have completed. Any error delivered by an input
- * Observable will be immediately emitted on the output Observable.
- *
- * @example <caption>Merge together two Observables: 1s interval and clicks</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var timer = Rx.Observable.interval(1000);
- * var clicksOrTimer = Rx.Observable.merge(clicks, timer);
- * clicksOrTimer.subscribe(x => console.log(x));
- *
- * // Results in the following:
- * // timer will emit ascending values, one every second(1000ms) to console
- * // clicks logs MouseEvents to console everytime the "document" is clicked
- * // Since the two streams are merged you see these happening
- * // as they occur.
- *
- * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>
- * var timer1 = Rx.Observable.interval(1000).take(10);
- * var timer2 = Rx.Observable.interval(2000).take(6);
- * var timer3 = Rx.Observable.interval(500).take(10);
- * var concurrent = 2; // the argument
- * var merged = Rx.Observable.merge(timer1, timer2, timer3, concurrent);
- * merged.subscribe(x => console.log(x));
- *
- * // Results in the following:
- * // - First timer1 and timer2 will run concurrently
- * // - timer1 will emit a value every 1000ms for 10 iterations
- * // - timer2 will emit a value every 2000ms for 6 iterations
- * // - after timer1 hits it's max iteration, timer2 will
- * //   continue, and timer3 will start to run concurrently with timer2
- * // - when timer2 hits it's max iteration it terminates, and
- * //   timer3 will continue to emit a value every 500ms until it is complete
- *
- * @see {@link mergeAll}
- * @see {@link mergeMap}
- * @see {@link mergeMapTo}
- * @see {@link mergeScan}
- *
- * @param {...ObservableInput} observables Input Observables to merge together.
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
- * Observables being subscribed to concurrently.
- * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
- * concurrency of input Observables.
- * @return {Observable} an Observable that emits items that are the result of
- * every input Observable.
- * @static true
- * @name merge
- * @owner Observable
- */
-function mergeStatic() {
-    var observables = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        observables[_i - 0] = arguments[_i];
-    }
-    var concurrent = Number.POSITIVE_INFINITY;
-    var scheduler = null;
-    var last = observables[observables.length - 1];
-    if (isScheduler_1.isScheduler(last)) {
-        scheduler = observables.pop();
-        if (observables.length > 1 && typeof observables[observables.length - 1] === 'number') {
-            concurrent = observables.pop();
-        }
-    }
-    else if (typeof last === 'number') {
-        concurrent = observables.pop();
-    }
-    if (scheduler === null && observables.length === 1 && observables[0] instanceof Observable_1.Observable) {
-        return observables[0];
-    }
-    return new ArrayObservable_1.ArrayObservable(observables, scheduler).lift(new mergeAll_1.MergeAllOperator(concurrent));
-}
-exports.mergeStatic = mergeStatic;
-//# sourceMappingURL=merge.js.map
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var subscribeToResult_1 = __webpack_require__(3);
-var OuterSubscriber_1 = __webpack_require__(2);
-/* tslint:enable:max-line-length */
-/**
- * Projects each source value to an Observable which is merged in the output
- * Observable.
- *
- * <span class="informal">Maps each value to an Observable, then flattens all of
- * these inner Observables using {@link mergeAll}.</span>
- *
- * <img src="./img/mergeMap.png" width="100%">
- *
- * Returns an Observable that emits items based on applying a function that you
- * supply to each item emitted by the source Observable, where that function
- * returns an Observable, and then merging those resulting Observables and
- * emitting the results of this merger.
- *
- * @example <caption>Map and flatten each letter to an Observable ticking every 1 second</caption>
- * var letters = Rx.Observable.of('a', 'b', 'c');
- * var result = letters.mergeMap(x =>
- *   Rx.Observable.interval(1000).map(i => x+i)
- * );
- * result.subscribe(x => console.log(x));
- *
- * // Results in the following:
- * // a0
- * // b0
- * // c0
- * // a1
- * // b1
- * // c1
- * // continues to list a,b,c with respective ascending integers
- *
- * @see {@link concatMap}
- * @see {@link exhaustMap}
- * @see {@link merge}
- * @see {@link mergeAll}
- * @see {@link mergeMapTo}
- * @see {@link mergeScan}
- * @see {@link switchMap}
- *
- * @param {function(value: T, ?index: number): ObservableInput} project A function
- * that, when applied to an item emitted by the source Observable, returns an
- * Observable.
- * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
- * A function to produce the value on the output Observable based on the values
- * and the indices of the source (outer) emission and the inner Observable
- * emission. The arguments passed to this function are:
- * - `outerValue`: the value that came from the source
- * - `innerValue`: the value that came from the projected Observable
- * - `outerIndex`: the "index" of the value that came from the source
- * - `innerIndex`: the "index" of the value from the projected Observable
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
- * Observables being subscribed to concurrently.
- * @return {Observable} An Observable that emits the result of applying the
- * projection function (and the optional `resultSelector`) to each item emitted
- * by the source Observable and merging the results of the Observables obtained
- * from this transformation.
- * @method mergeMap
- * @owner Observable
- */
-function mergeMap(project, resultSelector, concurrent) {
-    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
-    if (typeof resultSelector === 'number') {
-        concurrent = resultSelector;
-        resultSelector = null;
-    }
-    return this.lift(new MergeMapOperator(project, resultSelector, concurrent));
-}
-exports.mergeMap = mergeMap;
-var MergeMapOperator = (function () {
-    function MergeMapOperator(project, resultSelector, concurrent) {
-        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
-        this.project = project;
-        this.resultSelector = resultSelector;
-        this.concurrent = concurrent;
-    }
-    MergeMapOperator.prototype.call = function (observer, source) {
-        return source.subscribe(new MergeMapSubscriber(observer, this.project, this.resultSelector, this.concurrent));
-    };
-    return MergeMapOperator;
-}());
-exports.MergeMapOperator = MergeMapOperator;
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var MergeMapSubscriber = (function (_super) {
-    __extends(MergeMapSubscriber, _super);
-    function MergeMapSubscriber(destination, project, resultSelector, concurrent) {
-        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
-        _super.call(this, destination);
-        this.project = project;
-        this.resultSelector = resultSelector;
-        this.concurrent = concurrent;
-        this.hasCompleted = false;
-        this.buffer = [];
-        this.active = 0;
-        this.index = 0;
-    }
-    MergeMapSubscriber.prototype._next = function (value) {
-        if (this.active < this.concurrent) {
-            this._tryNext(value);
-        }
-        else {
-            this.buffer.push(value);
-        }
-    };
-    MergeMapSubscriber.prototype._tryNext = function (value) {
-        var result;
-        var index = this.index++;
-        try {
-            result = this.project(value, index);
-        }
-        catch (err) {
-            this.destination.error(err);
-            return;
-        }
-        this.active++;
-        this._innerSub(result, value, index);
-    };
-    MergeMapSubscriber.prototype._innerSub = function (ish, value, index) {
-        this.add(subscribeToResult_1.subscribeToResult(this, ish, value, index));
-    };
-    MergeMapSubscriber.prototype._complete = function () {
-        this.hasCompleted = true;
-        if (this.active === 0 && this.buffer.length === 0) {
-            this.destination.complete();
-        }
-    };
-    MergeMapSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
-        if (this.resultSelector) {
-            this._notifyResultSelector(outerValue, innerValue, outerIndex, innerIndex);
-        }
-        else {
-            this.destination.next(innerValue);
-        }
-    };
-    MergeMapSubscriber.prototype._notifyResultSelector = function (outerValue, innerValue, outerIndex, innerIndex) {
-        var result;
-        try {
-            result = this.resultSelector(outerValue, innerValue, outerIndex, innerIndex);
-        }
-        catch (err) {
-            this.destination.error(err);
-            return;
-        }
-        this.destination.next(result);
-    };
-    MergeMapSubscriber.prototype.notifyComplete = function (innerSub) {
-        var buffer = this.buffer;
-        this.remove(innerSub);
-        this.active--;
-        if (buffer.length > 0) {
-            this._next(buffer.shift());
-        }
-        else if (this.active === 0 && this.hasCompleted) {
-            this.destination.complete();
-        }
-    };
-    return MergeMapSubscriber;
-}(OuterSubscriber_1.OuterSubscriber));
-exports.MergeMapSubscriber = MergeMapSubscriber;
-//# sourceMappingURL=mergeMap.js.map
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var OuterSubscriber_1 = __webpack_require__(2);
-var subscribeToResult_1 = __webpack_require__(3);
-/* tslint:enable:max-line-length */
-/**
- * Projects each source value to the same Observable which is merged multiple
- * times in the output Observable.
- *
- * <span class="informal">It's like {@link mergeMap}, but maps each value always
- * to the same inner Observable.</span>
- *
- * <img src="./img/mergeMapTo.png" width="100%">
- *
- * Maps each source value to the given Observable `innerObservable` regardless
- * of the source value, and then merges those resulting Observables into one
- * single Observable, which is the output Observable.
- *
- * @example <caption>For each click event, start an interval Observable ticking every 1 second</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var result = clicks.mergeMapTo(Rx.Observable.interval(1000));
- * result.subscribe(x => console.log(x));
- *
- * @see {@link concatMapTo}
- * @see {@link merge}
- * @see {@link mergeAll}
- * @see {@link mergeMap}
- * @see {@link mergeScan}
- * @see {@link switchMapTo}
- *
- * @param {ObservableInput} innerObservable An Observable to replace each value from
- * the source Observable.
- * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
- * A function to produce the value on the output Observable based on the values
- * and the indices of the source (outer) emission and the inner Observable
- * emission. The arguments passed to this function are:
- * - `outerValue`: the value that came from the source
- * - `innerValue`: the value that came from the projected Observable
- * - `outerIndex`: the "index" of the value that came from the source
- * - `innerIndex`: the "index" of the value from the projected Observable
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
- * Observables being subscribed to concurrently.
- * @return {Observable} An Observable that emits items from the given
- * `innerObservable` (and optionally transformed through `resultSelector`) every
- * time a value is emitted on the source Observable.
- * @method mergeMapTo
- * @owner Observable
- */
-function mergeMapTo(innerObservable, resultSelector, concurrent) {
-    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
-    if (typeof resultSelector === 'number') {
-        concurrent = resultSelector;
-        resultSelector = null;
-    }
-    return this.lift(new MergeMapToOperator(innerObservable, resultSelector, concurrent));
-}
-exports.mergeMapTo = mergeMapTo;
-// TODO: Figure out correct signature here: an Operator<Observable<T>, R>
-//       needs to implement call(observer: Subscriber<R>): Subscriber<Observable<T>>
-var MergeMapToOperator = (function () {
-    function MergeMapToOperator(ish, resultSelector, concurrent) {
-        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
-        this.ish = ish;
-        this.resultSelector = resultSelector;
-        this.concurrent = concurrent;
-    }
-    MergeMapToOperator.prototype.call = function (observer, source) {
-        return source.subscribe(new MergeMapToSubscriber(observer, this.ish, this.resultSelector, this.concurrent));
-    };
-    return MergeMapToOperator;
-}());
-exports.MergeMapToOperator = MergeMapToOperator;
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var MergeMapToSubscriber = (function (_super) {
-    __extends(MergeMapToSubscriber, _super);
-    function MergeMapToSubscriber(destination, ish, resultSelector, concurrent) {
-        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
-        _super.call(this, destination);
-        this.ish = ish;
-        this.resultSelector = resultSelector;
-        this.concurrent = concurrent;
-        this.hasCompleted = false;
-        this.buffer = [];
-        this.active = 0;
-        this.index = 0;
-    }
-    MergeMapToSubscriber.prototype._next = function (value) {
-        if (this.active < this.concurrent) {
-            var resultSelector = this.resultSelector;
-            var index = this.index++;
-            var ish = this.ish;
-            var destination = this.destination;
-            this.active++;
-            this._innerSub(ish, destination, resultSelector, value, index);
-        }
-        else {
-            this.buffer.push(value);
-        }
-    };
-    MergeMapToSubscriber.prototype._innerSub = function (ish, destination, resultSelector, value, index) {
-        this.add(subscribeToResult_1.subscribeToResult(this, ish, value, index));
-    };
-    MergeMapToSubscriber.prototype._complete = function () {
-        this.hasCompleted = true;
-        if (this.active === 0 && this.buffer.length === 0) {
-            this.destination.complete();
-        }
-    };
-    MergeMapToSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
-        var _a = this, resultSelector = _a.resultSelector, destination = _a.destination;
-        if (resultSelector) {
-            this.trySelectResult(outerValue, innerValue, outerIndex, innerIndex);
-        }
-        else {
-            destination.next(innerValue);
-        }
-    };
-    MergeMapToSubscriber.prototype.trySelectResult = function (outerValue, innerValue, outerIndex, innerIndex) {
-        var _a = this, resultSelector = _a.resultSelector, destination = _a.destination;
-        var result;
-        try {
-            result = resultSelector(outerValue, innerValue, outerIndex, innerIndex);
-        }
-        catch (err) {
-            destination.error(err);
-            return;
-        }
-        destination.next(result);
-    };
-    MergeMapToSubscriber.prototype.notifyError = function (err) {
-        this.destination.error(err);
-    };
-    MergeMapToSubscriber.prototype.notifyComplete = function (innerSub) {
-        var buffer = this.buffer;
-        this.remove(innerSub);
-        this.active--;
-        if (buffer.length > 0) {
-            this._next(buffer.shift());
-        }
-        else if (this.active === 0 && this.hasCompleted) {
-            this.destination.complete();
-        }
-    };
-    return MergeMapToSubscriber;
-}(OuterSubscriber_1.OuterSubscriber));
-exports.MergeMapToSubscriber = MergeMapToSubscriber;
-//# sourceMappingURL=mergeMapTo.js.map
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var FromObservable_1 = __webpack_require__(62);
-var isArray_1 = __webpack_require__(11);
-var OuterSubscriber_1 = __webpack_require__(2);
-var subscribeToResult_1 = __webpack_require__(3);
-/* tslint:enable:max-line-length */
-function onErrorResumeNext() {
-    var nextSources = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        nextSources[_i - 0] = arguments[_i];
-    }
-    if (nextSources.length === 1 && isArray_1.isArray(nextSources[0])) {
-        nextSources = nextSources[0];
-    }
-    return this.lift(new OnErrorResumeNextOperator(nextSources));
-}
-exports.onErrorResumeNext = onErrorResumeNext;
-/* tslint:enable:max-line-length */
-function onErrorResumeNextStatic() {
-    var nextSources = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        nextSources[_i - 0] = arguments[_i];
-    }
-    var source = null;
-    if (nextSources.length === 1 && isArray_1.isArray(nextSources[0])) {
-        nextSources = nextSources[0];
-    }
-    source = nextSources.shift();
-    return new FromObservable_1.FromObservable(source, null).lift(new OnErrorResumeNextOperator(nextSources));
-}
-exports.onErrorResumeNextStatic = onErrorResumeNextStatic;
-var OnErrorResumeNextOperator = (function () {
-    function OnErrorResumeNextOperator(nextSources) {
-        this.nextSources = nextSources;
-    }
-    OnErrorResumeNextOperator.prototype.call = function (subscriber, source) {
-        return source.subscribe(new OnErrorResumeNextSubscriber(subscriber, this.nextSources));
-    };
-    return OnErrorResumeNextOperator;
-}());
-var OnErrorResumeNextSubscriber = (function (_super) {
-    __extends(OnErrorResumeNextSubscriber, _super);
-    function OnErrorResumeNextSubscriber(destination, nextSources) {
-        _super.call(this, destination);
-        this.destination = destination;
-        this.nextSources = nextSources;
-    }
-    OnErrorResumeNextSubscriber.prototype.notifyError = function (error, innerSub) {
-        this.subscribeToNextSource();
-    };
-    OnErrorResumeNextSubscriber.prototype.notifyComplete = function (innerSub) {
-        this.subscribeToNextSource();
-    };
-    OnErrorResumeNextSubscriber.prototype._error = function (err) {
-        this.subscribeToNextSource();
-    };
-    OnErrorResumeNextSubscriber.prototype._complete = function () {
-        this.subscribeToNextSource();
-    };
-    OnErrorResumeNextSubscriber.prototype.subscribeToNextSource = function () {
-        var next = this.nextSources.shift();
-        if (next) {
-            this.add(subscribeToResult_1.subscribeToResult(this, next));
-        }
-        else {
-            this.destination.complete();
-        }
-    };
-    return OnErrorResumeNextSubscriber;
-}(OuterSubscriber_1.OuterSubscriber));
-//# sourceMappingURL=onErrorResumeNext.js.map
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var isArray_1 = __webpack_require__(11);
-var ArrayObservable_1 = __webpack_require__(10);
-var OuterSubscriber_1 = __webpack_require__(2);
-var subscribeToResult_1 = __webpack_require__(3);
-/* tslint:enable:max-line-length */
-/**
- * Returns an Observable that mirrors the first source Observable to emit an item
- * from the combination of this Observable and supplied Observables.
- * @param {...Observables} ...observables Sources used to race for which Observable emits first.
- * @return {Observable} An Observable that mirrors the output of the first Observable to emit an item.
- * @method race
- * @owner Observable
- */
-function race() {
-    var observables = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        observables[_i - 0] = arguments[_i];
-    }
-    // if the only argument is an array, it was most likely called with
-    // `pair([obs1, obs2, ...])`
-    if (observables.length === 1 && isArray_1.isArray(observables[0])) {
-        observables = observables[0];
-    }
-    return this.lift.call(raceStatic.apply(void 0, [this].concat(observables)));
-}
-exports.race = race;
-function raceStatic() {
-    var observables = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        observables[_i - 0] = arguments[_i];
-    }
-    // if the only argument is an array, it was most likely called with
-    // `pair([obs1, obs2, ...])`
-    if (observables.length === 1) {
-        if (isArray_1.isArray(observables[0])) {
-            observables = observables[0];
-        }
-        else {
-            return observables[0];
-        }
-    }
-    return new ArrayObservable_1.ArrayObservable(observables).lift(new RaceOperator());
-}
-exports.raceStatic = raceStatic;
-var RaceOperator = (function () {
-    function RaceOperator() {
-    }
-    RaceOperator.prototype.call = function (subscriber, source) {
-        return source.subscribe(new RaceSubscriber(subscriber));
-    };
-    return RaceOperator;
-}());
-exports.RaceOperator = RaceOperator;
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var RaceSubscriber = (function (_super) {
-    __extends(RaceSubscriber, _super);
-    function RaceSubscriber(destination) {
-        _super.call(this, destination);
-        this.hasFirst = false;
-        this.observables = [];
-        this.subscriptions = [];
-    }
-    RaceSubscriber.prototype._next = function (observable) {
-        this.observables.push(observable);
-    };
-    RaceSubscriber.prototype._complete = function () {
-        var observables = this.observables;
-        var len = observables.length;
-        if (len === 0) {
-            this.destination.complete();
-        }
-        else {
-            for (var i = 0; i < len && !this.hasFirst; i++) {
-                var observable = observables[i];
-                var subscription = subscribeToResult_1.subscribeToResult(this, observable, observable, i);
-                if (this.subscriptions) {
-                    this.subscriptions.push(subscription);
-                }
-                this.add(subscription);
-            }
-            this.observables = null;
-        }
-    };
-    RaceSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
-        if (!this.hasFirst) {
-            this.hasFirst = true;
-            for (var i = 0; i < this.subscriptions.length; i++) {
-                if (i !== outerIndex) {
-                    var subscription = this.subscriptions[i];
-                    subscription.unsubscribe();
-                    this.remove(subscription);
-                }
-            }
-            this.subscriptions = null;
-        }
-        this.destination.next(innerValue);
-    };
-    return RaceSubscriber;
-}(OuterSubscriber_1.OuterSubscriber));
-exports.RaceSubscriber = RaceSubscriber;
-//# sourceMappingURL=race.js.map
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subscriber_1 = __webpack_require__(1);
-var async_1 = __webpack_require__(9);
-/**
- * @param scheduler
- * @return {Observable<TimeInterval<any>>|WebSocketSubject<T>|Observable<T>}
- * @method timeInterval
- * @owner Observable
- */
-function timeInterval(scheduler) {
-    if (scheduler === void 0) { scheduler = async_1.async; }
-    return this.lift(new TimeIntervalOperator(scheduler));
-}
-exports.timeInterval = timeInterval;
-var TimeInterval = (function () {
-    function TimeInterval(value, interval) {
-        this.value = value;
-        this.interval = interval;
-    }
-    return TimeInterval;
-}());
-exports.TimeInterval = TimeInterval;
-;
-var TimeIntervalOperator = (function () {
-    function TimeIntervalOperator(scheduler) {
-        this.scheduler = scheduler;
-    }
-    TimeIntervalOperator.prototype.call = function (observer, source) {
-        return source.subscribe(new TimeIntervalSubscriber(observer, this.scheduler));
-    };
-    return TimeIntervalOperator;
-}());
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var TimeIntervalSubscriber = (function (_super) {
-    __extends(TimeIntervalSubscriber, _super);
-    function TimeIntervalSubscriber(destination, scheduler) {
-        _super.call(this, destination);
-        this.scheduler = scheduler;
-        this.lastTime = 0;
-        this.lastTime = scheduler.now();
-    }
-    TimeIntervalSubscriber.prototype._next = function (value) {
-        var now = this.scheduler.now();
-        var span = now - this.lastTime;
-        this.lastTime = now;
-        this.destination.next(new TimeInterval(value, span));
-    };
-    return TimeIntervalSubscriber;
-}(Subscriber_1.Subscriber));
-//# sourceMappingURL=timeInterval.js.map
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subscriber_1 = __webpack_require__(1);
-var async_1 = __webpack_require__(9);
-/**
- * @param scheduler
- * @return {Observable<Timestamp<any>>|WebSocketSubject<T>|Observable<T>}
- * @method timestamp
- * @owner Observable
- */
-function timestamp(scheduler) {
-    if (scheduler === void 0) { scheduler = async_1.async; }
-    return this.lift(new TimestampOperator(scheduler));
-}
-exports.timestamp = timestamp;
-var Timestamp = (function () {
-    function Timestamp(value, timestamp) {
-        this.value = value;
-        this.timestamp = timestamp;
-    }
-    return Timestamp;
-}());
-exports.Timestamp = Timestamp;
-;
-var TimestampOperator = (function () {
-    function TimestampOperator(scheduler) {
-        this.scheduler = scheduler;
-    }
-    TimestampOperator.prototype.call = function (observer, source) {
-        return source.subscribe(new TimestampSubscriber(observer, this.scheduler));
-    };
-    return TimestampOperator;
-}());
-var TimestampSubscriber = (function (_super) {
-    __extends(TimestampSubscriber, _super);
-    function TimestampSubscriber(destination, scheduler) {
-        _super.call(this, destination);
-        this.scheduler = scheduler;
-    }
-    TimestampSubscriber.prototype._next = function (value) {
-        var now = this.scheduler.now();
-        this.destination.next(new Timestamp(value, now));
-    };
-    return TimestampSubscriber;
-}(Subscriber_1.Subscriber));
-//# sourceMappingURL=timestamp.js.map
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var AsyncAction_1 = __webpack_require__(20);
-var AsyncScheduler_1 = __webpack_require__(21);
-var VirtualTimeScheduler = (function (_super) {
-    __extends(VirtualTimeScheduler, _super);
-    function VirtualTimeScheduler(SchedulerAction, maxFrames) {
-        var _this = this;
-        if (SchedulerAction === void 0) { SchedulerAction = VirtualAction; }
-        if (maxFrames === void 0) { maxFrames = Number.POSITIVE_INFINITY; }
-        _super.call(this, SchedulerAction, function () { return _this.frame; });
-        this.maxFrames = maxFrames;
-        this.frame = 0;
-        this.index = -1;
-    }
-    /**
-     * Prompt the Scheduler to execute all of its queued actions, therefore
-     * clearing its queue.
-     * @return {void}
-     */
-    VirtualTimeScheduler.prototype.flush = function () {
-        var _a = this, actions = _a.actions, maxFrames = _a.maxFrames;
-        var error, action;
-        while ((action = actions.shift()) && (this.frame = action.delay) <= maxFrames) {
-            if (error = action.execute(action.state, action.delay)) {
-                break;
-            }
-        }
-        if (error) {
-            while (action = actions.shift()) {
-                action.unsubscribe();
-            }
-            throw error;
-        }
-    };
-    VirtualTimeScheduler.frameTimeFactor = 10;
-    return VirtualTimeScheduler;
-}(AsyncScheduler_1.AsyncScheduler));
-exports.VirtualTimeScheduler = VirtualTimeScheduler;
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var VirtualAction = (function (_super) {
-    __extends(VirtualAction, _super);
-    function VirtualAction(scheduler, work, index) {
-        if (index === void 0) { index = scheduler.index += 1; }
-        _super.call(this, scheduler, work);
-        this.scheduler = scheduler;
-        this.work = work;
-        this.index = index;
-        this.index = scheduler.index = index;
-    }
-    VirtualAction.prototype.schedule = function (state, delay) {
-        if (delay === void 0) { delay = 0; }
-        if (!this.id) {
-            return _super.prototype.schedule.call(this, state, delay);
-        }
-        // If an action is rescheduled, we save allocations by mutating its state,
-        // pushing it to the end of the scheduler queue, and recycling the action.
-        // But since the VirtualTimeScheduler is used for testing, VirtualActions
-        // must be immutable so they can be inspected later.
-        var action = new VirtualAction(this.scheduler, this.work);
-        this.add(action);
-        return action.schedule(state, delay);
-    };
-    VirtualAction.prototype.requestAsyncId = function (scheduler, id, delay) {
-        if (delay === void 0) { delay = 0; }
-        this.delay = scheduler.frame + delay;
-        var actions = scheduler.actions;
-        actions.push(this);
-        actions.sort(VirtualAction.sortActions);
-        return true;
-    };
-    VirtualAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
-        if (delay === void 0) { delay = 0; }
-        return undefined;
-    };
-    VirtualAction.sortActions = function (a, b) {
-        if (a.delay === b.delay) {
-            if (a.index === b.index) {
-                return 0;
-            }
-            else if (a.index > b.index) {
-                return 1;
-            }
-            else {
-                return -1;
-            }
-        }
-        else if (a.delay > b.delay) {
-            return 1;
-        }
-        else {
-            return -1;
-        }
-    };
-    return VirtualAction;
-}(AsyncAction_1.AsyncAction));
-exports.VirtualAction = VirtualAction;
-//# sourceMappingURL=VirtualTimeScheduler.js.map
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var AsapAction_1 = __webpack_require__(381);
-var AsapScheduler_1 = __webpack_require__(382);
-/**
- *
- * Asap Scheduler
- *
- * <span class="informal">Perform task as fast as it can be performed asynchronously</span>
- *
- * `asap` scheduler behaves the same as {@link async} scheduler when you use it to delay task
- * in time. If however you set delay to `0`, `asap` will wait for current synchronously executing
- * code to end and then it will try to execute given task as fast as possible.
- *
- * `asap` scheduler will do its best to minimize time between end of currently executing code
- * and start of scheduled task. This makes it best candidate for performing so called "deferring".
- * Traditionally this was achieved by calling `setTimeout(deferredTask, 0)`, but that technique involves
- * some (although minimal) unwanted delay.
- *
- * Note that using `asap` scheduler does not necessarily mean that your task will be first to process
- * after currently executing code. In particular, if some task was also scheduled with `asap` before,
- * that task will execute first. That being said, if you need to schedule task asynchronously, but
- * as soon as possible, `asap` scheduler is your best bet.
- *
- * @example <caption>Compare async and asap scheduler</caption>
- *
- * Rx.Scheduler.async.schedule(() => console.log('async')); // scheduling 'async' first...
- * Rx.Scheduler.asap.schedule(() => console.log('asap'));
- *
- * // Logs:
- * // "asap"
- * // "async"
- * // ... but 'asap' goes first!
- *
- * @static true
- * @name asap
- * @owner Scheduler
- */
-exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
-//# sourceMappingURL=asap.js.map
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var QueueAction_1 = __webpack_require__(383);
-var QueueScheduler_1 = __webpack_require__(384);
-/**
- *
- * Queue Scheduler
- *
- * <span class="informal">Put every next task on a queue, instead of executing it immediately</span>
- *
- * `queue` scheduler, when used with delay, behaves the same as {@link async} scheduler.
- *
- * When used without delay, it schedules given task synchronously - executes it right when
- * it is scheduled. However when called recursively, that is when inside the scheduled task,
- * another task is scheduled with queue scheduler, instead of executing immediately as well,
- * that task will be put on a queue and wait for current one to finish.
- *
- * This means that when you execute task with `queue` scheduler, you are sure it will end
- * before any other task scheduled with that scheduler will start.
- *
- * @examples <caption>Schedule recursively first, then do something</caption>
- *
- * Rx.Scheduler.queue.schedule(() => {
- *   Rx.Scheduler.queue.schedule(() => console.log('second')); // will not happen now, but will be put on a queue
- *
- *   console.log('first');
- * });
- *
- * // Logs:
- * // "first"
- * // "second"
- *
- *
- * @example <caption>Reschedule itself recursively</caption>
- *
- * Rx.Scheduler.queue.schedule(function(state) {
- *   if (state !== 0) {
- *     console.log('before', state);
- *     this.schedule(state - 1); // `this` references currently executing Action,
- *                               // which we reschedule with new state
- *     console.log('after', state);
- *   }
- * }, 0, 3);
- *
- * // In scheduler that runs recursively, you would expect:
- * // "before", 3
- * // "before", 2
- * // "before", 1
- * // "after", 1
- * // "after", 2
- * // "after", 3
- *
- * // But with queue it logs:
- * // "before", 3
- * // "after", 3
- * // "before", 2
- * // "after", 2
- * // "before", 1
- * // "after", 1
- *
- *
- * @static true
- * @name queue
- * @owner Scheduler
- */
-exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
-//# sourceMappingURL=queue.js.map
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var SubscriptionLog = (function () {
-    function SubscriptionLog(subscribedFrame, unsubscribedFrame) {
-        if (unsubscribedFrame === void 0) { unsubscribedFrame = Number.POSITIVE_INFINITY; }
-        this.subscribedFrame = subscribedFrame;
-        this.unsubscribedFrame = unsubscribedFrame;
-    }
-    return SubscriptionLog;
-}());
-exports.SubscriptionLog = SubscriptionLog;
-//# sourceMappingURL=SubscriptionLog.js.map
-
-/***/ }),
-/* 79 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var SubscriptionLog_1 = __webpack_require__(78);
-var SubscriptionLoggable = (function () {
-    function SubscriptionLoggable() {
-        this.subscriptions = [];
-    }
-    SubscriptionLoggable.prototype.logSubscribedFrame = function () {
-        this.subscriptions.push(new SubscriptionLog_1.SubscriptionLog(this.scheduler.now()));
-        return this.subscriptions.length - 1;
-    };
-    SubscriptionLoggable.prototype.logUnsubscribedFrame = function (index) {
-        var subscriptionLogs = this.subscriptions;
-        var oldSubscriptionLog = subscriptionLogs[index];
-        subscriptionLogs[index] = new SubscriptionLog_1.SubscriptionLog(oldSubscriptionLog.subscribedFrame, this.scheduler.now());
-    };
-    return SubscriptionLoggable;
-}());
-exports.SubscriptionLoggable = SubscriptionLoggable;
-//# sourceMappingURL=SubscriptionLoggable.js.map
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-/**
- * An error thrown when duetime elapses.
- *
- * @see {@link timeout}
- *
- * @class TimeoutError
- */
-var TimeoutError = (function (_super) {
-    __extends(TimeoutError, _super);
-    function TimeoutError() {
-        var err = _super.call(this, 'Timeout has occurred');
-        this.name = err.name = 'TimeoutError';
-        this.stack = err.stack;
-        this.message = err.message;
-    }
-    return TimeoutError;
-}(Error));
-exports.TimeoutError = TimeoutError;
-//# sourceMappingURL=TimeoutError.js.map
-
-/***/ }),
-/* 81 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-/**
- * An error thrown when one or more errors have occurred during the
- * `unsubscribe` of a {@link Subscription}.
- */
-var UnsubscriptionError = (function (_super) {
-    __extends(UnsubscriptionError, _super);
-    function UnsubscriptionError(errors) {
-        _super.call(this);
-        this.errors = errors;
-        var err = Error.call(this, errors ?
-            errors.length + " errors occurred during unsubscription:\n  " + errors.map(function (err, i) { return ((i + 1) + ") " + err.toString()); }).join('\n  ') : '');
-        this.name = err.name = 'UnsubscriptionError';
-        this.stack = err.stack;
-        this.message = err.message;
-    }
-    return UnsubscriptionError;
-}(Error));
-exports.UnsubscriptionError = UnsubscriptionError;
-//# sourceMappingURL=UnsubscriptionError.js.map
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function applyMixins(derivedCtor, baseCtors) {
-    for (var i = 0, len = baseCtors.length; i < len; i++) {
-        var baseCtor = baseCtors[i];
-        var propertyKeys = Object.getOwnPropertyNames(baseCtor.prototype);
-        for (var j = 0, len2 = propertyKeys.length; j < len2; j++) {
-            var name_1 = propertyKeys[j];
-            derivedCtor.prototype[name_1] = baseCtor.prototype[name_1];
-        }
-    }
-}
-exports.applyMixins = applyMixins;
-//# sourceMappingURL=applyMixins.js.map
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-exports.isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
-//# sourceMappingURL=isArrayLike.js.map
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function isObject(x) {
-    return x != null && typeof x === 'object';
-}
-exports.isObject = isObject;
-//# sourceMappingURL=isObject.js.map
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function isPromise(value) {
-    return value && typeof value.subscribe !== 'function' && typeof value.then === 'function';
-}
-exports.isPromise = isPromise;
-//# sourceMappingURL=isPromise.js.map
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-/* tslint:disable:no-empty */
-function noop() { }
-exports.noop = noop;
-//# sourceMappingURL=noop.js.map
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var localforage_1 = __webpack_require__(399);
-exports.LocalForageStore = localforage_1.LocalForageStore;
-
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var testType_1 = __webpack_require__(400);
-var plump_1 = __webpack_require__(35);
-var Bluebird = __webpack_require__(15);
-var mergeOptions = __webpack_require__(18);
-Bluebird.config({
-    longStackTraces: true,
-});
-var chai = __webpack_require__(93);
-var chaiAsPromised = __webpack_require__(92);
-chai.use(chaiAsPromised);
-var expect = chai.expect;
-var sampleObject = {
-    typeName: 'tests',
-    attributes: {
-        name: 'potato',
-        extended: {
-            actual: 'rutabaga',
-            otherValue: 42,
-        },
-    },
-    relationships: {},
-};
-function testSuite(context, storeOpts) {
-    var store = Object.assign({}, {
-        before: function () { return Bluebird.resolve(); },
-        after: function () { return Bluebird.resolve(); },
-    }, storeOpts);
-    context.describe(store.name, function () {
-        var actualStore;
-        context.before(function () {
-            return (store.before || (function () { return Bluebird.resolve(); }))(actualStore)
-                .then(function () {
-                actualStore = new store.ctor(store.opts);
-                actualStore.addSchema(testType_1.TestType);
-            });
-        });
-        context.describe('core CRUD', function () {
-            context.it('supports creating values with no id field, and retrieving values', function () {
-                return actualStore.writeAttributes(sampleObject)
-                    .then(function (createdObject) {
-                    return actualStore.read({ typeName: 'tests', id: createdObject.id }, ['attributes', 'relationships'])
-                        .then(function (v) {
-                        return expect(v)
-                            .to.deep.equal(mergeOptions({}, sampleObject, {
-                            id: createdObject.id,
-                            relationships: {
-                                parents: [],
-                                children: [],
-                                valenceParents: [],
-                                valenceChildren: [],
-                                queryParents: [],
-                                queryChildren: [],
-                            },
-                            attributes: {
-                                id: createdObject.id,
-                                otherName: '',
-                            },
-                        }));
-                    });
-                });
-            });
-            context.it('allows objects to be stored by id', function () {
-                return actualStore.writeAttributes(sampleObject)
-                    .then(function (createdObject) {
-                    var modObject = mergeOptions({}, createdObject, { attributes: { name: 'carrot' } });
-                    return actualStore.writeAttributes(modObject)
-                        .then(function (updatedObject) {
-                        return expect(actualStore.read({ typeName: 'tests', id: updatedObject.id }, 'attributes'))
-                            .to.eventually.deep.equal(mergeOptions({}, modObject, {
-                            id: createdObject.id,
-                            relationships: {},
-                            attributes: {
-                                id: createdObject.id,
-                                otherName: '',
-                            },
-                        }));
-                    });
-                });
-            });
-            context.it('allows for deletion of objects by id', function () {
-                return actualStore.writeAttributes(sampleObject)
-                    .then(function (createdObject) {
-                    return expect(actualStore.read({ typeName: 'tests', id: createdObject.id }))
-                        .to.eventually.have.deep.property('attributes.name', 'potato')
-                        .then(function () { return actualStore.delete({ typeName: 'tests', id: createdObject.id }); })
-                        .then(function () { return expect(actualStore.read({ typeName: 'tests', id: createdObject.id })).to.eventually.be.null; });
-                });
-            });
-        });
-        context.describe('relationships', function () {
-            context.it('can fetch a base and hasmany in one read', function () {
-                return actualStore.writeAttributes(sampleObject)
-                    .then(function (createdObject) {
-                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 200 })
-                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 201 }); })
-                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 202 }); })
-                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 203 }); })
-                        .then(function () {
-                        return actualStore.read({ typeName: 'tests', id: createdObject.id }, ['attributes', 'relationships.children']);
-                    })
-                        .then(function (v) {
-                        expect(v).to.have.deep.property('attributes.name', 'potato');
-                        expect(v.relationships.children).to.deep.equal([{ id: 200 }, { id: 201 }, { id: 202 }, { id: 203 }]);
-                    });
-                });
-            });
-            context.it('can add to a hasMany relationship', function () {
-                return actualStore.writeAttributes(sampleObject)
-                    .then(function (createdObject) {
-                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 100 })
-                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 101 }); })
-                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 102 }); })
-                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 103 }); })
-                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: 100 }, 'children', { id: createdObject.id }); })
-                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, ['relationships.children']); })
-                        .then(function (v) {
-                        expect(v.relationships.children).to.deep.equal([
-                            { id: 100 },
-                            { id: 101 },
-                            { id: 102 },
-                            { id: 103 },
-                        ]);
-                        return actualStore.read({ typeName: 'tests', id: createdObject.id }, ['relationships.parents']);
-                    })
-                        .then(function (v) { return expect(v.relationships.parents).to.deep.equal([{ id: 100 }]); });
-                });
-            });
-            context.it('can add to a hasMany relationship with extras', function () {
-                return actualStore.writeAttributes(sampleObject)
-                    .then(function (createdObject) {
-                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'valenceChildren', { id: 100, meta: { perm: 1 } })
-                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.valenceChildren'); })
-                        .then(function (v) { return expect(v.relationships.valenceChildren).to.deep.equal([{ id: 100, meta: { perm: 1 } }]); });
-                });
-            });
-            context.it('can modify valence on a hasMany relationship', function () {
-                return actualStore.writeAttributes(sampleObject)
-                    .then(function (createdObject) {
-                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'valenceChildren', { id: 100, meta: { perm: 1 } })
-                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.valenceChildren'); })
-                        .then(function (v) { return expect(v.relationships.valenceChildren).to.deep.equal([{ id: 100, meta: { perm: 1 } }]); })
-                        .then(function () {
-                        return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'valenceChildren', { id: 100, meta: { perm: 2 } });
-                    })
-                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.valenceChildren'); })
-                        .then(function (v) { return expect(v.relationships.valenceChildren).to.deep.equal([{ id: 100, meta: { perm: 2 } }]); });
-                });
-            });
-            context.it('can remove from a hasMany relationship', function () {
-                return actualStore.writeAttributes(sampleObject)
-                    .then(function (createdObject) {
-                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 100 })
-                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.children'); })
-                        .then(function (v) { return expect(v.relationships.children).to.deep.equal([{ id: 100 }]); })
-                        .then(function () { return actualStore.deleteRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 100 }); })
-                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.children'); })
-                        .then(function (v) { return expect(v.relationships.children).to.deep.equal([]); });
-                });
-            });
-        });
-        context.describe('events', function () {
-            context.it('should pass basic write-invalidation events to other datastores', function () {
-                var memstore = new plump_1.MemoryStore();
-                var testPlump = new plump_1.Plump();
-                return testPlump.addStore(memstore)
-                    .then(function () { return testPlump.addStore(actualStore); })
-                    .then(function () { return testPlump.addType(testType_1.TestType); })
-                    .then(function () { return actualStore.writeAttributes({ typeName: 'tests', attributes: { name: 'potato' } }); })
-                    .then(function (createdObject) {
-                    return actualStore.read({ typeName: 'tests', id: createdObject.id })
-                        .then(function () {
-                        return new Bluebird(function (resolve) { return setTimeout(resolve, 100); })
-                            .then(function () {
-                            return expect(memstore.read({ typeName: 'tests', id: createdObject.id }))
-                                .to.eventually.have.deep.property('attributes.name', 'potato');
-                        }).then(function () {
-                            return actualStore.writeAttributes({
-                                typeName: 'tests',
-                                id: createdObject.id,
-                                attributes: {
-                                    name: 'grotato',
-                                },
-                            });
-                        }).then(function () {
-                            return new Bluebird(function (resolve) { return setTimeout(resolve, 100); });
-                        }).then(function () {
-                            return expect(memstore.read({ typeName: 'tests', id: createdObject.id }))
-                                .to.eventually.be.null;
-                        });
-                    });
-                })
-                    .finally(function () {
-                    return testPlump.teardown();
-                });
-            });
-            context.it('should pass basic cacheable-read events up the stack', function () {
-                var testPlump = new plump_1.Plump();
-                var testItem;
-                var memstore;
-                return testPlump.addType(testType_1.TestType)
-                    .then(function () { return actualStore.writeAttributes({ typeName: 'tests', attributes: { name: 'potato' } }); })
-                    .then(function (createdObject) {
-                    testItem = createdObject;
-                    return expect(actualStore.read({ typeName: 'tests', id: testItem.id }))
-                        .to.eventually.have.deep.property('attributes.name', 'potato');
-                }).then(function () {
-                    memstore = new plump_1.MemoryStore();
-                    testPlump.addStore(memstore);
-                    testPlump.addStore(actualStore);
-                    return expect(memstore.read({ typeName: 'tests', id: testItem.id })).to.eventually.be.null;
-                }).then(function () {
-                    return actualStore.read({ typeName: 'tests', id: testItem.id });
-                })
-                    .then(function () {
-                    return new Bluebird(function (resolve) { return setTimeout(resolve, 100); });
-                })
-                    .then(function () {
-                    return expect(memstore.read({ typeName: 'tests', id: testItem.id }))
-                        .to.eventually.have.deep.property('attributes.name', 'potato');
-                }).finally(function () { return testPlump.teardown(); });
-            });
-            context.it('should pass write-invalidation events on hasMany relationships to other datastores', function () {
-                var testItem;
-                var memstore = new plump_1.MemoryStore();
-                var testPlump = new plump_1.Plump();
-                return testPlump.addType(testType_1.TestType)
-                    .then(function () { return testPlump.addStore(memstore); })
-                    .then(function () { return testPlump.addStore(actualStore); })
-                    .then(function () { return actualStore.writeAttributes({ typeName: 'tests', attributes: { name: 'potato' } }); })
-                    .then(function (createdObject) {
-                    testItem = createdObject;
-                    return expect(actualStore.read({ typeName: 'tests', id: testItem.id }))
-                        .to.eventually.have.deep.property('attributes.name', 'potato');
-                }).then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: testItem.id }, 'children', { id: 100 }); })
-                    .then(function () {
-                    return expect(memstore.read({ typeName: 'tests', id: testItem.id }))
-                        .to.eventually.not.have.deep.property('relationships.children');
-                }).then(function () {
-                    return actualStore.read({ typeName: 'tests', id: testItem.id }, 'children');
-                }).then(function () {
-                    return new Bluebird(function (resolve) { return setTimeout(resolve, 100); });
-                })
-                    .then(function () { return memstore.read({ typeName: 'tests', id: testItem.id }, 'children'); })
-                    .then(function (v) { return expect(v.relationships.children).to.deep.equal([{ id: 100 }]); })
-                    .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: testItem.id }, 'children', { id: 101 }); })
-                    .then(function () { return new Bluebird(function (resolve) { return setTimeout(resolve, 100); }); })
-                    .then(function () { return memstore.read({ typeName: 'tests', id: testItem.id }); })
-                    .then(function (v) { return expect(v).to.not.have.deep.property('relationships.children'); })
-                    .finally(function () { return testPlump.teardown(); });
-            });
-            context.it('should pass cacheable-read events on hasMany relationships to other datastores', function () {
-                var testItem;
-                var memstore;
-                var testPlump = new plump_1.Plump();
-                return testPlump.addType(testType_1.TestType)
-                    .then(function () { return actualStore.writeAttributes({ typeName: 'tests', attributes: { name: 'potato' } }); })
-                    .then(function (createdObject) {
-                    testItem = createdObject;
-                    return expect(actualStore.read({ typeName: 'tests', id: testItem.id }))
-                        .to.eventually.have.deep.property('attributes.name', 'potato');
-                }).then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: testItem.id }, 'children', { id: 100 }); })
-                    .then(function () {
-                    memstore = new plump_1.MemoryStore();
-                    testPlump.addStore(actualStore);
-                    testPlump.addStore(memstore);
-                    return expect(memstore.read({ typeName: 'tests', id: testItem.id })).to.eventually.be.null;
-                }).then(function () {
-                    return actualStore.read({ typeName: 'tests', id: testItem.id }, 'children');
-                }).then(function () { return new Bluebird(function (resolve) { return setTimeout(resolve, 100); }); })
-                    .then(function () { return memstore.read({ typeName: 'tests', id: testItem.id }, 'children'); })
-                    .then(function (v) { return expect(v.relationships.children).to.deep.equal([{ id: 100 }]); })
-                    .finally(function () { return testPlump.teardown(); });
-            });
-        });
-        context.after(function () {
-            return (store.after || (function () { return; }))(actualStore);
-        });
-    });
-}
-exports.testSuite = testSuite;
-
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.byteLength = byteLength
-exports.toByteArray = toByteArray
-exports.fromByteArray = fromByteArray
-
-var lookup = []
-var revLookup = []
-var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
-
-var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-for (var i = 0, len = code.length; i < len; ++i) {
-  lookup[i] = code[i]
-  revLookup[code.charCodeAt(i)] = i
-}
-
-revLookup['-'.charCodeAt(0)] = 62
-revLookup['_'.charCodeAt(0)] = 63
-
-function placeHoldersCount (b64) {
-  var len = b64.length
-  if (len % 4 > 0) {
-    throw new Error('Invalid string. Length must be a multiple of 4')
-  }
-
-  // the number of equal signs (place holders)
-  // if there are two placeholders, than the two characters before it
-  // represent one byte
-  // if there is only one, then the three characters before it represent 2 bytes
-  // this is just a cheap hack to not do indexOf twice
-  return b64[len - 2] === '=' ? 2 : b64[len - 1] === '=' ? 1 : 0
-}
-
-function byteLength (b64) {
-  // base64 is 4/3 + up to two characters of the original data
-  return b64.length * 3 / 4 - placeHoldersCount(b64)
-}
-
-function toByteArray (b64) {
-  var i, j, l, tmp, placeHolders, arr
-  var len = b64.length
-  placeHolders = placeHoldersCount(b64)
-
-  arr = new Arr(len * 3 / 4 - placeHolders)
-
-  // if there are placeholders, only get up to the last complete 4 chars
-  l = placeHolders > 0 ? len - 4 : len
-
-  var L = 0
-
-  for (i = 0, j = 0; i < l; i += 4, j += 3) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 18) | (revLookup[b64.charCodeAt(i + 1)] << 12) | (revLookup[b64.charCodeAt(i + 2)] << 6) | revLookup[b64.charCodeAt(i + 3)]
-    arr[L++] = (tmp >> 16) & 0xFF
-    arr[L++] = (tmp >> 8) & 0xFF
-    arr[L++] = tmp & 0xFF
-  }
-
-  if (placeHolders === 2) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 2) | (revLookup[b64.charCodeAt(i + 1)] >> 4)
-    arr[L++] = tmp & 0xFF
-  } else if (placeHolders === 1) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 10) | (revLookup[b64.charCodeAt(i + 1)] << 4) | (revLookup[b64.charCodeAt(i + 2)] >> 2)
-    arr[L++] = (tmp >> 8) & 0xFF
-    arr[L++] = tmp & 0xFF
-  }
-
-  return arr
-}
-
-function tripletToBase64 (num) {
-  return lookup[num >> 18 & 0x3F] + lookup[num >> 12 & 0x3F] + lookup[num >> 6 & 0x3F] + lookup[num & 0x3F]
-}
-
-function encodeChunk (uint8, start, end) {
-  var tmp
-  var output = []
-  for (var i = start; i < end; i += 3) {
-    tmp = (uint8[i] << 16) + (uint8[i + 1] << 8) + (uint8[i + 2])
-    output.push(tripletToBase64(tmp))
-  }
-  return output.join('')
-}
-
-function fromByteArray (uint8) {
-  var tmp
-  var len = uint8.length
-  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
-  var output = ''
-  var parts = []
-  var maxChunkLength = 16383 // must be multiple of 3
-
-  // go through the array every three bytes, we'll deal with trailing stuff later
-  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
-    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
-  }
-
-  // pad the end with zeros, but make sure to not forget the extra bytes
-  if (extraBytes === 1) {
-    tmp = uint8[len - 1]
-    output += lookup[tmp >> 2]
-    output += lookup[(tmp << 4) & 0x3F]
-    output += '=='
-  } else if (extraBytes === 2) {
-    tmp = (uint8[len - 2] << 8) + (uint8[len - 1])
-    output += lookup[tmp >> 10]
-    output += lookup[(tmp >> 4) & 0x3F]
-    output += lookup[(tmp << 2) & 0x3F]
-    output += '='
-  }
-
-  parts.push(output)
-
-  return parts.join('')
-}
-
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
- * @license  MIT
- */
-/* eslint-disable no-proto */
-
-
-
-var base64 = __webpack_require__(89)
-var ieee754 = __webpack_require__(117)
-var isArray = __webpack_require__(91)
-
-exports.Buffer = Buffer
-exports.SlowBuffer = SlowBuffer
-exports.INSPECT_MAX_BYTES = 50
-
-/**
- * If `Buffer.TYPED_ARRAY_SUPPORT`:
- *   === true    Use Uint8Array implementation (fastest)
- *   === false   Use Object implementation (most compatible, even IE6)
- *
- * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
- * Opera 11.6+, iOS 4.2+.
- *
- * Due to various browser bugs, sometimes the Object implementation will be used even
- * when the browser supports typed arrays.
- *
- * Note:
- *
- *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
- *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
- *
- *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
- *
- *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
- *     incorrect length in some situations.
-
- * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
- * get the Object implementation, which is slower but behaves correctly.
- */
-Buffer.TYPED_ARRAY_SUPPORT = global.TYPED_ARRAY_SUPPORT !== undefined
-  ? global.TYPED_ARRAY_SUPPORT
-  : typedArraySupport()
-
-/*
- * Export kMaxLength after typed array support is determined.
- */
-exports.kMaxLength = kMaxLength()
-
-function typedArraySupport () {
-  try {
-    var arr = new Uint8Array(1)
-    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
-    return arr.foo() === 42 && // typed array instances can be augmented
-        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
-        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
-  } catch (e) {
-    return false
-  }
-}
-
-function kMaxLength () {
-  return Buffer.TYPED_ARRAY_SUPPORT
-    ? 0x7fffffff
-    : 0x3fffffff
-}
-
-function createBuffer (that, length) {
-  if (kMaxLength() < length) {
-    throw new RangeError('Invalid typed array length')
-  }
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    // Return an augmented `Uint8Array` instance, for best performance
-    that = new Uint8Array(length)
-    that.__proto__ = Buffer.prototype
-  } else {
-    // Fallback: Return an object instance of the Buffer class
-    if (that === null) {
-      that = new Buffer(length)
-    }
-    that.length = length
-  }
-
-  return that
-}
-
-/**
- * The Buffer constructor returns instances of `Uint8Array` that have their
- * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
- * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
- * and the `Uint8Array` methods. Square bracket notation works as expected -- it
- * returns a single octet.
- *
- * The `Uint8Array` prototype remains unmodified.
- */
-
-function Buffer (arg, encodingOrOffset, length) {
-  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
-    return new Buffer(arg, encodingOrOffset, length)
-  }
-
-  // Common case.
-  if (typeof arg === 'number') {
-    if (typeof encodingOrOffset === 'string') {
-      throw new Error(
-        'If encoding is specified then the first argument must be a string'
-      )
-    }
-    return allocUnsafe(this, arg)
-  }
-  return from(this, arg, encodingOrOffset, length)
-}
-
-Buffer.poolSize = 8192 // not used by this implementation
-
-// TODO: Legacy, not needed anymore. Remove in next major version.
-Buffer._augment = function (arr) {
-  arr.__proto__ = Buffer.prototype
-  return arr
-}
-
-function from (that, value, encodingOrOffset, length) {
-  if (typeof value === 'number') {
-    throw new TypeError('"value" argument must not be a number')
-  }
-
-  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
-    return fromArrayBuffer(that, value, encodingOrOffset, length)
-  }
-
-  if (typeof value === 'string') {
-    return fromString(that, value, encodingOrOffset)
-  }
-
-  return fromObject(that, value)
-}
-
-/**
- * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
- * if value is a number.
- * Buffer.from(str[, encoding])
- * Buffer.from(array)
- * Buffer.from(buffer)
- * Buffer.from(arrayBuffer[, byteOffset[, length]])
- **/
-Buffer.from = function (value, encodingOrOffset, length) {
-  return from(null, value, encodingOrOffset, length)
-}
-
-if (Buffer.TYPED_ARRAY_SUPPORT) {
-  Buffer.prototype.__proto__ = Uint8Array.prototype
-  Buffer.__proto__ = Uint8Array
-  if (typeof Symbol !== 'undefined' && Symbol.species &&
-      Buffer[Symbol.species] === Buffer) {
-    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
-    Object.defineProperty(Buffer, Symbol.species, {
-      value: null,
-      configurable: true
-    })
-  }
-}
-
-function assertSize (size) {
-  if (typeof size !== 'number') {
-    throw new TypeError('"size" argument must be a number')
-  } else if (size < 0) {
-    throw new RangeError('"size" argument must not be negative')
-  }
-}
-
-function alloc (that, size, fill, encoding) {
-  assertSize(size)
-  if (size <= 0) {
-    return createBuffer(that, size)
-  }
-  if (fill !== undefined) {
-    // Only pay attention to encoding if it's a string. This
-    // prevents accidentally sending in a number that would
-    // be interpretted as a start offset.
-    return typeof encoding === 'string'
-      ? createBuffer(that, size).fill(fill, encoding)
-      : createBuffer(that, size).fill(fill)
-  }
-  return createBuffer(that, size)
-}
-
-/**
- * Creates a new filled Buffer instance.
- * alloc(size[, fill[, encoding]])
- **/
-Buffer.alloc = function (size, fill, encoding) {
-  return alloc(null, size, fill, encoding)
-}
-
-function allocUnsafe (that, size) {
-  assertSize(size)
-  that = createBuffer(that, size < 0 ? 0 : checked(size) | 0)
-  if (!Buffer.TYPED_ARRAY_SUPPORT) {
-    for (var i = 0; i < size; ++i) {
-      that[i] = 0
-    }
-  }
-  return that
-}
-
-/**
- * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
- * */
-Buffer.allocUnsafe = function (size) {
-  return allocUnsafe(null, size)
-}
-/**
- * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
- */
-Buffer.allocUnsafeSlow = function (size) {
-  return allocUnsafe(null, size)
-}
-
-function fromString (that, string, encoding) {
-  if (typeof encoding !== 'string' || encoding === '') {
-    encoding = 'utf8'
-  }
-
-  if (!Buffer.isEncoding(encoding)) {
-    throw new TypeError('"encoding" must be a valid string encoding')
-  }
-
-  var length = byteLength(string, encoding) | 0
-  that = createBuffer(that, length)
-
-  var actual = that.write(string, encoding)
-
-  if (actual !== length) {
-    // Writing a hex string, for example, that contains invalid characters will
-    // cause everything after the first invalid character to be ignored. (e.g.
-    // 'abxxcd' will be treated as 'ab')
-    that = that.slice(0, actual)
-  }
-
-  return that
-}
-
-function fromArrayLike (that, array) {
-  var length = array.length < 0 ? 0 : checked(array.length) | 0
-  that = createBuffer(that, length)
-  for (var i = 0; i < length; i += 1) {
-    that[i] = array[i] & 255
-  }
-  return that
-}
-
-function fromArrayBuffer (that, array, byteOffset, length) {
-  array.byteLength // this throws if `array` is not a valid ArrayBuffer
-
-  if (byteOffset < 0 || array.byteLength < byteOffset) {
-    throw new RangeError('\'offset\' is out of bounds')
-  }
-
-  if (array.byteLength < byteOffset + (length || 0)) {
-    throw new RangeError('\'length\' is out of bounds')
-  }
-
-  if (byteOffset === undefined && length === undefined) {
-    array = new Uint8Array(array)
-  } else if (length === undefined) {
-    array = new Uint8Array(array, byteOffset)
-  } else {
-    array = new Uint8Array(array, byteOffset, length)
-  }
-
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    // Return an augmented `Uint8Array` instance, for best performance
-    that = array
-    that.__proto__ = Buffer.prototype
-  } else {
-    // Fallback: Return an object instance of the Buffer class
-    that = fromArrayLike(that, array)
-  }
-  return that
-}
-
-function fromObject (that, obj) {
-  if (Buffer.isBuffer(obj)) {
-    var len = checked(obj.length) | 0
-    that = createBuffer(that, len)
-
-    if (that.length === 0) {
-      return that
-    }
-
-    obj.copy(that, 0, 0, len)
-    return that
-  }
-
-  if (obj) {
-    if ((typeof ArrayBuffer !== 'undefined' &&
-        obj.buffer instanceof ArrayBuffer) || 'length' in obj) {
-      if (typeof obj.length !== 'number' || isnan(obj.length)) {
-        return createBuffer(that, 0)
-      }
-      return fromArrayLike(that, obj)
-    }
-
-    if (obj.type === 'Buffer' && isArray(obj.data)) {
-      return fromArrayLike(that, obj.data)
-    }
-  }
-
-  throw new TypeError('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.')
-}
-
-function checked (length) {
-  // Note: cannot use `length < kMaxLength()` here because that fails when
-  // length is NaN (which is otherwise coerced to zero.)
-  if (length >= kMaxLength()) {
-    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
-                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
-  }
-  return length | 0
-}
-
-function SlowBuffer (length) {
-  if (+length != length) { // eslint-disable-line eqeqeq
-    length = 0
-  }
-  return Buffer.alloc(+length)
-}
-
-Buffer.isBuffer = function isBuffer (b) {
-  return !!(b != null && b._isBuffer)
-}
-
-Buffer.compare = function compare (a, b) {
-  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
-    throw new TypeError('Arguments must be Buffers')
-  }
-
-  if (a === b) return 0
-
-  var x = a.length
-  var y = b.length
-
-  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
-    if (a[i] !== b[i]) {
-      x = a[i]
-      y = b[i]
-      break
-    }
-  }
-
-  if (x < y) return -1
-  if (y < x) return 1
-  return 0
-}
-
-Buffer.isEncoding = function isEncoding (encoding) {
-  switch (String(encoding).toLowerCase()) {
-    case 'hex':
-    case 'utf8':
-    case 'utf-8':
-    case 'ascii':
-    case 'latin1':
-    case 'binary':
-    case 'base64':
-    case 'ucs2':
-    case 'ucs-2':
-    case 'utf16le':
-    case 'utf-16le':
-      return true
-    default:
-      return false
-  }
-}
-
-Buffer.concat = function concat (list, length) {
-  if (!isArray(list)) {
-    throw new TypeError('"list" argument must be an Array of Buffers')
-  }
-
-  if (list.length === 0) {
-    return Buffer.alloc(0)
-  }
-
-  var i
-  if (length === undefined) {
-    length = 0
-    for (i = 0; i < list.length; ++i) {
-      length += list[i].length
-    }
-  }
-
-  var buffer = Buffer.allocUnsafe(length)
-  var pos = 0
-  for (i = 0; i < list.length; ++i) {
-    var buf = list[i]
-    if (!Buffer.isBuffer(buf)) {
-      throw new TypeError('"list" argument must be an Array of Buffers')
-    }
-    buf.copy(buffer, pos)
-    pos += buf.length
-  }
-  return buffer
-}
-
-function byteLength (string, encoding) {
-  if (Buffer.isBuffer(string)) {
-    return string.length
-  }
-  if (typeof ArrayBuffer !== 'undefined' && typeof ArrayBuffer.isView === 'function' &&
-      (ArrayBuffer.isView(string) || string instanceof ArrayBuffer)) {
-    return string.byteLength
-  }
-  if (typeof string !== 'string') {
-    string = '' + string
-  }
-
-  var len = string.length
-  if (len === 0) return 0
-
-  // Use a for loop to avoid recursion
-  var loweredCase = false
-  for (;;) {
-    switch (encoding) {
-      case 'ascii':
-      case 'latin1':
-      case 'binary':
-        return len
-      case 'utf8':
-      case 'utf-8':
-      case undefined:
-        return utf8ToBytes(string).length
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return len * 2
-      case 'hex':
-        return len >>> 1
-      case 'base64':
-        return base64ToBytes(string).length
-      default:
-        if (loweredCase) return utf8ToBytes(string).length // assume utf8
-        encoding = ('' + encoding).toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-Buffer.byteLength = byteLength
-
-function slowToString (encoding, start, end) {
-  var loweredCase = false
-
-  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
-  // property of a typed array.
-
-  // This behaves neither like String nor Uint8Array in that we set start/end
-  // to their upper/lower bounds if the value passed is out of range.
-  // undefined is handled specially as per ECMA-262 6th Edition,
-  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
-  if (start === undefined || start < 0) {
-    start = 0
-  }
-  // Return early if start > this.length. Done here to prevent potential uint32
-  // coercion fail below.
-  if (start > this.length) {
-    return ''
-  }
-
-  if (end === undefined || end > this.length) {
-    end = this.length
-  }
-
-  if (end <= 0) {
-    return ''
-  }
-
-  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
-  end >>>= 0
-  start >>>= 0
-
-  if (end <= start) {
-    return ''
-  }
-
-  if (!encoding) encoding = 'utf8'
-
-  while (true) {
-    switch (encoding) {
-      case 'hex':
-        return hexSlice(this, start, end)
-
-      case 'utf8':
-      case 'utf-8':
-        return utf8Slice(this, start, end)
-
-      case 'ascii':
-        return asciiSlice(this, start, end)
-
-      case 'latin1':
-      case 'binary':
-        return latin1Slice(this, start, end)
-
-      case 'base64':
-        return base64Slice(this, start, end)
-
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return utf16leSlice(this, start, end)
-
-      default:
-        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
-        encoding = (encoding + '').toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-
-// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
-// Buffer instances.
-Buffer.prototype._isBuffer = true
-
-function swap (b, n, m) {
-  var i = b[n]
-  b[n] = b[m]
-  b[m] = i
-}
-
-Buffer.prototype.swap16 = function swap16 () {
-  var len = this.length
-  if (len % 2 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 16-bits')
-  }
-  for (var i = 0; i < len; i += 2) {
-    swap(this, i, i + 1)
-  }
-  return this
-}
-
-Buffer.prototype.swap32 = function swap32 () {
-  var len = this.length
-  if (len % 4 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 32-bits')
-  }
-  for (var i = 0; i < len; i += 4) {
-    swap(this, i, i + 3)
-    swap(this, i + 1, i + 2)
-  }
-  return this
-}
-
-Buffer.prototype.swap64 = function swap64 () {
-  var len = this.length
-  if (len % 8 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 64-bits')
-  }
-  for (var i = 0; i < len; i += 8) {
-    swap(this, i, i + 7)
-    swap(this, i + 1, i + 6)
-    swap(this, i + 2, i + 5)
-    swap(this, i + 3, i + 4)
-  }
-  return this
-}
-
-Buffer.prototype.toString = function toString () {
-  var length = this.length | 0
-  if (length === 0) return ''
-  if (arguments.length === 0) return utf8Slice(this, 0, length)
-  return slowToString.apply(this, arguments)
-}
-
-Buffer.prototype.equals = function equals (b) {
-  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
-  if (this === b) return true
-  return Buffer.compare(this, b) === 0
-}
-
-Buffer.prototype.inspect = function inspect () {
-  var str = ''
-  var max = exports.INSPECT_MAX_BYTES
-  if (this.length > 0) {
-    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
-    if (this.length > max) str += ' ... '
-  }
-  return '<Buffer ' + str + '>'
-}
-
-Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
-  if (!Buffer.isBuffer(target)) {
-    throw new TypeError('Argument must be a Buffer')
-  }
-
-  if (start === undefined) {
-    start = 0
-  }
-  if (end === undefined) {
-    end = target ? target.length : 0
-  }
-  if (thisStart === undefined) {
-    thisStart = 0
-  }
-  if (thisEnd === undefined) {
-    thisEnd = this.length
-  }
-
-  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
-    throw new RangeError('out of range index')
-  }
-
-  if (thisStart >= thisEnd && start >= end) {
-    return 0
-  }
-  if (thisStart >= thisEnd) {
-    return -1
-  }
-  if (start >= end) {
-    return 1
-  }
-
-  start >>>= 0
-  end >>>= 0
-  thisStart >>>= 0
-  thisEnd >>>= 0
-
-  if (this === target) return 0
-
-  var x = thisEnd - thisStart
-  var y = end - start
-  var len = Math.min(x, y)
-
-  var thisCopy = this.slice(thisStart, thisEnd)
-  var targetCopy = target.slice(start, end)
-
-  for (var i = 0; i < len; ++i) {
-    if (thisCopy[i] !== targetCopy[i]) {
-      x = thisCopy[i]
-      y = targetCopy[i]
-      break
-    }
-  }
-
-  if (x < y) return -1
-  if (y < x) return 1
-  return 0
-}
-
-// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
-// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
-//
-// Arguments:
-// - buffer - a Buffer to search
-// - val - a string, Buffer, or number
-// - byteOffset - an index into `buffer`; will be clamped to an int32
-// - encoding - an optional encoding, relevant is val is a string
-// - dir - true for indexOf, false for lastIndexOf
-function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
-  // Empty buffer means no match
-  if (buffer.length === 0) return -1
-
-  // Normalize byteOffset
-  if (typeof byteOffset === 'string') {
-    encoding = byteOffset
-    byteOffset = 0
-  } else if (byteOffset > 0x7fffffff) {
-    byteOffset = 0x7fffffff
-  } else if (byteOffset < -0x80000000) {
-    byteOffset = -0x80000000
-  }
-  byteOffset = +byteOffset  // Coerce to Number.
-  if (isNaN(byteOffset)) {
-    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
-    byteOffset = dir ? 0 : (buffer.length - 1)
-  }
-
-  // Normalize byteOffset: negative offsets start from the end of the buffer
-  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
-  if (byteOffset >= buffer.length) {
-    if (dir) return -1
-    else byteOffset = buffer.length - 1
-  } else if (byteOffset < 0) {
-    if (dir) byteOffset = 0
-    else return -1
-  }
-
-  // Normalize val
-  if (typeof val === 'string') {
-    val = Buffer.from(val, encoding)
-  }
-
-  // Finally, search either indexOf (if dir is true) or lastIndexOf
-  if (Buffer.isBuffer(val)) {
-    // Special case: looking for empty string/buffer always fails
-    if (val.length === 0) {
-      return -1
-    }
-    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
-  } else if (typeof val === 'number') {
-    val = val & 0xFF // Search for a byte value [0-255]
-    if (Buffer.TYPED_ARRAY_SUPPORT &&
-        typeof Uint8Array.prototype.indexOf === 'function') {
-      if (dir) {
-        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
-      } else {
-        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
-      }
-    }
-    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
-  }
-
-  throw new TypeError('val must be string, number or Buffer')
-}
-
-function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
-  var indexSize = 1
-  var arrLength = arr.length
-  var valLength = val.length
-
-  if (encoding !== undefined) {
-    encoding = String(encoding).toLowerCase()
-    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
-        encoding === 'utf16le' || encoding === 'utf-16le') {
-      if (arr.length < 2 || val.length < 2) {
-        return -1
-      }
-      indexSize = 2
-      arrLength /= 2
-      valLength /= 2
-      byteOffset /= 2
-    }
-  }
-
-  function read (buf, i) {
-    if (indexSize === 1) {
-      return buf[i]
-    } else {
-      return buf.readUInt16BE(i * indexSize)
-    }
-  }
-
-  var i
-  if (dir) {
-    var foundIndex = -1
-    for (i = byteOffset; i < arrLength; i++) {
-      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
-        if (foundIndex === -1) foundIndex = i
-        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
-      } else {
-        if (foundIndex !== -1) i -= i - foundIndex
-        foundIndex = -1
-      }
-    }
-  } else {
-    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
-    for (i = byteOffset; i >= 0; i--) {
-      var found = true
-      for (var j = 0; j < valLength; j++) {
-        if (read(arr, i + j) !== read(val, j)) {
-          found = false
-          break
-        }
-      }
-      if (found) return i
-    }
-  }
-
-  return -1
-}
-
-Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
-  return this.indexOf(val, byteOffset, encoding) !== -1
-}
-
-Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
-  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
-}
-
-Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
-  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
-}
-
-function hexWrite (buf, string, offset, length) {
-  offset = Number(offset) || 0
-  var remaining = buf.length - offset
-  if (!length) {
-    length = remaining
-  } else {
-    length = Number(length)
-    if (length > remaining) {
-      length = remaining
-    }
-  }
-
-  // must be an even number of digits
-  var strLen = string.length
-  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
-
-  if (length > strLen / 2) {
-    length = strLen / 2
-  }
-  for (var i = 0; i < length; ++i) {
-    var parsed = parseInt(string.substr(i * 2, 2), 16)
-    if (isNaN(parsed)) return i
-    buf[offset + i] = parsed
-  }
-  return i
-}
-
-function utf8Write (buf, string, offset, length) {
-  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
-}
-
-function asciiWrite (buf, string, offset, length) {
-  return blitBuffer(asciiToBytes(string), buf, offset, length)
-}
-
-function latin1Write (buf, string, offset, length) {
-  return asciiWrite(buf, string, offset, length)
-}
-
-function base64Write (buf, string, offset, length) {
-  return blitBuffer(base64ToBytes(string), buf, offset, length)
-}
-
-function ucs2Write (buf, string, offset, length) {
-  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
-}
-
-Buffer.prototype.write = function write (string, offset, length, encoding) {
-  // Buffer#write(string)
-  if (offset === undefined) {
-    encoding = 'utf8'
-    length = this.length
-    offset = 0
-  // Buffer#write(string, encoding)
-  } else if (length === undefined && typeof offset === 'string') {
-    encoding = offset
-    length = this.length
-    offset = 0
-  // Buffer#write(string, offset[, length][, encoding])
-  } else if (isFinite(offset)) {
-    offset = offset | 0
-    if (isFinite(length)) {
-      length = length | 0
-      if (encoding === undefined) encoding = 'utf8'
-    } else {
-      encoding = length
-      length = undefined
-    }
-  // legacy write(string, encoding, offset, length) - remove in v0.13
-  } else {
-    throw new Error(
-      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
-    )
-  }
-
-  var remaining = this.length - offset
-  if (length === undefined || length > remaining) length = remaining
-
-  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
-    throw new RangeError('Attempt to write outside buffer bounds')
-  }
-
-  if (!encoding) encoding = 'utf8'
-
-  var loweredCase = false
-  for (;;) {
-    switch (encoding) {
-      case 'hex':
-        return hexWrite(this, string, offset, length)
-
-      case 'utf8':
-      case 'utf-8':
-        return utf8Write(this, string, offset, length)
-
-      case 'ascii':
-        return asciiWrite(this, string, offset, length)
-
-      case 'latin1':
-      case 'binary':
-        return latin1Write(this, string, offset, length)
-
-      case 'base64':
-        // Warning: maxLength not taken into account in base64Write
-        return base64Write(this, string, offset, length)
-
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return ucs2Write(this, string, offset, length)
-
-      default:
-        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
-        encoding = ('' + encoding).toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-
-Buffer.prototype.toJSON = function toJSON () {
-  return {
-    type: 'Buffer',
-    data: Array.prototype.slice.call(this._arr || this, 0)
-  }
-}
-
-function base64Slice (buf, start, end) {
-  if (start === 0 && end === buf.length) {
-    return base64.fromByteArray(buf)
-  } else {
-    return base64.fromByteArray(buf.slice(start, end))
-  }
-}
-
-function utf8Slice (buf, start, end) {
-  end = Math.min(buf.length, end)
-  var res = []
-
-  var i = start
-  while (i < end) {
-    var firstByte = buf[i]
-    var codePoint = null
-    var bytesPerSequence = (firstByte > 0xEF) ? 4
-      : (firstByte > 0xDF) ? 3
-      : (firstByte > 0xBF) ? 2
-      : 1
-
-    if (i + bytesPerSequence <= end) {
-      var secondByte, thirdByte, fourthByte, tempCodePoint
-
-      switch (bytesPerSequence) {
-        case 1:
-          if (firstByte < 0x80) {
-            codePoint = firstByte
-          }
-          break
-        case 2:
-          secondByte = buf[i + 1]
-          if ((secondByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
-            if (tempCodePoint > 0x7F) {
-              codePoint = tempCodePoint
-            }
-          }
-          break
-        case 3:
-          secondByte = buf[i + 1]
-          thirdByte = buf[i + 2]
-          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
-            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
-              codePoint = tempCodePoint
-            }
-          }
-          break
-        case 4:
-          secondByte = buf[i + 1]
-          thirdByte = buf[i + 2]
-          fourthByte = buf[i + 3]
-          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
-            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
-              codePoint = tempCodePoint
-            }
-          }
-      }
-    }
-
-    if (codePoint === null) {
-      // we did not generate a valid codePoint so insert a
-      // replacement char (U+FFFD) and advance only 1 byte
-      codePoint = 0xFFFD
-      bytesPerSequence = 1
-    } else if (codePoint > 0xFFFF) {
-      // encode to utf16 (surrogate pair dance)
-      codePoint -= 0x10000
-      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
-      codePoint = 0xDC00 | codePoint & 0x3FF
-    }
-
-    res.push(codePoint)
-    i += bytesPerSequence
-  }
-
-  return decodeCodePointsArray(res)
-}
-
-// Based on http://stackoverflow.com/a/22747272/680742, the browser with
-// the lowest limit is Chrome, with 0x10000 args.
-// We go 1 magnitude less, for safety
-var MAX_ARGUMENTS_LENGTH = 0x1000
-
-function decodeCodePointsArray (codePoints) {
-  var len = codePoints.length
-  if (len <= MAX_ARGUMENTS_LENGTH) {
-    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
-  }
-
-  // Decode in chunks to avoid "call stack size exceeded".
-  var res = ''
-  var i = 0
-  while (i < len) {
-    res += String.fromCharCode.apply(
-      String,
-      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
-    )
-  }
-  return res
-}
-
-function asciiSlice (buf, start, end) {
-  var ret = ''
-  end = Math.min(buf.length, end)
-
-  for (var i = start; i < end; ++i) {
-    ret += String.fromCharCode(buf[i] & 0x7F)
-  }
-  return ret
-}
-
-function latin1Slice (buf, start, end) {
-  var ret = ''
-  end = Math.min(buf.length, end)
-
-  for (var i = start; i < end; ++i) {
-    ret += String.fromCharCode(buf[i])
-  }
-  return ret
-}
-
-function hexSlice (buf, start, end) {
-  var len = buf.length
-
-  if (!start || start < 0) start = 0
-  if (!end || end < 0 || end > len) end = len
-
-  var out = ''
-  for (var i = start; i < end; ++i) {
-    out += toHex(buf[i])
-  }
-  return out
-}
-
-function utf16leSlice (buf, start, end) {
-  var bytes = buf.slice(start, end)
-  var res = ''
-  for (var i = 0; i < bytes.length; i += 2) {
-    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
-  }
-  return res
-}
-
-Buffer.prototype.slice = function slice (start, end) {
-  var len = this.length
-  start = ~~start
-  end = end === undefined ? len : ~~end
-
-  if (start < 0) {
-    start += len
-    if (start < 0) start = 0
-  } else if (start > len) {
-    start = len
-  }
-
-  if (end < 0) {
-    end += len
-    if (end < 0) end = 0
-  } else if (end > len) {
-    end = len
-  }
-
-  if (end < start) end = start
-
-  var newBuf
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    newBuf = this.subarray(start, end)
-    newBuf.__proto__ = Buffer.prototype
-  } else {
-    var sliceLen = end - start
-    newBuf = new Buffer(sliceLen, undefined)
-    for (var i = 0; i < sliceLen; ++i) {
-      newBuf[i] = this[i + start]
-    }
-  }
-
-  return newBuf
-}
-
-/*
- * Need to make sure that buffer isn't trying to write out of bounds.
- */
-function checkOffset (offset, ext, length) {
-  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
-  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
-}
-
-Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var val = this[offset]
-  var mul = 1
-  var i = 0
-  while (++i < byteLength && (mul *= 0x100)) {
-    val += this[offset + i] * mul
-  }
-
-  return val
-}
-
-Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) {
-    checkOffset(offset, byteLength, this.length)
-  }
-
-  var val = this[offset + --byteLength]
-  var mul = 1
-  while (byteLength > 0 && (mul *= 0x100)) {
-    val += this[offset + --byteLength] * mul
-  }
-
-  return val
-}
-
-Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 1, this.length)
-  return this[offset]
-}
-
-Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  return this[offset] | (this[offset + 1] << 8)
-}
-
-Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  return (this[offset] << 8) | this[offset + 1]
-}
-
-Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return ((this[offset]) |
-      (this[offset + 1] << 8) |
-      (this[offset + 2] << 16)) +
-      (this[offset + 3] * 0x1000000)
-}
-
-Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset] * 0x1000000) +
-    ((this[offset + 1] << 16) |
-    (this[offset + 2] << 8) |
-    this[offset + 3])
-}
-
-Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var val = this[offset]
-  var mul = 1
-  var i = 0
-  while (++i < byteLength && (mul *= 0x100)) {
-    val += this[offset + i] * mul
-  }
-  mul *= 0x80
-
-  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
-
-  return val
-}
-
-Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var i = byteLength
-  var mul = 1
-  var val = this[offset + --i]
-  while (i > 0 && (mul *= 0x100)) {
-    val += this[offset + --i] * mul
-  }
-  mul *= 0x80
-
-  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
-
-  return val
-}
-
-Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 1, this.length)
-  if (!(this[offset] & 0x80)) return (this[offset])
-  return ((0xff - this[offset] + 1) * -1)
-}
-
-Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  var val = this[offset] | (this[offset + 1] << 8)
-  return (val & 0x8000) ? val | 0xFFFF0000 : val
-}
-
-Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  var val = this[offset + 1] | (this[offset] << 8)
-  return (val & 0x8000) ? val | 0xFFFF0000 : val
-}
-
-Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset]) |
-    (this[offset + 1] << 8) |
-    (this[offset + 2] << 16) |
-    (this[offset + 3] << 24)
-}
-
-Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset] << 24) |
-    (this[offset + 1] << 16) |
-    (this[offset + 2] << 8) |
-    (this[offset + 3])
-}
-
-Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-  return ieee754.read(this, offset, true, 23, 4)
-}
-
-Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-  return ieee754.read(this, offset, false, 23, 4)
-}
-
-Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 8, this.length)
-  return ieee754.read(this, offset, true, 52, 8)
-}
-
-Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 8, this.length)
-  return ieee754.read(this, offset, false, 52, 8)
-}
-
-function checkInt (buf, value, offset, ext, max, min) {
-  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
-  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
-  if (offset + ext > buf.length) throw new RangeError('Index out of range')
-}
-
-Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) {
-    var maxBytes = Math.pow(2, 8 * byteLength) - 1
-    checkInt(this, value, offset, byteLength, maxBytes, 0)
-  }
-
-  var mul = 1
-  var i = 0
-  this[offset] = value & 0xFF
-  while (++i < byteLength && (mul *= 0x100)) {
-    this[offset + i] = (value / mul) & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) {
-    var maxBytes = Math.pow(2, 8 * byteLength) - 1
-    checkInt(this, value, offset, byteLength, maxBytes, 0)
-  }
-
-  var i = byteLength - 1
-  var mul = 1
-  this[offset + i] = value & 0xFF
-  while (--i >= 0 && (mul *= 0x100)) {
-    this[offset + i] = (value / mul) & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
-  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
-  this[offset] = (value & 0xff)
-  return offset + 1
-}
-
-function objectWriteUInt16 (buf, value, offset, littleEndian) {
-  if (value < 0) value = 0xffff + value + 1
-  for (var i = 0, j = Math.min(buf.length - offset, 2); i < j; ++i) {
-    buf[offset + i] = (value & (0xff << (8 * (littleEndian ? i : 1 - i)))) >>>
-      (littleEndian ? i : 1 - i) * 8
-  }
-}
-
-Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value & 0xff)
-    this[offset + 1] = (value >>> 8)
-  } else {
-    objectWriteUInt16(this, value, offset, true)
-  }
-  return offset + 2
-}
-
-Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value >>> 8)
-    this[offset + 1] = (value & 0xff)
-  } else {
-    objectWriteUInt16(this, value, offset, false)
-  }
-  return offset + 2
-}
-
-function objectWriteUInt32 (buf, value, offset, littleEndian) {
-  if (value < 0) value = 0xffffffff + value + 1
-  for (var i = 0, j = Math.min(buf.length - offset, 4); i < j; ++i) {
-    buf[offset + i] = (value >>> (littleEndian ? i : 3 - i) * 8) & 0xff
-  }
-}
-
-Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset + 3] = (value >>> 24)
-    this[offset + 2] = (value >>> 16)
-    this[offset + 1] = (value >>> 8)
-    this[offset] = (value & 0xff)
-  } else {
-    objectWriteUInt32(this, value, offset, true)
-  }
-  return offset + 4
-}
-
-Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value >>> 24)
-    this[offset + 1] = (value >>> 16)
-    this[offset + 2] = (value >>> 8)
-    this[offset + 3] = (value & 0xff)
-  } else {
-    objectWriteUInt32(this, value, offset, false)
-  }
-  return offset + 4
-}
-
-Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) {
-    var limit = Math.pow(2, 8 * byteLength - 1)
-
-    checkInt(this, value, offset, byteLength, limit - 1, -limit)
-  }
-
-  var i = 0
-  var mul = 1
-  var sub = 0
-  this[offset] = value & 0xFF
-  while (++i < byteLength && (mul *= 0x100)) {
-    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
-      sub = 1
-    }
-    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) {
-    var limit = Math.pow(2, 8 * byteLength - 1)
-
-    checkInt(this, value, offset, byteLength, limit - 1, -limit)
-  }
-
-  var i = byteLength - 1
-  var mul = 1
-  var sub = 0
-  this[offset + i] = value & 0xFF
-  while (--i >= 0 && (mul *= 0x100)) {
-    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
-      sub = 1
-    }
-    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
-  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
-  if (value < 0) value = 0xff + value + 1
-  this[offset] = (value & 0xff)
-  return offset + 1
-}
-
-Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value & 0xff)
-    this[offset + 1] = (value >>> 8)
-  } else {
-    objectWriteUInt16(this, value, offset, true)
-  }
-  return offset + 2
-}
-
-Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value >>> 8)
-    this[offset + 1] = (value & 0xff)
-  } else {
-    objectWriteUInt16(this, value, offset, false)
-  }
-  return offset + 2
-}
-
-Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value & 0xff)
-    this[offset + 1] = (value >>> 8)
-    this[offset + 2] = (value >>> 16)
-    this[offset + 3] = (value >>> 24)
-  } else {
-    objectWriteUInt32(this, value, offset, true)
-  }
-  return offset + 4
-}
-
-Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
-  if (value < 0) value = 0xffffffff + value + 1
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value >>> 24)
-    this[offset + 1] = (value >>> 16)
-    this[offset + 2] = (value >>> 8)
-    this[offset + 3] = (value & 0xff)
-  } else {
-    objectWriteUInt32(this, value, offset, false)
-  }
-  return offset + 4
-}
-
-function checkIEEE754 (buf, value, offset, ext, max, min) {
-  if (offset + ext > buf.length) throw new RangeError('Index out of range')
-  if (offset < 0) throw new RangeError('Index out of range')
-}
-
-function writeFloat (buf, value, offset, littleEndian, noAssert) {
-  if (!noAssert) {
-    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
-  }
-  ieee754.write(buf, value, offset, littleEndian, 23, 4)
-  return offset + 4
-}
-
-Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
-  return writeFloat(this, value, offset, true, noAssert)
-}
-
-Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
-  return writeFloat(this, value, offset, false, noAssert)
-}
-
-function writeDouble (buf, value, offset, littleEndian, noAssert) {
-  if (!noAssert) {
-    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
-  }
-  ieee754.write(buf, value, offset, littleEndian, 52, 8)
-  return offset + 8
-}
-
-Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
-  return writeDouble(this, value, offset, true, noAssert)
-}
-
-Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
-  return writeDouble(this, value, offset, false, noAssert)
-}
-
-// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
-Buffer.prototype.copy = function copy (target, targetStart, start, end) {
-  if (!start) start = 0
-  if (!end && end !== 0) end = this.length
-  if (targetStart >= target.length) targetStart = target.length
-  if (!targetStart) targetStart = 0
-  if (end > 0 && end < start) end = start
-
-  // Copy 0 bytes; we're done
-  if (end === start) return 0
-  if (target.length === 0 || this.length === 0) return 0
-
-  // Fatal error conditions
-  if (targetStart < 0) {
-    throw new RangeError('targetStart out of bounds')
-  }
-  if (start < 0 || start >= this.length) throw new RangeError('sourceStart out of bounds')
-  if (end < 0) throw new RangeError('sourceEnd out of bounds')
-
-  // Are we oob?
-  if (end > this.length) end = this.length
-  if (target.length - targetStart < end - start) {
-    end = target.length - targetStart + start
-  }
-
-  var len = end - start
-  var i
-
-  if (this === target && start < targetStart && targetStart < end) {
-    // descending copy from end
-    for (i = len - 1; i >= 0; --i) {
-      target[i + targetStart] = this[i + start]
-    }
-  } else if (len < 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
-    // ascending copy from start
-    for (i = 0; i < len; ++i) {
-      target[i + targetStart] = this[i + start]
-    }
-  } else {
-    Uint8Array.prototype.set.call(
-      target,
-      this.subarray(start, start + len),
-      targetStart
-    )
-  }
-
-  return len
-}
-
-// Usage:
-//    buffer.fill(number[, offset[, end]])
-//    buffer.fill(buffer[, offset[, end]])
-//    buffer.fill(string[, offset[, end]][, encoding])
-Buffer.prototype.fill = function fill (val, start, end, encoding) {
-  // Handle string cases:
-  if (typeof val === 'string') {
-    if (typeof start === 'string') {
-      encoding = start
-      start = 0
-      end = this.length
-    } else if (typeof end === 'string') {
-      encoding = end
-      end = this.length
-    }
-    if (val.length === 1) {
-      var code = val.charCodeAt(0)
-      if (code < 256) {
-        val = code
-      }
-    }
-    if (encoding !== undefined && typeof encoding !== 'string') {
-      throw new TypeError('encoding must be a string')
-    }
-    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
-      throw new TypeError('Unknown encoding: ' + encoding)
-    }
-  } else if (typeof val === 'number') {
-    val = val & 255
-  }
-
-  // Invalid ranges are not set to a default, so can range check early.
-  if (start < 0 || this.length < start || this.length < end) {
-    throw new RangeError('Out of range index')
-  }
-
-  if (end <= start) {
-    return this
-  }
-
-  start = start >>> 0
-  end = end === undefined ? this.length : end >>> 0
-
-  if (!val) val = 0
-
-  var i
-  if (typeof val === 'number') {
-    for (i = start; i < end; ++i) {
-      this[i] = val
-    }
-  } else {
-    var bytes = Buffer.isBuffer(val)
-      ? val
-      : utf8ToBytes(new Buffer(val, encoding).toString())
-    var len = bytes.length
-    for (i = 0; i < end - start; ++i) {
-      this[i + start] = bytes[i % len]
-    }
-  }
-
-  return this
-}
-
-// HELPER FUNCTIONS
-// ================
-
-var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
-
-function base64clean (str) {
-  // Node strips out invalid characters like \n and \t from the string, base64-js does not
-  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
-  // Node converts strings with length < 2 to ''
-  if (str.length < 2) return ''
-  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
-  while (str.length % 4 !== 0) {
-    str = str + '='
-  }
-  return str
-}
-
-function stringtrim (str) {
-  if (str.trim) return str.trim()
-  return str.replace(/^\s+|\s+$/g, '')
-}
-
-function toHex (n) {
-  if (n < 16) return '0' + n.toString(16)
-  return n.toString(16)
-}
-
-function utf8ToBytes (string, units) {
-  units = units || Infinity
-  var codePoint
-  var length = string.length
-  var leadSurrogate = null
-  var bytes = []
-
-  for (var i = 0; i < length; ++i) {
-    codePoint = string.charCodeAt(i)
-
-    // is surrogate component
-    if (codePoint > 0xD7FF && codePoint < 0xE000) {
-      // last char was a lead
-      if (!leadSurrogate) {
-        // no lead yet
-        if (codePoint > 0xDBFF) {
-          // unexpected trail
-          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-          continue
-        } else if (i + 1 === length) {
-          // unpaired lead
-          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-          continue
-        }
-
-        // valid lead
-        leadSurrogate = codePoint
-
-        continue
-      }
-
-      // 2 leads in a row
-      if (codePoint < 0xDC00) {
-        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-        leadSurrogate = codePoint
-        continue
-      }
-
-      // valid surrogate pair
-      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
-    } else if (leadSurrogate) {
-      // valid bmp char, but last char was a lead
-      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-    }
-
-    leadSurrogate = null
-
-    // encode utf8
-    if (codePoint < 0x80) {
-      if ((units -= 1) < 0) break
-      bytes.push(codePoint)
-    } else if (codePoint < 0x800) {
-      if ((units -= 2) < 0) break
-      bytes.push(
-        codePoint >> 0x6 | 0xC0,
-        codePoint & 0x3F | 0x80
-      )
-    } else if (codePoint < 0x10000) {
-      if ((units -= 3) < 0) break
-      bytes.push(
-        codePoint >> 0xC | 0xE0,
-        codePoint >> 0x6 & 0x3F | 0x80,
-        codePoint & 0x3F | 0x80
-      )
-    } else if (codePoint < 0x110000) {
-      if ((units -= 4) < 0) break
-      bytes.push(
-        codePoint >> 0x12 | 0xF0,
-        codePoint >> 0xC & 0x3F | 0x80,
-        codePoint >> 0x6 & 0x3F | 0x80,
-        codePoint & 0x3F | 0x80
-      )
-    } else {
-      throw new Error('Invalid code point')
-    }
-  }
-
-  return bytes
-}
-
-function asciiToBytes (str) {
-  var byteArray = []
-  for (var i = 0; i < str.length; ++i) {
-    // Node's code seems to be doing this and not & 0x7F..
-    byteArray.push(str.charCodeAt(i) & 0xFF)
-  }
-  return byteArray
-}
-
-function utf16leToBytes (str, units) {
-  var c, hi, lo
-  var byteArray = []
-  for (var i = 0; i < str.length; ++i) {
-    if ((units -= 2) < 0) break
-
-    c = str.charCodeAt(i)
-    hi = c >> 8
-    lo = c % 256
-    byteArray.push(lo)
-    byteArray.push(hi)
-  }
-
-  return byteArray
-}
-
-function base64ToBytes (str) {
-  return base64.toByteArray(base64clean(str))
-}
-
-function blitBuffer (src, dst, offset, length) {
-  for (var i = 0; i < length; ++i) {
-    if ((i + offset >= dst.length) || (i >= src.length)) break
-    dst[i + offset] = src[i]
-  }
-  return i
-}
-
-function isnan (val) {
-  return val !== val // eslint-disable-line no-self-compare
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23)))
-
-/***/ }),
-/* 91 */
-/***/ (function(module, exports) {
-
-var toString = {}.toString;
-
-module.exports = Array.isArray || function (arr) {
-  return toString.call(arr) == '[object Array]';
-};
-
-
-/***/ }),
-/* 92 */
-/***/ (function(module, exports, __webpack_require__) {
-
-(function () {
-    "use strict";
-
-    // Module systems magic dance.
-
-    /* istanbul ignore else */
-    if (true) {
-        // NodeJS
-        module.exports = chaiAsPromised;
-    } else if (typeof define === "function" && define.amd) {
-        // AMD
-        define(function () {
-            return chaiAsPromised;
-        });
-    } else {
-        /*global self: false */
-
-        // Other environment (usually <script> tag): plug in to global chai instance directly.
-        chai.use(chaiAsPromised);
-
-        // Expose as a property of the global object so that consumers can configure the `transferPromiseness` property.
-        self.chaiAsPromised = chaiAsPromised;
-    }
-
-    chaiAsPromised.transferPromiseness = function (assertion, promise) {
-        assertion.then = promise.then.bind(promise);
-    };
-
-    chaiAsPromised.transformAsserterArgs = function (values) {
-        return values;
-    };
-
-    function chaiAsPromised(chai, utils) {
-        var Assertion = chai.Assertion;
-        var assert = chai.assert;
-
-        function isLegacyJQueryPromise(thenable) {
-            // jQuery promises are Promises/A+-compatible since 3.0.0. jQuery 3.0.0 is also the first version
-            // to define the catch method.
-            return typeof thenable.catch !== "function" &&
-                   typeof thenable.always === "function" &&
-                   typeof thenable.done === "function" &&
-                   typeof thenable.fail === "function" &&
-                   typeof thenable.pipe === "function" &&
-                   typeof thenable.progress === "function" &&
-                   typeof thenable.state === "function";
-        }
-
-        function assertIsAboutPromise(assertion) {
-            if (typeof assertion._obj.then !== "function") {
-                throw new TypeError(utils.inspect(assertion._obj) + " is not a thenable.");
-            }
-            if (isLegacyJQueryPromise(assertion._obj)) {
-                throw new TypeError("Chai as Promised is incompatible with thenables of jQuery<3.0.0, sorry! Please " +
-                                    "upgrade jQuery or use another Promises/A+ compatible library (see " +
-                                    "http://promisesaplus.com/).");
-            }
-        }
-
-        function method(name, asserter) {
-            utils.addMethod(Assertion.prototype, name, function () {
-                assertIsAboutPromise(this);
-                return asserter.apply(this, arguments);
-            });
-        }
-
-        function property(name, asserter) {
-            utils.addProperty(Assertion.prototype, name, function () {
-                assertIsAboutPromise(this);
-                return asserter.apply(this, arguments);
-            });
-        }
-
-        function doNotify(promise, done) {
-            promise.then(function () { done(); }, done);
-        }
-
-        // These are for clarity and to bypass Chai refusing to allow `undefined` as actual when used with `assert`.
-        function assertIfNegated(assertion, message, extra) {
-            assertion.assert(true, null, message, extra.expected, extra.actual);
-        }
-
-        function assertIfNotNegated(assertion, message, extra) {
-            assertion.assert(false, message, null, extra.expected, extra.actual);
-        }
-
-        function getBasePromise(assertion) {
-            // We need to chain subsequent asserters on top of ones in the chain already (consider
-            // `eventually.have.property("foo").that.equals("bar")`), only running them after the existing ones pass.
-            // So the first base-promise is `assertion._obj`, but after that we use the assertions themselves, i.e.
-            // previously derived promises, to chain off of.
-            return typeof assertion.then === "function" ? assertion : assertion._obj;
-        }
-
-        // Grab these first, before we modify `Assertion.prototype`.
-
-        var propertyNames = Object.getOwnPropertyNames(Assertion.prototype);
-
-        var propertyDescs = {};
-        propertyNames.forEach(function (name) {
-            propertyDescs[name] = Object.getOwnPropertyDescriptor(Assertion.prototype, name);
-        });
-
-        property("fulfilled", function () {
-            var that = this;
-            var derivedPromise = getBasePromise(that).then(
-                function (value) {
-                    that._obj = value;
-                    assertIfNegated(that,
-                                    "expected promise not to be fulfilled but it was fulfilled with #{act}",
-                                    { actual: value });
-                    return value;
-                },
-                function (reason) {
-                    assertIfNotNegated(that,
-                                       "expected promise to be fulfilled but it was rejected with #{act}",
-                                       { actual: reason });
-                }
-            );
-
-            chaiAsPromised.transferPromiseness(that, derivedPromise);
-        });
-
-        property("rejected", function () {
-            var that = this;
-            var derivedPromise = getBasePromise(that).then(
-                function (value) {
-                    that._obj = value;
-                    assertIfNotNegated(that,
-                                       "expected promise to be rejected but it was fulfilled with #{act}",
-                                       { actual: value });
-                    return value;
-                },
-                function (reason) {
-                    assertIfNegated(that,
-                                    "expected promise not to be rejected but it was rejected with #{act}",
-                                    { actual: reason });
-
-                    // Return the reason, transforming this into a fulfillment, to allow further assertions, e.g.
-                    // `promise.should.be.rejected.and.eventually.equal("reason")`.
-                    return reason;
-                }
-            );
-
-            chaiAsPromised.transferPromiseness(that, derivedPromise);
-        });
-
-        method("rejectedWith", function (Constructor, message) {
-            var desiredReason = null;
-            var constructorName = null;
-
-            if (Constructor instanceof RegExp || typeof Constructor === "string") {
-                message = Constructor;
-                Constructor = null;
-            } else if (Constructor && Constructor instanceof Error) {
-                desiredReason = Constructor;
-                Constructor = null;
-                message = null;
-            } else if (typeof Constructor === "function") {
-                constructorName = (new Constructor()).name;
-            } else {
-                Constructor = null;
-            }
-
-            var that = this;
-            var derivedPromise = getBasePromise(that).then(
-                function (value) {
-                    var assertionMessage = null;
-                    var expected = null;
-
-                    if (Constructor) {
-                        assertionMessage = "expected promise to be rejected with #{exp} but it was fulfilled with " +
-                                           "#{act}";
-                        expected = constructorName;
-                    } else if (message) {
-                        var verb = message instanceof RegExp ? "matching" : "including";
-                        assertionMessage = "expected promise to be rejected with an error " + verb + " #{exp} but it " +
-                                           "was fulfilled with #{act}";
-                        expected = message;
-                    } else if (desiredReason) {
-                        assertionMessage = "expected promise to be rejected with #{exp} but it was fulfilled with " +
-                                           "#{act}";
-                        expected = desiredReason;
-                    }
-
-                    that._obj = value;
-
-                    assertIfNotNegated(that, assertionMessage, { expected: expected, actual: value });
-                },
-                function (reason) {
-                    if (Constructor) {
-                        that.assert(reason instanceof Constructor,
-                                    "expected promise to be rejected with #{exp} but it was rejected with #{act}",
-                                    "expected promise not to be rejected with #{exp} but it was rejected with #{act}",
-                                    constructorName,
-                                    reason);
-                    }
-
-                    var reasonMessage = utils.type(reason) === "object" && "message" in reason ?
-                                            reason.message :
-                                            "" + reason;
-                    if (message && reasonMessage !== null && reasonMessage !== undefined) {
-                        if (message instanceof RegExp) {
-                            that.assert(message.test(reasonMessage),
-                                        "expected promise to be rejected with an error matching #{exp} but got #{act}",
-                                        "expected promise not to be rejected with an error matching #{exp}",
-                                        message,
-                                        reasonMessage);
-                        }
-                        if (typeof message === "string") {
-                            that.assert(reasonMessage.indexOf(message) !== -1,
-                                        "expected promise to be rejected with an error including #{exp} but got #{act}",
-                                        "expected promise not to be rejected with an error including #{exp}",
-                                        message,
-                                        reasonMessage);
-                        }
-                    }
-
-                    if (desiredReason) {
-                        that.assert(reason === desiredReason,
-                                    "expected promise to be rejected with #{exp} but it was rejected with #{act}",
-                                    "expected promise not to be rejected with #{exp}",
-                                    desiredReason,
-                                    reason);
-                    }
-                }
-            );
-
-            chaiAsPromised.transferPromiseness(that, derivedPromise);
-        });
-
-        property("eventually", function () {
-            utils.flag(this, "eventually", true);
-        });
-
-        method("notify", function (done) {
-            doNotify(getBasePromise(this), done);
-        });
-
-        method("become", function (value, message) {
-            return this.eventually.deep.equal(value, message);
-        });
-
-        ////////
-        // `eventually`
-
-        // We need to be careful not to trigger any getters, thus `Object.getOwnPropertyDescriptor` usage.
-        var methodNames = propertyNames.filter(function (name) {
-            return name !== "assert" && typeof propertyDescs[name].value === "function";
-        });
-
-        methodNames.forEach(function (methodName) {
-            Assertion.overwriteMethod(methodName, function (originalMethod) {
-                return function () {
-                    doAsserterAsyncAndAddThen(originalMethod, this, arguments);
-                };
-            });
-        });
-
-        var getterNames = propertyNames.filter(function (name) {
-            return name !== "_obj" && typeof propertyDescs[name].get === "function";
-        });
-
-        getterNames.forEach(function (getterName) {
-            // Chainable methods are things like `an`, which can work both for `.should.be.an.instanceOf` and as
-            // `should.be.an("object")`. We need to handle those specially.
-            var isChainableMethod = Assertion.prototype.__methods.hasOwnProperty(getterName);
-
-            if (isChainableMethod) {
-                Assertion.overwriteChainableMethod(
-                    getterName,
-                    function (originalMethod) {
-                        return function() {
-                            doAsserterAsyncAndAddThen(originalMethod, this, arguments);
-                        };
-                    },
-                    function (originalGetter) {
-                        return function() {
-                            doAsserterAsyncAndAddThen(originalGetter, this);
-                        };
-                    }
-                );
-            } else {
-                Assertion.overwriteProperty(getterName, function (originalGetter) {
-                    return function () {
-                        doAsserterAsyncAndAddThen(originalGetter, this);
-                    };
-                });
-            }
-        });
-
-        function doAsserterAsyncAndAddThen(asserter, assertion, args) {
-            // Since we're intercepting all methods/properties, we need to just pass through if they don't want
-            // `eventually`, or if we've already fulfilled the promise (see below).
-            if (!utils.flag(assertion, "eventually")) {
-                return asserter.apply(assertion, args);
-            }
-
-            var derivedPromise = getBasePromise(assertion).then(function (value) {
-                // Set up the environment for the asserter to actually run: `_obj` should be the fulfillment value, and
-                // now that we have the value, we're no longer in "eventually" mode, so we won't run any of this code,
-                // just the base Chai code that we get to via the short-circuit above.
-                assertion._obj = value;
-                utils.flag(assertion, "eventually", false);
-
-                return args ? chaiAsPromised.transformAsserterArgs(args) : args;
-            }).then(function (args) {
-                asserter.apply(assertion, args);
-
-                // Because asserters, for example `property`, can change the value of `_obj` (i.e. change the "object"
-                // flag), we need to communicate this value change to subsequent chained asserters. Since we build a
-                // promise chain paralleling the asserter chain, we can use it to communicate such changes.
-                return assertion._obj;
-            });
-
-            chaiAsPromised.transferPromiseness(assertion, derivedPromise);
-        }
-
-        ///////
-        // Now use the `Assertion` framework to build an `assert` interface.
-        var originalAssertMethods = Object.getOwnPropertyNames(assert).filter(function (propName) {
-            return typeof assert[propName] === "function";
-        });
-
-        assert.isFulfilled = function (promise, message) {
-            return (new Assertion(promise, message)).to.be.fulfilled;
-        };
-
-        assert.isRejected = function (promise, toTestAgainst, message) {
-            if (typeof toTestAgainst === "string") {
-                message = toTestAgainst;
-                toTestAgainst = undefined;
-            }
-
-            var assertion = (new Assertion(promise, message));
-            return toTestAgainst !== undefined ? assertion.to.be.rejectedWith(toTestAgainst) : assertion.to.be.rejected;
-        };
-
-        assert.becomes = function (promise, value, message) {
-            return assert.eventually.deepEqual(promise, value, message);
-        };
-
-        assert.doesNotBecome = function (promise, value, message) {
-            return assert.eventually.notDeepEqual(promise, value, message);
-        };
-
-        assert.eventually = {};
-        originalAssertMethods.forEach(function (assertMethodName) {
-            assert.eventually[assertMethodName] = function (promise) {
-                var otherArgs = Array.prototype.slice.call(arguments, 1);
-
-                var customRejectionHandler;
-                var message = arguments[assert[assertMethodName].length - 1];
-                if (typeof message === "string") {
-                    customRejectionHandler = function (reason) {
-                        throw new chai.AssertionError(message + "\n\nOriginal reason: " + utils.inspect(reason));
-                    };
-                }
-
-                var returnedPromise = promise.then(
-                    function (fulfillmentValue) {
-                        return assert[assertMethodName].apply(assert, [fulfillmentValue].concat(otherArgs));
-                    },
-                    customRejectionHandler
-                );
-
-                returnedPromise.notify = function (done) {
-                    doNotify(returnedPromise, done);
-                };
-
-                return returnedPromise;
-            };
-        });
-    }
-}());
-
-
-/***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(94);
-
-
-/***/ }),
-/* 94 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * chai
- * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-var used = []
-  , exports = module.exports = {};
-
-/*!
- * Chai version
- */
-
-exports.version = '3.5.0';
-
-/*!
- * Assertion Error
- */
-
-exports.AssertionError = __webpack_require__(47);
-
-/*!
- * Utils for plugins (not exported)
- */
-
-var util = __webpack_require__(108);
-
-/**
- * # .use(function)
- *
- * Provides a way to extend the internals of Chai
- *
- * @param {Function}
- * @returns {this} for chaining
- * @api public
- */
-
-exports.use = function (fn) {
-  if (!~used.indexOf(fn)) {
-    fn(this, util);
-    used.push(fn);
-  }
-
-  return this;
-};
-
-/*!
- * Utility Functions
- */
-
-exports.util = util;
-
-/*!
- * Configuration
- */
-
-var config = __webpack_require__(16);
-exports.config = config;
-
-/*!
- * Primary `Assertion` prototype
- */
-
-var assertion = __webpack_require__(95);
-exports.use(assertion);
-
-/*!
- * Core Assertions
- */
-
-var core = __webpack_require__(96);
-exports.use(core);
-
-/*!
- * Expect interface
- */
-
-var expect = __webpack_require__(98);
-exports.use(expect);
-
-/*!
- * Should interface
- */
-
-var should = __webpack_require__(99);
-exports.use(should);
-
-/*!
- * Assert interface
- */
-
-var assert = __webpack_require__(97);
-exports.use(assert);
-
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * chai
- * http://chaijs.com
- * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-var config = __webpack_require__(16);
-
-module.exports = function (_chai, util) {
-  /*!
-   * Module dependencies.
-   */
-
-  var AssertionError = _chai.AssertionError
-    , flag = util.flag;
-
-  /*!
-   * Module export.
-   */
-
-  _chai.Assertion = Assertion;
-
-  /*!
-   * Assertion Constructor
-   *
-   * Creates object for chaining.
-   *
-   * @api private
-   */
-
-  function Assertion (obj, msg, stack) {
-    flag(this, 'ssfi', stack || arguments.callee);
-    flag(this, 'object', obj);
-    flag(this, 'message', msg);
-  }
-
-  Object.defineProperty(Assertion, 'includeStack', {
-    get: function() {
-      console.warn('Assertion.includeStack is deprecated, use chai.config.includeStack instead.');
-      return config.includeStack;
-    },
-    set: function(value) {
-      console.warn('Assertion.includeStack is deprecated, use chai.config.includeStack instead.');
-      config.includeStack = value;
-    }
-  });
-
-  Object.defineProperty(Assertion, 'showDiff', {
-    get: function() {
-      console.warn('Assertion.showDiff is deprecated, use chai.config.showDiff instead.');
-      return config.showDiff;
-    },
-    set: function(value) {
-      console.warn('Assertion.showDiff is deprecated, use chai.config.showDiff instead.');
-      config.showDiff = value;
-    }
-  });
-
-  Assertion.addProperty = function (name, fn) {
-    util.addProperty(this.prototype, name, fn);
-  };
-
-  Assertion.addMethod = function (name, fn) {
-    util.addMethod(this.prototype, name, fn);
-  };
-
-  Assertion.addChainableMethod = function (name, fn, chainingBehavior) {
-    util.addChainableMethod(this.prototype, name, fn, chainingBehavior);
-  };
-
-  Assertion.overwriteProperty = function (name, fn) {
-    util.overwriteProperty(this.prototype, name, fn);
-  };
-
-  Assertion.overwriteMethod = function (name, fn) {
-    util.overwriteMethod(this.prototype, name, fn);
-  };
-
-  Assertion.overwriteChainableMethod = function (name, fn, chainingBehavior) {
-    util.overwriteChainableMethod(this.prototype, name, fn, chainingBehavior);
-  };
-
-  /**
-   * ### .assert(expression, message, negateMessage, expected, actual, showDiff)
-   *
-   * Executes an expression and check expectations. Throws AssertionError for reporting if test doesn't pass.
-   *
-   * @name assert
-   * @param {Philosophical} expression to be tested
-   * @param {String|Function} message or function that returns message to display if expression fails
-   * @param {String|Function} negatedMessage or function that returns negatedMessage to display if negated expression fails
-   * @param {Mixed} expected value (remember to check for negation)
-   * @param {Mixed} actual (optional) will default to `this.obj`
-   * @param {Boolean} showDiff (optional) when set to `true`, assert will display a diff in addition to the message if expression fails
-   * @api private
-   */
-
-  Assertion.prototype.assert = function (expr, msg, negateMsg, expected, _actual, showDiff) {
-    var ok = util.test(this, arguments);
-    if (true !== showDiff) showDiff = false;
-    if (true !== config.showDiff) showDiff = false;
-
-    if (!ok) {
-      var msg = util.getMessage(this, arguments)
-        , actual = util.getActual(this, arguments);
-      throw new AssertionError(msg, {
-          actual: actual
-        , expected: expected
-        , showDiff: showDiff
-      }, (config.includeStack) ? this.assert : flag(this, 'ssfi'));
-    }
-  };
-
-  /*!
-   * ### ._obj
-   *
-   * Quick reference to stored `actual` value for plugin developers.
-   *
-   * @api private
-   */
-
-  Object.defineProperty(Assertion.prototype, '_obj',
-    { get: function () {
-        return flag(this, 'object');
-      }
-    , set: function (val) {
-        flag(this, 'object', val);
-      }
-  });
-};
-
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports) {
-
-/*!
- * chai
- * http://chaijs.com
- * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-module.exports = function (chai, _) {
-  var Assertion = chai.Assertion
-    , toString = Object.prototype.toString
-    , flag = _.flag;
-
-  /**
-   * ### Language Chains
-   *
-   * The following are provided as chainable getters to
-   * improve the readability of your assertions. They
-   * do not provide testing capabilities unless they
-   * have been overwritten by a plugin.
-   *
-   * **Chains**
-   *
-   * - to
-   * - be
-   * - been
-   * - is
-   * - that
-   * - which
-   * - and
-   * - has
-   * - have
-   * - with
-   * - at
-   * - of
-   * - same
-   *
-   * @name language chains
-   * @namespace BDD
-   * @api public
-   */
-
-  [ 'to', 'be', 'been'
-  , 'is', 'and', 'has', 'have'
-  , 'with', 'that', 'which', 'at'
-  , 'of', 'same' ].forEach(function (chain) {
-    Assertion.addProperty(chain, function () {
-      return this;
-    });
-  });
-
-  /**
-   * ### .not
-   *
-   * Negates any of assertions following in the chain.
-   *
-   *     expect(foo).to.not.equal('bar');
-   *     expect(goodFn).to.not.throw(Error);
-   *     expect({ foo: 'baz' }).to.have.property('foo')
-   *       .and.not.equal('bar');
-   *
-   * @name not
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('not', function () {
-    flag(this, 'negate', true);
-  });
-
-  /**
-   * ### .deep
-   *
-   * Sets the `deep` flag, later used by the `equal` and
-   * `property` assertions.
-   *
-   *     expect(foo).to.deep.equal({ bar: 'baz' });
-   *     expect({ foo: { bar: { baz: 'quux' } } })
-   *       .to.have.deep.property('foo.bar.baz', 'quux');
-   *
-   * `.deep.property` special characters can be escaped
-   * by adding two slashes before the `.` or `[]`.
-   *
-   *     var deepCss = { '.link': { '[target]': 42 }};
-   *     expect(deepCss).to.have.deep.property('\\.link.\\[target\\]', 42);
-   *
-   * @name deep
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('deep', function () {
-    flag(this, 'deep', true);
-  });
-
-  /**
-   * ### .any
-   *
-   * Sets the `any` flag, (opposite of the `all` flag)
-   * later used in the `keys` assertion.
-   *
-   *     expect(foo).to.have.any.keys('bar', 'baz');
-   *
-   * @name any
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('any', function () {
-    flag(this, 'any', true);
-    flag(this, 'all', false)
-  });
-
-
-  /**
-   * ### .all
-   *
-   * Sets the `all` flag (opposite of the `any` flag)
-   * later used by the `keys` assertion.
-   *
-   *     expect(foo).to.have.all.keys('bar', 'baz');
-   *
-   * @name all
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('all', function () {
-    flag(this, 'all', true);
-    flag(this, 'any', false);
-  });
-
-  /**
-   * ### .a(type)
-   *
-   * The `a` and `an` assertions are aliases that can be
-   * used either as language chains or to assert a value's
-   * type.
-   *
-   *     // typeof
-   *     expect('test').to.be.a('string');
-   *     expect({ foo: 'bar' }).to.be.an('object');
-   *     expect(null).to.be.a('null');
-   *     expect(undefined).to.be.an('undefined');
-   *     expect(new Error).to.be.an('error');
-   *     expect(new Promise).to.be.a('promise');
-   *     expect(new Float32Array()).to.be.a('float32array');
-   *     expect(Symbol()).to.be.a('symbol');
-   *
-   *     // es6 overrides
-   *     expect({[Symbol.toStringTag]:()=>'foo'}).to.be.a('foo');
-   *
-   *     // language chain
-   *     expect(foo).to.be.an.instanceof(Foo);
-   *
-   * @name a
-   * @alias an
-   * @param {String} type
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function an (type, msg) {
-    if (msg) flag(this, 'message', msg);
-    type = type.toLowerCase();
-    var obj = flag(this, 'object')
-      , article = ~[ 'a', 'e', 'i', 'o', 'u' ].indexOf(type.charAt(0)) ? 'an ' : 'a ';
-
-    this.assert(
-        type === _.type(obj)
-      , 'expected #{this} to be ' + article + type
-      , 'expected #{this} not to be ' + article + type
-    );
-  }
-
-  Assertion.addChainableMethod('an', an);
-  Assertion.addChainableMethod('a', an);
-
-  /**
-   * ### .include(value)
-   *
-   * The `include` and `contain` assertions can be used as either property
-   * based language chains or as methods to assert the inclusion of an object
-   * in an array or a substring in a string. When used as language chains,
-   * they toggle the `contains` flag for the `keys` assertion.
-   *
-   *     expect([1,2,3]).to.include(2);
-   *     expect('foobar').to.contain('foo');
-   *     expect({ foo: 'bar', hello: 'universe' }).to.include.keys('foo');
-   *
-   * @name include
-   * @alias contain
-   * @alias includes
-   * @alias contains
-   * @param {Object|String|Number} obj
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function includeChainingBehavior () {
-    flag(this, 'contains', true);
-  }
-
-  function include (val, msg) {
-    _.expectTypes(this, ['array', 'object', 'string']);
-
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    var expected = false;
-
-    if (_.type(obj) === 'array' && _.type(val) === 'object') {
-      for (var i in obj) {
-        if (_.eql(obj[i], val)) {
-          expected = true;
-          break;
-        }
-      }
-    } else if (_.type(val) === 'object') {
-      if (!flag(this, 'negate')) {
-        for (var k in val) new Assertion(obj).property(k, val[k]);
-        return;
-      }
-      var subset = {};
-      for (var k in val) subset[k] = obj[k];
-      expected = _.eql(subset, val);
-    } else {
-      expected = (obj != undefined) && ~obj.indexOf(val);
-    }
-    this.assert(
-        expected
-      , 'expected #{this} to include ' + _.inspect(val)
-      , 'expected #{this} to not include ' + _.inspect(val));
-  }
-
-  Assertion.addChainableMethod('include', include, includeChainingBehavior);
-  Assertion.addChainableMethod('contain', include, includeChainingBehavior);
-  Assertion.addChainableMethod('contains', include, includeChainingBehavior);
-  Assertion.addChainableMethod('includes', include, includeChainingBehavior);
-
-  /**
-   * ### .ok
-   *
-   * Asserts that the target is truthy.
-   *
-   *     expect('everything').to.be.ok;
-   *     expect(1).to.be.ok;
-   *     expect(false).to.not.be.ok;
-   *     expect(undefined).to.not.be.ok;
-   *     expect(null).to.not.be.ok;
-   *
-   * @name ok
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('ok', function () {
-    this.assert(
-        flag(this, 'object')
-      , 'expected #{this} to be truthy'
-      , 'expected #{this} to be falsy');
-  });
-
-  /**
-   * ### .true
-   *
-   * Asserts that the target is `true`.
-   *
-   *     expect(true).to.be.true;
-   *     expect(1).to.not.be.true;
-   *
-   * @name true
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('true', function () {
-    this.assert(
-        true === flag(this, 'object')
-      , 'expected #{this} to be true'
-      , 'expected #{this} to be false'
-      , this.negate ? false : true
-    );
-  });
-
-  /**
-   * ### .false
-   *
-   * Asserts that the target is `false`.
-   *
-   *     expect(false).to.be.false;
-   *     expect(0).to.not.be.false;
-   *
-   * @name false
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('false', function () {
-    this.assert(
-        false === flag(this, 'object')
-      , 'expected #{this} to be false'
-      , 'expected #{this} to be true'
-      , this.negate ? true : false
-    );
-  });
-
-  /**
-   * ### .null
-   *
-   * Asserts that the target is `null`.
-   *
-   *     expect(null).to.be.null;
-   *     expect(undefined).to.not.be.null;
-   *
-   * @name null
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('null', function () {
-    this.assert(
-        null === flag(this, 'object')
-      , 'expected #{this} to be null'
-      , 'expected #{this} not to be null'
-    );
-  });
-
-  /**
-   * ### .undefined
-   *
-   * Asserts that the target is `undefined`.
-   *
-   *     expect(undefined).to.be.undefined;
-   *     expect(null).to.not.be.undefined;
-   *
-   * @name undefined
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('undefined', function () {
-    this.assert(
-        undefined === flag(this, 'object')
-      , 'expected #{this} to be undefined'
-      , 'expected #{this} not to be undefined'
-    );
-  });
-
-  /**
-   * ### .NaN
-   * Asserts that the target is `NaN`.
-   *
-   *     expect('foo').to.be.NaN;
-   *     expect(4).not.to.be.NaN;
-   *
-   * @name NaN
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('NaN', function () {
-    this.assert(
-        isNaN(flag(this, 'object'))
-        , 'expected #{this} to be NaN'
-        , 'expected #{this} not to be NaN'
-    );
-  });
-
-  /**
-   * ### .exist
-   *
-   * Asserts that the target is neither `null` nor `undefined`.
-   *
-   *     var foo = 'hi'
-   *       , bar = null
-   *       , baz;
-   *
-   *     expect(foo).to.exist;
-   *     expect(bar).to.not.exist;
-   *     expect(baz).to.not.exist;
-   *
-   * @name exist
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('exist', function () {
-    this.assert(
-        null != flag(this, 'object')
-      , 'expected #{this} to exist'
-      , 'expected #{this} to not exist'
-    );
-  });
-
-
-  /**
-   * ### .empty
-   *
-   * Asserts that the target's length is `0`. For arrays and strings, it checks
-   * the `length` property. For objects, it gets the count of
-   * enumerable keys.
-   *
-   *     expect([]).to.be.empty;
-   *     expect('').to.be.empty;
-   *     expect({}).to.be.empty;
-   *
-   * @name empty
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('empty', function () {
-    var obj = flag(this, 'object')
-      , expected = obj;
-
-    if (Array.isArray(obj) || 'string' === typeof object) {
-      expected = obj.length;
-    } else if (typeof obj === 'object') {
-      expected = Object.keys(obj).length;
-    }
-
-    this.assert(
-        !expected
-      , 'expected #{this} to be empty'
-      , 'expected #{this} not to be empty'
-    );
-  });
-
-  /**
-   * ### .arguments
-   *
-   * Asserts that the target is an arguments object.
-   *
-   *     function test () {
-   *       expect(arguments).to.be.arguments;
-   *     }
-   *
-   * @name arguments
-   * @alias Arguments
-   * @namespace BDD
-   * @api public
-   */
-
-  function checkArguments () {
-    var obj = flag(this, 'object')
-      , type = Object.prototype.toString.call(obj);
-    this.assert(
-        '[object Arguments]' === type
-      , 'expected #{this} to be arguments but got ' + type
-      , 'expected #{this} to not be arguments'
-    );
-  }
-
-  Assertion.addProperty('arguments', checkArguments);
-  Assertion.addProperty('Arguments', checkArguments);
-
-  /**
-   * ### .equal(value)
-   *
-   * Asserts that the target is strictly equal (`===`) to `value`.
-   * Alternately, if the `deep` flag is set, asserts that
-   * the target is deeply equal to `value`.
-   *
-   *     expect('hello').to.equal('hello');
-   *     expect(42).to.equal(42);
-   *     expect(1).to.not.equal(true);
-   *     expect({ foo: 'bar' }).to.not.equal({ foo: 'bar' });
-   *     expect({ foo: 'bar' }).to.deep.equal({ foo: 'bar' });
-   *
-   * @name equal
-   * @alias equals
-   * @alias eq
-   * @alias deep.equal
-   * @param {Mixed} value
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertEqual (val, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    if (flag(this, 'deep')) {
-      return this.eql(val);
-    } else {
-      this.assert(
-          val === obj
-        , 'expected #{this} to equal #{exp}'
-        , 'expected #{this} to not equal #{exp}'
-        , val
-        , this._obj
-        , true
-      );
-    }
-  }
-
-  Assertion.addMethod('equal', assertEqual);
-  Assertion.addMethod('equals', assertEqual);
-  Assertion.addMethod('eq', assertEqual);
-
-  /**
-   * ### .eql(value)
-   *
-   * Asserts that the target is deeply equal to `value`.
-   *
-   *     expect({ foo: 'bar' }).to.eql({ foo: 'bar' });
-   *     expect([ 1, 2, 3 ]).to.eql([ 1, 2, 3 ]);
-   *
-   * @name eql
-   * @alias eqls
-   * @param {Mixed} value
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertEql(obj, msg) {
-    if (msg) flag(this, 'message', msg);
-    this.assert(
-        _.eql(obj, flag(this, 'object'))
-      , 'expected #{this} to deeply equal #{exp}'
-      , 'expected #{this} to not deeply equal #{exp}'
-      , obj
-      , this._obj
-      , true
-    );
-  }
-
-  Assertion.addMethod('eql', assertEql);
-  Assertion.addMethod('eqls', assertEql);
-
-  /**
-   * ### .above(value)
-   *
-   * Asserts that the target is greater than `value`.
-   *
-   *     expect(10).to.be.above(5);
-   *
-   * Can also be used in conjunction with `length` to
-   * assert a minimum length. The benefit being a
-   * more informative error message than if the length
-   * was supplied directly.
-   *
-   *     expect('foo').to.have.length.above(2);
-   *     expect([ 1, 2, 3 ]).to.have.length.above(2);
-   *
-   * @name above
-   * @alias gt
-   * @alias greaterThan
-   * @param {Number} value
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertAbove (n, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    if (flag(this, 'doLength')) {
-      new Assertion(obj, msg).to.have.property('length');
-      var len = obj.length;
-      this.assert(
-          len > n
-        , 'expected #{this} to have a length above #{exp} but got #{act}'
-        , 'expected #{this} to not have a length above #{exp}'
-        , n
-        , len
-      );
-    } else {
-      this.assert(
-          obj > n
-        , 'expected #{this} to be above ' + n
-        , 'expected #{this} to be at most ' + n
-      );
-    }
-  }
-
-  Assertion.addMethod('above', assertAbove);
-  Assertion.addMethod('gt', assertAbove);
-  Assertion.addMethod('greaterThan', assertAbove);
-
-  /**
-   * ### .least(value)
-   *
-   * Asserts that the target is greater than or equal to `value`.
-   *
-   *     expect(10).to.be.at.least(10);
-   *
-   * Can also be used in conjunction with `length` to
-   * assert a minimum length. The benefit being a
-   * more informative error message than if the length
-   * was supplied directly.
-   *
-   *     expect('foo').to.have.length.of.at.least(2);
-   *     expect([ 1, 2, 3 ]).to.have.length.of.at.least(3);
-   *
-   * @name least
-   * @alias gte
-   * @param {Number} value
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertLeast (n, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    if (flag(this, 'doLength')) {
-      new Assertion(obj, msg).to.have.property('length');
-      var len = obj.length;
-      this.assert(
-          len >= n
-        , 'expected #{this} to have a length at least #{exp} but got #{act}'
-        , 'expected #{this} to have a length below #{exp}'
-        , n
-        , len
-      );
-    } else {
-      this.assert(
-          obj >= n
-        , 'expected #{this} to be at least ' + n
-        , 'expected #{this} to be below ' + n
-      );
-    }
-  }
-
-  Assertion.addMethod('least', assertLeast);
-  Assertion.addMethod('gte', assertLeast);
-
-  /**
-   * ### .below(value)
-   *
-   * Asserts that the target is less than `value`.
-   *
-   *     expect(5).to.be.below(10);
-   *
-   * Can also be used in conjunction with `length` to
-   * assert a maximum length. The benefit being a
-   * more informative error message than if the length
-   * was supplied directly.
-   *
-   *     expect('foo').to.have.length.below(4);
-   *     expect([ 1, 2, 3 ]).to.have.length.below(4);
-   *
-   * @name below
-   * @alias lt
-   * @alias lessThan
-   * @param {Number} value
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertBelow (n, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    if (flag(this, 'doLength')) {
-      new Assertion(obj, msg).to.have.property('length');
-      var len = obj.length;
-      this.assert(
-          len < n
-        , 'expected #{this} to have a length below #{exp} but got #{act}'
-        , 'expected #{this} to not have a length below #{exp}'
-        , n
-        , len
-      );
-    } else {
-      this.assert(
-          obj < n
-        , 'expected #{this} to be below ' + n
-        , 'expected #{this} to be at least ' + n
-      );
-    }
-  }
-
-  Assertion.addMethod('below', assertBelow);
-  Assertion.addMethod('lt', assertBelow);
-  Assertion.addMethod('lessThan', assertBelow);
-
-  /**
-   * ### .most(value)
-   *
-   * Asserts that the target is less than or equal to `value`.
-   *
-   *     expect(5).to.be.at.most(5);
-   *
-   * Can also be used in conjunction with `length` to
-   * assert a maximum length. The benefit being a
-   * more informative error message than if the length
-   * was supplied directly.
-   *
-   *     expect('foo').to.have.length.of.at.most(4);
-   *     expect([ 1, 2, 3 ]).to.have.length.of.at.most(3);
-   *
-   * @name most
-   * @alias lte
-   * @param {Number} value
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertMost (n, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    if (flag(this, 'doLength')) {
-      new Assertion(obj, msg).to.have.property('length');
-      var len = obj.length;
-      this.assert(
-          len <= n
-        , 'expected #{this} to have a length at most #{exp} but got #{act}'
-        , 'expected #{this} to have a length above #{exp}'
-        , n
-        , len
-      );
-    } else {
-      this.assert(
-          obj <= n
-        , 'expected #{this} to be at most ' + n
-        , 'expected #{this} to be above ' + n
-      );
-    }
-  }
-
-  Assertion.addMethod('most', assertMost);
-  Assertion.addMethod('lte', assertMost);
-
-  /**
-   * ### .within(start, finish)
-   *
-   * Asserts that the target is within a range.
-   *
-   *     expect(7).to.be.within(5,10);
-   *
-   * Can also be used in conjunction with `length` to
-   * assert a length range. The benefit being a
-   * more informative error message than if the length
-   * was supplied directly.
-   *
-   *     expect('foo').to.have.length.within(2,4);
-   *     expect([ 1, 2, 3 ]).to.have.length.within(2,4);
-   *
-   * @name within
-   * @param {Number} start lowerbound inclusive
-   * @param {Number} finish upperbound inclusive
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addMethod('within', function (start, finish, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object')
-      , range = start + '..' + finish;
-    if (flag(this, 'doLength')) {
-      new Assertion(obj, msg).to.have.property('length');
-      var len = obj.length;
-      this.assert(
-          len >= start && len <= finish
-        , 'expected #{this} to have a length within ' + range
-        , 'expected #{this} to not have a length within ' + range
-      );
-    } else {
-      this.assert(
-          obj >= start && obj <= finish
-        , 'expected #{this} to be within ' + range
-        , 'expected #{this} to not be within ' + range
-      );
-    }
-  });
-
-  /**
-   * ### .instanceof(constructor)
-   *
-   * Asserts that the target is an instance of `constructor`.
-   *
-   *     var Tea = function (name) { this.name = name; }
-   *       , Chai = new Tea('chai');
-   *
-   *     expect(Chai).to.be.an.instanceof(Tea);
-   *     expect([ 1, 2, 3 ]).to.be.instanceof(Array);
-   *
-   * @name instanceof
-   * @param {Constructor} constructor
-   * @param {String} message _optional_
-   * @alias instanceOf
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertInstanceOf (constructor, msg) {
-    if (msg) flag(this, 'message', msg);
-    var name = _.getName(constructor);
-    this.assert(
-        flag(this, 'object') instanceof constructor
-      , 'expected #{this} to be an instance of ' + name
-      , 'expected #{this} to not be an instance of ' + name
-    );
-  };
-
-  Assertion.addMethod('instanceof', assertInstanceOf);
-  Assertion.addMethod('instanceOf', assertInstanceOf);
-
-  /**
-   * ### .property(name, [value])
-   *
-   * Asserts that the target has a property `name`, optionally asserting that
-   * the value of that property is strictly equal to  `value`.
-   * If the `deep` flag is set, you can use dot- and bracket-notation for deep
-   * references into objects and arrays.
-   *
-   *     // simple referencing
-   *     var obj = { foo: 'bar' };
-   *     expect(obj).to.have.property('foo');
-   *     expect(obj).to.have.property('foo', 'bar');
-   *
-   *     // deep referencing
-   *     var deepObj = {
-   *         green: { tea: 'matcha' }
-   *       , teas: [ 'chai', 'matcha', { tea: 'konacha' } ]
-   *     };
-   *
-   *     expect(deepObj).to.have.deep.property('green.tea', 'matcha');
-   *     expect(deepObj).to.have.deep.property('teas[1]', 'matcha');
-   *     expect(deepObj).to.have.deep.property('teas[2].tea', 'konacha');
-   *
-   * You can also use an array as the starting point of a `deep.property`
-   * assertion, or traverse nested arrays.
-   *
-   *     var arr = [
-   *         [ 'chai', 'matcha', 'konacha' ]
-   *       , [ { tea: 'chai' }
-   *         , { tea: 'matcha' }
-   *         , { tea: 'konacha' } ]
-   *     ];
-   *
-   *     expect(arr).to.have.deep.property('[0][1]', 'matcha');
-   *     expect(arr).to.have.deep.property('[1][2].tea', 'konacha');
-   *
-   * Furthermore, `property` changes the subject of the assertion
-   * to be the value of that property from the original object. This
-   * permits for further chainable assertions on that property.
-   *
-   *     expect(obj).to.have.property('foo')
-   *       .that.is.a('string');
-   *     expect(deepObj).to.have.property('green')
-   *       .that.is.an('object')
-   *       .that.deep.equals({ tea: 'matcha' });
-   *     expect(deepObj).to.have.property('teas')
-   *       .that.is.an('array')
-   *       .with.deep.property('[2]')
-   *         .that.deep.equals({ tea: 'konacha' });
-   *
-   * Note that dots and bracket in `name` must be backslash-escaped when
-   * the `deep` flag is set, while they must NOT be escaped when the `deep`
-   * flag is not set.
-   *
-   *     // simple referencing
-   *     var css = { '.link[target]': 42 };
-   *     expect(css).to.have.property('.link[target]', 42);
-   *
-   *     // deep referencing
-   *     var deepCss = { '.link': { '[target]': 42 }};
-   *     expect(deepCss).to.have.deep.property('\\.link.\\[target\\]', 42);
-   *
-   * @name property
-   * @alias deep.property
-   * @param {String} name
-   * @param {Mixed} value (optional)
-   * @param {String} message _optional_
-   * @returns value of property for chaining
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addMethod('property', function (name, val, msg) {
-    if (msg) flag(this, 'message', msg);
-
-    var isDeep = !!flag(this, 'deep')
-      , descriptor = isDeep ? 'deep property ' : 'property '
-      , negate = flag(this, 'negate')
-      , obj = flag(this, 'object')
-      , pathInfo = isDeep ? _.getPathInfo(name, obj) : null
-      , hasProperty = isDeep
-        ? pathInfo.exists
-        : _.hasProperty(name, obj)
-      , value = isDeep
-        ? pathInfo.value
-        : obj[name];
-
-    if (negate && arguments.length > 1) {
-      if (undefined === value) {
-        msg = (msg != null) ? msg + ': ' : '';
-        throw new Error(msg + _.inspect(obj) + ' has no ' + descriptor + _.inspect(name));
-      }
-    } else {
-      this.assert(
-          hasProperty
-        , 'expected #{this} to have a ' + descriptor + _.inspect(name)
-        , 'expected #{this} to not have ' + descriptor + _.inspect(name));
-    }
-
-    if (arguments.length > 1) {
-      this.assert(
-          val === value
-        , 'expected #{this} to have a ' + descriptor + _.inspect(name) + ' of #{exp}, but got #{act}'
-        , 'expected #{this} to not have a ' + descriptor + _.inspect(name) + ' of #{act}'
-        , val
-        , value
-      );
-    }
-
-    flag(this, 'object', value);
-  });
-
-
-  /**
-   * ### .ownProperty(name)
-   *
-   * Asserts that the target has an own property `name`.
-   *
-   *     expect('test').to.have.ownProperty('length');
-   *
-   * @name ownProperty
-   * @alias haveOwnProperty
-   * @param {String} name
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertOwnProperty (name, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    this.assert(
-        obj.hasOwnProperty(name)
-      , 'expected #{this} to have own property ' + _.inspect(name)
-      , 'expected #{this} to not have own property ' + _.inspect(name)
-    );
-  }
-
-  Assertion.addMethod('ownProperty', assertOwnProperty);
-  Assertion.addMethod('haveOwnProperty', assertOwnProperty);
-
-  /**
-   * ### .ownPropertyDescriptor(name[, descriptor[, message]])
-   *
-   * Asserts that the target has an own property descriptor `name`, that optionally matches `descriptor`.
-   *
-   *     expect('test').to.have.ownPropertyDescriptor('length');
-   *     expect('test').to.have.ownPropertyDescriptor('length', { enumerable: false, configurable: false, writable: false, value: 4 });
-   *     expect('test').not.to.have.ownPropertyDescriptor('length', { enumerable: false, configurable: false, writable: false, value: 3 });
-   *     expect('test').ownPropertyDescriptor('length').to.have.property('enumerable', false);
-   *     expect('test').ownPropertyDescriptor('length').to.have.keys('value');
-   *
-   * @name ownPropertyDescriptor
-   * @alias haveOwnPropertyDescriptor
-   * @param {String} name
-   * @param {Object} descriptor _optional_
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertOwnPropertyDescriptor (name, descriptor, msg) {
-    if (typeof descriptor === 'string') {
-      msg = descriptor;
-      descriptor = null;
-    }
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    var actualDescriptor = Object.getOwnPropertyDescriptor(Object(obj), name);
-    if (actualDescriptor && descriptor) {
-      this.assert(
-          _.eql(descriptor, actualDescriptor)
-        , 'expected the own property descriptor for ' + _.inspect(name) + ' on #{this} to match ' + _.inspect(descriptor) + ', got ' + _.inspect(actualDescriptor)
-        , 'expected the own property descriptor for ' + _.inspect(name) + ' on #{this} to not match ' + _.inspect(descriptor)
-        , descriptor
-        , actualDescriptor
-        , true
-      );
-    } else {
-      this.assert(
-          actualDescriptor
-        , 'expected #{this} to have an own property descriptor for ' + _.inspect(name)
-        , 'expected #{this} to not have an own property descriptor for ' + _.inspect(name)
-      );
-    }
-    flag(this, 'object', actualDescriptor);
-  }
-
-  Assertion.addMethod('ownPropertyDescriptor', assertOwnPropertyDescriptor);
-  Assertion.addMethod('haveOwnPropertyDescriptor', assertOwnPropertyDescriptor);
-
-  /**
-   * ### .length
-   *
-   * Sets the `doLength` flag later used as a chain precursor to a value
-   * comparison for the `length` property.
-   *
-   *     expect('foo').to.have.length.above(2);
-   *     expect([ 1, 2, 3 ]).to.have.length.above(2);
-   *     expect('foo').to.have.length.below(4);
-   *     expect([ 1, 2, 3 ]).to.have.length.below(4);
-   *     expect('foo').to.have.length.within(2,4);
-   *     expect([ 1, 2, 3 ]).to.have.length.within(2,4);
-   *
-   * *Deprecation notice:* Using `length` as an assertion will be deprecated
-   * in version 2.4.0 and removed in 3.0.0. Code using the old style of
-   * asserting for `length` property value using `length(value)` should be
-   * switched to use `lengthOf(value)` instead.
-   *
-   * @name length
-   * @namespace BDD
-   * @api public
-   */
-
-  /**
-   * ### .lengthOf(value[, message])
-   *
-   * Asserts that the target's `length` property has
-   * the expected value.
-   *
-   *     expect([ 1, 2, 3]).to.have.lengthOf(3);
-   *     expect('foobar').to.have.lengthOf(6);
-   *
-   * @name lengthOf
-   * @param {Number} length
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertLengthChain () {
-    flag(this, 'doLength', true);
-  }
-
-  function assertLength (n, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    new Assertion(obj, msg).to.have.property('length');
-    var len = obj.length;
-
-    this.assert(
-        len == n
-      , 'expected #{this} to have a length of #{exp} but got #{act}'
-      , 'expected #{this} to not have a length of #{act}'
-      , n
-      , len
-    );
-  }
-
-  Assertion.addChainableMethod('length', assertLength, assertLengthChain);
-  Assertion.addMethod('lengthOf', assertLength);
-
-  /**
-   * ### .match(regexp)
-   *
-   * Asserts that the target matches a regular expression.
-   *
-   *     expect('foobar').to.match(/^foo/);
-   *
-   * @name match
-   * @alias matches
-   * @param {RegExp} RegularExpression
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-  function assertMatch(re, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    this.assert(
-        re.exec(obj)
-      , 'expected #{this} to match ' + re
-      , 'expected #{this} not to match ' + re
-    );
-  }
-
-  Assertion.addMethod('match', assertMatch);
-  Assertion.addMethod('matches', assertMatch);
-
-  /**
-   * ### .string(string)
-   *
-   * Asserts that the string target contains another string.
-   *
-   *     expect('foobar').to.have.string('bar');
-   *
-   * @name string
-   * @param {String} string
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addMethod('string', function (str, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    new Assertion(obj, msg).is.a('string');
-
-    this.assert(
-        ~obj.indexOf(str)
-      , 'expected #{this} to contain ' + _.inspect(str)
-      , 'expected #{this} to not contain ' + _.inspect(str)
-    );
-  });
-
-
-  /**
-   * ### .keys(key1, [key2], [...])
-   *
-   * Asserts that the target contains any or all of the passed-in keys.
-   * Use in combination with `any`, `all`, `contains`, or `have` will affect
-   * what will pass.
-   *
-   * When used in conjunction with `any`, at least one key that is passed
-   * in must exist in the target object. This is regardless whether or not
-   * the `have` or `contain` qualifiers are used. Note, either `any` or `all`
-   * should be used in the assertion. If neither are used, the assertion is
-   * defaulted to `all`.
-   *
-   * When both `all` and `contain` are used, the target object must have at
-   * least all of the passed-in keys but may have more keys not listed.
-   *
-   * When both `all` and `have` are used, the target object must both contain
-   * all of the passed-in keys AND the number of keys in the target object must
-   * match the number of keys passed in (in other words, a target object must
-   * have all and only all of the passed-in keys).
-   *
-   *     expect({ foo: 1, bar: 2 }).to.have.any.keys('foo', 'baz');
-   *     expect({ foo: 1, bar: 2 }).to.have.any.keys('foo');
-   *     expect({ foo: 1, bar: 2 }).to.contain.any.keys('bar', 'baz');
-   *     expect({ foo: 1, bar: 2 }).to.contain.any.keys(['foo']);
-   *     expect({ foo: 1, bar: 2 }).to.contain.any.keys({'foo': 6});
-   *     expect({ foo: 1, bar: 2 }).to.have.all.keys(['bar', 'foo']);
-   *     expect({ foo: 1, bar: 2 }).to.have.all.keys({'bar': 6, 'foo': 7});
-   *     expect({ foo: 1, bar: 2, baz: 3 }).to.contain.all.keys(['bar', 'foo']);
-   *     expect({ foo: 1, bar: 2, baz: 3 }).to.contain.all.keys({'bar': 6});
-   *
-   *
-   * @name keys
-   * @alias key
-   * @param {...String|Array|Object} keys
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertKeys (keys) {
-    var obj = flag(this, 'object')
-      , str
-      , ok = true
-      , mixedArgsMsg = 'keys must be given single argument of Array|Object|String, or multiple String arguments';
-
-    switch (_.type(keys)) {
-      case "array":
-        if (arguments.length > 1) throw (new Error(mixedArgsMsg));
-        break;
-      case "object":
-        if (arguments.length > 1) throw (new Error(mixedArgsMsg));
-        keys = Object.keys(keys);
-        break;
-      default:
-        keys = Array.prototype.slice.call(arguments);
-    }
-
-    if (!keys.length) throw new Error('keys required');
-
-    var actual = Object.keys(obj)
-      , expected = keys
-      , len = keys.length
-      , any = flag(this, 'any')
-      , all = flag(this, 'all');
-
-    if (!any && !all) {
-      all = true;
-    }
-
-    // Has any
-    if (any) {
-      var intersection = expected.filter(function(key) {
-        return ~actual.indexOf(key);
-      });
-      ok = intersection.length > 0;
-    }
-
-    // Has all
-    if (all) {
-      ok = keys.every(function(key){
-        return ~actual.indexOf(key);
-      });
-      if (!flag(this, 'negate') && !flag(this, 'contains')) {
-        ok = ok && keys.length == actual.length;
-      }
-    }
-
-    // Key string
-    if (len > 1) {
-      keys = keys.map(function(key){
-        return _.inspect(key);
-      });
-      var last = keys.pop();
-      if (all) {
-        str = keys.join(', ') + ', and ' + last;
-      }
-      if (any) {
-        str = keys.join(', ') + ', or ' + last;
-      }
-    } else {
-      str = _.inspect(keys[0]);
-    }
-
-    // Form
-    str = (len > 1 ? 'keys ' : 'key ') + str;
-
-    // Have / include
-    str = (flag(this, 'contains') ? 'contain ' : 'have ') + str;
-
-    // Assertion
-    this.assert(
-        ok
-      , 'expected #{this} to ' + str
-      , 'expected #{this} to not ' + str
-      , expected.slice(0).sort()
-      , actual.sort()
-      , true
-    );
-  }
-
-  Assertion.addMethod('keys', assertKeys);
-  Assertion.addMethod('key', assertKeys);
-
-  /**
-   * ### .throw(constructor)
-   *
-   * Asserts that the function target will throw a specific error, or specific type of error
-   * (as determined using `instanceof`), optionally with a RegExp or string inclusion test
-   * for the error's message.
-   *
-   *     var err = new ReferenceError('This is a bad function.');
-   *     var fn = function () { throw err; }
-   *     expect(fn).to.throw(ReferenceError);
-   *     expect(fn).to.throw(Error);
-   *     expect(fn).to.throw(/bad function/);
-   *     expect(fn).to.not.throw('good function');
-   *     expect(fn).to.throw(ReferenceError, /bad function/);
-   *     expect(fn).to.throw(err);
-   *
-   * Please note that when a throw expectation is negated, it will check each
-   * parameter independently, starting with error constructor type. The appropriate way
-   * to check for the existence of a type of error but for a message that does not match
-   * is to use `and`.
-   *
-   *     expect(fn).to.throw(ReferenceError)
-   *        .and.not.throw(/good function/);
-   *
-   * @name throw
-   * @alias throws
-   * @alias Throw
-   * @param {ErrorConstructor} constructor
-   * @param {String|RegExp} expected error message
-   * @param {String} message _optional_
-   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
-   * @returns error for chaining (null if no error)
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertThrows (constructor, errMsg, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    new Assertion(obj, msg).is.a('function');
-
-    var thrown = false
-      , desiredError = null
-      , name = null
-      , thrownError = null;
-
-    if (arguments.length === 0) {
-      errMsg = null;
-      constructor = null;
-    } else if (constructor && (constructor instanceof RegExp || 'string' === typeof constructor)) {
-      errMsg = constructor;
-      constructor = null;
-    } else if (constructor && constructor instanceof Error) {
-      desiredError = constructor;
-      constructor = null;
-      errMsg = null;
-    } else if (typeof constructor === 'function') {
-      name = constructor.prototype.name;
-      if (!name || (name === 'Error' && constructor !== Error)) {
-        name = constructor.name || (new constructor()).name;
-      }
-    } else {
-      constructor = null;
-    }
-
-    try {
-      obj();
-    } catch (err) {
-      // first, check desired error
-      if (desiredError) {
-        this.assert(
-            err === desiredError
-          , 'expected #{this} to throw #{exp} but #{act} was thrown'
-          , 'expected #{this} to not throw #{exp}'
-          , (desiredError instanceof Error ? desiredError.toString() : desiredError)
-          , (err instanceof Error ? err.toString() : err)
-        );
-
-        flag(this, 'object', err);
-        return this;
-      }
-
-      // next, check constructor
-      if (constructor) {
-        this.assert(
-            err instanceof constructor
-          , 'expected #{this} to throw #{exp} but #{act} was thrown'
-          , 'expected #{this} to not throw #{exp} but #{act} was thrown'
-          , name
-          , (err instanceof Error ? err.toString() : err)
-        );
-
-        if (!errMsg) {
-          flag(this, 'object', err);
-          return this;
-        }
-      }
-
-      // next, check message
-      var message = 'error' === _.type(err) && "message" in err
-        ? err.message
-        : '' + err;
-
-      if ((message != null) && errMsg && errMsg instanceof RegExp) {
-        this.assert(
-            errMsg.exec(message)
-          , 'expected #{this} to throw error matching #{exp} but got #{act}'
-          , 'expected #{this} to throw error not matching #{exp}'
-          , errMsg
-          , message
-        );
-
-        flag(this, 'object', err);
-        return this;
-      } else if ((message != null) && errMsg && 'string' === typeof errMsg) {
-        this.assert(
-            ~message.indexOf(errMsg)
-          , 'expected #{this} to throw error including #{exp} but got #{act}'
-          , 'expected #{this} to throw error not including #{act}'
-          , errMsg
-          , message
-        );
-
-        flag(this, 'object', err);
-        return this;
-      } else {
-        thrown = true;
-        thrownError = err;
-      }
-    }
-
-    var actuallyGot = ''
-      , expectedThrown = name !== null
-        ? name
-        : desiredError
-          ? '#{exp}' //_.inspect(desiredError)
-          : 'an error';
-
-    if (thrown) {
-      actuallyGot = ' but #{act} was thrown'
-    }
-
-    this.assert(
-        thrown === true
-      , 'expected #{this} to throw ' + expectedThrown + actuallyGot
-      , 'expected #{this} to not throw ' + expectedThrown + actuallyGot
-      , (desiredError instanceof Error ? desiredError.toString() : desiredError)
-      , (thrownError instanceof Error ? thrownError.toString() : thrownError)
-    );
-
-    flag(this, 'object', thrownError);
-  };
-
-  Assertion.addMethod('throw', assertThrows);
-  Assertion.addMethod('throws', assertThrows);
-  Assertion.addMethod('Throw', assertThrows);
-
-  /**
-   * ### .respondTo(method)
-   *
-   * Asserts that the object or class target will respond to a method.
-   *
-   *     Klass.prototype.bar = function(){};
-   *     expect(Klass).to.respondTo('bar');
-   *     expect(obj).to.respondTo('bar');
-   *
-   * To check if a constructor will respond to a static function,
-   * set the `itself` flag.
-   *
-   *     Klass.baz = function(){};
-   *     expect(Klass).itself.to.respondTo('baz');
-   *
-   * @name respondTo
-   * @alias respondsTo
-   * @param {String} method
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function respondTo (method, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object')
-      , itself = flag(this, 'itself')
-      , context = ('function' === _.type(obj) && !itself)
-        ? obj.prototype[method]
-        : obj[method];
-
-    this.assert(
-        'function' === typeof context
-      , 'expected #{this} to respond to ' + _.inspect(method)
-      , 'expected #{this} to not respond to ' + _.inspect(method)
-    );
-  }
-
-  Assertion.addMethod('respondTo', respondTo);
-  Assertion.addMethod('respondsTo', respondTo);
-
-  /**
-   * ### .itself
-   *
-   * Sets the `itself` flag, later used by the `respondTo` assertion.
-   *
-   *     function Foo() {}
-   *     Foo.bar = function() {}
-   *     Foo.prototype.baz = function() {}
-   *
-   *     expect(Foo).itself.to.respondTo('bar');
-   *     expect(Foo).itself.not.to.respondTo('baz');
-   *
-   * @name itself
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('itself', function () {
-    flag(this, 'itself', true);
-  });
-
-  /**
-   * ### .satisfy(method)
-   *
-   * Asserts that the target passes a given truth test.
-   *
-   *     expect(1).to.satisfy(function(num) { return num > 0; });
-   *
-   * @name satisfy
-   * @alias satisfies
-   * @param {Function} matcher
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function satisfy (matcher, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-    var result = matcher(obj);
-    this.assert(
-        result
-      , 'expected #{this} to satisfy ' + _.objDisplay(matcher)
-      , 'expected #{this} to not satisfy' + _.objDisplay(matcher)
-      , this.negate ? false : true
-      , result
-    );
-  }
-
-  Assertion.addMethod('satisfy', satisfy);
-  Assertion.addMethod('satisfies', satisfy);
-
-  /**
-   * ### .closeTo(expected, delta)
-   *
-   * Asserts that the target is equal `expected`, to within a +/- `delta` range.
-   *
-   *     expect(1.5).to.be.closeTo(1, 0.5);
-   *
-   * @name closeTo
-   * @alias approximately
-   * @param {Number} expected
-   * @param {Number} delta
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function closeTo(expected, delta, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-
-    new Assertion(obj, msg).is.a('number');
-    if (_.type(expected) !== 'number' || _.type(delta) !== 'number') {
-      throw new Error('the arguments to closeTo or approximately must be numbers');
-    }
-
-    this.assert(
-        Math.abs(obj - expected) <= delta
-      , 'expected #{this} to be close to ' + expected + ' +/- ' + delta
-      , 'expected #{this} not to be close to ' + expected + ' +/- ' + delta
-    );
-  }
-
-  Assertion.addMethod('closeTo', closeTo);
-  Assertion.addMethod('approximately', closeTo);
-
-  function isSubsetOf(subset, superset, cmp) {
-    return subset.every(function(elem) {
-      if (!cmp) return superset.indexOf(elem) !== -1;
-
-      return superset.some(function(elem2) {
-        return cmp(elem, elem2);
-      });
-    })
-  }
-
-  /**
-   * ### .members(set)
-   *
-   * Asserts that the target is a superset of `set`,
-   * or that the target and `set` have the same strictly-equal (===) members.
-   * Alternately, if the `deep` flag is set, set members are compared for deep
-   * equality.
-   *
-   *     expect([1, 2, 3]).to.include.members([3, 2]);
-   *     expect([1, 2, 3]).to.not.include.members([3, 2, 8]);
-   *
-   *     expect([4, 2]).to.have.members([2, 4]);
-   *     expect([5, 2]).to.not.have.members([5, 2, 1]);
-   *
-   *     expect([{ id: 1 }]).to.deep.include.members([{ id: 1 }]);
-   *
-   * @name members
-   * @param {Array} set
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addMethod('members', function (subset, msg) {
-    if (msg) flag(this, 'message', msg);
-    var obj = flag(this, 'object');
-
-    new Assertion(obj).to.be.an('array');
-    new Assertion(subset).to.be.an('array');
-
-    var cmp = flag(this, 'deep') ? _.eql : undefined;
-
-    if (flag(this, 'contains')) {
-      return this.assert(
-          isSubsetOf(subset, obj, cmp)
-        , 'expected #{this} to be a superset of #{act}'
-        , 'expected #{this} to not be a superset of #{act}'
-        , obj
-        , subset
-      );
-    }
-
-    this.assert(
-        isSubsetOf(obj, subset, cmp) && isSubsetOf(subset, obj, cmp)
-        , 'expected #{this} to have the same members as #{act}'
-        , 'expected #{this} to not have the same members as #{act}'
-        , obj
-        , subset
-    );
-  });
-
-  /**
-   * ### .oneOf(list)
-   *
-   * Assert that a value appears somewhere in the top level of array `list`.
-   *
-   *     expect('a').to.be.oneOf(['a', 'b', 'c']);
-   *     expect(9).to.not.be.oneOf(['z']);
-   *     expect([3]).to.not.be.oneOf([1, 2, [3]]);
-   *
-   *     var three = [3];
-   *     // for object-types, contents are not compared
-   *     expect(three).to.not.be.oneOf([1, 2, [3]]);
-   *     // comparing references works
-   *     expect(three).to.be.oneOf([1, 2, three]);
-   *
-   * @name oneOf
-   * @param {Array<*>} list
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function oneOf (list, msg) {
-    if (msg) flag(this, 'message', msg);
-    var expected = flag(this, 'object');
-    new Assertion(list).to.be.an('array');
-
-    this.assert(
-        list.indexOf(expected) > -1
-      , 'expected #{this} to be one of #{exp}'
-      , 'expected #{this} to not be one of #{exp}'
-      , list
-      , expected
-    );
-  }
-
-  Assertion.addMethod('oneOf', oneOf);
-
-
-  /**
-   * ### .change(function)
-   *
-   * Asserts that a function changes an object property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { obj.val += 3 };
-   *     var noChangeFn = function() { return 'foo' + 'bar'; }
-   *     expect(fn).to.change(obj, 'val');
-   *     expect(noChangeFn).to.not.change(obj, 'val')
-   *
-   * @name change
-   * @alias changes
-   * @alias Change
-   * @param {String} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertChanges (object, prop, msg) {
-    if (msg) flag(this, 'message', msg);
-    var fn = flag(this, 'object');
-    new Assertion(object, msg).to.have.property(prop);
-    new Assertion(fn).is.a('function');
-
-    var initial = object[prop];
-    fn();
-
-    this.assert(
-      initial !== object[prop]
-      , 'expected .' + prop + ' to change'
-      , 'expected .' + prop + ' to not change'
-    );
-  }
-
-  Assertion.addChainableMethod('change', assertChanges);
-  Assertion.addChainableMethod('changes', assertChanges);
-
-  /**
-   * ### .increase(function)
-   *
-   * Asserts that a function increases an object property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { obj.val = 15 };
-   *     expect(fn).to.increase(obj, 'val');
-   *
-   * @name increase
-   * @alias increases
-   * @alias Increase
-   * @param {String} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertIncreases (object, prop, msg) {
-    if (msg) flag(this, 'message', msg);
-    var fn = flag(this, 'object');
-    new Assertion(object, msg).to.have.property(prop);
-    new Assertion(fn).is.a('function');
-
-    var initial = object[prop];
-    fn();
-
-    this.assert(
-      object[prop] - initial > 0
-      , 'expected .' + prop + ' to increase'
-      , 'expected .' + prop + ' to not increase'
-    );
-  }
-
-  Assertion.addChainableMethod('increase', assertIncreases);
-  Assertion.addChainableMethod('increases', assertIncreases);
-
-  /**
-   * ### .decrease(function)
-   *
-   * Asserts that a function decreases an object property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { obj.val = 5 };
-   *     expect(fn).to.decrease(obj, 'val');
-   *
-   * @name decrease
-   * @alias decreases
-   * @alias Decrease
-   * @param {String} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace BDD
-   * @api public
-   */
-
-  function assertDecreases (object, prop, msg) {
-    if (msg) flag(this, 'message', msg);
-    var fn = flag(this, 'object');
-    new Assertion(object, msg).to.have.property(prop);
-    new Assertion(fn).is.a('function');
-
-    var initial = object[prop];
-    fn();
-
-    this.assert(
-      object[prop] - initial < 0
-      , 'expected .' + prop + ' to decrease'
-      , 'expected .' + prop + ' to not decrease'
-    );
-  }
-
-  Assertion.addChainableMethod('decrease', assertDecreases);
-  Assertion.addChainableMethod('decreases', assertDecreases);
-
-  /**
-   * ### .extensible
-   *
-   * Asserts that the target is extensible (can have new properties added to
-   * it).
-   *
-   *     var nonExtensibleObject = Object.preventExtensions({});
-   *     var sealedObject = Object.seal({});
-   *     var frozenObject = Object.freeze({});
-   *
-   *     expect({}).to.be.extensible;
-   *     expect(nonExtensibleObject).to.not.be.extensible;
-   *     expect(sealedObject).to.not.be.extensible;
-   *     expect(frozenObject).to.not.be.extensible;
-   *
-   * @name extensible
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('extensible', function() {
-    var obj = flag(this, 'object');
-
-    // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
-    // In ES6, a non-object argument will be treated as if it was a non-extensible ordinary object, simply return false.
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible
-    // The following provides ES6 behavior when a TypeError is thrown under ES5.
-
-    var isExtensible;
-
-    try {
-      isExtensible = Object.isExtensible(obj);
-    } catch (err) {
-      if (err instanceof TypeError) isExtensible = false;
-      else throw err;
-    }
-
-    this.assert(
-      isExtensible
-      , 'expected #{this} to be extensible'
-      , 'expected #{this} to not be extensible'
-    );
-  });
-
-  /**
-   * ### .sealed
-   *
-   * Asserts that the target is sealed (cannot have new properties added to it
-   * and its existing properties cannot be removed).
-   *
-   *     var sealedObject = Object.seal({});
-   *     var frozenObject = Object.freeze({});
-   *
-   *     expect(sealedObject).to.be.sealed;
-   *     expect(frozenObject).to.be.sealed;
-   *     expect({}).to.not.be.sealed;
-   *
-   * @name sealed
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('sealed', function() {
-    var obj = flag(this, 'object');
-
-    // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
-    // In ES6, a non-object argument will be treated as if it was a sealed ordinary object, simply return true.
-    // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed
-    // The following provides ES6 behavior when a TypeError is thrown under ES5.
-
-    var isSealed;
-
-    try {
-      isSealed = Object.isSealed(obj);
-    } catch (err) {
-      if (err instanceof TypeError) isSealed = true;
-      else throw err;
-    }
-
-    this.assert(
-      isSealed
-      , 'expected #{this} to be sealed'
-      , 'expected #{this} to not be sealed'
-    );
-  });
-
-  /**
-   * ### .frozen
-   *
-   * Asserts that the target is frozen (cannot have new properties added to it
-   * and its existing properties cannot be modified).
-   *
-   *     var frozenObject = Object.freeze({});
-   *
-   *     expect(frozenObject).to.be.frozen;
-   *     expect({}).to.not.be.frozen;
-   *
-   * @name frozen
-   * @namespace BDD
-   * @api public
-   */
-
-  Assertion.addProperty('frozen', function() {
-    var obj = flag(this, 'object');
-
-    // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
-    // In ES6, a non-object argument will be treated as if it was a frozen ordinary object, simply return true.
-    // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen
-    // The following provides ES6 behavior when a TypeError is thrown under ES5.
-
-    var isFrozen;
-
-    try {
-      isFrozen = Object.isFrozen(obj);
-    } catch (err) {
-      if (err instanceof TypeError) isFrozen = true;
-      else throw err;
-    }
-
-    this.assert(
-      isFrozen
-      , 'expected #{this} to be frozen'
-      , 'expected #{this} to not be frozen'
-    );
-  });
-};
-
-
-/***/ }),
-/* 97 */
-/***/ (function(module, exports) {
-
-/*!
- * chai
- * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-
-module.exports = function (chai, util) {
-
-  /*!
-   * Chai dependencies.
-   */
-
-  var Assertion = chai.Assertion
-    , flag = util.flag;
-
-  /*!
-   * Module export.
-   */
-
-  /**
-   * ### assert(expression, message)
-   *
-   * Write your own test expressions.
-   *
-   *     assert('foo' !== 'bar', 'foo is not bar');
-   *     assert(Array.isArray([]), 'empty arrays are arrays');
-   *
-   * @param {Mixed} expression to test for truthiness
-   * @param {String} message to display on error
-   * @name assert
-   * @namespace Assert
-   * @api public
-   */
-
-  var assert = chai.assert = function (express, errmsg) {
-    var test = new Assertion(null, null, chai.assert);
-    test.assert(
-        express
-      , errmsg
-      , '[ negation message unavailable ]'
-    );
-  };
-
-  /**
-   * ### .fail(actual, expected, [message], [operator])
-   *
-   * Throw a failure. Node.js `assert` module-compatible.
-   *
-   * @name fail
-   * @param {Mixed} actual
-   * @param {Mixed} expected
-   * @param {String} message
-   * @param {String} operator
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.fail = function (actual, expected, message, operator) {
-    message = message || 'assert.fail()';
-    throw new chai.AssertionError(message, {
-        actual: actual
-      , expected: expected
-      , operator: operator
-    }, assert.fail);
-  };
-
-  /**
-   * ### .isOk(object, [message])
-   *
-   * Asserts that `object` is truthy.
-   *
-   *     assert.isOk('everything', 'everything is ok');
-   *     assert.isOk(false, 'this will fail');
-   *
-   * @name isOk
-   * @alias ok
-   * @param {Mixed} object to test
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isOk = function (val, msg) {
-    new Assertion(val, msg).is.ok;
-  };
-
-  /**
-   * ### .isNotOk(object, [message])
-   *
-   * Asserts that `object` is falsy.
-   *
-   *     assert.isNotOk('everything', 'this will fail');
-   *     assert.isNotOk(false, 'this will pass');
-   *
-   * @name isNotOk
-   * @alias notOk
-   * @param {Mixed} object to test
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotOk = function (val, msg) {
-    new Assertion(val, msg).is.not.ok;
-  };
-
-  /**
-   * ### .equal(actual, expected, [message])
-   *
-   * Asserts non-strict equality (`==`) of `actual` and `expected`.
-   *
-   *     assert.equal(3, '3', '== coerces values to strings');
-   *
-   * @name equal
-   * @param {Mixed} actual
-   * @param {Mixed} expected
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.equal = function (act, exp, msg) {
-    var test = new Assertion(act, msg, assert.equal);
-
-    test.assert(
-        exp == flag(test, 'object')
-      , 'expected #{this} to equal #{exp}'
-      , 'expected #{this} to not equal #{act}'
-      , exp
-      , act
-    );
-  };
-
-  /**
-   * ### .notEqual(actual, expected, [message])
-   *
-   * Asserts non-strict inequality (`!=`) of `actual` and `expected`.
-   *
-   *     assert.notEqual(3, 4, 'these numbers are not equal');
-   *
-   * @name notEqual
-   * @param {Mixed} actual
-   * @param {Mixed} expected
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notEqual = function (act, exp, msg) {
-    var test = new Assertion(act, msg, assert.notEqual);
-
-    test.assert(
-        exp != flag(test, 'object')
-      , 'expected #{this} to not equal #{exp}'
-      , 'expected #{this} to equal #{act}'
-      , exp
-      , act
-    );
-  };
-
-  /**
-   * ### .strictEqual(actual, expected, [message])
-   *
-   * Asserts strict equality (`===`) of `actual` and `expected`.
-   *
-   *     assert.strictEqual(true, true, 'these booleans are strictly equal');
-   *
-   * @name strictEqual
-   * @param {Mixed} actual
-   * @param {Mixed} expected
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.strictEqual = function (act, exp, msg) {
-    new Assertion(act, msg).to.equal(exp);
-  };
-
-  /**
-   * ### .notStrictEqual(actual, expected, [message])
-   *
-   * Asserts strict inequality (`!==`) of `actual` and `expected`.
-   *
-   *     assert.notStrictEqual(3, '3', 'no coercion for strict equality');
-   *
-   * @name notStrictEqual
-   * @param {Mixed} actual
-   * @param {Mixed} expected
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notStrictEqual = function (act, exp, msg) {
-    new Assertion(act, msg).to.not.equal(exp);
-  };
-
-  /**
-   * ### .deepEqual(actual, expected, [message])
-   *
-   * Asserts that `actual` is deeply equal to `expected`.
-   *
-   *     assert.deepEqual({ tea: 'green' }, { tea: 'green' });
-   *
-   * @name deepEqual
-   * @param {Mixed} actual
-   * @param {Mixed} expected
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.deepEqual = function (act, exp, msg) {
-    new Assertion(act, msg).to.eql(exp);
-  };
-
-  /**
-   * ### .notDeepEqual(actual, expected, [message])
-   *
-   * Assert that `actual` is not deeply equal to `expected`.
-   *
-   *     assert.notDeepEqual({ tea: 'green' }, { tea: 'jasmine' });
-   *
-   * @name notDeepEqual
-   * @param {Mixed} actual
-   * @param {Mixed} expected
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notDeepEqual = function (act, exp, msg) {
-    new Assertion(act, msg).to.not.eql(exp);
-  };
-
-   /**
-   * ### .isAbove(valueToCheck, valueToBeAbove, [message])
-   *
-   * Asserts `valueToCheck` is strictly greater than (>) `valueToBeAbove`
-   *
-   *     assert.isAbove(5, 2, '5 is strictly greater than 2');
-   *
-   * @name isAbove
-   * @param {Mixed} valueToCheck
-   * @param {Mixed} valueToBeAbove
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isAbove = function (val, abv, msg) {
-    new Assertion(val, msg).to.be.above(abv);
-  };
-
-   /**
-   * ### .isAtLeast(valueToCheck, valueToBeAtLeast, [message])
-   *
-   * Asserts `valueToCheck` is greater than or equal to (>=) `valueToBeAtLeast`
-   *
-   *     assert.isAtLeast(5, 2, '5 is greater or equal to 2');
-   *     assert.isAtLeast(3, 3, '3 is greater or equal to 3');
-   *
-   * @name isAtLeast
-   * @param {Mixed} valueToCheck
-   * @param {Mixed} valueToBeAtLeast
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isAtLeast = function (val, atlst, msg) {
-    new Assertion(val, msg).to.be.least(atlst);
-  };
-
-   /**
-   * ### .isBelow(valueToCheck, valueToBeBelow, [message])
-   *
-   * Asserts `valueToCheck` is strictly less than (<) `valueToBeBelow`
-   *
-   *     assert.isBelow(3, 6, '3 is strictly less than 6');
-   *
-   * @name isBelow
-   * @param {Mixed} valueToCheck
-   * @param {Mixed} valueToBeBelow
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isBelow = function (val, blw, msg) {
-    new Assertion(val, msg).to.be.below(blw);
-  };
-
-   /**
-   * ### .isAtMost(valueToCheck, valueToBeAtMost, [message])
-   *
-   * Asserts `valueToCheck` is less than or equal to (<=) `valueToBeAtMost`
-   *
-   *     assert.isAtMost(3, 6, '3 is less than or equal to 6');
-   *     assert.isAtMost(4, 4, '4 is less than or equal to 4');
-   *
-   * @name isAtMost
-   * @param {Mixed} valueToCheck
-   * @param {Mixed} valueToBeAtMost
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isAtMost = function (val, atmst, msg) {
-    new Assertion(val, msg).to.be.most(atmst);
-  };
-
-  /**
-   * ### .isTrue(value, [message])
-   *
-   * Asserts that `value` is true.
-   *
-   *     var teaServed = true;
-   *     assert.isTrue(teaServed, 'the tea has been served');
-   *
-   * @name isTrue
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isTrue = function (val, msg) {
-    new Assertion(val, msg).is['true'];
-  };
-
-  /**
-   * ### .isNotTrue(value, [message])
-   *
-   * Asserts that `value` is not true.
-   *
-   *     var tea = 'tasty chai';
-   *     assert.isNotTrue(tea, 'great, time for tea!');
-   *
-   * @name isNotTrue
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotTrue = function (val, msg) {
-    new Assertion(val, msg).to.not.equal(true);
-  };
-
-  /**
-   * ### .isFalse(value, [message])
-   *
-   * Asserts that `value` is false.
-   *
-   *     var teaServed = false;
-   *     assert.isFalse(teaServed, 'no tea yet? hmm...');
-   *
-   * @name isFalse
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isFalse = function (val, msg) {
-    new Assertion(val, msg).is['false'];
-  };
-
-  /**
-   * ### .isNotFalse(value, [message])
-   *
-   * Asserts that `value` is not false.
-   *
-   *     var tea = 'tasty chai';
-   *     assert.isNotFalse(tea, 'great, time for tea!');
-   *
-   * @name isNotFalse
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotFalse = function (val, msg) {
-    new Assertion(val, msg).to.not.equal(false);
-  };
-
-  /**
-   * ### .isNull(value, [message])
-   *
-   * Asserts that `value` is null.
-   *
-   *     assert.isNull(err, 'there was no error');
-   *
-   * @name isNull
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNull = function (val, msg) {
-    new Assertion(val, msg).to.equal(null);
-  };
-
-  /**
-   * ### .isNotNull(value, [message])
-   *
-   * Asserts that `value` is not null.
-   *
-   *     var tea = 'tasty chai';
-   *     assert.isNotNull(tea, 'great, time for tea!');
-   *
-   * @name isNotNull
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotNull = function (val, msg) {
-    new Assertion(val, msg).to.not.equal(null);
-  };
-
-  /**
-   * ### .isNaN
-   * Asserts that value is NaN
-   *
-   *    assert.isNaN('foo', 'foo is NaN');
-   *
-   * @name isNaN
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNaN = function (val, msg) {
-    new Assertion(val, msg).to.be.NaN;
-  };
-
-  /**
-   * ### .isNotNaN
-   * Asserts that value is not NaN
-   *
-   *    assert.isNotNaN(4, '4 is not NaN');
-   *
-   * @name isNotNaN
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-  assert.isNotNaN = function (val, msg) {
-    new Assertion(val, msg).not.to.be.NaN;
-  };
-
-  /**
-   * ### .isUndefined(value, [message])
-   *
-   * Asserts that `value` is `undefined`.
-   *
-   *     var tea;
-   *     assert.isUndefined(tea, 'no tea defined');
-   *
-   * @name isUndefined
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isUndefined = function (val, msg) {
-    new Assertion(val, msg).to.equal(undefined);
-  };
-
-  /**
-   * ### .isDefined(value, [message])
-   *
-   * Asserts that `value` is not `undefined`.
-   *
-   *     var tea = 'cup of chai';
-   *     assert.isDefined(tea, 'tea has been defined');
-   *
-   * @name isDefined
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isDefined = function (val, msg) {
-    new Assertion(val, msg).to.not.equal(undefined);
-  };
-
-  /**
-   * ### .isFunction(value, [message])
-   *
-   * Asserts that `value` is a function.
-   *
-   *     function serveTea() { return 'cup of tea'; };
-   *     assert.isFunction(serveTea, 'great, we can have tea now');
-   *
-   * @name isFunction
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isFunction = function (val, msg) {
-    new Assertion(val, msg).to.be.a('function');
-  };
-
-  /**
-   * ### .isNotFunction(value, [message])
-   *
-   * Asserts that `value` is _not_ a function.
-   *
-   *     var serveTea = [ 'heat', 'pour', 'sip' ];
-   *     assert.isNotFunction(serveTea, 'great, we have listed the steps');
-   *
-   * @name isNotFunction
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotFunction = function (val, msg) {
-    new Assertion(val, msg).to.not.be.a('function');
-  };
-
-  /**
-   * ### .isObject(value, [message])
-   *
-   * Asserts that `value` is an object of type 'Object' (as revealed by `Object.prototype.toString`).
-   * _The assertion does not match subclassed objects._
-   *
-   *     var selection = { name: 'Chai', serve: 'with spices' };
-   *     assert.isObject(selection, 'tea selection is an object');
-   *
-   * @name isObject
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isObject = function (val, msg) {
-    new Assertion(val, msg).to.be.a('object');
-  };
-
-  /**
-   * ### .isNotObject(value, [message])
-   *
-   * Asserts that `value` is _not_ an object of type 'Object' (as revealed by `Object.prototype.toString`).
-   *
-   *     var selection = 'chai'
-   *     assert.isNotObject(selection, 'tea selection is not an object');
-   *     assert.isNotObject(null, 'null is not an object');
-   *
-   * @name isNotObject
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotObject = function (val, msg) {
-    new Assertion(val, msg).to.not.be.a('object');
-  };
-
-  /**
-   * ### .isArray(value, [message])
-   *
-   * Asserts that `value` is an array.
-   *
-   *     var menu = [ 'green', 'chai', 'oolong' ];
-   *     assert.isArray(menu, 'what kind of tea do we want?');
-   *
-   * @name isArray
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isArray = function (val, msg) {
-    new Assertion(val, msg).to.be.an('array');
-  };
-
-  /**
-   * ### .isNotArray(value, [message])
-   *
-   * Asserts that `value` is _not_ an array.
-   *
-   *     var menu = 'green|chai|oolong';
-   *     assert.isNotArray(menu, 'what kind of tea do we want?');
-   *
-   * @name isNotArray
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotArray = function (val, msg) {
-    new Assertion(val, msg).to.not.be.an('array');
-  };
-
-  /**
-   * ### .isString(value, [message])
-   *
-   * Asserts that `value` is a string.
-   *
-   *     var teaOrder = 'chai';
-   *     assert.isString(teaOrder, 'order placed');
-   *
-   * @name isString
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isString = function (val, msg) {
-    new Assertion(val, msg).to.be.a('string');
-  };
-
-  /**
-   * ### .isNotString(value, [message])
-   *
-   * Asserts that `value` is _not_ a string.
-   *
-   *     var teaOrder = 4;
-   *     assert.isNotString(teaOrder, 'order placed');
-   *
-   * @name isNotString
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotString = function (val, msg) {
-    new Assertion(val, msg).to.not.be.a('string');
-  };
-
-  /**
-   * ### .isNumber(value, [message])
-   *
-   * Asserts that `value` is a number.
-   *
-   *     var cups = 2;
-   *     assert.isNumber(cups, 'how many cups');
-   *
-   * @name isNumber
-   * @param {Number} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNumber = function (val, msg) {
-    new Assertion(val, msg).to.be.a('number');
-  };
-
-  /**
-   * ### .isNotNumber(value, [message])
-   *
-   * Asserts that `value` is _not_ a number.
-   *
-   *     var cups = '2 cups please';
-   *     assert.isNotNumber(cups, 'how many cups');
-   *
-   * @name isNotNumber
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotNumber = function (val, msg) {
-    new Assertion(val, msg).to.not.be.a('number');
-  };
-
-  /**
-   * ### .isBoolean(value, [message])
-   *
-   * Asserts that `value` is a boolean.
-   *
-   *     var teaReady = true
-   *       , teaServed = false;
-   *
-   *     assert.isBoolean(teaReady, 'is the tea ready');
-   *     assert.isBoolean(teaServed, 'has tea been served');
-   *
-   * @name isBoolean
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isBoolean = function (val, msg) {
-    new Assertion(val, msg).to.be.a('boolean');
-  };
-
-  /**
-   * ### .isNotBoolean(value, [message])
-   *
-   * Asserts that `value` is _not_ a boolean.
-   *
-   *     var teaReady = 'yep'
-   *       , teaServed = 'nope';
-   *
-   *     assert.isNotBoolean(teaReady, 'is the tea ready');
-   *     assert.isNotBoolean(teaServed, 'has tea been served');
-   *
-   * @name isNotBoolean
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotBoolean = function (val, msg) {
-    new Assertion(val, msg).to.not.be.a('boolean');
-  };
-
-  /**
-   * ### .typeOf(value, name, [message])
-   *
-   * Asserts that `value`'s type is `name`, as determined by
-   * `Object.prototype.toString`.
-   *
-   *     assert.typeOf({ tea: 'chai' }, 'object', 'we have an object');
-   *     assert.typeOf(['chai', 'jasmine'], 'array', 'we have an array');
-   *     assert.typeOf('tea', 'string', 'we have a string');
-   *     assert.typeOf(/tea/, 'regexp', 'we have a regular expression');
-   *     assert.typeOf(null, 'null', 'we have a null');
-   *     assert.typeOf(undefined, 'undefined', 'we have an undefined');
-   *
-   * @name typeOf
-   * @param {Mixed} value
-   * @param {String} name
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.typeOf = function (val, type, msg) {
-    new Assertion(val, msg).to.be.a(type);
-  };
-
-  /**
-   * ### .notTypeOf(value, name, [message])
-   *
-   * Asserts that `value`'s type is _not_ `name`, as determined by
-   * `Object.prototype.toString`.
-   *
-   *     assert.notTypeOf('tea', 'number', 'strings are not numbers');
-   *
-   * @name notTypeOf
-   * @param {Mixed} value
-   * @param {String} typeof name
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notTypeOf = function (val, type, msg) {
-    new Assertion(val, msg).to.not.be.a(type);
-  };
-
-  /**
-   * ### .instanceOf(object, constructor, [message])
-   *
-   * Asserts that `value` is an instance of `constructor`.
-   *
-   *     var Tea = function (name) { this.name = name; }
-   *       , chai = new Tea('chai');
-   *
-   *     assert.instanceOf(chai, Tea, 'chai is an instance of tea');
-   *
-   * @name instanceOf
-   * @param {Object} object
-   * @param {Constructor} constructor
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.instanceOf = function (val, type, msg) {
-    new Assertion(val, msg).to.be.instanceOf(type);
-  };
-
-  /**
-   * ### .notInstanceOf(object, constructor, [message])
-   *
-   * Asserts `value` is not an instance of `constructor`.
-   *
-   *     var Tea = function (name) { this.name = name; }
-   *       , chai = new String('chai');
-   *
-   *     assert.notInstanceOf(chai, Tea, 'chai is not an instance of tea');
-   *
-   * @name notInstanceOf
-   * @param {Object} object
-   * @param {Constructor} constructor
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notInstanceOf = function (val, type, msg) {
-    new Assertion(val, msg).to.not.be.instanceOf(type);
-  };
-
-  /**
-   * ### .include(haystack, needle, [message])
-   *
-   * Asserts that `haystack` includes `needle`. Works
-   * for strings and arrays.
-   *
-   *     assert.include('foobar', 'bar', 'foobar contains string "bar"');
-   *     assert.include([ 1, 2, 3 ], 3, 'array contains value');
-   *
-   * @name include
-   * @param {Array|String} haystack
-   * @param {Mixed} needle
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.include = function (exp, inc, msg) {
-    new Assertion(exp, msg, assert.include).include(inc);
-  };
-
-  /**
-   * ### .notInclude(haystack, needle, [message])
-   *
-   * Asserts that `haystack` does not include `needle`. Works
-   * for strings and arrays.
-   *
-   *     assert.notInclude('foobar', 'baz', 'string not include substring');
-   *     assert.notInclude([ 1, 2, 3 ], 4, 'array not include contain value');
-   *
-   * @name notInclude
-   * @param {Array|String} haystack
-   * @param {Mixed} needle
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notInclude = function (exp, inc, msg) {
-    new Assertion(exp, msg, assert.notInclude).not.include(inc);
-  };
-
-  /**
-   * ### .match(value, regexp, [message])
-   *
-   * Asserts that `value` matches the regular expression `regexp`.
-   *
-   *     assert.match('foobar', /^foo/, 'regexp matches');
-   *
-   * @name match
-   * @param {Mixed} value
-   * @param {RegExp} regexp
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.match = function (exp, re, msg) {
-    new Assertion(exp, msg).to.match(re);
-  };
-
-  /**
-   * ### .notMatch(value, regexp, [message])
-   *
-   * Asserts that `value` does not match the regular expression `regexp`.
-   *
-   *     assert.notMatch('foobar', /^foo/, 'regexp does not match');
-   *
-   * @name notMatch
-   * @param {Mixed} value
-   * @param {RegExp} regexp
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notMatch = function (exp, re, msg) {
-    new Assertion(exp, msg).to.not.match(re);
-  };
-
-  /**
-   * ### .property(object, property, [message])
-   *
-   * Asserts that `object` has a property named by `property`.
-   *
-   *     assert.property({ tea: { green: 'matcha' }}, 'tea');
-   *
-   * @name property
-   * @param {Object} object
-   * @param {String} property
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.property = function (obj, prop, msg) {
-    new Assertion(obj, msg).to.have.property(prop);
-  };
-
-  /**
-   * ### .notProperty(object, property, [message])
-   *
-   * Asserts that `object` does _not_ have a property named by `property`.
-   *
-   *     assert.notProperty({ tea: { green: 'matcha' }}, 'coffee');
-   *
-   * @name notProperty
-   * @param {Object} object
-   * @param {String} property
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notProperty = function (obj, prop, msg) {
-    new Assertion(obj, msg).to.not.have.property(prop);
-  };
-
-  /**
-   * ### .deepProperty(object, property, [message])
-   *
-   * Asserts that `object` has a property named by `property`, which can be a
-   * string using dot- and bracket-notation for deep reference.
-   *
-   *     assert.deepProperty({ tea: { green: 'matcha' }}, 'tea.green');
-   *
-   * @name deepProperty
-   * @param {Object} object
-   * @param {String} property
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.deepProperty = function (obj, prop, msg) {
-    new Assertion(obj, msg).to.have.deep.property(prop);
-  };
-
-  /**
-   * ### .notDeepProperty(object, property, [message])
-   *
-   * Asserts that `object` does _not_ have a property named by `property`, which
-   * can be a string using dot- and bracket-notation for deep reference.
-   *
-   *     assert.notDeepProperty({ tea: { green: 'matcha' }}, 'tea.oolong');
-   *
-   * @name notDeepProperty
-   * @param {Object} object
-   * @param {String} property
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.notDeepProperty = function (obj, prop, msg) {
-    new Assertion(obj, msg).to.not.have.deep.property(prop);
-  };
-
-  /**
-   * ### .propertyVal(object, property, value, [message])
-   *
-   * Asserts that `object` has a property named by `property` with value given
-   * by `value`.
-   *
-   *     assert.propertyVal({ tea: 'is good' }, 'tea', 'is good');
-   *
-   * @name propertyVal
-   * @param {Object} object
-   * @param {String} property
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.propertyVal = function (obj, prop, val, msg) {
-    new Assertion(obj, msg).to.have.property(prop, val);
-  };
-
-  /**
-   * ### .propertyNotVal(object, property, value, [message])
-   *
-   * Asserts that `object` has a property named by `property`, but with a value
-   * different from that given by `value`.
-   *
-   *     assert.propertyNotVal({ tea: 'is good' }, 'tea', 'is bad');
-   *
-   * @name propertyNotVal
-   * @param {Object} object
-   * @param {String} property
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.propertyNotVal = function (obj, prop, val, msg) {
-    new Assertion(obj, msg).to.not.have.property(prop, val);
-  };
-
-  /**
-   * ### .deepPropertyVal(object, property, value, [message])
-   *
-   * Asserts that `object` has a property named by `property` with value given
-   * by `value`. `property` can use dot- and bracket-notation for deep
-   * reference.
-   *
-   *     assert.deepPropertyVal({ tea: { green: 'matcha' }}, 'tea.green', 'matcha');
-   *
-   * @name deepPropertyVal
-   * @param {Object} object
-   * @param {String} property
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.deepPropertyVal = function (obj, prop, val, msg) {
-    new Assertion(obj, msg).to.have.deep.property(prop, val);
-  };
-
-  /**
-   * ### .deepPropertyNotVal(object, property, value, [message])
-   *
-   * Asserts that `object` has a property named by `property`, but with a value
-   * different from that given by `value`. `property` can use dot- and
-   * bracket-notation for deep reference.
-   *
-   *     assert.deepPropertyNotVal({ tea: { green: 'matcha' }}, 'tea.green', 'konacha');
-   *
-   * @name deepPropertyNotVal
-   * @param {Object} object
-   * @param {String} property
-   * @param {Mixed} value
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.deepPropertyNotVal = function (obj, prop, val, msg) {
-    new Assertion(obj, msg).to.not.have.deep.property(prop, val);
-  };
-
-  /**
-   * ### .lengthOf(object, length, [message])
-   *
-   * Asserts that `object` has a `length` property with the expected value.
-   *
-   *     assert.lengthOf([1,2,3], 3, 'array has length of 3');
-   *     assert.lengthOf('foobar', 6, 'string has length of 6');
-   *
-   * @name lengthOf
-   * @param {Mixed} object
-   * @param {Number} length
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.lengthOf = function (exp, len, msg) {
-    new Assertion(exp, msg).to.have.length(len);
-  };
-
-  /**
-   * ### .throws(function, [constructor/string/regexp], [string/regexp], [message])
-   *
-   * Asserts that `function` will throw an error that is an instance of
-   * `constructor`, or alternately that it will throw an error with message
-   * matching `regexp`.
-   *
-   *     assert.throws(fn, 'function throws a reference error');
-   *     assert.throws(fn, /function throws a reference error/);
-   *     assert.throws(fn, ReferenceError);
-   *     assert.throws(fn, ReferenceError, 'function throws a reference error');
-   *     assert.throws(fn, ReferenceError, /function throws a reference error/);
-   *
-   * @name throws
-   * @alias throw
-   * @alias Throw
-   * @param {Function} function
-   * @param {ErrorConstructor} constructor
-   * @param {RegExp} regexp
-   * @param {String} message
-   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.throws = function (fn, errt, errs, msg) {
-    if ('string' === typeof errt || errt instanceof RegExp) {
-      errs = errt;
-      errt = null;
-    }
-
-    var assertErr = new Assertion(fn, msg).to.throw(errt, errs);
-    return flag(assertErr, 'object');
-  };
-
-  /**
-   * ### .doesNotThrow(function, [constructor/regexp], [message])
-   *
-   * Asserts that `function` will _not_ throw an error that is an instance of
-   * `constructor`, or alternately that it will not throw an error with message
-   * matching `regexp`.
-   *
-   *     assert.doesNotThrow(fn, Error, 'function does not throw');
-   *
-   * @name doesNotThrow
-   * @param {Function} function
-   * @param {ErrorConstructor} constructor
-   * @param {RegExp} regexp
-   * @param {String} message
-   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.doesNotThrow = function (fn, type, msg) {
-    if ('string' === typeof type) {
-      msg = type;
-      type = null;
-    }
-
-    new Assertion(fn, msg).to.not.Throw(type);
-  };
-
-  /**
-   * ### .operator(val1, operator, val2, [message])
-   *
-   * Compares two values using `operator`.
-   *
-   *     assert.operator(1, '<', 2, 'everything is ok');
-   *     assert.operator(1, '>', 2, 'this will fail');
-   *
-   * @name operator
-   * @param {Mixed} val1
-   * @param {String} operator
-   * @param {Mixed} val2
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.operator = function (val, operator, val2, msg) {
-    var ok;
-    switch(operator) {
-      case '==':
-        ok = val == val2;
-        break;
-      case '===':
-        ok = val === val2;
-        break;
-      case '>':
-        ok = val > val2;
-        break;
-      case '>=':
-        ok = val >= val2;
-        break;
-      case '<':
-        ok = val < val2;
-        break;
-      case '<=':
-        ok = val <= val2;
-        break;
-      case '!=':
-        ok = val != val2;
-        break;
-      case '!==':
-        ok = val !== val2;
-        break;
-      default:
-        throw new Error('Invalid operator "' + operator + '"');
-    }
-    var test = new Assertion(ok, msg);
-    test.assert(
-        true === flag(test, 'object')
-      , 'expected ' + util.inspect(val) + ' to be ' + operator + ' ' + util.inspect(val2)
-      , 'expected ' + util.inspect(val) + ' to not be ' + operator + ' ' + util.inspect(val2) );
-  };
-
-  /**
-   * ### .closeTo(actual, expected, delta, [message])
-   *
-   * Asserts that the target is equal `expected`, to within a +/- `delta` range.
-   *
-   *     assert.closeTo(1.5, 1, 0.5, 'numbers are close');
-   *
-   * @name closeTo
-   * @param {Number} actual
-   * @param {Number} expected
-   * @param {Number} delta
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.closeTo = function (act, exp, delta, msg) {
-    new Assertion(act, msg).to.be.closeTo(exp, delta);
-  };
-
-  /**
-   * ### .approximately(actual, expected, delta, [message])
-   *
-   * Asserts that the target is equal `expected`, to within a +/- `delta` range.
-   *
-   *     assert.approximately(1.5, 1, 0.5, 'numbers are close');
-   *
-   * @name approximately
-   * @param {Number} actual
-   * @param {Number} expected
-   * @param {Number} delta
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.approximately = function (act, exp, delta, msg) {
-    new Assertion(act, msg).to.be.approximately(exp, delta);
-  };
-
-  /**
-   * ### .sameMembers(set1, set2, [message])
-   *
-   * Asserts that `set1` and `set2` have the same members.
-   * Order is not taken into account.
-   *
-   *     assert.sameMembers([ 1, 2, 3 ], [ 2, 1, 3 ], 'same members');
-   *
-   * @name sameMembers
-   * @param {Array} set1
-   * @param {Array} set2
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.sameMembers = function (set1, set2, msg) {
-    new Assertion(set1, msg).to.have.same.members(set2);
-  }
-
-  /**
-   * ### .sameDeepMembers(set1, set2, [message])
-   *
-   * Asserts that `set1` and `set2` have the same members - using a deep equality checking.
-   * Order is not taken into account.
-   *
-   *     assert.sameDeepMembers([ {b: 3}, {a: 2}, {c: 5} ], [ {c: 5}, {b: 3}, {a: 2} ], 'same deep members');
-   *
-   * @name sameDeepMembers
-   * @param {Array} set1
-   * @param {Array} set2
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.sameDeepMembers = function (set1, set2, msg) {
-    new Assertion(set1, msg).to.have.same.deep.members(set2);
-  }
-
-  /**
-   * ### .includeMembers(superset, subset, [message])
-   *
-   * Asserts that `subset` is included in `superset`.
-   * Order is not taken into account.
-   *
-   *     assert.includeMembers([ 1, 2, 3 ], [ 2, 1 ], 'include members');
-   *
-   * @name includeMembers
-   * @param {Array} superset
-   * @param {Array} subset
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.includeMembers = function (superset, subset, msg) {
-    new Assertion(superset, msg).to.include.members(subset);
-  }
-
-  /**
-   * ### .includeDeepMembers(superset, subset, [message])
-   *
-   * Asserts that `subset` is included in `superset` - using deep equality checking.
-   * Order is not taken into account.
-   * Duplicates are ignored.
-   *
-   *     assert.includeDeepMembers([ {a: 1}, {b: 2}, {c: 3} ], [ {b: 2}, {a: 1}, {b: 2} ], 'include deep members');
-   *
-   * @name includeDeepMembers
-   * @param {Array} superset
-   * @param {Array} subset
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.includeDeepMembers = function (superset, subset, msg) {
-    new Assertion(superset, msg).to.include.deep.members(subset);
-  }
-
-  /**
-   * ### .oneOf(inList, list, [message])
-   *
-   * Asserts that non-object, non-array value `inList` appears in the flat array `list`.
-   *
-   *     assert.oneOf(1, [ 2, 1 ], 'Not found in list');
-   *
-   * @name oneOf
-   * @param {*} inList
-   * @param {Array<*>} list
-   * @param {String} message
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.oneOf = function (inList, list, msg) {
-    new Assertion(inList, msg).to.be.oneOf(list);
-  }
-
-   /**
-   * ### .changes(function, object, property)
-   *
-   * Asserts that a function changes the value of a property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { obj.val = 22 };
-   *     assert.changes(fn, obj, 'val');
-   *
-   * @name changes
-   * @param {Function} modifier function
-   * @param {Object} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.changes = function (fn, obj, prop) {
-    new Assertion(fn).to.change(obj, prop);
-  }
-
-   /**
-   * ### .doesNotChange(function, object, property)
-   *
-   * Asserts that a function does not changes the value of a property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { console.log('foo'); };
-   *     assert.doesNotChange(fn, obj, 'val');
-   *
-   * @name doesNotChange
-   * @param {Function} modifier function
-   * @param {Object} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.doesNotChange = function (fn, obj, prop) {
-    new Assertion(fn).to.not.change(obj, prop);
-  }
-
-   /**
-   * ### .increases(function, object, property)
-   *
-   * Asserts that a function increases an object property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { obj.val = 13 };
-   *     assert.increases(fn, obj, 'val');
-   *
-   * @name increases
-   * @param {Function} modifier function
-   * @param {Object} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.increases = function (fn, obj, prop) {
-    new Assertion(fn).to.increase(obj, prop);
-  }
-
-   /**
-   * ### .doesNotIncrease(function, object, property)
-   *
-   * Asserts that a function does not increase object property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { obj.val = 8 };
-   *     assert.doesNotIncrease(fn, obj, 'val');
-   *
-   * @name doesNotIncrease
-   * @param {Function} modifier function
-   * @param {Object} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.doesNotIncrease = function (fn, obj, prop) {
-    new Assertion(fn).to.not.increase(obj, prop);
-  }
-
-   /**
-   * ### .decreases(function, object, property)
-   *
-   * Asserts that a function decreases an object property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { obj.val = 5 };
-   *     assert.decreases(fn, obj, 'val');
-   *
-   * @name decreases
-   * @param {Function} modifier function
-   * @param {Object} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.decreases = function (fn, obj, prop) {
-    new Assertion(fn).to.decrease(obj, prop);
-  }
-
-   /**
-   * ### .doesNotDecrease(function, object, property)
-   *
-   * Asserts that a function does not decreases an object property
-   *
-   *     var obj = { val: 10 };
-   *     var fn = function() { obj.val = 15 };
-   *     assert.doesNotDecrease(fn, obj, 'val');
-   *
-   * @name doesNotDecrease
-   * @param {Function} modifier function
-   * @param {Object} object
-   * @param {String} property name
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.doesNotDecrease = function (fn, obj, prop) {
-    new Assertion(fn).to.not.decrease(obj, prop);
-  }
-
-  /*!
-   * ### .ifError(object)
-   *
-   * Asserts if value is not a false value, and throws if it is a true value.
-   * This is added to allow for chai to be a drop-in replacement for Node's
-   * assert class.
-   *
-   *     var err = new Error('I am a custom error');
-   *     assert.ifError(err); // Rethrows err!
-   *
-   * @name ifError
-   * @param {Object} object
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.ifError = function (val) {
-    if (val) {
-      throw(val);
-    }
-  };
-
-  /**
-   * ### .isExtensible(object)
-   *
-   * Asserts that `object` is extensible (can have new properties added to it).
-   *
-   *     assert.isExtensible({});
-   *
-   * @name isExtensible
-   * @alias extensible
-   * @param {Object} object
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isExtensible = function (obj, msg) {
-    new Assertion(obj, msg).to.be.extensible;
-  };
-
-  /**
-   * ### .isNotExtensible(object)
-   *
-   * Asserts that `object` is _not_ extensible.
-   *
-   *     var nonExtensibleObject = Object.preventExtensions({});
-   *     var sealedObject = Object.seal({});
-   *     var frozenObject = Object.freese({});
-   *
-   *     assert.isNotExtensible(nonExtensibleObject);
-   *     assert.isNotExtensible(sealedObject);
-   *     assert.isNotExtensible(frozenObject);
-   *
-   * @name isNotExtensible
-   * @alias notExtensible
-   * @param {Object} object
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotExtensible = function (obj, msg) {
-    new Assertion(obj, msg).to.not.be.extensible;
-  };
-
-  /**
-   * ### .isSealed(object)
-   *
-   * Asserts that `object` is sealed (cannot have new properties added to it
-   * and its existing properties cannot be removed).
-   *
-   *     var sealedObject = Object.seal({});
-   *     var frozenObject = Object.seal({});
-   *
-   *     assert.isSealed(sealedObject);
-   *     assert.isSealed(frozenObject);
-   *
-   * @name isSealed
-   * @alias sealed
-   * @param {Object} object
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isSealed = function (obj, msg) {
-    new Assertion(obj, msg).to.be.sealed;
-  };
-
-  /**
-   * ### .isNotSealed(object)
-   *
-   * Asserts that `object` is _not_ sealed.
-   *
-   *     assert.isNotSealed({});
-   *
-   * @name isNotSealed
-   * @alias notSealed
-   * @param {Object} object
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotSealed = function (obj, msg) {
-    new Assertion(obj, msg).to.not.be.sealed;
-  };
-
-  /**
-   * ### .isFrozen(object)
-   *
-   * Asserts that `object` is frozen (cannot have new properties added to it
-   * and its existing properties cannot be modified).
-   *
-   *     var frozenObject = Object.freeze({});
-   *     assert.frozen(frozenObject);
-   *
-   * @name isFrozen
-   * @alias frozen
-   * @param {Object} object
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isFrozen = function (obj, msg) {
-    new Assertion(obj, msg).to.be.frozen;
-  };
-
-  /**
-   * ### .isNotFrozen(object)
-   *
-   * Asserts that `object` is _not_ frozen.
-   *
-   *     assert.isNotFrozen({});
-   *
-   * @name isNotFrozen
-   * @alias notFrozen
-   * @param {Object} object
-   * @param {String} message _optional_
-   * @namespace Assert
-   * @api public
-   */
-
-  assert.isNotFrozen = function (obj, msg) {
-    new Assertion(obj, msg).to.not.be.frozen;
-  };
-
-  /*!
-   * Aliases.
-   */
-
-  (function alias(name, as){
-    assert[as] = assert[name];
-    return alias;
-  })
-  ('isOk', 'ok')
-  ('isNotOk', 'notOk')
-  ('throws', 'throw')
-  ('throws', 'Throw')
-  ('isExtensible', 'extensible')
-  ('isNotExtensible', 'notExtensible')
-  ('isSealed', 'sealed')
-  ('isNotSealed', 'notSealed')
-  ('isFrozen', 'frozen')
-  ('isNotFrozen', 'notFrozen');
-};
-
-
-/***/ }),
-/* 98 */
-/***/ (function(module, exports) {
-
-/*!
- * chai
- * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-module.exports = function (chai, util) {
-  chai.expect = function (val, message) {
-    return new chai.Assertion(val, message);
-  };
-
-  /**
-   * ### .fail(actual, expected, [message], [operator])
-   *
-   * Throw a failure.
-   *
-   * @name fail
-   * @param {Mixed} actual
-   * @param {Mixed} expected
-   * @param {String} message
-   * @param {String} operator
-   * @namespace Expect
-   * @api public
-   */
-
-  chai.expect.fail = function (actual, expected, message, operator) {
-    message = message || 'expect.fail()';
-    throw new chai.AssertionError(message, {
-        actual: actual
-      , expected: expected
-      , operator: operator
-    }, chai.expect.fail);
-  };
-};
-
-
-/***/ }),
-/* 99 */
-/***/ (function(module, exports) {
-
-/*!
- * chai
- * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-module.exports = function (chai, util) {
-  var Assertion = chai.Assertion;
-
-  function loadShould () {
-    // explicitly define this method as function as to have it's name to include as `ssfi`
-    function shouldGetter() {
-      if (this instanceof String || this instanceof Number || this instanceof Boolean ) {
-        return new Assertion(this.valueOf(), null, shouldGetter);
-      }
-      return new Assertion(this, null, shouldGetter);
-    }
-    function shouldSetter(value) {
-      // See https://github.com/chaijs/chai/issues/86: this makes
-      // `whatever.should = someValue` actually set `someValue`, which is
-      // especially useful for `global.should = require('chai').should()`.
-      //
-      // Note that we have to use [[DefineProperty]] instead of [[Put]]
-      // since otherwise we would trigger this very setter!
-      Object.defineProperty(this, 'should', {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    }
-    // modify Object.prototype to have `should`
-    Object.defineProperty(Object.prototype, 'should', {
-      set: shouldSetter
-      , get: shouldGetter
-      , configurable: true
-    });
-
-    var should = {};
-
-    /**
-     * ### .fail(actual, expected, [message], [operator])
-     *
-     * Throw a failure.
-     *
-     * @name fail
-     * @param {Mixed} actual
-     * @param {Mixed} expected
-     * @param {String} message
-     * @param {String} operator
-     * @namespace Should
-     * @api public
-     */
-
-    should.fail = function (actual, expected, message, operator) {
-      message = message || 'should.fail()';
-      throw new chai.AssertionError(message, {
-          actual: actual
-        , expected: expected
-        , operator: operator
-      }, should.fail);
-    };
-
-    /**
-     * ### .equal(actual, expected, [message])
-     *
-     * Asserts non-strict equality (`==`) of `actual` and `expected`.
-     *
-     *     should.equal(3, '3', '== coerces values to strings');
-     *
-     * @name equal
-     * @param {Mixed} actual
-     * @param {Mixed} expected
-     * @param {String} message
-     * @namespace Should
-     * @api public
-     */
-
-    should.equal = function (val1, val2, msg) {
-      new Assertion(val1, msg).to.equal(val2);
-    };
-
-    /**
-     * ### .throw(function, [constructor/string/regexp], [string/regexp], [message])
-     *
-     * Asserts that `function` will throw an error that is an instance of
-     * `constructor`, or alternately that it will throw an error with message
-     * matching `regexp`.
-     *
-     *     should.throw(fn, 'function throws a reference error');
-     *     should.throw(fn, /function throws a reference error/);
-     *     should.throw(fn, ReferenceError);
-     *     should.throw(fn, ReferenceError, 'function throws a reference error');
-     *     should.throw(fn, ReferenceError, /function throws a reference error/);
-     *
-     * @name throw
-     * @alias Throw
-     * @param {Function} function
-     * @param {ErrorConstructor} constructor
-     * @param {RegExp} regexp
-     * @param {String} message
-     * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
-     * @namespace Should
-     * @api public
-     */
-
-    should.Throw = function (fn, errt, errs, msg) {
-      new Assertion(fn, msg).to.Throw(errt, errs);
-    };
-
-    /**
-     * ### .exist
-     *
-     * Asserts that the target is neither `null` nor `undefined`.
-     *
-     *     var foo = 'hi';
-     *
-     *     should.exist(foo, 'foo exists');
-     *
-     * @name exist
-     * @namespace Should
-     * @api public
-     */
-
-    should.exist = function (val, msg) {
-      new Assertion(val, msg).to.exist;
-    }
-
-    // negation
-    should.not = {}
-
-    /**
-     * ### .not.equal(actual, expected, [message])
-     *
-     * Asserts non-strict inequality (`!=`) of `actual` and `expected`.
-     *
-     *     should.not.equal(3, 4, 'these numbers are not equal');
-     *
-     * @name not.equal
-     * @param {Mixed} actual
-     * @param {Mixed} expected
-     * @param {String} message
-     * @namespace Should
-     * @api public
-     */
-
-    should.not.equal = function (val1, val2, msg) {
-      new Assertion(val1, msg).to.not.equal(val2);
-    };
-
-    /**
-     * ### .throw(function, [constructor/regexp], [message])
-     *
-     * Asserts that `function` will _not_ throw an error that is an instance of
-     * `constructor`, or alternately that it will not throw an error with message
-     * matching `regexp`.
-     *
-     *     should.not.throw(fn, Error, 'function does not throw');
-     *
-     * @name not.throw
-     * @alias not.Throw
-     * @param {Function} function
-     * @param {ErrorConstructor} constructor
-     * @param {RegExp} regexp
-     * @param {String} message
-     * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
-     * @namespace Should
-     * @api public
-     */
-
-    should.not.Throw = function (fn, errt, errs, msg) {
-      new Assertion(fn, msg).to.not.Throw(errt, errs);
-    };
-
-    /**
-     * ### .not.exist
-     *
-     * Asserts that the target is neither `null` nor `undefined`.
-     *
-     *     var bar = null;
-     *
-     *     should.not.exist(bar, 'bar does not exist');
-     *
-     * @name not.exist
-     * @namespace Should
-     * @api public
-     */
-
-    should.not.exist = function (val, msg) {
-      new Assertion(val, msg).to.not.exist;
-    }
-
-    should['throw'] = should['Throw'];
-    should.not['throw'] = should.not['Throw'];
-
-    return should;
-  };
-
-  chai.should = loadShould;
-  chai.Should = loadShould;
-};
-
-
-/***/ }),
-/* 100 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - addChainingMethod utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/*!
- * Module dependencies
- */
-
-var transferFlags = __webpack_require__(53);
-var flag = __webpack_require__(14);
-var config = __webpack_require__(16);
-
-/*!
- * Module variables
- */
-
-// Check whether `__proto__` is supported
-var hasProtoSupport = '__proto__' in Object;
-
-// Without `__proto__` support, this module will need to add properties to a function.
-// However, some Function.prototype methods cannot be overwritten,
-// and there seems no easy cross-platform way to detect them (@see chaijs/chai/issues/69).
-var excludeNames = /^(?:length|name|arguments|caller)$/;
-
-// Cache `Function` properties
-var call  = Function.prototype.call,
-    apply = Function.prototype.apply;
-
-/**
- * ### addChainableMethod (ctx, name, method, chainingBehavior)
- *
- * Adds a method to an object, such that the method can also be chained.
- *
- *     utils.addChainableMethod(chai.Assertion.prototype, 'foo', function (str) {
- *       var obj = utils.flag(this, 'object');
- *       new chai.Assertion(obj).to.be.equal(str);
- *     });
- *
- * Can also be accessed directly from `chai.Assertion`.
- *
- *     chai.Assertion.addChainableMethod('foo', fn, chainingBehavior);
- *
- * The result can then be used as both a method assertion, executing both `method` and
- * `chainingBehavior`, or as a language chain, which only executes `chainingBehavior`.
- *
- *     expect(fooStr).to.be.foo('bar');
- *     expect(fooStr).to.be.foo.equal('foo');
- *
- * @param {Object} ctx object to which the method is added
- * @param {String} name of method to add
- * @param {Function} method function to be used for `name`, when called
- * @param {Function} chainingBehavior function to be called every time the property is accessed
- * @namespace Utils
- * @name addChainableMethod
- * @api public
- */
-
-module.exports = function (ctx, name, method, chainingBehavior) {
-  if (typeof chainingBehavior !== 'function') {
-    chainingBehavior = function () { };
-  }
-
-  var chainableBehavior = {
-      method: method
-    , chainingBehavior: chainingBehavior
-  };
-
-  // save the methods so we can overwrite them later, if we need to.
-  if (!ctx.__methods) {
-    ctx.__methods = {};
-  }
-  ctx.__methods[name] = chainableBehavior;
-
-  Object.defineProperty(ctx, name,
-    { get: function () {
-        chainableBehavior.chainingBehavior.call(this);
-
-        var assert = function assert() {
-          var old_ssfi = flag(this, 'ssfi');
-          if (old_ssfi && config.includeStack === false)
-            flag(this, 'ssfi', assert);
-          var result = chainableBehavior.method.apply(this, arguments);
-          return result === undefined ? this : result;
-        };
-
-        // Use `__proto__` if available
-        if (hasProtoSupport) {
-          // Inherit all properties from the object by replacing the `Function` prototype
-          var prototype = assert.__proto__ = Object.create(this);
-          // Restore the `call` and `apply` methods from `Function`
-          prototype.call = call;
-          prototype.apply = apply;
-        }
-        // Otherwise, redefine all properties (slow!)
-        else {
-          var asserterNames = Object.getOwnPropertyNames(ctx);
-          asserterNames.forEach(function (asserterName) {
-            if (!excludeNames.test(asserterName)) {
-              var pd = Object.getOwnPropertyDescriptor(ctx, asserterName);
-              Object.defineProperty(assert, asserterName, pd);
-            }
-          });
-        }
-
-        transferFlags(this, assert);
-        return assert;
-      }
-    , configurable: true
-  });
-};
-
-
-/***/ }),
-/* 101 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - addMethod utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-var config = __webpack_require__(16);
-
-/**
- * ### .addMethod (ctx, name, method)
- *
- * Adds a method to the prototype of an object.
- *
- *     utils.addMethod(chai.Assertion.prototype, 'foo', function (str) {
- *       var obj = utils.flag(this, 'object');
- *       new chai.Assertion(obj).to.be.equal(str);
- *     });
- *
- * Can also be accessed directly from `chai.Assertion`.
- *
- *     chai.Assertion.addMethod('foo', fn);
- *
- * Then can be used as any other assertion.
- *
- *     expect(fooStr).to.be.foo('bar');
- *
- * @param {Object} ctx object to which the method is added
- * @param {String} name of method to add
- * @param {Function} method function to be used for name
- * @namespace Utils
- * @name addMethod
- * @api public
- */
-var flag = __webpack_require__(14);
-
-module.exports = function (ctx, name, method) {
-  ctx[name] = function () {
-    var old_ssfi = flag(this, 'ssfi');
-    if (old_ssfi && config.includeStack === false)
-      flag(this, 'ssfi', ctx[name]);
-    var result = method.apply(this, arguments);
-    return result === undefined ? this : result;
-  };
-};
-
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - addProperty utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-var config = __webpack_require__(16);
-var flag = __webpack_require__(14);
-
-/**
- * ### addProperty (ctx, name, getter)
- *
- * Adds a property to the prototype of an object.
- *
- *     utils.addProperty(chai.Assertion.prototype, 'foo', function () {
- *       var obj = utils.flag(this, 'object');
- *       new chai.Assertion(obj).to.be.instanceof(Foo);
- *     });
- *
- * Can also be accessed directly from `chai.Assertion`.
- *
- *     chai.Assertion.addProperty('foo', fn);
- *
- * Then can be used as any other assertion.
- *
- *     expect(myFoo).to.be.foo;
- *
- * @param {Object} ctx object to which the property is added
- * @param {String} name of property to add
- * @param {Function} getter function to be used for name
- * @namespace Utils
- * @name addProperty
- * @api public
- */
-
-module.exports = function (ctx, name, getter) {
-  Object.defineProperty(ctx, name,
-    { get: function addProperty() {
-        var old_ssfi = flag(this, 'ssfi');
-        if (old_ssfi && config.includeStack === false)
-          flag(this, 'ssfi', addProperty);
-
-        var result = getter.call(this);
-        return result === undefined ? this : result;
-      }
-    , configurable: true
-  });
-};
-
-
-/***/ }),
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - expectTypes utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * ### expectTypes(obj, types)
- *
- * Ensures that the object being tested against is of a valid type.
- *
- *     utils.expectTypes(this, ['array', 'object', 'string']);
- *
- * @param {Mixed} obj constructed Assertion
- * @param {Array} type A list of allowed types for this assertion
- * @namespace Utils
- * @name expectTypes
- * @api public
- */
-
-var AssertionError = __webpack_require__(47);
-var flag = __webpack_require__(14);
-var type = __webpack_require__(46);
-
-module.exports = function (obj, types) {
-  var obj = flag(obj, 'object');
-  types = types.map(function (t) { return t.toLowerCase(); });
-  types.sort();
-
-  // Transforms ['lorem', 'ipsum'] into 'a lirum, or an ipsum'
-  var str = types.map(function (t, index) {
-    var art = ~[ 'a', 'e', 'i', 'o', 'u' ].indexOf(t.charAt(0)) ? 'an' : 'a';
-    var or = types.length > 1 && index === types.length - 1 ? 'or ' : '';
-    return or + art + ' ' + t;
-  }).join(', ');
-
-  if (!types.some(function (expected) { return type(obj) === expected; })) {
-    throw new AssertionError(
-      'object tested must be ' + str + ', but ' + type(obj) + ' given'
-    );
-  }
-};
-
-
-/***/ }),
-/* 104 */
-/***/ (function(module, exports) {
-
-/*!
- * Chai - getEnumerableProperties utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * ### .getEnumerableProperties(object)
- *
- * This allows the retrieval of enumerable property names of an object,
- * inherited or not.
- *
- * @param {Object} object
- * @returns {Array}
- * @namespace Utils
- * @name getEnumerableProperties
- * @api public
- */
-
-module.exports = function getEnumerableProperties(object) {
-  var result = [];
-  for (var name in object) {
-    result.push(name);
-  }
-  return result;
-};
-
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - message composition utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/*!
- * Module dependancies
- */
-
-var flag = __webpack_require__(14)
-  , getActual = __webpack_require__(48)
-  , inspect = __webpack_require__(34)
-  , objDisplay = __webpack_require__(52);
-
-/**
- * ### .getMessage(object, message, negateMessage)
- *
- * Construct the error message based on flags
- * and template tags. Template tags will return
- * a stringified inspection of the object referenced.
- *
- * Message template tags:
- * - `#{this}` current asserted object
- * - `#{act}` actual value
- * - `#{exp}` expected value
- *
- * @param {Object} object (constructed Assertion)
- * @param {Arguments} chai.Assertion.prototype.assert arguments
- * @namespace Utils
- * @name getMessage
- * @api public
- */
-
-module.exports = function (obj, args) {
-  var negate = flag(obj, 'negate')
-    , val = flag(obj, 'object')
-    , expected = args[3]
-    , actual = getActual(obj, args)
-    , msg = negate ? args[2] : args[1]
-    , flagMsg = flag(obj, 'message');
-
-  if(typeof msg === "function") msg = msg();
-  msg = msg || '';
-  msg = msg
-    .replace(/#\{this\}/g, function () { return objDisplay(val); })
-    .replace(/#\{act\}/g, function () { return objDisplay(actual); })
-    .replace(/#\{exp\}/g, function () { return objDisplay(expected); });
-
-  return flagMsg ? flagMsg + ': ' + msg : msg;
-};
-
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - getPathValue utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * @see https://github.com/logicalparadox/filtr
- * MIT Licensed
- */
-
-var getPathInfo = __webpack_require__(50);
-
-/**
- * ### .getPathValue(path, object)
- *
- * This allows the retrieval of values in an
- * object given a string path.
- *
- *     var obj = {
- *         prop1: {
- *             arr: ['a', 'b', 'c']
- *           , str: 'Hello'
- *         }
- *       , prop2: {
- *             arr: [ { nested: 'Universe' } ]
- *           , str: 'Hello again!'
- *         }
- *     }
- *
- * The following would be the results.
- *
- *     getPathValue('prop1.str', obj); // Hello
- *     getPathValue('prop1.att[2]', obj); // b
- *     getPathValue('prop2.arr[0].nested', obj); // Universe
- *
- * @param {String} path
- * @param {Object} object
- * @returns {Object} value or `undefined`
- * @namespace Utils
- * @name getPathValue
- * @api public
- */
-module.exports = function(path, obj) {
-  var info = getPathInfo(path, obj);
-  return info.value;
-};
-
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports) {
-
-/*!
- * Chai - getProperties utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * ### .getProperties(object)
- *
- * This allows the retrieval of property names of an object, enumerable or not,
- * inherited or not.
- *
- * @param {Object} object
- * @returns {Array}
- * @namespace Utils
- * @name getProperties
- * @api public
- */
-
-module.exports = function getProperties(object) {
-  var result = Object.getOwnPropertyNames(object);
-
-  function addProperty(property) {
-    if (result.indexOf(property) === -1) {
-      result.push(property);
-    }
-  }
-
-  var proto = Object.getPrototypeOf(object);
-  while (proto !== null) {
-    Object.getOwnPropertyNames(proto).forEach(addProperty);
-    proto = Object.getPrototypeOf(proto);
-  }
-
-  return result;
-};
-
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * chai
- * Copyright(c) 2011 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/*!
- * Main exports
- */
-
-var exports = module.exports = {};
-
-/*!
- * test utility
- */
-
-exports.test = __webpack_require__(112);
-
-/*!
- * type utility
- */
-
-exports.type = __webpack_require__(46);
-
-/*!
- * expectTypes utility
- */
-exports.expectTypes = __webpack_require__(103);
-
-/*!
- * message utility
- */
-
-exports.getMessage = __webpack_require__(105);
-
-/*!
- * actual utility
- */
-
-exports.getActual = __webpack_require__(48);
-
-/*!
- * Inspect util
- */
-
-exports.inspect = __webpack_require__(34);
-
-/*!
- * Object Display util
- */
-
-exports.objDisplay = __webpack_require__(52);
-
-/*!
- * Flag utility
- */
-
-exports.flag = __webpack_require__(14);
-
-/*!
- * Flag transferring utility
- */
-
-exports.transferFlags = __webpack_require__(53);
-
-/*!
- * Deep equal utility
- */
-
-exports.eql = __webpack_require__(113);
-
-/*!
- * Deep path value
- */
-
-exports.getPathValue = __webpack_require__(106);
-
-/*!
- * Deep path info
- */
-
-exports.getPathInfo = __webpack_require__(50);
-
-/*!
- * Check if a property exists
- */
-
-exports.hasProperty = __webpack_require__(51);
-
-/*!
- * Function name
- */
-
-exports.getName = __webpack_require__(49);
-
-/*!
- * add Property
- */
-
-exports.addProperty = __webpack_require__(102);
-
-/*!
- * add Method
- */
-
-exports.addMethod = __webpack_require__(101);
-
-/*!
- * overwrite Property
- */
-
-exports.overwriteProperty = __webpack_require__(111);
-
-/*!
- * overwrite Method
- */
-
-exports.overwriteMethod = __webpack_require__(110);
-
-/*!
- * Add a chainable method
- */
-
-exports.addChainableMethod = __webpack_require__(100);
-
-/*!
- * Overwrite chainable method
- */
-
-exports.overwriteChainableMethod = __webpack_require__(109);
-
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports) {
-
-/*!
- * Chai - overwriteChainableMethod utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * ### overwriteChainableMethod (ctx, name, method, chainingBehavior)
- *
- * Overwites an already existing chainable method
- * and provides access to the previous function or
- * property.  Must return functions to be used for
- * name.
- *
- *     utils.overwriteChainableMethod(chai.Assertion.prototype, 'length',
- *       function (_super) {
- *       }
- *     , function (_super) {
- *       }
- *     );
- *
- * Can also be accessed directly from `chai.Assertion`.
- *
- *     chai.Assertion.overwriteChainableMethod('foo', fn, fn);
- *
- * Then can be used as any other assertion.
- *
- *     expect(myFoo).to.have.length(3);
- *     expect(myFoo).to.have.length.above(3);
- *
- * @param {Object} ctx object whose method / property is to be overwritten
- * @param {String} name of method / property to overwrite
- * @param {Function} method function that returns a function to be used for name
- * @param {Function} chainingBehavior function that returns a function to be used for property
- * @namespace Utils
- * @name overwriteChainableMethod
- * @api public
- */
-
-module.exports = function (ctx, name, method, chainingBehavior) {
-  var chainableBehavior = ctx.__methods[name];
-
-  var _chainingBehavior = chainableBehavior.chainingBehavior;
-  chainableBehavior.chainingBehavior = function () {
-    var result = chainingBehavior(_chainingBehavior).call(this);
-    return result === undefined ? this : result;
-  };
-
-  var _method = chainableBehavior.method;
-  chainableBehavior.method = function () {
-    var result = method(_method).apply(this, arguments);
-    return result === undefined ? this : result;
-  };
-};
-
-
-/***/ }),
-/* 110 */
-/***/ (function(module, exports) {
-
-/*!
- * Chai - overwriteMethod utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * ### overwriteMethod (ctx, name, fn)
- *
- * Overwites an already existing method and provides
- * access to previous function. Must return function
- * to be used for name.
- *
- *     utils.overwriteMethod(chai.Assertion.prototype, 'equal', function (_super) {
- *       return function (str) {
- *         var obj = utils.flag(this, 'object');
- *         if (obj instanceof Foo) {
- *           new chai.Assertion(obj.value).to.equal(str);
- *         } else {
- *           _super.apply(this, arguments);
- *         }
- *       }
- *     });
- *
- * Can also be accessed directly from `chai.Assertion`.
- *
- *     chai.Assertion.overwriteMethod('foo', fn);
- *
- * Then can be used as any other assertion.
- *
- *     expect(myFoo).to.equal('bar');
- *
- * @param {Object} ctx object whose method is to be overwritten
- * @param {String} name of method to overwrite
- * @param {Function} method function that returns a function to be used for name
- * @namespace Utils
- * @name overwriteMethod
- * @api public
- */
-
-module.exports = function (ctx, name, method) {
-  var _method = ctx[name]
-    , _super = function () { return this; };
-
-  if (_method && 'function' === typeof _method)
-    _super = _method;
-
-  ctx[name] = function () {
-    var result = method(_super).apply(this, arguments);
-    return result === undefined ? this : result;
-  }
-};
-
-
-/***/ }),
-/* 111 */
-/***/ (function(module, exports) {
-
-/*!
- * Chai - overwriteProperty utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/**
- * ### overwriteProperty (ctx, name, fn)
- *
- * Overwites an already existing property getter and provides
- * access to previous value. Must return function to use as getter.
- *
- *     utils.overwriteProperty(chai.Assertion.prototype, 'ok', function (_super) {
- *       return function () {
- *         var obj = utils.flag(this, 'object');
- *         if (obj instanceof Foo) {
- *           new chai.Assertion(obj.name).to.equal('bar');
- *         } else {
- *           _super.call(this);
- *         }
- *       }
- *     });
- *
- *
- * Can also be accessed directly from `chai.Assertion`.
- *
- *     chai.Assertion.overwriteProperty('foo', fn);
- *
- * Then can be used as any other assertion.
- *
- *     expect(myFoo).to.be.ok;
- *
- * @param {Object} ctx object whose property is to be overwritten
- * @param {String} name of property to overwrite
- * @param {Function} getter function that returns a getter function to be used for name
- * @namespace Utils
- * @name overwriteProperty
- * @api public
- */
-
-module.exports = function (ctx, name, getter) {
-  var _get = Object.getOwnPropertyDescriptor(ctx, name)
-    , _super = function () {};
-
-  if (_get && 'function' === typeof _get.get)
-    _super = _get.get
-
-  Object.defineProperty(ctx, name,
-    { get: function () {
-        var result = getter(_super).call(this);
-        return result === undefined ? this : result;
-      }
-    , configurable: true
-  });
-};
-
-
-/***/ }),
-/* 112 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Chai - test utility
- * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/*!
- * Module dependancies
- */
-
-var flag = __webpack_require__(14);
-
-/**
- * # test(object, expression)
- *
- * Test and object for expression.
- *
- * @param {Object} object (constructed Assertion)
- * @param {Arguments} chai.Assertion.prototype.assert arguments
- * @namespace Utils
- * @name test
- */
-
-module.exports = function (obj, args) {
-  var negate = flag(obj, 'negate')
-    , expr = args[0];
-  return negate ? !expr : expr;
-};
-
-
-/***/ }),
-/* 113 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(114);
-
-
-/***/ }),
-/* 114 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * deep-eql
- * Copyright(c) 2013 Jake Luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/*!
- * Module dependencies
- */
-
-var type = __webpack_require__(115);
-
-/*!
- * Buffer.isBuffer browser shim
- */
-
-var Buffer;
-try { Buffer = __webpack_require__(90).Buffer; }
-catch(ex) {
-  Buffer = {};
-  Buffer.isBuffer = function() { return false; }
-}
-
-/*!
- * Primary Export
- */
-
-module.exports = deepEqual;
-
-/**
- * Assert super-strict (egal) equality between
- * two objects of any type.
- *
- * @param {Mixed} a
- * @param {Mixed} b
- * @param {Array} memoised (optional)
- * @return {Boolean} equal match
- */
-
-function deepEqual(a, b, m) {
-  if (sameValue(a, b)) {
-    return true;
-  } else if ('date' === type(a)) {
-    return dateEqual(a, b);
-  } else if ('regexp' === type(a)) {
-    return regexpEqual(a, b);
-  } else if (Buffer.isBuffer(a)) {
-    return bufferEqual(a, b);
-  } else if ('arguments' === type(a)) {
-    return argumentsEqual(a, b, m);
-  } else if (!typeEqual(a, b)) {
-    return false;
-  } else if (('object' !== type(a) && 'object' !== type(b))
-  && ('array' !== type(a) && 'array' !== type(b))) {
-    return sameValue(a, b);
-  } else {
-    return objectEqual(a, b, m);
-  }
-}
-
-/*!
- * Strict (egal) equality test. Ensures that NaN always
- * equals NaN and `-0` does not equal `+0`.
- *
- * @param {Mixed} a
- * @param {Mixed} b
- * @return {Boolean} equal match
- */
-
-function sameValue(a, b) {
-  if (a === b) return a !== 0 || 1 / a === 1 / b;
-  return a !== a && b !== b;
-}
-
-/*!
- * Compare the types of two given objects and
- * return if they are equal. Note that an Array
- * has a type of `array` (not `object`) and arguments
- * have a type of `arguments` (not `array`/`object`).
- *
- * @param {Mixed} a
- * @param {Mixed} b
- * @return {Boolean} result
- */
-
-function typeEqual(a, b) {
-  return type(a) === type(b);
-}
-
-/*!
- * Compare two Date objects by asserting that
- * the time values are equal using `saveValue`.
- *
- * @param {Date} a
- * @param {Date} b
- * @return {Boolean} result
- */
-
-function dateEqual(a, b) {
-  if ('date' !== type(b)) return false;
-  return sameValue(a.getTime(), b.getTime());
-}
-
-/*!
- * Compare two regular expressions by converting them
- * to string and checking for `sameValue`.
- *
- * @param {RegExp} a
- * @param {RegExp} b
- * @return {Boolean} result
- */
-
-function regexpEqual(a, b) {
-  if ('regexp' !== type(b)) return false;
-  return sameValue(a.toString(), b.toString());
-}
-
-/*!
- * Assert deep equality of two `arguments` objects.
- * Unfortunately, these must be sliced to arrays
- * prior to test to ensure no bad behavior.
- *
- * @param {Arguments} a
- * @param {Arguments} b
- * @param {Array} memoize (optional)
- * @return {Boolean} result
- */
-
-function argumentsEqual(a, b, m) {
-  if ('arguments' !== type(b)) return false;
-  a = [].slice.call(a);
-  b = [].slice.call(b);
-  return deepEqual(a, b, m);
-}
-
-/*!
- * Get enumerable properties of a given object.
- *
- * @param {Object} a
- * @return {Array} property names
- */
-
-function enumerable(a) {
-  var res = [];
-  for (var key in a) res.push(key);
-  return res;
-}
-
-/*!
- * Simple equality for flat iterable objects
- * such as Arrays or Node.js buffers.
- *
- * @param {Iterable} a
- * @param {Iterable} b
- * @return {Boolean} result
- */
-
-function iterableEqual(a, b) {
-  if (a.length !==  b.length) return false;
-
-  var i = 0;
-  var match = true;
-
-  for (; i < a.length; i++) {
-    if (a[i] !== b[i]) {
-      match = false;
-      break;
-    }
-  }
-
-  return match;
-}
-
-/*!
- * Extension to `iterableEqual` specifically
- * for Node.js Buffers.
- *
- * @param {Buffer} a
- * @param {Mixed} b
- * @return {Boolean} result
- */
-
-function bufferEqual(a, b) {
-  if (!Buffer.isBuffer(b)) return false;
-  return iterableEqual(a, b);
-}
-
-/*!
- * Block for `objectEqual` ensuring non-existing
- * values don't get in.
- *
- * @param {Mixed} object
- * @return {Boolean} result
- */
-
-function isValue(a) {
-  return a !== null && a !== undefined;
-}
-
-/*!
- * Recursively check the equality of two objects.
- * Once basic sameness has been established it will
- * defer to `deepEqual` for each enumerable key
- * in the object.
- *
- * @param {Mixed} a
- * @param {Mixed} b
- * @return {Boolean} result
- */
-
-function objectEqual(a, b, m) {
-  if (!isValue(a) || !isValue(b)) {
-    return false;
-  }
-
-  if (a.prototype !== b.prototype) {
-    return false;
-  }
-
-  var i;
-  if (m) {
-    for (i = 0; i < m.length; i++) {
-      if ((m[i][0] === a && m[i][1] === b)
-      ||  (m[i][0] === b && m[i][1] === a)) {
-        return true;
-      }
-    }
-  } else {
-    m = [];
-  }
-
-  try {
-    var ka = enumerable(a);
-    var kb = enumerable(b);
-  } catch (ex) {
-    return false;
-  }
-
-  ka.sort();
-  kb.sort();
-
-  if (!iterableEqual(ka, kb)) {
-    return false;
-  }
-
-  m.push([ a, b ]);
-
-  var key;
-  for (i = ka.length - 1; i >= 0; i--) {
-    key = ka[i];
-    if (!deepEqual(a[key], b[key], m)) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-
-/***/ }),
-/* 115 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(116);
-
-
-/***/ }),
-/* 116 */
-/***/ (function(module, exports) {
-
-/*!
- * type-detect
- * Copyright(c) 2013 jake luer <jake@alogicalparadox.com>
- * MIT Licensed
- */
-
-/*!
- * Primary Exports
- */
-
-var exports = module.exports = getType;
-
-/*!
- * Detectable javascript natives
- */
-
-var natives = {
-    '[object Array]': 'array'
-  , '[object RegExp]': 'regexp'
-  , '[object Function]': 'function'
-  , '[object Arguments]': 'arguments'
-  , '[object Date]': 'date'
-};
-
-/**
- * ### typeOf (obj)
- *
- * Use several different techniques to determine
- * the type of object being tested.
- *
- *
- * @param {Mixed} object
- * @return {String} object type
- * @api public
- */
-
-function getType (obj) {
-  var str = Object.prototype.toString.call(obj);
-  if (natives[str]) return natives[str];
-  if (obj === null) return 'null';
-  if (obj === undefined) return 'undefined';
-  if (obj === Object(obj)) return 'object';
-  return typeof obj;
-}
-
-exports.Library = Library;
-
-/**
- * ### Library
- *
- * Create a repository for custom type detection.
- *
- * ```js
- * var lib = new type.Library;
- * ```
- *
- */
-
-function Library () {
-  this.tests = {};
-}
-
-/**
- * #### .of (obj)
- *
- * Expose replacement `typeof` detection to the library.
- *
- * ```js
- * if ('string' === lib.of('hello world')) {
- *   // ...
- * }
- * ```
- *
- * @param {Mixed} object to test
- * @return {String} type
- */
-
-Library.prototype.of = getType;
-
-/**
- * #### .define (type, test)
- *
- * Add a test to for the `.test()` assertion.
- *
- * Can be defined as a regular expression:
- *
- * ```js
- * lib.define('int', /^[0-9]+$/);
- * ```
- *
- * ... or as a function:
- *
- * ```js
- * lib.define('bln', function (obj) {
- *   if ('boolean' === lib.of(obj)) return true;
- *   var blns = [ 'yes', 'no', 'true', 'false', 1, 0 ];
- *   if ('string' === lib.of(obj)) obj = obj.toLowerCase();
- *   return !! ~blns.indexOf(obj);
- * });
- * ```
- *
- * @param {String} type
- * @param {RegExp|Function} test
- * @api public
- */
-
-Library.prototype.define = function (type, test) {
-  if (arguments.length === 1) return this.tests[type];
-  this.tests[type] = test;
-  return this;
-};
-
-/**
- * #### .test (obj, test)
- *
- * Assert that an object is of type. Will first
- * check natives, and if that does not pass it will
- * use the user defined custom tests.
- *
- * ```js
- * assert(lib.test('1', 'int'));
- * assert(lib.test('yes', 'bln'));
- * ```
- *
- * @param {Mixed} object
- * @param {String} type
- * @return {Boolean} result
- * @api public
- */
-
-Library.prototype.test = function (obj, type) {
-  if (type === getType(obj)) return true;
-  var test = this.tests[type];
-
-  if (test && 'regexp' === getType(test)) {
-    return test.test(obj);
-  } else if (test && 'function' === getType(test)) {
-    return test(obj);
-  } else {
-    throw new ReferenceError('Type test "' + type + '" not defined or invalid.');
-  }
-};
-
-
-/***/ }),
-/* 117 */
-/***/ (function(module, exports) {
-
-exports.read = function (buffer, offset, isLE, mLen, nBytes) {
-  var e, m
-  var eLen = nBytes * 8 - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var nBits = -7
-  var i = isLE ? (nBytes - 1) : 0
-  var d = isLE ? -1 : 1
-  var s = buffer[offset + i]
-
-  i += d
-
-  e = s & ((1 << (-nBits)) - 1)
-  s >>= (-nBits)
-  nBits += eLen
-  for (; nBits > 0; e = e * 256 + buffer[offset + i], i += d, nBits -= 8) {}
-
-  m = e & ((1 << (-nBits)) - 1)
-  e >>= (-nBits)
-  nBits += mLen
-  for (; nBits > 0; m = m * 256 + buffer[offset + i], i += d, nBits -= 8) {}
-
-  if (e === 0) {
-    e = 1 - eBias
-  } else if (e === eMax) {
-    return m ? NaN : ((s ? -1 : 1) * Infinity)
-  } else {
-    m = m + Math.pow(2, mLen)
-    e = e - eBias
-  }
-  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
-}
-
-exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
-  var e, m, c
-  var eLen = nBytes * 8 - mLen - 1
-  var eMax = (1 << eLen) - 1
-  var eBias = eMax >> 1
-  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
-  var i = isLE ? 0 : (nBytes - 1)
-  var d = isLE ? 1 : -1
-  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
-
-  value = Math.abs(value)
-
-  if (isNaN(value) || value === Infinity) {
-    m = isNaN(value) ? 1 : 0
-    e = eMax
-  } else {
-    e = Math.floor(Math.log(value) / Math.LN2)
-    if (value * (c = Math.pow(2, -e)) < 1) {
-      e--
-      c *= 2
-    }
-    if (e + eBias >= 1) {
-      value += rt / c
-    } else {
-      value += rt * Math.pow(2, 1 - eBias)
-    }
-    if (value * c >= 2) {
-      e++
-      c /= 2
-    }
-
-    if (e + eBias >= eMax) {
-      m = 0
-      e = eMax
-    } else if (e + eBias >= 1) {
-      m = (value * c - 1) * Math.pow(2, mLen)
-      e = e + eBias
-    } else {
-      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
-      e = 0
-    }
-  }
-
-  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
-
-  e = (e << mLen) | m
-  eLen += mLen
-  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
-
-  buffer[offset + i - d] |= s * 128
-}
-
-
-/***/ }),
-/* 118 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var toString = Object.prototype.toString;
-
-module.exports = function (x) {
-	var prototype;
-	return toString.call(x) === '[object Object]' && (prototype = Object.getPrototypeOf(x), prototype === null || prototype === Object.getPrototypeOf({}));
-};
-
-
-/***/ }),
-/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var require;var require;/*!
@@ -23718,7 +12114,11728 @@ module.exports = localforage_js;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23)))
 
 /***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var plump_1 = __webpack_require__(35);
+exports.ChildrenSchema = {
+    sides: {
+        parents: { otherType: 'tests', otherName: 'children' },
+        children: { otherType: 'tests', otherName: 'parents' },
+    },
+    storeData: {
+        sql: {
+            tableName: 'parent_child_relationship',
+            joinFields: {
+                parents: 'child_id',
+                children: 'parent_id',
+            },
+        },
+    }
+};
+exports.ValenceChildrenSchema = {
+    sides: {
+        valenceParents: { otherType: 'tests', otherName: 'valenceChildren' },
+        valenceChildren: { otherType: 'tests', otherName: 'valenceParents' },
+    },
+    storeData: {
+        sql: {
+            tableName: 'valence_children',
+            joinFields: {
+                valenceParents: 'child_id',
+                valenceChildren: 'parent_id',
+            },
+        },
+    },
+    extras: {
+        perm: {
+            type: 'number',
+        },
+    },
+};
+exports.QueryChildrenSchema = {
+    sides: {
+        queryParents: { otherType: 'tests', otherName: 'queryChildren' },
+        queryChildren: { otherType: 'tests', otherName: 'queryParents' },
+    },
+    storeData: {
+        sql: {
+            tableName: 'query_children',
+            joinFields: {
+                queryParents: 'child_id',
+                queryChildren: 'parent_id',
+            },
+            joinQuery: {
+                queryParents: 'on "tests"."id" = "queryParents"."child_id" and "queryParents"."perm" >= 2',
+                queryChildren: 'on "tests"."id" = "queryChildren"."parent_id" and "queryChildren"."perm" >= 2',
+            },
+            where: {
+                queryParents: 'where "queryParents"."child_id" = ? and "queryParents"."perm" >= 2',
+                queryChildren: 'where "queryChildren"."parent_id" = ? and "queryChildren"."perm" >= 2',
+            },
+        },
+    },
+    extras: {
+        perm: {
+            type: 'number',
+        },
+    },
+};
+exports.TestSchema = {
+    name: 'tests',
+    idAttribute: 'id',
+    attributes: {
+        id: { type: 'number', readOnly: true },
+        name: { type: 'string', readOnly: false },
+        otherName: { type: 'string', default: '', readOnly: false },
+        extended: { type: 'object', default: {}, readOnly: false },
+    },
+    relationships: {
+        children: { type: exports.ChildrenSchema },
+        parents: { type: exports.ChildrenSchema },
+        valenceChildren: { type: exports.ValenceChildrenSchema },
+        valenceParents: { type: exports.ValenceChildrenSchema },
+        queryChildren: { type: exports.QueryChildrenSchema, readOnly: true },
+        queryParents: { type: exports.QueryChildrenSchema, readOnly: true },
+    },
+    storeData: {
+        sql: {
+            tableName: 'tests',
+            bulkQuery: 'where "tests"."id" >= ?',
+        },
+    }
+};
+var TestType = (function (_super) {
+    __extends(TestType, _super);
+    function TestType() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return TestType;
+}(plump_1.Model));
+TestType.typeName = 'tests';
+TestType.schema = exports.TestSchema;
+exports.TestType = TestType;
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports) {
+
+/*!
+ * assertion-error
+ * Copyright(c) 2013 Jake Luer <jake@qualiancy.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Return a function that will copy properties from
+ * one object to another excluding any originally
+ * listed. Returned function will create a new `{}`.
+ *
+ * @param {String} excluded properties ...
+ * @return {Function}
+ */
+
+function exclude () {
+  var excludes = [].slice.call(arguments);
+
+  function excludeProps (res, obj) {
+    Object.keys(obj).forEach(function (key) {
+      if (!~excludes.indexOf(key)) res[key] = obj[key];
+    });
+  }
+
+  return function extendExclude () {
+    var args = [].slice.call(arguments)
+      , i = 0
+      , res = {};
+
+    for (; i < args.length; i++) {
+      excludeProps(res, args[i]);
+    }
+
+    return res;
+  };
+};
+
+/*!
+ * Primary Exports
+ */
+
+module.exports = AssertionError;
+
+/**
+ * ### AssertionError
+ *
+ * An extension of the JavaScript `Error` constructor for
+ * assertion and validation scenarios.
+ *
+ * @param {String} message
+ * @param {Object} properties to include (optional)
+ * @param {callee} start stack function (optional)
+ */
+
+function AssertionError (message, _props, ssf) {
+  var extend = exclude('name', 'message', 'stack', 'constructor', 'toJSON')
+    , props = extend(_props || {});
+
+  // default values
+  this.message = message || 'Unspecified AssertionError';
+  this.showDiff = false;
+
+  // copy from properties
+  for (var key in props) {
+    this[key] = props[key];
+  }
+
+  // capture stack trace
+  ssf = ssf || arguments.callee;
+  if (ssf && Error.captureStackTrace) {
+    Error.captureStackTrace(this, ssf);
+  } else {
+    try {
+      throw new Error();
+    } catch(e) {
+      this.stack = e.stack;
+    }
+  }
+}
+
+/*!
+ * Inherit from Error.prototype
+ */
+
+AssertionError.prototype = Object.create(Error.prototype);
+
+/*!
+ * Statically set name
+ */
+
+AssertionError.prototype.name = 'AssertionError';
+
+/*!
+ * Ensure correct constructor
+ */
+
+AssertionError.prototype.constructor = AssertionError;
+
+/**
+ * Allow errors to be converted to JSON for static transfer.
+ *
+ * @param {Boolean} include stack (default: `true`)
+ * @return {Object} object that can be `JSON.stringify`
+ */
+
+AssertionError.prototype.toJSON = function (stack) {
+  var extend = exclude('constructor', 'toJSON', 'stack')
+    , props = extend({ name: this.name }, this);
+
+  // include stack if exists and not turned off
+  if (false !== stack && this.stack) {
+    props.stack = this.stack;
+  }
+
+  return props;
+};
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports) {
+
+/*!
+ * Chai - getActual utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * # getActual(object, [actual])
+ *
+ * Returns the `actual` value for an Assertion
+ *
+ * @param {Object} object (constructed Assertion)
+ * @param {Arguments} chai.Assertion.prototype.assert arguments
+ * @namespace Utils
+ * @name getActual
+ */
+
+module.exports = function (obj, args) {
+  return args.length > 4 ? args[4] : obj._obj;
+};
+
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports) {
+
+/*!
+ * Chai - getName utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * # getName(func)
+ *
+ * Gets the name of a function, in a cross-browser way.
+ *
+ * @param {Function} a function (usually a constructor)
+ * @namespace Utils
+ * @name getName
+ */
+
+module.exports = function (func) {
+  if (func.name) return func.name;
+
+  var match = /^\s?function ([^(]*)\(/.exec(func);
+  return match && match[1] ? match[1] : "";
+};
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - getPathInfo utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+var hasProperty = __webpack_require__(54);
+
+/**
+ * ### .getPathInfo(path, object)
+ *
+ * This allows the retrieval of property info in an
+ * object given a string path.
+ *
+ * The path info consists of an object with the
+ * following properties:
+ *
+ * * parent - The parent object of the property referenced by `path`
+ * * name - The name of the final property, a number if it was an array indexer
+ * * value - The value of the property, if it exists, otherwise `undefined`
+ * * exists - Whether the property exists or not
+ *
+ * @param {String} path
+ * @param {Object} object
+ * @returns {Object} info
+ * @namespace Utils
+ * @name getPathInfo
+ * @api public
+ */
+
+module.exports = function getPathInfo(path, obj) {
+  var parsed = parsePath(path),
+      last = parsed[parsed.length - 1];
+
+  var info = {
+    parent: parsed.length > 1 ? _getPathValue(parsed, obj, parsed.length - 1) : obj,
+    name: last.p || last.i,
+    value: _getPathValue(parsed, obj)
+  };
+  info.exists = hasProperty(info.name, info.parent);
+
+  return info;
+};
+
+
+/*!
+ * ## parsePath(path)
+ *
+ * Helper function used to parse string object
+ * paths. Use in conjunction with `_getPathValue`.
+ *
+ *      var parsed = parsePath('myobject.property.subprop');
+ *
+ * ### Paths:
+ *
+ * * Can be as near infinitely deep and nested
+ * * Arrays are also valid using the formal `myobject.document[3].property`.
+ * * Literal dots and brackets (not delimiter) must be backslash-escaped.
+ *
+ * @param {String} path
+ * @returns {Object} parsed
+ * @api private
+ */
+
+function parsePath (path) {
+  var str = path.replace(/([^\\])\[/g, '$1.[')
+    , parts = str.match(/(\\\.|[^.]+?)+/g);
+  return parts.map(function (value) {
+    var re = /^\[(\d+)\]$/
+      , mArr = re.exec(value);
+    if (mArr) return { i: parseFloat(mArr[1]) };
+    else return { p: value.replace(/\\([.\[\]])/g, '$1') };
+  });
+}
+
+
+/*!
+ * ## _getPathValue(parsed, obj)
+ *
+ * Helper companion function for `.parsePath` that returns
+ * the value located at the parsed address.
+ *
+ *      var value = getPathValue(parsed, obj);
+ *
+ * @param {Object} parsed definition from `parsePath`.
+ * @param {Object} object to search against
+ * @param {Number} object to search against
+ * @returns {Object|Undefined} value
+ * @api private
+ */
+
+function _getPathValue (parsed, obj, index) {
+  var tmp = obj
+    , res;
+
+  index = (index === undefined ? parsed.length : index);
+
+  for (var i = 0, l = index; i < l; i++) {
+    var part = parsed[i];
+    if (tmp) {
+      if ('undefined' !== typeof part.p)
+        tmp = tmp[part.p];
+      else if ('undefined' !== typeof part.i)
+        tmp = tmp[part.i];
+      if (i == (l - 1)) res = tmp;
+    } else {
+      res = undefined;
+    }
+  }
+  return res;
+}
+
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - hasProperty utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+var type = __webpack_require__(46);
+
+/**
+ * ### .hasProperty(object, name)
+ *
+ * This allows checking whether an object has
+ * named property or numeric array index.
+ *
+ * Basically does the same thing as the `in`
+ * operator but works properly with natives
+ * and null/undefined values.
+ *
+ *     var obj = {
+ *         arr: ['a', 'b', 'c']
+ *       , str: 'Hello'
+ *     }
+ *
+ * The following would be the results.
+ *
+ *     hasProperty('str', obj);  // true
+ *     hasProperty('constructor', obj);  // true
+ *     hasProperty('bar', obj);  // false
+ *
+ *     hasProperty('length', obj.str); // true
+ *     hasProperty(1, obj.str);  // true
+ *     hasProperty(5, obj.str);  // false
+ *
+ *     hasProperty('length', obj.arr);  // true
+ *     hasProperty(2, obj.arr);  // true
+ *     hasProperty(3, obj.arr);  // false
+ *
+ * @param {Objuect} object
+ * @param {String|Number} name
+ * @returns {Boolean} whether it exists
+ * @namespace Utils
+ * @name getPathInfo
+ * @api public
+ */
+
+var literals = {
+    'number': Number
+  , 'string': String
+};
+
+module.exports = function hasProperty(name, obj) {
+  var ot = type(obj);
+
+  // Bad Object, obviously no props at all
+  if(ot === 'null' || ot === 'undefined')
+    return false;
+
+  // The `in` operator does not work with certain literals
+  // box these before the check
+  if(literals[ot] && typeof obj !== 'object')
+    obj = new literals[ot](obj);
+
+  return name in obj;
+};
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - flag utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Module dependancies
+ */
+
+var inspect = __webpack_require__(34);
+var config = __webpack_require__(16);
+
+/**
+ * ### .objDisplay (object)
+ *
+ * Determines if an object or an array matches
+ * criteria to be inspected in-line for error
+ * messages or should be truncated.
+ *
+ * @param {Mixed} javascript object to inspect
+ * @name objDisplay
+ * @namespace Utils
+ * @api public
+ */
+
+module.exports = function (obj) {
+  var str = inspect(obj)
+    , type = Object.prototype.toString.call(obj);
+
+  if (config.truncateThreshold && str.length >= config.truncateThreshold) {
+    if (type === '[object Function]') {
+      return !obj.name || obj.name === ''
+        ? '[Function]'
+        : '[Function: ' + obj.name + ']';
+    } else if (type === '[object Array]') {
+      return '[ Array(' + obj.length + ') ]';
+    } else if (type === '[object Object]') {
+      var keys = Object.keys(obj)
+        , kstr = keys.length > 2
+          ? keys.splice(0, 2).join(', ') + ', ...'
+          : keys.join(', ');
+      return '{ Object (' + kstr + ') }';
+    } else {
+      return str;
+    }
+  } else {
+    return str;
+  }
+};
+
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports) {
+
+/*!
+ * Chai - transferFlags utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * ### transferFlags(assertion, object, includeAll = true)
+ *
+ * Transfer all the flags for `assertion` to `object`. If
+ * `includeAll` is set to `false`, then the base Chai
+ * assertion flags (namely `object`, `ssfi`, and `message`)
+ * will not be transferred.
+ *
+ *
+ *     var newAssertion = new Assertion();
+ *     utils.transferFlags(assertion, newAssertion);
+ *
+ *     var anotherAsseriton = new Assertion(myObj);
+ *     utils.transferFlags(assertion, anotherAssertion, false);
+ *
+ * @param {Assertion} assertion the assertion to transfer the flags from
+ * @param {Object} object the object to transfer the flags to; usually a new assertion
+ * @param {Boolean} includeAll
+ * @namespace Utils
+ * @name transferFlags
+ * @api private
+ */
+
+module.exports = function (assertion, object, includeAll) {
+  var flags = assertion.__flags || (assertion.__flags = Object.create(null));
+
+  if (!object.__flags) {
+    object.__flags = Object.create(null);
+  }
+
+  includeAll = arguments.length === 3 ? includeAll : true;
+
+  for (var flag in flags) {
+    if (includeAll ||
+        (flag !== 'object' && flag !== 'ssfi' && flag != 'message')) {
+      object.__flags[flag] = flags[flag];
+    }
+  }
+};
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var Bluebird = __webpack_require__(15);
+var mergeOptions = __webpack_require__(18);
+var storage_1 = __webpack_require__(58);
+function saneNumber(i) {
+    return ((typeof i === 'number') && (!isNaN(i)) && (i !== Infinity) && (i !== -Infinity));
+}
+var KeyValueStore = (function (_super) {
+    __extends(KeyValueStore, _super);
+    function KeyValueStore() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.maxKeys = {};
+        return _this;
+    }
+    KeyValueStore.prototype.allocateId = function (typeName) {
+        this.maxKeys[typeName] = this.maxKeys[typeName] + 1;
+        return Bluebird.resolve(this.maxKeys[typeName]);
+    };
+    KeyValueStore.prototype.writeAttributes = function (inputValue) {
+        var _this = this;
+        var value = this.validateInput(inputValue);
+        delete value.relationships;
+        // trim out relationships for a direct write.
+        return Bluebird.resolve()
+            .then(function () {
+            if (!_this.terminal) {
+                throw new Error('Cannot create new content in a non-terminal store');
+            }
+        })
+            .then(function () {
+            if ((value.id === undefined) || (value.id === null)) {
+                return _this.allocateId(value.typeName)
+                    .then(function (n) {
+                    return mergeOptions({}, value, { id: n, relationships: {} }); // if new.
+                });
+            }
+            else {
+                // if not new, get current (including relationships) and merge
+                var thisId = typeof value.id === 'string' ? parseInt(value.id, 10) : value.id;
+                if (saneNumber(thisId) && thisId > _this.maxKeys[value.typeName]) {
+                    _this.maxKeys[value.typeName] = thisId;
+                }
+                return _this._get(_this.keyString(value)).then(function (current) { return mergeOptions({}, current, value); });
+            }
+        })
+            .then(function (toSave) {
+            return _this._set(_this.keyString(toSave), toSave)
+                .then(function () {
+                _this.fireWriteUpdate(Object.assign({}, toSave, { invalidate: ['attributes'] }));
+                return toSave;
+            });
+        });
+    };
+    KeyValueStore.prototype.readAttributes = function (value) {
+        return this._get(this.keyString(value))
+            .then(function (d) {
+            if (d && d.attributes && Object.keys(d.attributes).length > 0) {
+                return d;
+            }
+            else {
+                return null;
+            }
+        });
+    };
+    KeyValueStore.prototype.cache = function (value) {
+        var _this = this;
+        if ((value.id === undefined) || (value.id === null)) {
+            return Bluebird.reject('Cannot cache data without an id - write it to a terminal first');
+        }
+        else {
+            return this._get(this.keyString(value))
+                .then(function (current) {
+                var newVal = mergeOptions(current || {}, value);
+                return _this._set(_this.keyString(value), newVal);
+            });
+        }
+    };
+    KeyValueStore.prototype.cacheAttributes = function (value) {
+        var _this = this;
+        if ((value.id === undefined) || (value.id === null)) {
+            return Bluebird.reject('Cannot cache data without an id - write it to a terminal first');
+        }
+        else {
+            return this._get(this.keyString(value))
+                .then(function (current) {
+                return _this._set(_this.keyString(value), {
+                    typeName: value.typeName,
+                    id: value.id,
+                    attributes: value.attributes,
+                    relationships: current.relationships || {},
+                });
+            });
+        }
+    };
+    KeyValueStore.prototype.cacheRelationship = function (value) {
+        var _this = this;
+        if ((value.id === undefined) || (value.id === null)) {
+            return Bluebird.reject('Cannot cache data without an id - write it to a terminal first');
+        }
+        else {
+            return this._get(this.keyString(value))
+                .then(function (current) {
+                return _this._set(_this.keyString(value), {
+                    typeName: value.typeName,
+                    id: value.id,
+                    attributes: current.attributes || {},
+                    relationships: value.relationships,
+                });
+            });
+        }
+    };
+    KeyValueStore.prototype.readRelationship = function (value, relName) {
+        var _this = this;
+        return this._get(this.keyString(value))
+            .then(function (v) {
+            var retVal = Object.assign({}, v);
+            if (!v) {
+                if (_this.terminal) {
+                    return { typeName: value.typeName, id: value.id, relationships: (_a = {}, _a[relName] = [], _a) };
+                }
+                else {
+                    return null;
+                }
+            }
+            else if (!v.relationships && _this.terminal) {
+                retVal.relationships = (_b = {}, _b[relName] = [], _b);
+            }
+            else if (!retVal.relationships[relName] && _this.terminal) {
+                retVal.relationships[relName] = [];
+            }
+            return retVal;
+            var _a, _b;
+        });
+    };
+    KeyValueStore.prototype.delete = function (value) {
+        var _this = this;
+        return this._del(this.keyString(value))
+            .then(function () {
+            if (_this.terminal) {
+                _this.fireWriteUpdate({ id: value.id, typeName: value.typeName, invalidate: ['attributes', 'relationships'] });
+            }
+        });
+    };
+    KeyValueStore.prototype.wipe = function (value, field) {
+        var _this = this;
+        var ks = this.keyString(value);
+        return this._get(ks)
+            .then(function (val) {
+            if (val === null) {
+                return null;
+            }
+            var newVal = Object.assign({}, val);
+            if (field === 'attributes') {
+                delete newVal.attributes;
+            }
+            else if (field === 'relationships') {
+                delete newVal.relationships;
+            }
+            else if (field.indexOf('relationships.') === 0) {
+                delete newVal.relationships[field.split('.')[1]];
+                if (Object.keys(newVal.relationships).length === 0) {
+                    delete newVal.relationships;
+                }
+            }
+            else {
+                throw new Error("Cannot delete field " + field + " - unknown format");
+            }
+            return _this._set(ks, newVal);
+        });
+    };
+    KeyValueStore.prototype.writeRelationshipItem = function (value, relName, child) {
+        var _this = this;
+        var schema = this.getSchema(value.typeName);
+        var relSchema = schema.relationships[relName].type;
+        var otherRelType = relSchema.sides[relName].otherType;
+        var otherRelName = relSchema.sides[relName].otherName;
+        var thisKeyString = this.keyString(value);
+        var otherKeyString = this.keyString({ typeName: otherRelType, id: child.id });
+        return Bluebird.all([
+            this._get(thisKeyString),
+            this._get(otherKeyString),
+        ])
+            .then(function (_a) {
+            var thisItemResolved = _a[0], otherItemResolved = _a[1];
+            var thisItem = thisItemResolved;
+            if (!thisItem) {
+                thisItem = {
+                    id: child.id,
+                    typeName: otherRelType,
+                    attributes: {},
+                    relationships: {},
+                };
+            }
+            var otherItem = otherItemResolved;
+            if (!otherItem) {
+                otherItem = {
+                    id: child.id,
+                    typeName: otherRelType,
+                    attributes: {},
+                    relationships: {},
+                };
+            }
+            var newChild = { id: child.id };
+            var newParent = { id: value.id };
+            if (!thisItem.relationships[relName]) {
+                thisItem.relationships[relName] = [];
+            }
+            if (!otherItem.relationships[otherRelName]) {
+                otherItem.relationships[otherRelName] = [];
+            }
+            if (relSchema.extras && child.meta) {
+                newParent.meta = {};
+                newChild.meta = {};
+                for (var extra in child.meta) {
+                    if (extra in relSchema.extras) {
+                        newChild.meta[extra] = child.meta[extra];
+                        newParent.meta[extra] = child.meta[extra];
+                    }
+                }
+            }
+            var thisIdx = thisItem.relationships[relName].findIndex(function (item) { return item.id === child.id; });
+            var otherIdx = otherItem.relationships[otherRelName].findIndex(function (item) { return item.id === value.id; });
+            if (thisIdx < 0) {
+                thisItem.relationships[relName].push(newChild);
+            }
+            else {
+                thisItem.relationships[relName][thisIdx] = newChild;
+            }
+            if (otherIdx < 0) {
+                otherItem.relationships[otherRelName].push(newParent);
+            }
+            else {
+                otherItem.relationships[otherRelName][otherIdx] = newParent;
+            }
+            return Bluebird.all([
+                _this._set(_this.keyString(thisItem), thisItem),
+                _this._set(_this.keyString(otherItem), otherItem),
+            ]).then(function () {
+                _this.fireWriteUpdate(Object.assign(thisItem, { invalidate: ["relationships." + relName] }));
+                _this.fireWriteUpdate(Object.assign(otherItem, { invalidate: ["relationships." + otherRelName] }));
+            })
+                .then(function () { return thisItem; });
+        });
+    };
+    KeyValueStore.prototype.deleteRelationshipItem = function (value, relName, child) {
+        var _this = this;
+        var schema = this.getSchema(value.typeName);
+        var relSchema = schema.relationships[relName].type;
+        var otherRelType = relSchema.sides[relName].otherType;
+        var otherRelName = relSchema.sides[relName].otherName;
+        var thisKeyString = this.keyString(value);
+        var otherKeyString = this.keyString({ typeName: otherRelType, id: child.id });
+        return Bluebird.all([
+            this._get(thisKeyString),
+            this._get(otherKeyString),
+        ])
+            .then(function (_a) {
+            var thisItem = _a[0], otherItem = _a[1];
+            if (!thisItem.relationships[relName]) {
+                thisItem.relationships[relName] = [];
+            }
+            if (!otherItem.relationships[otherRelName]) {
+                otherItem.relationships[otherRelName] = [];
+            }
+            var thisIdx = thisItem.relationships[relName].findIndex(function (item) { return item.id === child.id; });
+            var otherIdx = otherItem.relationships[otherRelName].findIndex(function (item) { return item.id === value.id; });
+            if (thisIdx >= 0) {
+                thisItem.relationships[relName].splice(thisIdx, 1);
+            }
+            if (otherIdx >= 0) {
+                otherItem.relationships[otherRelName].splice(otherIdx, 1);
+            }
+            return Bluebird.all([
+                _this._set(_this.keyString(thisItem), thisItem),
+                _this._set(_this.keyString(otherItem), otherItem),
+            ]).then(function () {
+                _this.fireWriteUpdate(Object.assign(thisItem, { invalidate: ["relationships." + relName] }));
+                _this.fireWriteUpdate(Object.assign(otherItem, { invalidate: ["relationships." + otherRelName] }));
+            })
+                .then(function () { return thisItem; });
+        });
+    };
+    KeyValueStore.prototype.addSchema = function (t) {
+        var _this = this;
+        return _super.prototype.addSchema.call(this, t)
+            .then(function () {
+            _this.maxKeys[t.typeName] = 0;
+        });
+    };
+    KeyValueStore.prototype.keyString = function (value) {
+        return value.typeName + ":" + value.id;
+    };
+    return KeyValueStore;
+}(storage_1.Storage));
+exports.KeyValueStore = KeyValueStore;
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,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Q0FBQztJQUVELGlDQUFTLEdBQVQsVUFBVSxDQUEwQztRQUFwRCxpQkFLQztRQUpDLE1BQU0sQ0FBQyxpQkFBTSxTQUFTLFlBQUMsQ0FBQyxDQUFDO2FBQ3hCLElBQUksQ0FBQztZQUNKLEtBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUMvQixDQUFDLENBQUMsQ0FBQztJQUNMLENBQUM7SUFFRCxpQ0FBUyxHQUFULFVBQVUsS0FBcUI7UUFDN0IsTUFBTSxDQUFJLEtBQUssQ0FBQyxRQUFRLFNBQUksS0FBSyxDQUFDLEVBQUksQ0FBQztJQUN6QyxDQUFDO0lBQ0gsb0JBQUM7QUFBRCxDQW5SQSxBQW1SQyxDQW5SMkMsaUJBQU8sR0FtUmxEO0FBblJxQixzQ0FBYSIsImZpbGUiOiJzdG9yYWdlL2tleVZhbHVlU3RvcmUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBCbHVlYmlyZCBmcm9tICdibHVlYmlyZCc7XG5pbXBvcnQgKiBhcyBtZXJnZU9wdGlvbnMgZnJvbSAnbWVyZ2Utb3B0aW9ucyc7XG5cbmltcG9ydCB7IFN0b3JhZ2UgfSBmcm9tICcuL3N0b3JhZ2UnO1xuaW1wb3J0IHtcbiAgSW5kZWZpbml0ZU1vZGVsRGF0YSxcbiAgTW9kZWxEYXRhLFxuICBNb2RlbFJlZmVyZW5jZSxcbiAgTW9kZWxTY2hlbWEsXG4gIFJlbGF0aW9uc2hpcEl0ZW0sXG59IGZyb20gJy4uL2RhdGFUeXBlcyc7XG5cbmZ1bmN0aW9uIHNhbmVOdW1iZXIoaSkge1xuICByZXR1cm4gKCh0eXBlb2YgaSA9PT0gJ251bWJlcicpICYmICghaXNOYU4oaSkpICYmIChpICE9PSBJbmZpbml0eSkgJiYgKGkgIT09IC1JbmZpbml0eSkpO1xufVxuXG5leHBvcnQgYWJzdHJhY3QgY2xhc3MgS2V5VmFsdWVTdG9yZSBleHRlbmRzIFN0b3JhZ2Uge1xuICBwcm90ZWN0ZWQgbWF4S2V5czogeyBbdHlwZU5hbWU6IHN0cmluZ106IG51bWJlciB9ID0ge307XG5cbiAgYWJzdHJhY3QgX2tleXModHlwZU5hbWU6IHN0cmluZyk6IEJsdWViaXJkPHN0cmluZ1tdPjtcbiAgYWJzdHJhY3QgX2dldChrOiBzdHJpbmcpOiBCbHVlYmlyZDxNb2RlbERhdGEgfCBudWxsPjtcbiAgYWJzdHJhY3QgX3NldChrOiBzdHJpbmcsIHY6IE1vZGVsRGF0YSk6IEJsdWViaXJkPE1vZGVsRGF0YT47XG4gIGFic3RyYWN0IF9kZWwoazogc3RyaW5nKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcblxuICBhbGxvY2F0ZUlkKHR5cGVOYW1lOiBzdHJpbmcpIHtcbiAgICB0aGlzLm1heEtleXNbdHlwZU5hbWVdID0gdGhpcy5tYXhLZXlzW3R5cGVOYW1lXSArIDE7XG4gICAgcmV0dXJuIEJsdWViaXJkLnJlc29sdmUodGhpcy5tYXhLZXlzW3R5cGVOYW1lXSk7XG4gIH1cblxuICB3cml0ZUF0dHJpYnV0ZXMoaW5wdXRWYWx1ZTogSW5kZWZpbml0ZU1vZGVsRGF0YSkge1xuICAgIGNvbnN0IHZhbHVlID0gdGhpcy52YWxpZGF0ZUlucHV0KGlucHV0VmFsdWUpO1xuICAgIGRlbGV0ZSB2YWx1ZS5yZWxhdGlvbnNoaXBzO1xuICAgIC8vIHRyaW0gb3V0IHJlbGF0aW9uc2hpcHMgZm9yIGEgZGlyZWN0IHdyaXRlLlxuICAgIHJldHVybiBCbHVlYmlyZC5yZXNvbHZlKClcbiAgICAudGhlbigoKSA9PiB7XG4gICAgICBpZiAoIXRoaXMudGVybWluYWwpIHtcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdDYW5ub3QgY3JlYXRlIG5ldyBjb250ZW50IGluIGEgbm9uLXRlcm1pbmFsIHN0b3JlJyk7XG4gICAgICB9XG4gICAgfSlcbiAgICAudGhlbigoKSA9PiB7XG4gICAgICBpZiAoKHZhbHVlLmlkID09PSB1bmRlZmluZWQpIHx8ICh2YWx1ZS5pZCA9PT0gbnVsbCkpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuYWxsb2NhdGVJZCh2YWx1ZS50eXBlTmFtZSlcbiAgICAgICAgLnRoZW4oKG4pID0+IHtcbiAgICAgICAgICByZXR1cm4gbWVyZ2VPcHRpb25zKHt9LCB2YWx1ZSwgeyBpZDogbiwgcmVsYXRpb25zaGlwczoge30gfSk7IC8vIGlmIG5ldy5cbiAgICAgICAgfSk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICAvLyBpZiBub3QgbmV3LCBnZXQgY3VycmVudCAoaW5jbHVkaW5nIHJlbGF0aW9uc2hpcHMpIGFuZCBtZXJnZVxuICAgICAgICBjb25zdCB0aGlzSWQgPSB0eXBlb2YgdmFsdWUuaWQgPT09ICdzdHJpbmcnID8gcGFyc2VJbnQodmFsdWUuaWQsIDEwKSA6IHZhbHVlLmlkO1xuICAgICAgICBpZiAoc2FuZU51bWJlcih0aGlzSWQpICYmIHRoaXNJZCA+IHRoaXMubWF4S2V5c1t2YWx1ZS50eXBlTmFtZV0pIHtcbiAgICAgICAgICB0aGlzLm1heEtleXNbdmFsdWUudHlwZU5hbWVdID0gdGhpc0lkO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiB0aGlzLl9nZXQodGhpcy5rZXlTdHJpbmcodmFsdWUgYXMgTW9kZWxSZWZlcmVuY2UpKS50aGVuKGN1cnJlbnQgPT4gbWVyZ2VPcHRpb25zKHt9LCBjdXJyZW50LCB2YWx1ZSkpO1xuICAgICAgfVxuICAgIH0pXG4gICAgLnRoZW4oKHRvU2F2ZSkgPT4ge1xuICAgICAgcmV0dXJuIHRoaXMuX3NldCh0aGlzLmtleVN0cmluZyh0b1NhdmUpLCB0b1NhdmUpXG4gICAgICAudGhlbigoKSA9PiB7XG4gICAgICAgIHRoaXMuZmlyZVdyaXRlVXBkYXRlKE9iamVjdC5hc3NpZ24oe30sIHRvU2F2ZSwgeyBpbnZhbGlkYXRlOiBbJ2F0dHJpYnV0ZXMnXSB9KSk7XG4gICAgICAgIHJldHVybiB0b1NhdmU7XG4gICAgICB9KTtcbiAgICB9KTtcbiAgfVxuXG4gIHJlYWRBdHRyaWJ1dGVzKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSk6IEJsdWViaXJkPE1vZGVsRGF0YT4ge1xuICAgIHJldHVybiB0aGlzLl9nZXQodGhpcy5rZXlTdHJpbmcodmFsdWUpKVxuICAgIC50aGVuKGQgPT4ge1xuICAgICAgaWYgKGQgJiYgZC5hdHRyaWJ1dGVzICYmIE9iamVjdC5rZXlzKGQuYXR0cmlidXRlcykubGVuZ3RoID4gMCkge1xuICAgICAgICByZXR1cm4gZDtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIHJldHVybiBudWxsO1xuICAgICAgfVxuICAgIH0pO1xuICB9XG5cbiAgY2FjaGUodmFsdWU6IE1vZGVsRGF0YSkge1xuICAgIGlmICgodmFsdWUuaWQgPT09IHVuZGVmaW5lZCkgfHwgKHZhbHVlLmlkID09PSBudWxsKSkge1xuICAgICAgcmV0dXJuIEJsdWViaXJkLnJlamVjdCgnQ2Fubm90IGNhY2hlIGRhdGEgd2l0aG91dCBhbiBpZCAtIHdyaXRlIGl0IHRvIGEgdGVybWluYWwgZmlyc3QnKTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIHRoaXMuX2dldCh0aGlzLmtleVN0cmluZyh2YWx1ZSkpXG4gICAgICAudGhlbigoY3VycmVudCkgPT4ge1xuICAgICAgICBjb25zdCBuZXdWYWwgPSBtZXJnZU9wdGlvbnMoY3VycmVudCB8fCB7fSwgdmFsdWUpO1xuICAgICAgICByZXR1cm4gdGhpcy5fc2V0KHRoaXMua2V5U3RyaW5nKHZhbHVlKSwgbmV3VmFsKTtcbiAgICAgIH0pO1xuICAgIH1cbiAgfVxuXG4gIGNhY2hlQXR0cmlidXRlcyh2YWx1ZTogTW9kZWxEYXRhKSB7XG4gICAgaWYgKCh2YWx1ZS5pZCA9PT0gdW5kZWZpbmVkKSB8fCAodmFsdWUuaWQgPT09IG51bGwpKSB7XG4gICAgICByZXR1cm4gQmx1ZWJpcmQucmVqZWN0KCdDYW5ub3QgY2FjaGUgZGF0YSB3aXRob3V0IGFuIGlkIC0gd3JpdGUgaXQgdG8gYSB0ZXJtaW5hbCBmaXJzdCcpO1xuICAgIH0gZWxzZSB7XG4gICAgICByZXR1cm4gdGhpcy5fZ2V0KHRoaXMua2V5U3RyaW5nKHZhbHVlKSlcbiAgICAgIC50aGVuKChjdXJyZW50KSA9PiB7XG4gICAgICAgIHJldHVybiB0aGlzLl9zZXQodGhpcy5rZXlTdHJpbmcodmFsdWUpLCB7XG4gICAgICAgICAgdHlwZU5hbWU6IHZhbHVlLnR5cGVOYW1lLFxuICAgICAgICAgIGlkOiB2YWx1ZS5pZCxcbiAgICAgICAgICBhdHRyaWJ1dGVzOiB2YWx1ZS5hdHRyaWJ1dGVzLFxuICAgICAgICAgIHJlbGF0aW9uc2hpcHM6IGN1cnJlbnQucmVsYXRpb25zaGlwcyB8fCB7fSxcbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICB9XG4gIH1cblxuICBjYWNoZVJlbGF0aW9uc2hpcCh2YWx1ZTogTW9kZWxEYXRhKSB7XG4gICAgaWYgKCh2YWx1ZS5pZCA9PT0gdW5kZWZpbmVkKSB8fCAodmFsdWUuaWQgPT09IG51bGwpKSB7XG4gICAgICByZXR1cm4gQmx1ZWJpcmQucmVqZWN0KCdDYW5ub3QgY2FjaGUgZGF0YSB3aXRob3V0IGFuIGlkIC0gd3JpdGUgaXQgdG8gYSB0ZXJtaW5hbCBmaXJzdCcpO1xuICAgIH0gZWxzZSB7XG4gICAgICByZXR1cm4gdGhpcy5fZ2V0KHRoaXMua2V5U3RyaW5nKHZhbHVlKSlcbiAgICAgIC50aGVuKChjdXJyZW50KSA9PiB7XG4gICAgICAgIHJldHVybiB0aGlzLl9zZXQodGhpcy5rZXlTdHJpbmcodmFsdWUpLCB7XG4gICAgICAgICAgdHlwZU5hbWU6IHZhbHVlLnR5cGVOYW1lLFxuICAgICAgICAgIGlkOiB2YWx1ZS5pZCxcbiAgICAgICAgICBhdHRyaWJ1dGVzOiBjdXJyZW50LmF0dHJpYnV0ZXMgfHwge30sXG4gICAgICAgICAgcmVsYXRpb25zaGlwczogdmFsdWUucmVsYXRpb25zaGlwcyxcbiAgICAgICAgfSk7XG4gICAgICB9KTtcbiAgICB9XG4gIH1cblxuICByZWFkUmVsYXRpb25zaGlwKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSwgcmVsTmFtZTogc3RyaW5nKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPiB7XG4gICAgcmV0dXJuIHRoaXMuX2dldCh0aGlzLmtleVN0cmluZyh2YWx1ZSkpXG4gICAgLnRoZW4oKHYpID0+IHtcbiAgICAgIGNvbnN0IHJldFZhbCA9IE9iamVjdC5hc3NpZ24oe30sIHYpO1xuICAgICAgaWYgKCF2KSB7XG4gICAgICAgIGlmICh0aGlzLnRlcm1pbmFsKSB7XG4gICAgICAgICAgcmV0dXJuIHsgdHlwZU5hbWU6IHZhbHVlLnR5cGVOYW1lLCBpZDogdmFsdWUuaWQsIHJlbGF0aW9uc2hpcHM6IHsgW3JlbE5hbWVdOiBbXSB9IH07XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgcmV0dXJuIG51bGw7XG4gICAgICAgIH1cbiAgICAgIH0gZWxzZSBpZiAoIXYucmVsYXRpb25zaGlwcyAmJiB0aGlzLnRlcm1pbmFsKSB7XG4gICAgICAgIHJldFZhbC5yZWxhdGlvbnNoaXBzID0geyBbcmVsTmFtZV06IFtdIH07XG4gICAgICB9IGVsc2UgaWYgKCFyZXRWYWwucmVsYXRpb25zaGlwc1tyZWxOYW1lXSAmJiB0aGlzLnRlcm1pbmFsKSB7XG4gICAgICAgIHJldFZhbC5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdID0gW107XG4gICAgICB9XG4gICAgICByZXR1cm4gcmV0VmFsO1xuICAgIH0pO1xuICB9XG5cbiAgZGVsZXRlKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSkge1xuICAgIHJldHVybiB0aGlzLl9kZWwodGhpcy5rZXlTdHJpbmcodmFsdWUpKVxuICAgIC50aGVuKCgpID0+IHtcbiAgICAgIGlmICh0aGlzLnRlcm1pbmFsKSB7XG4gICAgICAgIHRoaXMuZmlyZVdyaXRlVXBkYXRlKHsgaWQ6IHZhbHVlLmlkLCB0eXBlTmFtZTogdmFsdWUudHlwZU5hbWUsIGludmFsaWRhdGU6IFsnYXR0cmlidXRlcycsICdyZWxhdGlvbnNoaXBzJ10gfSk7XG4gICAgICB9XG4gICAgfSk7XG4gIH1cblxuICB3aXBlKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSwgZmllbGQ6IHN0cmluZykge1xuICAgIGNvbnN0IGtzID0gdGhpcy5rZXlTdHJpbmcodmFsdWUpO1xuICAgIHJldHVybiB0aGlzLl9nZXQoa3MpXG4gICAgLnRoZW4oKHZhbCkgPT4ge1xuICAgICAgaWYgKHZhbCA9PT0gbnVsbCkge1xuICAgICAgICByZXR1cm4gbnVsbDtcbiAgICAgIH1cbiAgICAgIGNvbnN0IG5ld1ZhbCA9IE9iamVjdC5hc3NpZ24oe30sIHZhbCk7XG4gICAgICBpZiAoZmllbGQgPT09ICdhdHRyaWJ1dGVzJykge1xuICAgICAgICBkZWxldGUgbmV3VmFsLmF0dHJpYnV0ZXM7XG4gICAgICB9IGVsc2UgaWYgKGZpZWxkID09PSAncmVsYXRpb25zaGlwcycpIHtcbiAgICAgICAgZGVsZXRlIG5ld1ZhbC5yZWxhdGlvbnNoaXBzO1xuICAgICAgfSBlbHNlIGlmIChmaWVsZC5pbmRleE9mKCdyZWxhdGlvbnNoaXBzLicpID09PSAwKSB7XG4gICAgICAgIGRlbGV0ZSBuZXdWYWwucmVsYXRpb25zaGlwc1tmaWVsZC5zcGxpdCgnLicpWzFdXTtcbiAgICAgICAgaWYgKE9iamVjdC5rZXlzKG5ld1ZhbC5yZWxhdGlvbnNoaXBzKS5sZW5ndGggPT09IDApIHtcbiAgICAgICAgICBkZWxldGUgbmV3VmFsLnJlbGF0aW9uc2hpcHM7XG4gICAgICAgIH1cbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgQ2Fubm90IGRlbGV0ZSBmaWVsZCAke2ZpZWxkfSAtIHVua25vd24gZm9ybWF0YCk7XG4gICAgICB9XG4gICAgICByZXR1cm4gdGhpcy5fc2V0KGtzLCBuZXdWYWwpO1xuICAgIH0pO1xuICB9XG5cbiAgd3JpdGVSZWxhdGlvbnNoaXBJdGVtKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSwgcmVsTmFtZTogc3RyaW5nLCBjaGlsZDogUmVsYXRpb25zaGlwSXRlbSkge1xuICAgIGNvbnN0IHNjaGVtYSA9IHRoaXMuZ2V0U2NoZW1hKHZhbHVlLnR5cGVOYW1lKTtcbiAgICBjb25zdCByZWxTY2hlbWEgPSBzY2hlbWEucmVsYXRpb25zaGlwc1tyZWxOYW1lXS50eXBlO1xuICAgIGNvbnN0IG90aGVyUmVsVHlwZSA9IHJlbFNjaGVtYS5zaWRlc1tyZWxOYW1lXS5vdGhlclR5cGU7XG4gICAgY29uc3Qgb3RoZXJSZWxOYW1lID0gcmVsU2NoZW1hLnNpZGVzW3JlbE5hbWVdLm90aGVyTmFtZTtcbiAgICBjb25zdCB0aGlzS2V5U3RyaW5nID0gdGhpcy5rZXlTdHJpbmcodmFsdWUpO1xuICAgIGNvbnN0IG90aGVyS2V5U3RyaW5nID0gdGhpcy5rZXlTdHJpbmcoeyB0eXBlTmFtZTogb3RoZXJSZWxUeXBlLCBpZDogY2hpbGQuaWQgfSk7XG4gICAgcmV0dXJuIEJsdWViaXJkLmFsbChbXG4gICAgICB0aGlzLl9nZXQodGhpc0tleVN0cmluZyksXG4gICAgICB0aGlzLl9nZXQob3RoZXJLZXlTdHJpbmcpLFxuICAgIF0pXG4gICAgLnRoZW4oKFt0aGlzSXRlbVJlc29sdmVkLCBvdGhlckl0ZW1SZXNvbHZlZF0pID0+IHtcbiAgICAgIGxldCB0aGlzSXRlbSA9IHRoaXNJdGVtUmVzb2x2ZWQ7XG4gICAgICBpZiAoIXRoaXNJdGVtKSB7XG4gICAgICAgIHRoaXNJdGVtID0ge1xuICAgICAgICAgIGlkOiBjaGlsZC5pZCxcbiAgICAgICAgICB0eXBlTmFtZTogb3RoZXJSZWxUeXBlLFxuICAgICAgICAgIGF0dHJpYnV0ZXM6IHt9LFxuICAgICAgICAgIHJlbGF0aW9uc2hpcHM6IHt9LFxuICAgICAgICB9O1xuICAgICAgfVxuICAgICAgbGV0IG90aGVySXRlbSA9IG90aGVySXRlbVJlc29sdmVkO1xuICAgICAgaWYgKCFvdGhlckl0ZW0pIHtcbiAgICAgICAgb3RoZXJJdGVtID0ge1xuICAgICAgICAgIGlkOiBjaGlsZC5pZCxcbiAgICAgICAgICB0eXBlTmFtZTogb3RoZXJSZWxUeXBlLFxuICAgICAgICAgIGF0dHJpYnV0ZXM6IHt9LFxuICAgICAgICAgIHJlbGF0aW9uc2hpcHM6IHt9LFxuICAgICAgICB9O1xuICAgICAgfVxuICAgICAgY29uc3QgbmV3Q2hpbGQ6IFJlbGF0aW9uc2hpcEl0ZW0gPSB7IGlkOiBjaGlsZC5pZCB9O1xuICAgICAgY29uc3QgbmV3UGFyZW50OiBSZWxhdGlvbnNoaXBJdGVtID0geyBpZDogdmFsdWUuaWQgfTtcbiAgICAgIGlmICghdGhpc0l0ZW0ucmVsYXRpb25zaGlwc1tyZWxOYW1lXSkge1xuICAgICAgICB0aGlzSXRlbS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdID0gW107XG4gICAgICB9XG4gICAgICBpZiAoIW90aGVySXRlbS5yZWxhdGlvbnNoaXBzW290aGVyUmVsTmFtZV0pIHtcbiAgICAgICAgb3RoZXJJdGVtLnJlbGF0aW9uc2hpcHNbb3RoZXJSZWxOYW1lXSA9IFtdO1xuICAgICAgfVxuICAgICAgaWYgKHJlbFNjaGVtYS5leHRyYXMgJiYgY2hpbGQubWV0YSkge1xuICAgICAgICBuZXdQYXJlbnQubWV0YSA9IHt9O1xuICAgICAgICBuZXdDaGlsZC5tZXRhID0ge307XG4gICAgICAgIGZvciAoY29uc3QgZXh0cmEgaW4gY2hpbGQubWV0YSkge1xuICAgICAgICAgIGlmIChleHRyYSBpbiByZWxTY2hlbWEuZXh0cmFzKSB7XG4gICAgICAgICAgICBuZXdDaGlsZC5tZXRhW2V4dHJhXSA9IGNoaWxkLm1ldGFbZXh0cmFdO1xuICAgICAgICAgICAgbmV3UGFyZW50Lm1ldGFbZXh0cmFdID0gY2hpbGQubWV0YVtleHRyYV07XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIGNvbnN0IHRoaXNJZHggPSB0aGlzSXRlbS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdLmZpbmRJbmRleChpdGVtID0+IGl0ZW0uaWQgPT09IGNoaWxkLmlkKTtcbiAgICAgIGNvbnN0IG90aGVySWR4ID0gb3RoZXJJdGVtLnJlbGF0aW9uc2hpcHNbb3RoZXJSZWxOYW1lXS5maW5kSW5kZXgoaXRlbSA9PiBpdGVtLmlkID09PSB2YWx1ZS5pZCk7XG4gICAgICBpZiAodGhpc0lkeCA8IDApIHtcbiAgICAgICAgdGhpc0l0ZW0ucmVsYXRpb25zaGlwc1tyZWxOYW1lXS5wdXNoKG5ld0NoaWxkKTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIHRoaXNJdGVtLnJlbGF0aW9uc2hpcHNbcmVsTmFtZV1bdGhpc0lkeF0gPSBuZXdDaGlsZDtcbiAgICAgIH1cbiAgICAgIGlmIChvdGhlcklkeCA8IDApIHtcbiAgICAgICAgb3RoZXJJdGVtLnJlbGF0aW9uc2hpcHNbb3RoZXJSZWxOYW1lXS5wdXNoKG5ld1BhcmVudCk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICBvdGhlckl0ZW0ucmVsYXRpb25zaGlwc1tvdGhlclJlbE5hbWVdW290aGVySWR4XSA9IG5ld1BhcmVudDtcbiAgICAgIH1cblxuICAgICAgcmV0dXJuIEJsdWViaXJkLmFsbChbXG4gICAgICAgIHRoaXMuX3NldCh0aGlzLmtleVN0cmluZyh0aGlzSXRlbSksIHRoaXNJdGVtKSxcbiAgICAgICAgdGhpcy5fc2V0KHRoaXMua2V5U3RyaW5nKG90aGVySXRlbSksIG90aGVySXRlbSksXG4gICAgICBdKS50aGVuKCgpID0+IHtcbiAgICAgICAgdGhpcy5maXJlV3JpdGVVcGRhdGUoT2JqZWN0LmFzc2lnbih0aGlzSXRlbSwgeyBpbnZhbGlkYXRlOiBbYHJlbGF0aW9uc2hpcHMuJHtyZWxOYW1lfWBdIH0pKTtcbiAgICAgICAgdGhpcy5maXJlV3JpdGVVcGRhdGUoT2JqZWN0LmFzc2lnbihvdGhlckl0ZW0sIHsgaW52YWxpZGF0ZTogW2ByZWxhdGlvbnNoaXBzLiR7b3RoZXJSZWxOYW1lfWBdIH0pKTtcbiAgICAgIH0pXG4gICAgICAudGhlbigoKSA9PiB0aGlzSXRlbSk7XG4gICAgfSk7XG4gIH1cblxuICBkZWxldGVSZWxhdGlvbnNoaXBJdGVtKHZhbHVlOiBNb2RlbFJlZmVyZW5jZSwgcmVsTmFtZTogc3RyaW5nLCBjaGlsZDogUmVsYXRpb25zaGlwSXRlbSkge1xuICAgIGNvbnN0IHNjaGVtYSA9IHRoaXMuZ2V0U2NoZW1hKHZhbHVlLnR5cGVOYW1lKTtcbiAgICBjb25zdCByZWxTY2hlbWEgPSBzY2hlbWEucmVsYXRpb25zaGlwc1tyZWxOYW1lXS50eXBlO1xuICAgIGNvbnN0IG90aGVyUmVsVHlwZSA9IHJlbFNjaGVtYS5zaWRlc1tyZWxOYW1lXS5vdGhlclR5cGU7XG4gICAgY29uc3Qgb3RoZXJSZWxOYW1lID0gcmVsU2NoZW1hLnNpZGVzW3JlbE5hbWVdLm90aGVyTmFtZTtcbiAgICBjb25zdCB0aGlzS2V5U3RyaW5nID0gdGhpcy5rZXlTdHJpbmcodmFsdWUpO1xuICAgIGNvbnN0IG90aGVyS2V5U3RyaW5nID0gdGhpcy5rZXlTdHJpbmcoeyB0eXBlTmFtZTogb3RoZXJSZWxUeXBlLCBpZDogY2hpbGQuaWQgfSk7XG4gICAgcmV0dXJuIEJsdWViaXJkLmFsbChbXG4gICAgICB0aGlzLl9nZXQodGhpc0tleVN0cmluZyksXG4gICAgICB0aGlzLl9nZXQob3RoZXJLZXlTdHJpbmcpLFxuICAgIF0pXG4gICAgLnRoZW4oKFt0aGlzSXRlbSwgb3RoZXJJdGVtXSkgPT4ge1xuICAgICAgaWYgKCF0aGlzSXRlbS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdKSB7XG4gICAgICAgIHRoaXNJdGVtLnJlbGF0aW9uc2hpcHNbcmVsTmFtZV0gPSBbXTtcbiAgICAgIH1cbiAgICAgIGlmICghb3RoZXJJdGVtLnJlbGF0aW9uc2hpcHNbb3RoZXJSZWxOYW1lXSkge1xuICAgICAgICBvdGhlckl0ZW0ucmVsYXRpb25zaGlwc1tvdGhlclJlbE5hbWVdID0gW107XG4gICAgICB9XG4gICAgICBjb25zdCB0aGlzSWR4ID0gdGhpc0l0ZW0ucmVsYXRpb25zaGlwc1tyZWxOYW1lXS5maW5kSW5kZXgoaXRlbSA9PiBpdGVtLmlkID09PSBjaGlsZC5pZCk7XG4gICAgICBjb25zdCBvdGhlcklkeCA9IG90aGVySXRlbS5yZWxhdGlvbnNoaXBzW290aGVyUmVsTmFtZV0uZmluZEluZGV4KGl0ZW0gPT4gaXRlbS5pZCA9PT0gdmFsdWUuaWQpO1xuICAgICAgaWYgKHRoaXNJZHggPj0gMCkge1xuICAgICAgICB0aGlzSXRlbS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdLnNwbGljZSh0aGlzSWR4LCAxKTtcbiAgICAgIH1cbiAgICAgIGlmIChvdGhlcklkeCA+PSAwKSB7XG4gICAgICAgIG90aGVySXRlbS5yZWxhdGlvbnNoaXBzW290aGVyUmVsTmFtZV0uc3BsaWNlKG90aGVySWR4LCAxKTtcbiAgICAgIH1cblxuICAgICAgcmV0dXJuIEJsdWViaXJkLmFsbChbXG4gICAgICAgIHRoaXMuX3NldCh0aGlzLmtleVN0cmluZyh0aGlzSXRlbSksIHRoaXNJdGVtKSxcbiAgICAgICAgdGhpcy5fc2V0KHRoaXMua2V5U3RyaW5nKG90aGVySXRlbSksIG90aGVySXRlbSksXG4gICAgICBdKS50aGVuKCgpID0+IHtcbiAgICAgICAgdGhpcy5maXJlV3JpdGVVcGRhdGUoT2JqZWN0LmFzc2lnbih0aGlzSXRlbSwgeyBpbnZhbGlkYXRlOiBbYHJlbGF0aW9uc2hpcHMuJHtyZWxOYW1lfWBdIH0pKTtcbiAgICAgICAgdGhpcy5maXJlV3JpdGVVcGRhdGUoT2JqZWN0LmFzc2lnbihvdGhlckl0ZW0sIHsgaW52YWxpZGF0ZTogW2ByZWxhdGlvbnNoaXBzLiR7b3RoZXJSZWxOYW1lfWBdIH0pKTtcbiAgICAgIH0pXG4gICAgICAudGhlbigoKSA9PiB0aGlzSXRlbSk7XG4gICAgfSk7XG4gIH1cblxuICBhZGRTY2hlbWEodDoge3R5cGVOYW1lOiBzdHJpbmcsIHNjaGVtYTogTW9kZWxTY2hlbWF9KSB7XG4gICAgcmV0dXJuIHN1cGVyLmFkZFNjaGVtYSh0KVxuICAgIC50aGVuKCgpID0+IHtcbiAgICAgIHRoaXMubWF4S2V5c1t0LnR5cGVOYW1lXSA9IDA7XG4gICAgfSk7XG4gIH1cblxuICBrZXlTdHJpbmcodmFsdWU6IE1vZGVsUmVmZXJlbmNlKSB7XG4gICAgcmV0dXJuIGAke3ZhbHVlLnR5cGVOYW1lfToke3ZhbHVlLmlkfWA7XG4gIH1cbn1cbiJdfQ==
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* eslint no-unused-vars: 0 */
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var Bluebird = __webpack_require__(15);
+var mergeOptions = __webpack_require__(18);
+var util_1 = __webpack_require__(59);
+var Rx_1 = __webpack_require__(37);
+// type: an object that defines the type. typically this will be
+// part of the Model class hierarchy, but Storage objects call no methods
+// on the type object. We only are interested in Type.$name, Type.$id and Type.$schema.
+// Note that Type.$id is the *name of the id field* on instances
+//    and NOT the actual id field (e.g., in most cases, Type.$id === 'id').
+// id: unique id. Often an integer, but not necessary (could be an oid)
+// hasMany relationships are treated like id arrays. So, add / remove / has
+// just stores and removes integers.
+var Storage = (function () {
+    // protected types: Model[]; TODO: figure this out
+    function Storage(opts) {
+        // a "terminal" storage facility is the end of the storage chain.
+        // usually sql on the server side and rest on the client side, it *must*
+        // receive the writes, and is the final authoritative answer on whether
+        // something is 404.
+        if (opts === void 0) { opts = {}; }
+        this.types = {};
+        this.readSubject = new Rx_1.Subject();
+        this.writeSubject = new Rx_1.Subject();
+        // terminal facilities are also the only ones that can authoritatively answer
+        // authorization questions, but the design may allow for authorization to be
+        // cached.
+        this.terminal = opts.terminal || false;
+        this.read$ = this.readSubject.asObservable();
+        this.write$ = this.writeSubject.asObservable();
+    }
+    Storage.prototype.query = function (q) {
+        // q: {type: string, query: any}
+        // q.query is impl defined - a string for sql (raw sql)
+        return Bluebird.reject(new Error('Query not implemented'));
+    };
+    // convenience function used internally
+    // read a bunch of relationships and merge them together.
+    Storage.prototype.readRelationships = function (item, relationships) {
+        var _this = this;
+        return Bluebird.all(relationships.map(function (r) { return _this.readRelationship(item, r); }))
+            .then(function (rA) {
+            return rA.reduce(function (a, r) { return mergeOptions(a, r || {}); }, { typeName: item.typeName, id: item.id, attributes: {}, relationships: {} });
+        });
+    };
+    Storage.prototype.read = function (item, opts) {
+        var _this = this;
+        if (opts === void 0) { opts = ['attributes']; }
+        var schema = this.getSchema(item.typeName);
+        var keys = (opts && !Array.isArray(opts) ? [opts] : opts);
+        return this.readAttributes(item)
+            .then(function (attributes) {
+            if (!attributes) {
+                return null;
+            }
+            else {
+                if (attributes.id && attributes.attributes && !attributes.attributes[schema.idAttribute]) {
+                    attributes.attributes[schema.idAttribute] = attributes.id; // eslint-disable-line no-param-reassign
+                }
+                var relsWanted = (keys.indexOf('relationships') >= 0)
+                    ? Object.keys(schema.relationships)
+                    : keys.map(function (k) { return k.split('.'); })
+                        .filter(function (ka) { return ka[0] === 'relationships'; })
+                        .map(function (ka) { return ka[1]; });
+                var relsToFetch = relsWanted.filter(function (relName) { return !attributes.relationships[relName]; });
+                // readAttributes can return relationship data, so don't fetch those
+                if (relsToFetch.length > 0) {
+                    return _this.readRelationships(item, relsToFetch)
+                        .then(function (rels) {
+                        return mergeOptions(attributes, rels);
+                    });
+                }
+                else {
+                    return attributes;
+                }
+            }
+        }).then(function (result) {
+            if (result) {
+                _this.fireReadUpdate(result);
+            }
+            return result;
+        });
+    };
+    Storage.prototype.bulkRead = function (item) {
+        // override this if you want to do any special pre-processing
+        // for reading from the store prior to a REST service event
+        return this.read(item).then(function (data) {
+            return { data: data, included: [] };
+        });
+    };
+    Storage.prototype.hot = function (item) {
+        // t: type, id: id (integer).
+        // if hot, then consider this value authoritative, no need to go down
+        // the datastore chain. Consider a memorystorage used as a top-level cache.
+        // if the memstore has the value, it's hot and up-to-date. OTOH, a
+        // localstorage cache may be an out-of-date value (updated since last seen)
+        // this design lets hot be set by type and id. In particular, the goal for the
+        // front-end is to have profile objects be hot-cached in the memstore, but nothing
+        // else (in order to not run the browser out of memory)
+        return false;
+    };
+    // hook a non-terminal store into a terminal store.
+    Storage.prototype.wire = function (store, shutdownSignal) {
+        var _this = this;
+        if (this.terminal) {
+            throw new Error('Cannot wire a terminal store into another store');
+        }
+        else {
+            // TODO: figure out where the type data comes from.
+            store.read$.takeUntil(shutdownSignal).subscribe(function (v) {
+                _this.cache(v);
+            });
+            store.write$.takeUntil(shutdownSignal).subscribe(function (v) {
+                v.invalidate.forEach(function (invalid) {
+                    _this.wipe(v, invalid);
+                });
+            });
+        }
+    };
+    Storage.prototype.validateInput = function (value, opts) {
+        if (opts === void 0) { opts = {}; }
+        var type = this.getSchema(value.typeName);
+        return util_1.validateInput(type, value);
+    };
+    // store type info data on the store itself
+    Storage.prototype.getSchema = function (t) {
+        if (typeof t === 'string') {
+            return this.types[t];
+        }
+        else if (t['schema']) {
+            return t.schema;
+        }
+        else {
+            return t;
+        }
+    };
+    Storage.prototype.addSchema = function (t) {
+        this.types[t.typeName] = t.schema;
+        return Bluebird.resolve();
+    };
+    Storage.prototype.addSchemas = function (a) {
+        var _this = this;
+        return Bluebird.all(a.map(function (t) { return _this.addSchema(t); })).then(function () { });
+    };
+    Storage.prototype.fireWriteUpdate = function (val) {
+        this.writeSubject.next(val);
+        return Bluebird.resolve(val);
+    };
+    Storage.prototype.fireReadUpdate = function (val) {
+        this.readSubject.next(val);
+        return Bluebird.resolve(val);
+    };
+    return Storage;
+}());
+exports.Storage = Storage;
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,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LEdBQUcsQ0FBQyxDQUFDLE1BQU0sQ0FBQztRQUNsQyxNQUFNLENBQUMsUUFBUSxDQUFDLE9BQU8sRUFBRSxDQUFDO0lBQzVCLENBQUM7SUFFRCw0QkFBVSxHQUFWLFVBQVcsQ0FBQztRQUFaLGlCQUlDO1FBSEMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQ2pCLENBQUMsQ0FBQyxHQUFHLENBQUMsVUFBQSxDQUFDLElBQUksT0FBQSxLQUFJLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxFQUFqQixDQUFpQixDQUFDLENBQzlCLENBQUMsSUFBSSxDQUFDLGNBQWlCLENBQUMsQ0FBQyxDQUFDO0lBQzdCLENBQUM7SUFHRCxpQ0FBZSxHQUFmLFVBQWdCLEdBQWU7UUFDN0IsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7UUFDNUIsTUFBTSxDQUFDLFFBQVEsQ0FBQyxPQUFPLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDL0IsQ0FBQztJQUVELGdDQUFjLEdBQWQsVUFBZSxHQUFjO1FBQzNCLElBQUksQ0FBQyxXQUFXLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBQzNCLE1BQU0sQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQy9CLENBQUM7SUFDSCxjQUFDO0FBQUQsQ0FqTEEsQUFpTEMsSUFBQTtBQWpMcUIsMEJBQU8iLCJmaWxlIjoic3RvcmFnZS9zdG9yYWdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyogZXNsaW50IG5vLXVudXNlZC12YXJzOiAwICovXG5cbmltcG9ydCAqIGFzIEJsdWViaXJkIGZyb20gJ2JsdWViaXJkJztcbmltcG9ydCAqIGFzIG1lcmdlT3B0aW9ucyBmcm9tICdtZXJnZS1vcHRpb25zJztcbmltcG9ydCB7IHZhbGlkYXRlSW5wdXQgfSBmcm9tICcuLi91dGlsJztcbmltcG9ydCB7IFN1YmplY3QsIE9ic2VydmFibGUgfSBmcm9tICdyeGpzL1J4JztcbmltcG9ydCB7XG4gIEluZGVmaW5pdGVNb2RlbERhdGEsXG4gIE1vZGVsRGF0YSxcbiAgTW9kZWxEZWx0YSxcbiAgTW9kZWxTY2hlbWEsXG4gIE1vZGVsUmVmZXJlbmNlLFxuICBSZWxhdGlvbnNoaXBJdGVtLFxufSBmcm9tICcuLi9kYXRhVHlwZXMnO1xuXG4vLyB0eXBlOiBhbiBvYmplY3QgdGhhdCBkZWZpbmVzIHRoZSB0eXBlLiB0eXBpY2FsbHkgdGhpcyB3aWxsIGJlXG4vLyBwYXJ0IG9mIHRoZSBNb2RlbCBjbGFzcyBoaWVyYXJjaHksIGJ1dCBTdG9yYWdlIG9iamVjdHMgY2FsbCBubyBtZXRob2RzXG4vLyBvbiB0aGUgdHlwZSBvYmplY3QuIFdlIG9ubHkgYXJlIGludGVyZXN0ZWQgaW4gVHlwZS4kbmFtZSwgVHlwZS4kaWQgYW5kIFR5cGUuJHNjaGVtYS5cbi8vIE5vdGUgdGhhdCBUeXBlLiRpZCBpcyB0aGUgKm5hbWUgb2YgdGhlIGlkIGZpZWxkKiBvbiBpbnN0YW5jZXNcbi8vICAgIGFuZCBOT1QgdGhlIGFjdHVhbCBpZCBmaWVsZCAoZS5nLiwgaW4gbW9zdCBjYXNlcywgVHlwZS4kaWQgPT09ICdpZCcpLlxuLy8gaWQ6IHVuaXF1ZSBpZC4gT2Z0ZW4gYW4gaW50ZWdlciwgYnV0IG5vdCBuZWNlc3NhcnkgKGNvdWxkIGJlIGFuIG9pZClcblxuXG4vLyBoYXNNYW55IHJlbGF0aW9uc2hpcHMgYXJlIHRyZWF0ZWQgbGlrZSBpZCBhcnJheXMuIFNvLCBhZGQgLyByZW1vdmUgLyBoYXNcbi8vIGp1c3Qgc3RvcmVzIGFuZCByZW1vdmVzIGludGVnZXJzLlxuXG5leHBvcnQgYWJzdHJhY3QgY2xhc3MgU3RvcmFnZSB7XG5cbiAgdGVybWluYWw6IGJvb2xlYW47XG4gIHJlYWQkOiBPYnNlcnZhYmxlPE1vZGVsRGF0YT47XG4gIHdyaXRlJDogT2JzZXJ2YWJsZTxNb2RlbERlbHRhPjtcbiAgcHJvdGVjdGVkIHR5cGVzOiB7IFt0eXBlOiBzdHJpbmddOiBNb2RlbFNjaGVtYX0gPSB7fTtcbiAgcHJpdmF0ZSByZWFkU3ViamVjdCA9IG5ldyBTdWJqZWN0KCk7XG4gIHByaXZhdGUgd3JpdGVTdWJqZWN0ID0gbmV3IFN1YmplY3QoKTtcbiAgLy8gcHJvdGVjdGVkIHR5cGVzOiBNb2RlbFtdOyBUT0RPOiBmaWd1cmUgdGhpcyBvdXRcblxuICBjb25zdHJ1Y3RvcihvcHRzOiBhbnkgPSB7fSkge1xuICAgIC8vIGEgXCJ0ZXJtaW5hbFwiIHN0b3JhZ2UgZmFjaWxpdHkgaXMgdGhlIGVuZCBvZiB0aGUgc3RvcmFnZSBjaGFpbi5cbiAgICAvLyB1c3VhbGx5IHNxbCBvbiB0aGUgc2VydmVyIHNpZGUgYW5kIHJlc3Qgb24gdGhlIGNsaWVudCBzaWRlLCBpdCAqbXVzdCpcbiAgICAvLyByZWNlaXZlIHRoZSB3cml0ZXMsIGFuZCBpcyB0aGUgZmluYWwgYXV0aG9yaXRhdGl2ZSBhbnN3ZXIgb24gd2hldGhlclxuICAgIC8vIHNvbWV0aGluZyBpcyA0MDQuXG5cbiAgICAvLyB0ZXJtaW5hbCBmYWNpbGl0aWVzIGFyZSBhbHNvIHRoZSBvbmx5IG9uZXMgdGhhdCBjYW4gYXV0aG9yaXRhdGl2ZWx5IGFuc3dlclxuICAgIC8vIGF1dGhvcml6YXRpb24gcXVlc3Rpb25zLCBidXQgdGhlIGRlc2lnbiBtYXkgYWxsb3cgZm9yIGF1dGhvcml6YXRpb24gdG8gYmVcbiAgICAvLyBjYWNoZWQuXG4gICAgdGhpcy50ZXJtaW5hbCA9IG9wdHMudGVybWluYWwgfHwgZmFsc2U7XG4gICAgdGhpcy5yZWFkJCA9IHRoaXMucmVhZFN1YmplY3QuYXNPYnNlcnZhYmxlKCk7XG4gICAgdGhpcy53cml0ZSQgPSB0aGlzLndyaXRlU3ViamVjdC5hc09ic2VydmFibGUoKTtcbiAgfVxuXG4gIC8vIEFic3RyYWN0IC0gYWxsIHN0b3JlcyBtdXN0IHByb3ZpZGUgYmVsb3c6XG5cbiAgYWJzdHJhY3QgYWxsb2NhdGVJZCh0eXBlTmFtZTogc3RyaW5nKTogQmx1ZWJpcmQ8c3RyaW5nIHwgbnVtYmVyPjtcbiAgYWJzdHJhY3Qgd3JpdGVBdHRyaWJ1dGVzKHZhbHVlOiBJbmRlZmluaXRlTW9kZWxEYXRhKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcbiAgYWJzdHJhY3QgcmVhZEF0dHJpYnV0ZXModmFsdWU6IE1vZGVsUmVmZXJlbmNlKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcbiAgYWJzdHJhY3QgY2FjaGUodmFsdWU6IE1vZGVsRGF0YSk6IEJsdWViaXJkPE1vZGVsRGF0YT47XG4gIGFic3RyYWN0IGNhY2hlQXR0cmlidXRlcyh2YWx1ZTogTW9kZWxEYXRhKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcbiAgYWJzdHJhY3QgY2FjaGVSZWxhdGlvbnNoaXAodmFsdWU6IE1vZGVsRGF0YSk6IEJsdWViaXJkPE1vZGVsRGF0YT47XG4gIGFic3RyYWN0IHJlYWRSZWxhdGlvbnNoaXAodmFsdWU6IE1vZGVsUmVmZXJlbmNlLCBrZXk/OiBzdHJpbmcgfCBzdHJpbmdbXSk6IEJsdWViaXJkPE1vZGVsRGF0YSB8IFJlbGF0aW9uc2hpcEl0ZW1bXT47XG4gIGFic3RyYWN0IHdpcGUodmFsdWU6IE1vZGVsUmVmZXJlbmNlLCBrZXk/OiBzdHJpbmcgfCBzdHJpbmdbXSk6IHZvaWQ7XG4gIGFic3RyYWN0IGRlbGV0ZSh2YWx1ZTogTW9kZWxSZWZlcmVuY2UpOiBCbHVlYmlyZDx2b2lkPjtcbiAgYWJzdHJhY3Qgd3JpdGVSZWxhdGlvbnNoaXBJdGVtKFxuICAgIHZhbHVlOiBNb2RlbFJlZmVyZW5jZSxcbiAgICByZWxhdGlvbnNoaXBUaXRsZTogc3RyaW5nLFxuICAgIGNoaWxkOiB7aWQ6IHN0cmluZyB8IG51bWJlcn1cbiAgKTogQmx1ZWJpcmQ8TW9kZWxEYXRhPjtcbiAgYWJzdHJhY3QgZGVsZXRlUmVsYXRpb25zaGlwSXRlbShcbiAgICB2YWx1ZTogTW9kZWxSZWZlcmVuY2UsXG4gICAgcmVsYXRpb25zaGlwVGl0bGU6IHN0cmluZyxcbiAgICBjaGlsZDoge2lkOiBzdHJpbmcgfCBudW1iZXJ9XG4gICk6IEJsdWViaXJkPE1vZGVsRGF0YT47XG5cblxuICBxdWVyeShxKSB7XG4gICAgLy8gcToge3R5cGU6IHN0cmluZywgcXVlcnk6IGFueX1cbiAgICAvLyBxLnF1ZXJ5IGlzIGltcGwgZGVmaW5lZCAtIGEgc3RyaW5nIGZvciBzcWwgKHJhdyBzcWwpXG4gICAgcmV0dXJuIEJsdWViaXJkLnJlamVjdChuZXcgRXJyb3IoJ1F1ZXJ5IG5vdCBpbXBsZW1lbnRlZCcpKTtcbiAgfVxuXG4gIC8vIGNvbnZlbmllbmNlIGZ1bmN0aW9uIHVzZWQgaW50ZXJuYWxseVxuICAvLyByZWFkIGEgYnVuY2ggb2YgcmVsYXRpb25zaGlwcyBhbmQgbWVyZ2UgdGhlbSB0b2dldGhlci5cbiAgcmVhZFJlbGF0aW9uc2hpcHMoaXRlbTogTW9kZWxSZWZlcmVuY2UsIHJlbGF0aW9uc2hpcHM6IHN0cmluZ1tdKSB7XG4gICAgcmV0dXJuIEJsdWViaXJkLmFsbChyZWxhdGlvbnNoaXBzLm1hcChyID0+IHRoaXMucmVhZFJlbGF0aW9uc2hpcChpdGVtLCByKSkpXG4gICAgLnRoZW4ockEgPT5cbiAgICAgIHJBLnJlZHVjZShcbiAgICAgICAgKGEsIHIpID0+IG1lcmdlT3B0aW9ucyhhLCByIHx8IHt9KSxcbiAgICAgICAgeyB0eXBlTmFtZTogaXRlbS50eXBlTmFtZSwgaWQ6IGl0ZW0uaWQsIGF0dHJpYnV0ZXM6IHt9LCByZWxhdGlvbnNoaXBzOiB7fSB9XG4gICAgICApXG4gICAgKTtcbiAgfVxuXG4gIHJlYWQoaXRlbTogTW9kZWxSZWZlcmVuY2UsIG9wdHM6IHN0cmluZyB8IHN0cmluZ1tdID0gWydhdHRyaWJ1dGVzJ10pIHtcbiAgICBjb25zdCBzY2hlbWEgPSB0aGlzLmdldFNjaGVtYShpdGVtLnR5cGVOYW1lKTtcbiAgICBjb25zdCBrZXlzID0gKG9wdHMgJiYgIUFycmF5LmlzQXJyYXkob3B0cykgPyBbb3B0c10gOiBvcHRzKSBhcyBzdHJpbmdbXTtcbiAgICByZXR1cm4gdGhpcy5yZWFkQXR0cmlidXRlcyhpdGVtKVxuICAgIC50aGVuKGF0dHJpYnV0ZXMgPT4ge1xuICAgICAgaWYgKCFhdHRyaWJ1dGVzKSB7XG4gICAgICAgIHJldHVybiBudWxsO1xuICAgICAgfSBlbHNlIHtcbiAgICAgICAgaWYgKGF0dHJpYnV0ZXMuaWQgJiYgYXR0cmlidXRlcy5hdHRyaWJ1dGVzICYmICFhdHRyaWJ1dGVzLmF0dHJpYnV0ZXNbc2NoZW1hLmlkQXR0cmlidXRlXSkge1xuICAgICAgICAgIGF0dHJpYnV0ZXMuYXR0cmlidXRlc1tzY2hlbWEuaWRBdHRyaWJ1dGVdID0gYXR0cmlidXRlcy5pZDsgLy8gZXNsaW50LWRpc2FibGUtbGluZSBuby1wYXJhbS1yZWFzc2lnblxuICAgICAgICB9XG4gICAgICAgIGNvbnN0IHJlbHNXYW50ZWQgPSAoa2V5cy5pbmRleE9mKCdyZWxhdGlvbnNoaXBzJykgPj0gMClcbiAgICAgICAgICA/IE9iamVjdC5rZXlzKHNjaGVtYS5yZWxhdGlvbnNoaXBzKVxuICAgICAgICAgIDoga2V5cy5tYXAoayA9PiBrLnNwbGl0KCcuJykpXG4gICAgICAgICAgICAuZmlsdGVyKGthID0+IGthWzBdID09PSAncmVsYXRpb25zaGlwcycpXG4gICAgICAgICAgICAubWFwKGthID0+IGthWzFdKTtcbiAgICAgICAgY29uc3QgcmVsc1RvRmV0Y2ggPSByZWxzV2FudGVkLmZpbHRlcihyZWxOYW1lID0+ICFhdHRyaWJ1dGVzLnJlbGF0aW9uc2hpcHNbcmVsTmFtZV0pO1xuICAgICAgICAvLyByZWFkQXR0cmlidXRlcyBjYW4gcmV0dXJuIHJlbGF0aW9uc2hpcCBkYXRhLCBzbyBkb24ndCBmZXRjaCB0aG9zZVxuICAgICAgICBpZiAocmVsc1RvRmV0Y2gubGVuZ3RoID4gMCkge1xuICAgICAgICAgIHJldHVybiB0aGlzLnJlYWRSZWxhdGlvbnNoaXBzKGl0ZW0sIHJlbHNUb0ZldGNoKVxuICAgICAgICAgIC50aGVuKHJlbHMgPT4ge1xuICAgICAgICAgICAgcmV0dXJuIG1lcmdlT3B0aW9ucyhhdHRyaWJ1dGVzLCByZWxzKTtcbiAgICAgICAgICB9KTtcbiAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICByZXR1cm4gYXR0cmlidXRlcztcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH0pLnRoZW4oKHJlc3VsdCkgPT4ge1xuICAgICAgaWYgKHJlc3VsdCkge1xuICAgICAgICB0aGlzLmZpcmVSZWFkVXBkYXRlKHJlc3VsdCk7XG4gICAgICB9XG4gICAgICByZXR1cm4gcmVzdWx0O1xuICAgIH0pO1xuICB9XG5cbiAgYnVsa1JlYWQoaXRlbTogTW9kZWxSZWZlcmVuY2UpIHtcbiAgICAvLyBvdmVycmlkZSB0aGlzIGlmIHlvdSB3YW50IHRvIGRvIGFueSBzcGVjaWFsIHByZS1wcm9jZXNzaW5nXG4gICAgLy8gZm9yIHJlYWRpbmcgZnJvbSB0aGUgc3RvcmUgcHJpb3IgdG8gYSBSRVNUIHNlcnZpY2UgZXZlbnRcbiAgICByZXR1cm4gdGhpcy5yZWFkKGl0ZW0pLnRoZW4oZGF0YSA9PiB7XG4gICAgICByZXR1cm4geyBkYXRhLCBpbmNsdWRlZDogW10gfTtcbiAgICB9KTtcbiAgfVxuXG5cbiAgaG90KGl0ZW06IE1vZGVsUmVmZXJlbmNlKTogYm9vbGVhbiB7XG4gICAgLy8gdDogdHlwZSwgaWQ6IGlkIChpbnRlZ2VyKS5cbiAgICAvLyBpZiBob3QsIHRoZW4gY29uc2lkZXIgdGhpcyB2YWx1ZSBhdXRob3JpdGF0aXZlLCBubyBuZWVkIHRvIGdvIGRvd25cbiAgICAvLyB0aGUgZGF0YXN0b3JlIGNoYWluLiBDb25zaWRlciBhIG1lbW9yeXN0b3JhZ2UgdXNlZCBhcyBhIHRvcC1sZXZlbCBjYWNoZS5cbiAgICAvLyBpZiB0aGUgbWVtc3RvcmUgaGFzIHRoZSB2YWx1ZSwgaXQncyBob3QgYW5kIHVwLXRvLWRhdGUuIE9UT0gsIGFcbiAgICAvLyBsb2NhbHN0b3JhZ2UgY2FjaGUgbWF5IGJlIGFuIG91dC1vZi1kYXRlIHZhbHVlICh1cGRhdGVkIHNpbmNlIGxhc3Qgc2VlbilcblxuICAgIC8vIHRoaXMgZGVzaWduIGxldHMgaG90IGJlIHNldCBieSB0eXBlIGFuZCBpZC4gSW4gcGFydGljdWxhciwgdGhlIGdvYWwgZm9yIHRoZVxuICAgIC8vIGZyb250LWVuZCBpcyB0byBoYXZlIHByb2ZpbGUgb2JqZWN0cyBiZSBob3QtY2FjaGVkIGluIHRoZSBtZW1zdG9yZSwgYnV0IG5vdGhpbmdcbiAgICAvLyBlbHNlIChpbiBvcmRlciB0byBub3QgcnVuIHRoZSBicm93c2VyIG91dCBvZiBtZW1vcnkpXG4gICAgcmV0dXJuIGZhbHNlO1xuICB9XG5cbiAgLy8gaG9vayBhIG5vbi10ZXJtaW5hbCBzdG9yZSBpbnRvIGEgdGVybWluYWwgc3RvcmUuXG4gIHdpcmUoc3RvcmUsIHNodXRkb3duU2lnbmFsKSB7XG4gICAgaWYgKHRoaXMudGVybWluYWwpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcignQ2Fubm90IHdpcmUgYSB0ZXJtaW5hbCBzdG9yZSBpbnRvIGFub3RoZXIgc3RvcmUnKTtcbiAgICB9IGVsc2Uge1xuICAgICAgLy8gVE9ETzogZmlndXJlIG91dCB3aGVyZSB0aGUgdHlwZSBkYXRhIGNvbWVzIGZyb20uXG4gICAgICBzdG9yZS5yZWFkJC50YWtlVW50aWwoc2h1dGRvd25TaWduYWwpLnN1YnNjcmliZSgodikgPT4ge1xuICAgICAgICB0aGlzLmNhY2hlKHYpO1xuICAgICAgfSk7XG4gICAgICBzdG9yZS53cml0ZSQudGFrZVVudGlsKHNodXRkb3duU2lnbmFsKS5zdWJzY3JpYmUoKHYpID0+IHtcbiAgICAgICAgdi5pbnZhbGlkYXRlLmZvckVhY2goKGludmFsaWQpID0+IHtcbiAgICAgICAgICB0aGlzLndpcGUodiwgaW52YWxpZCk7XG4gICAgICAgIH0pO1xuICAgICAgfSk7XG4gICAgfVxuICB9XG5cbiAgdmFsaWRhdGVJbnB1dCh2YWx1ZTogSW5kZWZpbml0ZU1vZGVsRGF0YSwgb3B0cyA9IHt9KSB7XG4gICAgY29uc3QgdHlwZSA9IHRoaXMuZ2V0U2NoZW1hKHZhbHVlLnR5cGVOYW1lKTtcbiAgICByZXR1cm4gdmFsaWRhdGVJbnB1dCh0eXBlLCB2YWx1ZSk7XG4gIH1cblxuICAvLyBzdG9yZSB0eXBlIGluZm8gZGF0YSBvbiB0aGUgc3RvcmUgaXRzZWxmXG5cbiAgZ2V0U2NoZW1hKHQ6IHtzY2hlbWE6IE1vZGVsU2NoZW1hfSB8IE1vZGVsU2NoZW1hIHwgc3RyaW5nKTogTW9kZWxTY2hlbWEge1xuICAgIGlmICh0eXBlb2YgdCA9PT0gJ3N0cmluZycpIHtcbiAgICAgIHJldHVybiB0aGlzLnR5cGVzW3RdO1xuICAgIH0gZWxzZSBpZiAodFsnc2NoZW1hJ10pIHtcbiAgICAgIHJldHVybiAodCBhcyB7c2NoZW1hOiBNb2RlbFNjaGVtYX0pLnNjaGVtYTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIHQgYXMgTW9kZWxTY2hlbWE7XG4gICAgfVxuICB9XG5cbiAgYWRkU2NoZW1hKHQ6IHt0eXBlTmFtZTogc3RyaW5nLCBzY2hlbWE6IE1vZGVsU2NoZW1hfSkge1xuICAgIHRoaXMudHlwZXNbdC50eXBlTmFtZV0gPSB0LnNjaGVtYTtcbiAgICByZXR1cm4gQmx1ZWJpcmQucmVzb2x2ZSgpO1xuICB9XG5cbiAgYWRkU2NoZW1hcyhhKTogQmx1ZWJpcmQ8dm9pZD4ge1xuICAgIHJldHVybiBCbHVlYmlyZC5hbGwoXG4gICAgICBhLm1hcCh0ID0+IHRoaXMuYWRkU2NoZW1hKHQpKVxuICAgICkudGhlbigoKSA9PiB7Lyogbm9vcCAqL30pO1xuICB9XG5cblxuICBmaXJlV3JpdGVVcGRhdGUodmFsOiBNb2RlbERlbHRhKSB7XG4gICAgdGhpcy53cml0ZVN1YmplY3QubmV4dCh2YWwpO1xuICAgIHJldHVybiBCbHVlYmlyZC5yZXNvbHZlKHZhbCk7XG4gIH1cblxuICBmaXJlUmVhZFVwZGF0ZSh2YWw6IE1vZGVsRGF0YSkge1xuICAgIHRoaXMucmVhZFN1YmplY3QubmV4dCh2YWwpO1xuICAgIHJldHVybiBCbHVlYmlyZC5yZXNvbHZlKHZhbCk7XG4gIH1cbn1cbiJdfQ==
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var mergeOptions = __webpack_require__(18);
+function validateInput(schema, value) {
+    var retVal = { typeName: value.typeName, id: value.id, attributes: {}, relationships: {} };
+    var typeAttrs = Object.keys(schema.attributes || {});
+    var valAttrs = Object.keys(value.attributes || {});
+    var typeRels = Object.keys(schema.relationships || {});
+    var valRels = Object.keys(value.relationships || {});
+    var invalidAttrs = valAttrs.filter(function (item) { return typeAttrs.indexOf(item) < 0; });
+    var invalidRels = valRels.filter(function (item) { return typeRels.indexOf(item) < 0; });
+    if (invalidAttrs.length > 0) {
+        throw new Error("Invalid attributes on value object: " + JSON.stringify(invalidAttrs));
+    }
+    if (invalidRels.length > 0) {
+        throw new Error("Invalid relationships on value object: " + JSON.stringify(invalidRels));
+    }
+    for (var attrName in schema.attributes) {
+        if (!value.attributes[attrName] && (schema.attributes[attrName].default !== undefined)) {
+            if (Array.isArray(schema.attributes[attrName].default)) {
+                retVal.attributes[attrName] = schema.attributes[attrName].default.concat();
+            }
+            else if (typeof schema.attributes[attrName].default === 'object') {
+                retVal.attributes[attrName] = Object.assign({}, schema.attributes[attrName].default);
+            }
+            else {
+                retVal.attributes[attrName] = schema.attributes[attrName].default;
+            }
+        }
+    }
+    for (var relName in schema.relationships) {
+        if (value.relationships && value.relationships[relName] && !Array.isArray(value.relationships[relName])) {
+            throw new Error("relation " + relName + " is not an array");
+        }
+    }
+    return mergeOptions({}, value, retVal);
+}
+exports.validateInput = validateInput;
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,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QyxRQUFRLENBQUMsQ0FBQyxPQUFPLENBQUM7WUFDcEUsQ0FBQztRQUNILENBQUM7SUFDSCxDQUFDO0lBRUQsR0FBRyxDQUFDLENBQUMsSUFBTSxPQUFPLElBQUksTUFBTSxDQUFDLGFBQWEsQ0FBQyxDQUFDLENBQUM7UUFDM0MsRUFBRSxDQUFDLENBQUMsS0FBSyxDQUFDLGFBQWEsSUFBSSxLQUFLLENBQUMsYUFBYSxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUMsYUFBYSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDO1lBQ3hHLE1BQU0sSUFBSSxLQUFLLENBQUMsY0FBWSxPQUFPLHFCQUFrQixDQUFDLENBQUM7UUFDekQsQ0FBQztJQUNILENBQUM7SUFDRCxNQUFNLENBQUMsWUFBWSxDQUFDLEVBQUUsRUFBRSxLQUFLLEVBQUUsTUFBTSxDQUFDLENBQUM7QUFDekMsQ0FBQztBQXJDRCxzQ0FxQ0MiLCJmaWxlIjoidXRpbC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIG1lcmdlT3B0aW9ucyBmcm9tICdtZXJnZS1vcHRpb25zJztcblxuaW1wb3J0IHsgTW9kZWxEYXRhLCBJbmRlZmluaXRlTW9kZWxEYXRhLCBNb2RlbFNjaGVtYSB9IGZyb20gJy4vZGF0YVR5cGVzJztcblxuZXhwb3J0IGZ1bmN0aW9uIHZhbGlkYXRlSW5wdXQoc2NoZW1hOiBNb2RlbFNjaGVtYSwgdmFsdWU6IEluZGVmaW5pdGVNb2RlbERhdGEpOiBNb2RlbERhdGEge1xuICBjb25zdCByZXRWYWwgPSB7IHR5cGVOYW1lOiB2YWx1ZS50eXBlTmFtZSwgaWQ6IHZhbHVlLmlkLCBhdHRyaWJ1dGVzOiB7fSwgcmVsYXRpb25zaGlwczoge30gfTtcbiAgY29uc3QgdHlwZUF0dHJzID0gT2JqZWN0LmtleXMoc2NoZW1hLmF0dHJpYnV0ZXMgfHwge30pO1xuICBjb25zdCB2YWxBdHRycyA9IE9iamVjdC5rZXlzKHZhbHVlLmF0dHJpYnV0ZXMgfHwge30pO1xuICBjb25zdCB0eXBlUmVscyA9IE9iamVjdC5rZXlzKHNjaGVtYS5yZWxhdGlvbnNoaXBzIHx8IHt9KTtcbiAgY29uc3QgdmFsUmVscyA9IE9iamVjdC5rZXlzKHZhbHVlLnJlbGF0aW9uc2hpcHMgfHwge30pO1xuXG4gIGNvbnN0IGludmFsaWRBdHRycyA9IHZhbEF0dHJzLmZpbHRlcihpdGVtID0+IHR5cGVBdHRycy5pbmRleE9mKGl0ZW0pIDwgMCk7XG4gIGNvbnN0IGludmFsaWRSZWxzID0gdmFsUmVscy5maWx0ZXIoaXRlbSA9PiB0eXBlUmVscy5pbmRleE9mKGl0ZW0pIDwgMCk7XG5cbiAgaWYgKGludmFsaWRBdHRycy5sZW5ndGggPiAwKSB7XG4gICAgdGhyb3cgbmV3IEVycm9yKGBJbnZhbGlkIGF0dHJpYnV0ZXMgb24gdmFsdWUgb2JqZWN0OiAke0pTT04uc3RyaW5naWZ5KGludmFsaWRBdHRycyl9YCk7XG4gIH1cblxuICBpZiAoaW52YWxpZFJlbHMubGVuZ3RoID4gMCkge1xuICAgIHRocm93IG5ldyBFcnJvcihgSW52YWxpZCByZWxhdGlvbnNoaXBzIG9uIHZhbHVlIG9iamVjdDogJHtKU09OLnN0cmluZ2lmeShpbnZhbGlkUmVscyl9YCk7XG4gIH1cblxuXG4gIGZvciAoY29uc3QgYXR0ck5hbWUgaW4gc2NoZW1hLmF0dHJpYnV0ZXMpIHtcbiAgICBpZiAoIXZhbHVlLmF0dHJpYnV0ZXNbYXR0ck5hbWVdICYmIChzY2hlbWEuYXR0cmlidXRlc1thdHRyTmFtZV0uZGVmYXVsdCAhPT0gdW5kZWZpbmVkKSkge1xuICAgICAgaWYgKEFycmF5LmlzQXJyYXkoc2NoZW1hLmF0dHJpYnV0ZXNbYXR0ck5hbWVdLmRlZmF1bHQpKSB7XG4gICAgICAgIHJldFZhbC5hdHRyaWJ1dGVzW2F0dHJOYW1lXSA9IChzY2hlbWEuYXR0cmlidXRlc1thdHRyTmFtZV0uZGVmYXVsdCBhcyBhbnlbXSkuY29uY2F0KCk7XG4gICAgICB9IGVsc2UgaWYgKHR5cGVvZiBzY2hlbWEuYXR0cmlidXRlc1thdHRyTmFtZV0uZGVmYXVsdCA9PT0gJ29iamVjdCcpIHtcbiAgICAgICAgcmV0VmFsLmF0dHJpYnV0ZXNbYXR0ck5hbWVdID0gT2JqZWN0LmFzc2lnbih7fSwgc2NoZW1hLmF0dHJpYnV0ZXNbYXR0ck5hbWVdLmRlZmF1bHQpO1xuICAgICAgfSBlbHNlIHtcbiAgICAgICAgcmV0VmFsLmF0dHJpYnV0ZXNbYXR0ck5hbWVdID0gc2NoZW1hLmF0dHJpYnV0ZXNbYXR0ck5hbWVdLmRlZmF1bHQ7XG4gICAgICB9XG4gICAgfVxuICB9XG5cbiAgZm9yIChjb25zdCByZWxOYW1lIGluIHNjaGVtYS5yZWxhdGlvbnNoaXBzKSB7XG4gICAgaWYgKHZhbHVlLnJlbGF0aW9uc2hpcHMgJiYgdmFsdWUucmVsYXRpb25zaGlwc1tyZWxOYW1lXSAmJiAhQXJyYXkuaXNBcnJheSh2YWx1ZS5yZWxhdGlvbnNoaXBzW3JlbE5hbWVdKSkge1xuICAgICAgdGhyb3cgbmV3IEVycm9yKGByZWxhdGlvbiAke3JlbE5hbWV9IGlzIG5vdCBhbiBhcnJheWApO1xuICAgIH1cbiAgfVxuICByZXR1cm4gbWVyZ2VPcHRpb25zKHt9LCB2YWx1ZSwgcmV0VmFsKTtcbn1cbiJdfQ==
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subject_1 = __webpack_require__(5);
+var ObjectUnsubscribedError_1 = __webpack_require__(30);
+/**
+ * @class BehaviorSubject<T>
+ */
+var BehaviorSubject = (function (_super) {
+    __extends(BehaviorSubject, _super);
+    function BehaviorSubject(_value) {
+        _super.call(this);
+        this._value = _value;
+    }
+    Object.defineProperty(BehaviorSubject.prototype, "value", {
+        get: function () {
+            return this.getValue();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    BehaviorSubject.prototype._subscribe = function (subscriber) {
+        var subscription = _super.prototype._subscribe.call(this, subscriber);
+        if (subscription && !subscription.closed) {
+            subscriber.next(this._value);
+        }
+        return subscription;
+    };
+    BehaviorSubject.prototype.getValue = function () {
+        if (this.hasError) {
+            throw this.thrownError;
+        }
+        else if (this.closed) {
+            throw new ObjectUnsubscribedError_1.ObjectUnsubscribedError();
+        }
+        else {
+            return this._value;
+        }
+    };
+    BehaviorSubject.prototype.next = function (value) {
+        _super.prototype.next.call(this, this._value = value);
+    };
+    return BehaviorSubject;
+}(Subject_1.Subject));
+exports.BehaviorSubject = BehaviorSubject;
+//# sourceMappingURL=BehaviorSubject.js.map
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+exports.empty = {
+    closed: true,
+    next: function (value) { },
+    error: function (err) { throw err; },
+    complete: function () { }
+};
+//# sourceMappingURL=Observer.js.map
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscription_1 = __webpack_require__(4);
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var SubjectSubscription = (function (_super) {
+    __extends(SubjectSubscription, _super);
+    function SubjectSubscription(subject, subscriber) {
+        _super.call(this);
+        this.subject = subject;
+        this.subscriber = subscriber;
+        this.closed = false;
+    }
+    SubjectSubscription.prototype.unsubscribe = function () {
+        if (this.closed) {
+            return;
+        }
+        this.closed = true;
+        var subject = this.subject;
+        var observers = subject.observers;
+        this.subject = null;
+        if (!observers || observers.length === 0 || subject.isStopped || subject.closed) {
+            return;
+        }
+        var subscriberIndex = observers.indexOf(this.subscriber);
+        if (subscriberIndex !== -1) {
+            observers.splice(subscriberIndex, 1);
+        }
+    };
+    return SubjectSubscription;
+}(Subscription_1.Subscription));
+exports.SubjectSubscription = SubjectSubscription;
+//# sourceMappingURL=SubjectSubscription.js.map
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subject_1 = __webpack_require__(5);
+var Observable_1 = __webpack_require__(0);
+var Subscriber_1 = __webpack_require__(1);
+var Subscription_1 = __webpack_require__(4);
+/**
+ * @class ConnectableObservable<T>
+ */
+var ConnectableObservable = (function (_super) {
+    __extends(ConnectableObservable, _super);
+    function ConnectableObservable(source, subjectFactory) {
+        _super.call(this);
+        this.source = source;
+        this.subjectFactory = subjectFactory;
+        this._refCount = 0;
+    }
+    ConnectableObservable.prototype._subscribe = function (subscriber) {
+        return this.getSubject().subscribe(subscriber);
+    };
+    ConnectableObservable.prototype.getSubject = function () {
+        var subject = this._subject;
+        if (!subject || subject.isStopped) {
+            this._subject = this.subjectFactory();
+        }
+        return this._subject;
+    };
+    ConnectableObservable.prototype.connect = function () {
+        var connection = this._connection;
+        if (!connection) {
+            connection = this._connection = new Subscription_1.Subscription();
+            connection.add(this.source
+                .subscribe(new ConnectableSubscriber(this.getSubject(), this)));
+            if (connection.closed) {
+                this._connection = null;
+                connection = Subscription_1.Subscription.EMPTY;
+            }
+            else {
+                this._connection = connection;
+            }
+        }
+        return connection;
+    };
+    ConnectableObservable.prototype.refCount = function () {
+        return this.lift(new RefCountOperator(this));
+    };
+    return ConnectableObservable;
+}(Observable_1.Observable));
+exports.ConnectableObservable = ConnectableObservable;
+exports.connectableObservableDescriptor = {
+    operator: { value: null },
+    _refCount: { value: 0, writable: true },
+    _subscribe: { value: ConnectableObservable.prototype._subscribe },
+    getSubject: { value: ConnectableObservable.prototype.getSubject },
+    connect: { value: ConnectableObservable.prototype.connect },
+    refCount: { value: ConnectableObservable.prototype.refCount }
+};
+var ConnectableSubscriber = (function (_super) {
+    __extends(ConnectableSubscriber, _super);
+    function ConnectableSubscriber(destination, connectable) {
+        _super.call(this, destination);
+        this.connectable = connectable;
+    }
+    ConnectableSubscriber.prototype._error = function (err) {
+        this._unsubscribe();
+        _super.prototype._error.call(this, err);
+    };
+    ConnectableSubscriber.prototype._complete = function () {
+        this._unsubscribe();
+        _super.prototype._complete.call(this);
+    };
+    ConnectableSubscriber.prototype._unsubscribe = function () {
+        var connectable = this.connectable;
+        if (connectable) {
+            this.connectable = null;
+            var connection = connectable._connection;
+            connectable._refCount = 0;
+            connectable._subject = null;
+            connectable._connection = null;
+            if (connection) {
+                connection.unsubscribe();
+            }
+        }
+    };
+    return ConnectableSubscriber;
+}(Subject_1.SubjectSubscriber));
+var RefCountOperator = (function () {
+    function RefCountOperator(connectable) {
+        this.connectable = connectable;
+    }
+    RefCountOperator.prototype.call = function (subscriber, source) {
+        var connectable = this.connectable;
+        connectable._refCount++;
+        var refCounter = new RefCountSubscriber(subscriber, connectable);
+        var subscription = source.subscribe(refCounter);
+        if (!refCounter.closed) {
+            refCounter.connection = connectable.connect();
+        }
+        return subscription;
+    };
+    return RefCountOperator;
+}());
+var RefCountSubscriber = (function (_super) {
+    __extends(RefCountSubscriber, _super);
+    function RefCountSubscriber(destination, connectable) {
+        _super.call(this, destination);
+        this.connectable = connectable;
+    }
+    RefCountSubscriber.prototype._unsubscribe = function () {
+        var connectable = this.connectable;
+        if (!connectable) {
+            this.connection = null;
+            return;
+        }
+        this.connectable = null;
+        var refCount = connectable._refCount;
+        if (refCount <= 0) {
+            this.connection = null;
+            return;
+        }
+        connectable._refCount = refCount - 1;
+        if (refCount > 1) {
+            this.connection = null;
+            return;
+        }
+        ///
+        // Compare the local RefCountSubscriber's connection Subscription to the
+        // connection Subscription on the shared ConnectableObservable. In cases
+        // where the ConnectableObservable source synchronously emits values, and
+        // the RefCountSubscriber's downstream Observers synchronously unsubscribe,
+        // execution continues to here before the RefCountOperator has a chance to
+        // supply the RefCountSubscriber with the shared connection Subscription.
+        // For example:
+        // ```
+        // Observable.range(0, 10)
+        //   .publish()
+        //   .refCount()
+        //   .take(5)
+        //   .subscribe();
+        // ```
+        // In order to account for this case, RefCountSubscriber should only dispose
+        // the ConnectableObservable's shared connection Subscription if the
+        // connection Subscription exists, *and* either:
+        //   a. RefCountSubscriber doesn't have a reference to the shared connection
+        //      Subscription yet, or,
+        //   b. RefCountSubscriber's connection Subscription reference is identical
+        //      to the shared connection Subscription
+        ///
+        var connection = this.connection;
+        var sharedConnection = connectable._connection;
+        this.connection = null;
+        if (sharedConnection && (!connection || sharedConnection === connection)) {
+            sharedConnection.unsubscribe();
+        }
+    };
+    return RefCountSubscriber;
+}(Subscriber_1.Subscriber));
+//# sourceMappingURL=ConnectableObservable.js.map
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var isArray_1 = __webpack_require__(11);
+var isArrayLike_1 = __webpack_require__(86);
+var isPromise_1 = __webpack_require__(88);
+var PromiseObservable_1 = __webpack_require__(66);
+var IteratorObservable_1 = __webpack_require__(265);
+var ArrayObservable_1 = __webpack_require__(10);
+var ArrayLikeObservable_1 = __webpack_require__(254);
+var iterator_1 = __webpack_require__(22);
+var Observable_1 = __webpack_require__(0);
+var observeOn_1 = __webpack_require__(42);
+var observable_1 = __webpack_require__(26);
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @extends {Ignored}
+ * @hide true
+ */
+var FromObservable = (function (_super) {
+    __extends(FromObservable, _super);
+    function FromObservable(ish, scheduler) {
+        _super.call(this, null);
+        this.ish = ish;
+        this.scheduler = scheduler;
+    }
+    /**
+     * Creates an Observable from an Array, an array-like object, a Promise, an
+     * iterable object, or an Observable-like object.
+     *
+     * <span class="informal">Converts almost anything to an Observable.</span>
+     *
+     * <img src="./img/from.png" width="100%">
+     *
+     * Convert various other objects and data types into Observables. `from`
+     * converts a Promise or an array-like or an
+     * [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#iterable)
+     * object into an Observable that emits the items in that promise or array or
+     * iterable. A String, in this context, is treated as an array of characters.
+     * Observable-like objects (contains a function named with the ES2015 Symbol
+     * for Observable) can also be converted through this operator.
+     *
+     * @example <caption>Converts an array to an Observable</caption>
+     * var array = [10, 20, 30];
+     * var result = Rx.Observable.from(array);
+     * result.subscribe(x => console.log(x));
+     *
+     * // Results in the following:
+     * // 10 20 30
+     *
+     * @example <caption>Convert an infinite iterable (from a generator) to an Observable</caption>
+     * function* generateDoubles(seed) {
+     *   var i = seed;
+     *   while (true) {
+     *     yield i;
+     *     i = 2 * i; // double it
+     *   }
+     * }
+     *
+     * var iterator = generateDoubles(3);
+     * var result = Rx.Observable.from(iterator).take(10);
+     * result.subscribe(x => console.log(x));
+     *
+     * // Results in the following:
+     * // 3 6 12 24 48 96 192 384 768 1536
+     *
+     * @see {@link create}
+     * @see {@link fromEvent}
+     * @see {@link fromEventPattern}
+     * @see {@link fromPromise}
+     *
+     * @param {ObservableInput<T>} ish A subscribable object, a Promise, an
+     * Observable-like, an Array, an iterable or an array-like object to be
+     * converted.
+     * @param {Scheduler} [scheduler] The scheduler on which to schedule the
+     * emissions of values.
+     * @return {Observable<T>} The Observable whose values are originally from the
+     * input object that was converted.
+     * @static true
+     * @name from
+     * @owner Observable
+     */
+    FromObservable.create = function (ish, scheduler) {
+        if (ish != null) {
+            if (typeof ish[observable_1.$$observable] === 'function') {
+                if (ish instanceof Observable_1.Observable && !scheduler) {
+                    return ish;
+                }
+                return new FromObservable(ish, scheduler);
+            }
+            else if (isArray_1.isArray(ish)) {
+                return new ArrayObservable_1.ArrayObservable(ish, scheduler);
+            }
+            else if (isPromise_1.isPromise(ish)) {
+                return new PromiseObservable_1.PromiseObservable(ish, scheduler);
+            }
+            else if (typeof ish[iterator_1.$$iterator] === 'function' || typeof ish === 'string') {
+                return new IteratorObservable_1.IteratorObservable(ish, scheduler);
+            }
+            else if (isArrayLike_1.isArrayLike(ish)) {
+                return new ArrayLikeObservable_1.ArrayLikeObservable(ish, scheduler);
+            }
+        }
+        throw new TypeError((ish !== null && typeof ish || ish) + ' is not observable');
+    };
+    FromObservable.prototype._subscribe = function (subscriber) {
+        var ish = this.ish;
+        var scheduler = this.scheduler;
+        if (scheduler == null) {
+            return ish[observable_1.$$observable]().subscribe(subscriber);
+        }
+        else {
+            return ish[observable_1.$$observable]().subscribe(new observeOn_1.ObserveOnSubscriber(subscriber, scheduler, 0));
+        }
+    };
+    return FromObservable;
+}(Observable_1.Observable));
+exports.FromObservable = FromObservable;
+//# sourceMappingURL=FromObservable.js.map
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var root_1 = __webpack_require__(7);
+var Observable_1 = __webpack_require__(0);
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @extends {Ignored}
+ * @hide true
+ */
+var PromiseObservable = (function (_super) {
+    __extends(PromiseObservable, _super);
+    function PromiseObservable(promise, scheduler) {
+        _super.call(this);
+        this.promise = promise;
+        this.scheduler = scheduler;
+    }
+    /**
+     * Converts a Promise to an Observable.
+     *
+     * <span class="informal">Returns an Observable that just emits the Promise's
+     * resolved value, then completes.</span>
+     *
+     * Converts an ES2015 Promise or a Promises/A+ spec compliant Promise to an
+     * Observable. If the Promise resolves with a value, the output Observable
+     * emits that resolved value as a `next`, and then completes. If the Promise
+     * is rejected, then the output Observable emits the corresponding Error.
+     *
+     * @example <caption>Convert the Promise returned by Fetch to an Observable</caption>
+     * var result = Rx.Observable.fromPromise(fetch('http://myserver.com/'));
+     * result.subscribe(x => console.log(x), e => console.error(e));
+     *
+     * @see {@link bindCallback}
+     * @see {@link from}
+     *
+     * @param {Promise<T>} promise The promise to be converted.
+     * @param {Scheduler} [scheduler] An optional IScheduler to use for scheduling
+     * the delivery of the resolved value (or the rejection).
+     * @return {Observable<T>} An Observable which wraps the Promise.
+     * @static true
+     * @name fromPromise
+     * @owner Observable
+     */
+    PromiseObservable.create = function (promise, scheduler) {
+        return new PromiseObservable(promise, scheduler);
+    };
+    PromiseObservable.prototype._subscribe = function (subscriber) {
+        var _this = this;
+        var promise = this.promise;
+        var scheduler = this.scheduler;
+        if (scheduler == null) {
+            if (this._isScalar) {
+                if (!subscriber.closed) {
+                    subscriber.next(this.value);
+                    subscriber.complete();
+                }
+            }
+            else {
+                promise.then(function (value) {
+                    _this.value = value;
+                    _this._isScalar = true;
+                    if (!subscriber.closed) {
+                        subscriber.next(value);
+                        subscriber.complete();
+                    }
+                }, function (err) {
+                    if (!subscriber.closed) {
+                        subscriber.error(err);
+                    }
+                })
+                    .then(null, function (err) {
+                    // escape the promise trap, throw unhandled errors
+                    root_1.root.setTimeout(function () { throw err; });
+                });
+            }
+        }
+        else {
+            if (this._isScalar) {
+                if (!subscriber.closed) {
+                    return scheduler.schedule(dispatchNext, 0, { value: this.value, subscriber: subscriber });
+                }
+            }
+            else {
+                promise.then(function (value) {
+                    _this.value = value;
+                    _this._isScalar = true;
+                    if (!subscriber.closed) {
+                        subscriber.add(scheduler.schedule(dispatchNext, 0, { value: value, subscriber: subscriber }));
+                    }
+                }, function (err) {
+                    if (!subscriber.closed) {
+                        subscriber.add(scheduler.schedule(dispatchError, 0, { err: err, subscriber: subscriber }));
+                    }
+                })
+                    .then(null, function (err) {
+                    // escape the promise trap, throw unhandled errors
+                    root_1.root.setTimeout(function () { throw err; });
+                });
+            }
+        }
+    };
+    return PromiseObservable;
+}(Observable_1.Observable));
+exports.PromiseObservable = PromiseObservable;
+function dispatchNext(arg) {
+    var value = arg.value, subscriber = arg.subscriber;
+    if (!subscriber.closed) {
+        subscriber.next(value);
+        subscriber.complete();
+    }
+}
+function dispatchError(arg) {
+    var err = arg.err, subscriber = arg.subscriber;
+    if (!subscriber.closed) {
+        subscriber.error(err);
+    }
+}
+//# sourceMappingURL=PromiseObservable.js.map
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var root_1 = __webpack_require__(7);
+var tryCatch_1 = __webpack_require__(8);
+var errorObject_1 = __webpack_require__(6);
+var Observable_1 = __webpack_require__(0);
+var Subscriber_1 = __webpack_require__(1);
+var map_1 = __webpack_require__(41);
+function getCORSRequest() {
+    if (root_1.root.XMLHttpRequest) {
+        return new root_1.root.XMLHttpRequest();
+    }
+    else if (!!root_1.root.XDomainRequest) {
+        return new root_1.root.XDomainRequest();
+    }
+    else {
+        throw new Error('CORS is not supported by your browser');
+    }
+}
+function getXMLHttpRequest() {
+    if (root_1.root.XMLHttpRequest) {
+        return new root_1.root.XMLHttpRequest();
+    }
+    else {
+        var progId = void 0;
+        try {
+            var progIds = ['Msxml2.XMLHTTP', 'Microsoft.XMLHTTP', 'Msxml2.XMLHTTP.4.0'];
+            for (var i = 0; i < 3; i++) {
+                try {
+                    progId = progIds[i];
+                    if (new root_1.root.ActiveXObject(progId)) {
+                        break;
+                    }
+                }
+                catch (e) {
+                }
+            }
+            return new root_1.root.ActiveXObject(progId);
+        }
+        catch (e) {
+            throw new Error('XMLHttpRequest is not supported by your browser');
+        }
+    }
+}
+function ajaxGet(url, headers) {
+    if (headers === void 0) { headers = null; }
+    return new AjaxObservable({ method: 'GET', url: url, headers: headers });
+}
+exports.ajaxGet = ajaxGet;
+;
+function ajaxPost(url, body, headers) {
+    return new AjaxObservable({ method: 'POST', url: url, body: body, headers: headers });
+}
+exports.ajaxPost = ajaxPost;
+;
+function ajaxDelete(url, headers) {
+    return new AjaxObservable({ method: 'DELETE', url: url, headers: headers });
+}
+exports.ajaxDelete = ajaxDelete;
+;
+function ajaxPut(url, body, headers) {
+    return new AjaxObservable({ method: 'PUT', url: url, body: body, headers: headers });
+}
+exports.ajaxPut = ajaxPut;
+;
+function ajaxPatch(url, body, headers) {
+    return new AjaxObservable({ method: 'PATCH', url: url, body: body, headers: headers });
+}
+exports.ajaxPatch = ajaxPatch;
+;
+function ajaxGetJSON(url, headers) {
+    return new AjaxObservable({ method: 'GET', url: url, responseType: 'json', headers: headers })
+        .lift(new map_1.MapOperator(function (x, index) { return x.response; }, null));
+}
+exports.ajaxGetJSON = ajaxGetJSON;
+;
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @extends {Ignored}
+ * @hide true
+ */
+var AjaxObservable = (function (_super) {
+    __extends(AjaxObservable, _super);
+    function AjaxObservable(urlOrRequest) {
+        _super.call(this);
+        var request = {
+            async: true,
+            createXHR: function () {
+                return this.crossDomain ? getCORSRequest.call(this) : getXMLHttpRequest();
+            },
+            crossDomain: false,
+            withCredentials: false,
+            headers: {},
+            method: 'GET',
+            responseType: 'json',
+            timeout: 0
+        };
+        if (typeof urlOrRequest === 'string') {
+            request.url = urlOrRequest;
+        }
+        else {
+            for (var prop in urlOrRequest) {
+                if (urlOrRequest.hasOwnProperty(prop)) {
+                    request[prop] = urlOrRequest[prop];
+                }
+            }
+        }
+        this.request = request;
+    }
+    AjaxObservable.prototype._subscribe = function (subscriber) {
+        return new AjaxSubscriber(subscriber, this.request);
+    };
+    /**
+     * Creates an observable for an Ajax request with either a request object with
+     * url, headers, etc or a string for a URL.
+     *
+     * @example
+     * source = Rx.Observable.ajax('/products');
+     * source = Rx.Observable.ajax({ url: 'products', method: 'GET' });
+     *
+     * @param {string|Object} request Can be one of the following:
+     *   A string of the URL to make the Ajax call.
+     *   An object with the following properties
+     *   - url: URL of the request
+     *   - body: The body of the request
+     *   - method: Method of the request, such as GET, POST, PUT, PATCH, DELETE
+     *   - async: Whether the request is async
+     *   - headers: Optional headers
+     *   - crossDomain: true if a cross domain request, else false
+     *   - createXHR: a function to override if you need to use an alternate
+     *   XMLHttpRequest implementation.
+     *   - resultSelector: a function to use to alter the output value type of
+     *   the Observable. Gets {@link AjaxResponse} as an argument.
+     * @return {Observable} An observable sequence containing the XMLHttpRequest.
+     * @static true
+     * @name ajax
+     * @owner Observable
+    */
+    AjaxObservable.create = (function () {
+        var create = function (urlOrRequest) {
+            return new AjaxObservable(urlOrRequest);
+        };
+        create.get = ajaxGet;
+        create.post = ajaxPost;
+        create.delete = ajaxDelete;
+        create.put = ajaxPut;
+        create.patch = ajaxPatch;
+        create.getJSON = ajaxGetJSON;
+        return create;
+    })();
+    return AjaxObservable;
+}(Observable_1.Observable));
+exports.AjaxObservable = AjaxObservable;
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var AjaxSubscriber = (function (_super) {
+    __extends(AjaxSubscriber, _super);
+    function AjaxSubscriber(destination, request) {
+        _super.call(this, destination);
+        this.request = request;
+        this.done = false;
+        var headers = request.headers = request.headers || {};
+        // force CORS if requested
+        if (!request.crossDomain && !headers['X-Requested-With']) {
+            headers['X-Requested-With'] = 'XMLHttpRequest';
+        }
+        // ensure content type is set
+        if (!('Content-Type' in headers) && !(root_1.root.FormData && request.body instanceof root_1.root.FormData) && typeof request.body !== 'undefined') {
+            headers['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
+        }
+        // properly serialize body
+        request.body = this.serializeBody(request.body, request.headers['Content-Type']);
+        this.send();
+    }
+    AjaxSubscriber.prototype.next = function (e) {
+        this.done = true;
+        var _a = this, xhr = _a.xhr, request = _a.request, destination = _a.destination;
+        var response = new AjaxResponse(e, xhr, request);
+        destination.next(response);
+    };
+    AjaxSubscriber.prototype.send = function () {
+        var _a = this, request = _a.request, _b = _a.request, user = _b.user, method = _b.method, url = _b.url, async = _b.async, password = _b.password, headers = _b.headers, body = _b.body;
+        var createXHR = request.createXHR;
+        var xhr = tryCatch_1.tryCatch(createXHR).call(request);
+        if (xhr === errorObject_1.errorObject) {
+            this.error(errorObject_1.errorObject.e);
+        }
+        else {
+            this.xhr = xhr;
+            // set up the events before open XHR
+            // https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+            // You need to add the event listeners before calling open() on the request.
+            // Otherwise the progress events will not fire.
+            this.setupEvents(xhr, request);
+            // open XHR
+            var result = void 0;
+            if (user) {
+                result = tryCatch_1.tryCatch(xhr.open).call(xhr, method, url, async, user, password);
+            }
+            else {
+                result = tryCatch_1.tryCatch(xhr.open).call(xhr, method, url, async);
+            }
+            if (result === errorObject_1.errorObject) {
+                this.error(errorObject_1.errorObject.e);
+                return null;
+            }
+            // timeout, responseType and withCredentials can be set once the XHR is open
+            xhr.timeout = request.timeout;
+            xhr.responseType = request.responseType;
+            if ('withCredentials' in xhr) {
+                xhr.withCredentials = !!request.withCredentials;
+            }
+            // set headers
+            this.setHeaders(xhr, headers);
+            // finally send the request
+            result = body ? tryCatch_1.tryCatch(xhr.send).call(xhr, body) : tryCatch_1.tryCatch(xhr.send).call(xhr);
+            if (result === errorObject_1.errorObject) {
+                this.error(errorObject_1.errorObject.e);
+                return null;
+            }
+        }
+        return xhr;
+    };
+    AjaxSubscriber.prototype.serializeBody = function (body, contentType) {
+        if (!body || typeof body === 'string') {
+            return body;
+        }
+        else if (root_1.root.FormData && body instanceof root_1.root.FormData) {
+            return body;
+        }
+        if (contentType) {
+            var splitIndex = contentType.indexOf(';');
+            if (splitIndex !== -1) {
+                contentType = contentType.substring(0, splitIndex);
+            }
+        }
+        switch (contentType) {
+            case 'application/x-www-form-urlencoded':
+                return Object.keys(body).map(function (key) { return (encodeURI(key) + "=" + encodeURI(body[key])); }).join('&');
+            case 'application/json':
+                return JSON.stringify(body);
+            default:
+                return body;
+        }
+    };
+    AjaxSubscriber.prototype.setHeaders = function (xhr, headers) {
+        for (var key in headers) {
+            if (headers.hasOwnProperty(key)) {
+                xhr.setRequestHeader(key, headers[key]);
+            }
+        }
+    };
+    AjaxSubscriber.prototype.setupEvents = function (xhr, request) {
+        var progressSubscriber = request.progressSubscriber;
+        function xhrTimeout(e) {
+            var _a = xhrTimeout, subscriber = _a.subscriber, progressSubscriber = _a.progressSubscriber, request = _a.request;
+            if (progressSubscriber) {
+                progressSubscriber.error(e);
+            }
+            subscriber.error(new AjaxTimeoutError(this, request)); //TODO: Make betterer.
+        }
+        ;
+        xhr.ontimeout = xhrTimeout;
+        xhrTimeout.request = request;
+        xhrTimeout.subscriber = this;
+        xhrTimeout.progressSubscriber = progressSubscriber;
+        if (xhr.upload && 'withCredentials' in xhr) {
+            if (progressSubscriber) {
+                var xhrProgress_1;
+                xhrProgress_1 = function (e) {
+                    var progressSubscriber = xhrProgress_1.progressSubscriber;
+                    progressSubscriber.next(e);
+                };
+                if (root_1.root.XDomainRequest) {
+                    xhr.onprogress = xhrProgress_1;
+                }
+                else {
+                    xhr.upload.onprogress = xhrProgress_1;
+                }
+                xhrProgress_1.progressSubscriber = progressSubscriber;
+            }
+            var xhrError_1;
+            xhrError_1 = function (e) {
+                var _a = xhrError_1, progressSubscriber = _a.progressSubscriber, subscriber = _a.subscriber, request = _a.request;
+                if (progressSubscriber) {
+                    progressSubscriber.error(e);
+                }
+                subscriber.error(new AjaxError('ajax error', this, request));
+            };
+            xhr.onerror = xhrError_1;
+            xhrError_1.request = request;
+            xhrError_1.subscriber = this;
+            xhrError_1.progressSubscriber = progressSubscriber;
+        }
+        function xhrReadyStateChange(e) {
+            var _a = xhrReadyStateChange, subscriber = _a.subscriber, progressSubscriber = _a.progressSubscriber, request = _a.request;
+            if (this.readyState === 4) {
+                // normalize IE9 bug (http://bugs.jquery.com/ticket/1450)
+                var status_1 = this.status === 1223 ? 204 : this.status;
+                var response = (this.responseType === 'text' ? (this.response || this.responseText) : this.response);
+                // fix status code when it is 0 (0 status is undocumented).
+                // Occurs when accessing file resources or on Android 4.1 stock browser
+                // while retrieving files from application cache.
+                if (status_1 === 0) {
+                    status_1 = response ? 200 : 0;
+                }
+                if (200 <= status_1 && status_1 < 300) {
+                    if (progressSubscriber) {
+                        progressSubscriber.complete();
+                    }
+                    subscriber.next(e);
+                    subscriber.complete();
+                }
+                else {
+                    if (progressSubscriber) {
+                        progressSubscriber.error(e);
+                    }
+                    subscriber.error(new AjaxError('ajax error ' + status_1, this, request));
+                }
+            }
+        }
+        ;
+        xhr.onreadystatechange = xhrReadyStateChange;
+        xhrReadyStateChange.subscriber = this;
+        xhrReadyStateChange.progressSubscriber = progressSubscriber;
+        xhrReadyStateChange.request = request;
+    };
+    AjaxSubscriber.prototype.unsubscribe = function () {
+        var _a = this, done = _a.done, xhr = _a.xhr;
+        if (!done && xhr && xhr.readyState !== 4 && typeof xhr.abort === 'function') {
+            xhr.abort();
+        }
+        _super.prototype.unsubscribe.call(this);
+    };
+    return AjaxSubscriber;
+}(Subscriber_1.Subscriber));
+exports.AjaxSubscriber = AjaxSubscriber;
+/**
+ * A normalized AJAX response.
+ *
+ * @see {@link ajax}
+ *
+ * @class AjaxResponse
+ */
+var AjaxResponse = (function () {
+    function AjaxResponse(originalEvent, xhr, request) {
+        this.originalEvent = originalEvent;
+        this.xhr = xhr;
+        this.request = request;
+        this.status = xhr.status;
+        this.responseType = xhr.responseType || request.responseType;
+        switch (this.responseType) {
+            case 'json':
+                if ('response' in xhr) {
+                    //IE does not support json as responseType, parse it internally
+                    this.response = xhr.responseType ? xhr.response : JSON.parse(xhr.response || xhr.responseText || 'null');
+                }
+                else {
+                    this.response = JSON.parse(xhr.responseText || 'null');
+                }
+                break;
+            case 'xml':
+                this.response = xhr.responseXML;
+                break;
+            case 'text':
+            default:
+                this.response = ('response' in xhr) ? xhr.response : xhr.responseText;
+                break;
+        }
+    }
+    return AjaxResponse;
+}());
+exports.AjaxResponse = AjaxResponse;
+/**
+ * A normalized AJAX error.
+ *
+ * @see {@link ajax}
+ *
+ * @class AjaxError
+ */
+var AjaxError = (function (_super) {
+    __extends(AjaxError, _super);
+    function AjaxError(message, xhr, request) {
+        _super.call(this, message);
+        this.message = message;
+        this.xhr = xhr;
+        this.request = request;
+        this.status = xhr.status;
+    }
+    return AjaxError;
+}(Error));
+exports.AjaxError = AjaxError;
+/**
+ * @see {@link ajax}
+ *
+ * @class AjaxTimeoutError
+ */
+var AjaxTimeoutError = (function (_super) {
+    __extends(AjaxTimeoutError, _super);
+    function AjaxTimeoutError(xhr, request) {
+        _super.call(this, 'ajax timeout', xhr, request);
+    }
+    return AjaxTimeoutError;
+}(AjaxError));
+exports.AjaxTimeoutError = AjaxTimeoutError;
+//# sourceMappingURL=AjaxObservable.js.map
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscriber_1 = __webpack_require__(1);
+var tryCatch_1 = __webpack_require__(8);
+var errorObject_1 = __webpack_require__(6);
+/* tslint:enable:max-line-length */
+/**
+ * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.
+ *
+ * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
+ *
+ * If a comparator function is not provided, an equality check is used by default.
+ *
+ * @example <caption>A simple example with numbers</caption>
+ * Observable.of(1, 1, 2, 2, 2, 1, 1, 2, 3, 3, 4)
+ *   .distinctUntilChanged()
+ *   .subscribe(x => console.log(x)); // 1, 2, 1, 2, 3, 4
+ *
+ * @example <caption>An example using a compare function</caption>
+ * interface Person {
+ *    age: number,
+ *    name: string
+ * }
+ *
+ * Observable.of<Person>(
+ *     { age: 4, name: 'Foo'},
+ *     { age: 7, name: 'Bar'},
+ *     { age: 5, name: 'Foo'})
+ *     { age: 6, name: 'Foo'})
+ *     .distinctUntilChanged((p: Person, q: Person) => p.name === q.name)
+ *     .subscribe(x => console.log(x));
+ *
+ * // displays:
+ * // { age: 4, name: 'Foo' }
+ * // { age: 7, name: 'Bar' }
+ * // { age: 5, name: 'Foo' }
+ *
+ * @see {@link distinct}
+ * @see {@link distinctUntilKeyChanged}
+ *
+ * @param {function} [compare] Optional comparison function called to test if an item is distinct from the previous item in the source.
+ * @return {Observable} An Observable that emits items from the source Observable with distinct values.
+ * @method distinctUntilChanged
+ * @owner Observable
+ */
+function distinctUntilChanged(compare, keySelector) {
+    return this.lift(new DistinctUntilChangedOperator(compare, keySelector));
+}
+exports.distinctUntilChanged = distinctUntilChanged;
+var DistinctUntilChangedOperator = (function () {
+    function DistinctUntilChangedOperator(compare, keySelector) {
+        this.compare = compare;
+        this.keySelector = keySelector;
+    }
+    DistinctUntilChangedOperator.prototype.call = function (subscriber, source) {
+        return source.subscribe(new DistinctUntilChangedSubscriber(subscriber, this.compare, this.keySelector));
+    };
+    return DistinctUntilChangedOperator;
+}());
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var DistinctUntilChangedSubscriber = (function (_super) {
+    __extends(DistinctUntilChangedSubscriber, _super);
+    function DistinctUntilChangedSubscriber(destination, compare, keySelector) {
+        _super.call(this, destination);
+        this.keySelector = keySelector;
+        this.hasKey = false;
+        if (typeof compare === 'function') {
+            this.compare = compare;
+        }
+    }
+    DistinctUntilChangedSubscriber.prototype.compare = function (x, y) {
+        return x === y;
+    };
+    DistinctUntilChangedSubscriber.prototype._next = function (value) {
+        var keySelector = this.keySelector;
+        var key = value;
+        if (keySelector) {
+            key = tryCatch_1.tryCatch(this.keySelector)(value);
+            if (key === errorObject_1.errorObject) {
+                return this.destination.error(errorObject_1.errorObject.e);
+            }
+        }
+        var result = false;
+        if (this.hasKey) {
+            result = tryCatch_1.tryCatch(this.compare)(this.key, key);
+            if (result === errorObject_1.errorObject) {
+                return this.destination.error(errorObject_1.errorObject.e);
+            }
+        }
+        else {
+            this.hasKey = true;
+        }
+        if (Boolean(result) === false) {
+            this.key = key;
+            this.destination.next(value);
+        }
+    };
+    return DistinctUntilChangedSubscriber;
+}(Subscriber_1.Subscriber));
+//# sourceMappingURL=distinctUntilChanged.js.map
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscriber_1 = __webpack_require__(1);
+/* tslint:enable:max-line-length */
+/**
+ * Filter items emitted by the source Observable by only emitting those that
+ * satisfy a specified predicate.
+ *
+ * <span class="informal">Like
+ * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),
+ * it only emits a value from the source if it passes a criterion function.</span>
+ *
+ * <img src="./img/filter.png" width="100%">
+ *
+ * Similar to the well-known `Array.prototype.filter` method, this operator
+ * takes values from the source Observable, passes them through a `predicate`
+ * function and only emits those values that yielded `true`.
+ *
+ * @example <caption>Emit only click events whose target was a DIV element</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var clicksOnDivs = clicks.filter(ev => ev.target.tagName === 'DIV');
+ * clicksOnDivs.subscribe(x => console.log(x));
+ *
+ * @see {@link distinct}
+ * @see {@link distinctUntilChanged}
+ * @see {@link distinctUntilKeyChanged}
+ * @see {@link ignoreElements}
+ * @see {@link partition}
+ * @see {@link skip}
+ *
+ * @param {function(value: T, index: number): boolean} predicate A function that
+ * evaluates each value emitted by the source Observable. If it returns `true`,
+ * the value is emitted, if `false` the value is not passed to the output
+ * Observable. The `index` parameter is the number `i` for the i-th source
+ * emission that has happened since the subscription, starting from the number
+ * `0`.
+ * @param {any} [thisArg] An optional argument to determine the value of `this`
+ * in the `predicate` function.
+ * @return {Observable} An Observable of values from the source that were
+ * allowed by the `predicate` function.
+ * @method filter
+ * @owner Observable
+ */
+function filter(predicate, thisArg) {
+    return this.lift(new FilterOperator(predicate, thisArg));
+}
+exports.filter = filter;
+var FilterOperator = (function () {
+    function FilterOperator(predicate, thisArg) {
+        this.predicate = predicate;
+        this.thisArg = thisArg;
+    }
+    FilterOperator.prototype.call = function (subscriber, source) {
+        return source.subscribe(new FilterSubscriber(subscriber, this.predicate, this.thisArg));
+    };
+    return FilterOperator;
+}());
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var FilterSubscriber = (function (_super) {
+    __extends(FilterSubscriber, _super);
+    function FilterSubscriber(destination, predicate, thisArg) {
+        _super.call(this, destination);
+        this.predicate = predicate;
+        this.thisArg = thisArg;
+        this.count = 0;
+        this.predicate = predicate;
+    }
+    // the try catch block below is left specifically for
+    // optimization and perf reasons. a tryCatcher is not necessary here.
+    FilterSubscriber.prototype._next = function (value) {
+        var result;
+        try {
+            result = this.predicate.call(this.thisArg, value, this.count++);
+        }
+        catch (err) {
+            this.destination.error(err);
+            return;
+        }
+        if (result) {
+            this.destination.next(value);
+        }
+    };
+    return FilterSubscriber;
+}(Subscriber_1.Subscriber));
+//# sourceMappingURL=filter.js.map
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscriber_1 = __webpack_require__(1);
+/* tslint:enable:max-line-length */
+/**
+ * Emits only the first value emitted by the source Observable that meets some
+ * condition.
+ *
+ * <span class="informal">Finds the first value that passes some test and emits
+ * that.</span>
+ *
+ * <img src="./img/find.png" width="100%">
+ *
+ * `find` searches for the first item in the source Observable that matches the
+ * specified condition embodied by the `predicate`, and returns the first
+ * occurrence in the source. Unlike {@link first}, the `predicate` is required
+ * in `find`, and does not emit an error if a valid value is not found.
+ *
+ * @example <caption>Find and emit the first click that happens on a DIV element</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var result = clicks.find(ev => ev.target.tagName === 'DIV');
+ * result.subscribe(x => console.log(x));
+ *
+ * @see {@link filter}
+ * @see {@link first}
+ * @see {@link findIndex}
+ * @see {@link take}
+ *
+ * @param {function(value: T, index: number, source: Observable<T>): boolean} predicate
+ * A function called with each item to test for condition matching.
+ * @param {any} [thisArg] An optional argument to determine the value of `this`
+ * in the `predicate` function.
+ * @return {Observable<T>} An Observable of the first item that matches the
+ * condition.
+ * @method find
+ * @owner Observable
+ */
+function find(predicate, thisArg) {
+    if (typeof predicate !== 'function') {
+        throw new TypeError('predicate is not a function');
+    }
+    return this.lift(new FindValueOperator(predicate, this, false, thisArg));
+}
+exports.find = find;
+var FindValueOperator = (function () {
+    function FindValueOperator(predicate, source, yieldIndex, thisArg) {
+        this.predicate = predicate;
+        this.source = source;
+        this.yieldIndex = yieldIndex;
+        this.thisArg = thisArg;
+    }
+    FindValueOperator.prototype.call = function (observer, source) {
+        return source.subscribe(new FindValueSubscriber(observer, this.predicate, this.source, this.yieldIndex, this.thisArg));
+    };
+    return FindValueOperator;
+}());
+exports.FindValueOperator = FindValueOperator;
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var FindValueSubscriber = (function (_super) {
+    __extends(FindValueSubscriber, _super);
+    function FindValueSubscriber(destination, predicate, source, yieldIndex, thisArg) {
+        _super.call(this, destination);
+        this.predicate = predicate;
+        this.source = source;
+        this.yieldIndex = yieldIndex;
+        this.thisArg = thisArg;
+        this.index = 0;
+    }
+    FindValueSubscriber.prototype.notifyComplete = function (value) {
+        var destination = this.destination;
+        destination.next(value);
+        destination.complete();
+    };
+    FindValueSubscriber.prototype._next = function (value) {
+        var _a = this, predicate = _a.predicate, thisArg = _a.thisArg;
+        var index = this.index++;
+        try {
+            var result = predicate.call(thisArg || this, value, index, this.source);
+            if (result) {
+                this.notifyComplete(this.yieldIndex ? index : value);
+            }
+        }
+        catch (err) {
+            this.destination.error(err);
+        }
+    };
+    FindValueSubscriber.prototype._complete = function () {
+        this.notifyComplete(this.yieldIndex ? -1 : undefined);
+    };
+    return FindValueSubscriber;
+}(Subscriber_1.Subscriber));
+exports.FindValueSubscriber = FindValueSubscriber;
+//# sourceMappingURL=find.js.map
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var ArrayObservable_1 = __webpack_require__(10);
+var mergeAll_1 = __webpack_require__(25);
+var isScheduler_1 = __webpack_require__(12);
+/* tslint:enable:max-line-length */
+/**
+ * Creates an output Observable which concurrently emits all values from every
+ * given input Observable.
+ *
+ * <span class="informal">Flattens multiple Observables together by blending
+ * their values into one Observable.</span>
+ *
+ * <img src="./img/merge.png" width="100%">
+ *
+ * `merge` subscribes to each given input Observable (either the source or an
+ * Observable given as argument), and simply forwards (without doing any
+ * transformation) all the values from all the input Observables to the output
+ * Observable. The output Observable only completes once all input Observables
+ * have completed. Any error delivered by an input Observable will be immediately
+ * emitted on the output Observable.
+ *
+ * @example <caption>Merge together two Observables: 1s interval and clicks</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var timer = Rx.Observable.interval(1000);
+ * var clicksOrTimer = clicks.merge(timer);
+ * clicksOrTimer.subscribe(x => console.log(x));
+ *
+ * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>
+ * var timer1 = Rx.Observable.interval(1000).take(10);
+ * var timer2 = Rx.Observable.interval(2000).take(6);
+ * var timer3 = Rx.Observable.interval(500).take(10);
+ * var concurrent = 2; // the argument
+ * var merged = timer1.merge(timer2, timer3, concurrent);
+ * merged.subscribe(x => console.log(x));
+ *
+ * @see {@link mergeAll}
+ * @see {@link mergeMap}
+ * @see {@link mergeMapTo}
+ * @see {@link mergeScan}
+ *
+ * @param {ObservableInput} other An input Observable to merge with the source
+ * Observable. More than one input Observables may be given as argument.
+ * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
+ * Observables being subscribed to concurrently.
+ * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
+ * concurrency of input Observables.
+ * @return {Observable} An Observable that emits items that are the result of
+ * every input Observable.
+ * @method merge
+ * @owner Observable
+ */
+function merge() {
+    var observables = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        observables[_i - 0] = arguments[_i];
+    }
+    return this.lift.call(mergeStatic.apply(void 0, [this].concat(observables)));
+}
+exports.merge = merge;
+/* tslint:enable:max-line-length */
+/**
+ * Creates an output Observable which concurrently emits all values from every
+ * given input Observable.
+ *
+ * <span class="informal">Flattens multiple Observables together by blending
+ * their values into one Observable.</span>
+ *
+ * <img src="./img/merge.png" width="100%">
+ *
+ * `merge` subscribes to each given input Observable (as arguments), and simply
+ * forwards (without doing any transformation) all the values from all the input
+ * Observables to the output Observable. The output Observable only completes
+ * once all input Observables have completed. Any error delivered by an input
+ * Observable will be immediately emitted on the output Observable.
+ *
+ * @example <caption>Merge together two Observables: 1s interval and clicks</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var timer = Rx.Observable.interval(1000);
+ * var clicksOrTimer = Rx.Observable.merge(clicks, timer);
+ * clicksOrTimer.subscribe(x => console.log(x));
+ *
+ * // Results in the following:
+ * // timer will emit ascending values, one every second(1000ms) to console
+ * // clicks logs MouseEvents to console everytime the "document" is clicked
+ * // Since the two streams are merged you see these happening
+ * // as they occur.
+ *
+ * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>
+ * var timer1 = Rx.Observable.interval(1000).take(10);
+ * var timer2 = Rx.Observable.interval(2000).take(6);
+ * var timer3 = Rx.Observable.interval(500).take(10);
+ * var concurrent = 2; // the argument
+ * var merged = Rx.Observable.merge(timer1, timer2, timer3, concurrent);
+ * merged.subscribe(x => console.log(x));
+ *
+ * // Results in the following:
+ * // - First timer1 and timer2 will run concurrently
+ * // - timer1 will emit a value every 1000ms for 10 iterations
+ * // - timer2 will emit a value every 2000ms for 6 iterations
+ * // - after timer1 hits it's max iteration, timer2 will
+ * //   continue, and timer3 will start to run concurrently with timer2
+ * // - when timer2 hits it's max iteration it terminates, and
+ * //   timer3 will continue to emit a value every 500ms until it is complete
+ *
+ * @see {@link mergeAll}
+ * @see {@link mergeMap}
+ * @see {@link mergeMapTo}
+ * @see {@link mergeScan}
+ *
+ * @param {...ObservableInput} observables Input Observables to merge together.
+ * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
+ * Observables being subscribed to concurrently.
+ * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
+ * concurrency of input Observables.
+ * @return {Observable} an Observable that emits items that are the result of
+ * every input Observable.
+ * @static true
+ * @name merge
+ * @owner Observable
+ */
+function mergeStatic() {
+    var observables = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        observables[_i - 0] = arguments[_i];
+    }
+    var concurrent = Number.POSITIVE_INFINITY;
+    var scheduler = null;
+    var last = observables[observables.length - 1];
+    if (isScheduler_1.isScheduler(last)) {
+        scheduler = observables.pop();
+        if (observables.length > 1 && typeof observables[observables.length - 1] === 'number') {
+            concurrent = observables.pop();
+        }
+    }
+    else if (typeof last === 'number') {
+        concurrent = observables.pop();
+    }
+    if (scheduler === null && observables.length === 1 && observables[0] instanceof Observable_1.Observable) {
+        return observables[0];
+    }
+    return new ArrayObservable_1.ArrayObservable(observables, scheduler).lift(new mergeAll_1.MergeAllOperator(concurrent));
+}
+exports.mergeStatic = mergeStatic;
+//# sourceMappingURL=merge.js.map
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var subscribeToResult_1 = __webpack_require__(3);
+var OuterSubscriber_1 = __webpack_require__(2);
+/* tslint:enable:max-line-length */
+/**
+ * Projects each source value to an Observable which is merged in the output
+ * Observable.
+ *
+ * <span class="informal">Maps each value to an Observable, then flattens all of
+ * these inner Observables using {@link mergeAll}.</span>
+ *
+ * <img src="./img/mergeMap.png" width="100%">
+ *
+ * Returns an Observable that emits items based on applying a function that you
+ * supply to each item emitted by the source Observable, where that function
+ * returns an Observable, and then merging those resulting Observables and
+ * emitting the results of this merger.
+ *
+ * @example <caption>Map and flatten each letter to an Observable ticking every 1 second</caption>
+ * var letters = Rx.Observable.of('a', 'b', 'c');
+ * var result = letters.mergeMap(x =>
+ *   Rx.Observable.interval(1000).map(i => x+i)
+ * );
+ * result.subscribe(x => console.log(x));
+ *
+ * // Results in the following:
+ * // a0
+ * // b0
+ * // c0
+ * // a1
+ * // b1
+ * // c1
+ * // continues to list a,b,c with respective ascending integers
+ *
+ * @see {@link concatMap}
+ * @see {@link exhaustMap}
+ * @see {@link merge}
+ * @see {@link mergeAll}
+ * @see {@link mergeMapTo}
+ * @see {@link mergeScan}
+ * @see {@link switchMap}
+ *
+ * @param {function(value: T, ?index: number): ObservableInput} project A function
+ * that, when applied to an item emitted by the source Observable, returns an
+ * Observable.
+ * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
+ * A function to produce the value on the output Observable based on the values
+ * and the indices of the source (outer) emission and the inner Observable
+ * emission. The arguments passed to this function are:
+ * - `outerValue`: the value that came from the source
+ * - `innerValue`: the value that came from the projected Observable
+ * - `outerIndex`: the "index" of the value that came from the source
+ * - `innerIndex`: the "index" of the value from the projected Observable
+ * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
+ * Observables being subscribed to concurrently.
+ * @return {Observable} An Observable that emits the result of applying the
+ * projection function (and the optional `resultSelector`) to each item emitted
+ * by the source Observable and merging the results of the Observables obtained
+ * from this transformation.
+ * @method mergeMap
+ * @owner Observable
+ */
+function mergeMap(project, resultSelector, concurrent) {
+    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
+    if (typeof resultSelector === 'number') {
+        concurrent = resultSelector;
+        resultSelector = null;
+    }
+    return this.lift(new MergeMapOperator(project, resultSelector, concurrent));
+}
+exports.mergeMap = mergeMap;
+var MergeMapOperator = (function () {
+    function MergeMapOperator(project, resultSelector, concurrent) {
+        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
+        this.project = project;
+        this.resultSelector = resultSelector;
+        this.concurrent = concurrent;
+    }
+    MergeMapOperator.prototype.call = function (observer, source) {
+        return source.subscribe(new MergeMapSubscriber(observer, this.project, this.resultSelector, this.concurrent));
+    };
+    return MergeMapOperator;
+}());
+exports.MergeMapOperator = MergeMapOperator;
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var MergeMapSubscriber = (function (_super) {
+    __extends(MergeMapSubscriber, _super);
+    function MergeMapSubscriber(destination, project, resultSelector, concurrent) {
+        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
+        _super.call(this, destination);
+        this.project = project;
+        this.resultSelector = resultSelector;
+        this.concurrent = concurrent;
+        this.hasCompleted = false;
+        this.buffer = [];
+        this.active = 0;
+        this.index = 0;
+    }
+    MergeMapSubscriber.prototype._next = function (value) {
+        if (this.active < this.concurrent) {
+            this._tryNext(value);
+        }
+        else {
+            this.buffer.push(value);
+        }
+    };
+    MergeMapSubscriber.prototype._tryNext = function (value) {
+        var result;
+        var index = this.index++;
+        try {
+            result = this.project(value, index);
+        }
+        catch (err) {
+            this.destination.error(err);
+            return;
+        }
+        this.active++;
+        this._innerSub(result, value, index);
+    };
+    MergeMapSubscriber.prototype._innerSub = function (ish, value, index) {
+        this.add(subscribeToResult_1.subscribeToResult(this, ish, value, index));
+    };
+    MergeMapSubscriber.prototype._complete = function () {
+        this.hasCompleted = true;
+        if (this.active === 0 && this.buffer.length === 0) {
+            this.destination.complete();
+        }
+    };
+    MergeMapSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+        if (this.resultSelector) {
+            this._notifyResultSelector(outerValue, innerValue, outerIndex, innerIndex);
+        }
+        else {
+            this.destination.next(innerValue);
+        }
+    };
+    MergeMapSubscriber.prototype._notifyResultSelector = function (outerValue, innerValue, outerIndex, innerIndex) {
+        var result;
+        try {
+            result = this.resultSelector(outerValue, innerValue, outerIndex, innerIndex);
+        }
+        catch (err) {
+            this.destination.error(err);
+            return;
+        }
+        this.destination.next(result);
+    };
+    MergeMapSubscriber.prototype.notifyComplete = function (innerSub) {
+        var buffer = this.buffer;
+        this.remove(innerSub);
+        this.active--;
+        if (buffer.length > 0) {
+            this._next(buffer.shift());
+        }
+        else if (this.active === 0 && this.hasCompleted) {
+            this.destination.complete();
+        }
+    };
+    return MergeMapSubscriber;
+}(OuterSubscriber_1.OuterSubscriber));
+exports.MergeMapSubscriber = MergeMapSubscriber;
+//# sourceMappingURL=mergeMap.js.map
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var OuterSubscriber_1 = __webpack_require__(2);
+var subscribeToResult_1 = __webpack_require__(3);
+/* tslint:enable:max-line-length */
+/**
+ * Projects each source value to the same Observable which is merged multiple
+ * times in the output Observable.
+ *
+ * <span class="informal">It's like {@link mergeMap}, but maps each value always
+ * to the same inner Observable.</span>
+ *
+ * <img src="./img/mergeMapTo.png" width="100%">
+ *
+ * Maps each source value to the given Observable `innerObservable` regardless
+ * of the source value, and then merges those resulting Observables into one
+ * single Observable, which is the output Observable.
+ *
+ * @example <caption>For each click event, start an interval Observable ticking every 1 second</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var result = clicks.mergeMapTo(Rx.Observable.interval(1000));
+ * result.subscribe(x => console.log(x));
+ *
+ * @see {@link concatMapTo}
+ * @see {@link merge}
+ * @see {@link mergeAll}
+ * @see {@link mergeMap}
+ * @see {@link mergeScan}
+ * @see {@link switchMapTo}
+ *
+ * @param {ObservableInput} innerObservable An Observable to replace each value from
+ * the source Observable.
+ * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
+ * A function to produce the value on the output Observable based on the values
+ * and the indices of the source (outer) emission and the inner Observable
+ * emission. The arguments passed to this function are:
+ * - `outerValue`: the value that came from the source
+ * - `innerValue`: the value that came from the projected Observable
+ * - `outerIndex`: the "index" of the value that came from the source
+ * - `innerIndex`: the "index" of the value from the projected Observable
+ * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
+ * Observables being subscribed to concurrently.
+ * @return {Observable} An Observable that emits items from the given
+ * `innerObservable` (and optionally transformed through `resultSelector`) every
+ * time a value is emitted on the source Observable.
+ * @method mergeMapTo
+ * @owner Observable
+ */
+function mergeMapTo(innerObservable, resultSelector, concurrent) {
+    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
+    if (typeof resultSelector === 'number') {
+        concurrent = resultSelector;
+        resultSelector = null;
+    }
+    return this.lift(new MergeMapToOperator(innerObservable, resultSelector, concurrent));
+}
+exports.mergeMapTo = mergeMapTo;
+// TODO: Figure out correct signature here: an Operator<Observable<T>, R>
+//       needs to implement call(observer: Subscriber<R>): Subscriber<Observable<T>>
+var MergeMapToOperator = (function () {
+    function MergeMapToOperator(ish, resultSelector, concurrent) {
+        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
+        this.ish = ish;
+        this.resultSelector = resultSelector;
+        this.concurrent = concurrent;
+    }
+    MergeMapToOperator.prototype.call = function (observer, source) {
+        return source.subscribe(new MergeMapToSubscriber(observer, this.ish, this.resultSelector, this.concurrent));
+    };
+    return MergeMapToOperator;
+}());
+exports.MergeMapToOperator = MergeMapToOperator;
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var MergeMapToSubscriber = (function (_super) {
+    __extends(MergeMapToSubscriber, _super);
+    function MergeMapToSubscriber(destination, ish, resultSelector, concurrent) {
+        if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
+        _super.call(this, destination);
+        this.ish = ish;
+        this.resultSelector = resultSelector;
+        this.concurrent = concurrent;
+        this.hasCompleted = false;
+        this.buffer = [];
+        this.active = 0;
+        this.index = 0;
+    }
+    MergeMapToSubscriber.prototype._next = function (value) {
+        if (this.active < this.concurrent) {
+            var resultSelector = this.resultSelector;
+            var index = this.index++;
+            var ish = this.ish;
+            var destination = this.destination;
+            this.active++;
+            this._innerSub(ish, destination, resultSelector, value, index);
+        }
+        else {
+            this.buffer.push(value);
+        }
+    };
+    MergeMapToSubscriber.prototype._innerSub = function (ish, destination, resultSelector, value, index) {
+        this.add(subscribeToResult_1.subscribeToResult(this, ish, value, index));
+    };
+    MergeMapToSubscriber.prototype._complete = function () {
+        this.hasCompleted = true;
+        if (this.active === 0 && this.buffer.length === 0) {
+            this.destination.complete();
+        }
+    };
+    MergeMapToSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+        var _a = this, resultSelector = _a.resultSelector, destination = _a.destination;
+        if (resultSelector) {
+            this.trySelectResult(outerValue, innerValue, outerIndex, innerIndex);
+        }
+        else {
+            destination.next(innerValue);
+        }
+    };
+    MergeMapToSubscriber.prototype.trySelectResult = function (outerValue, innerValue, outerIndex, innerIndex) {
+        var _a = this, resultSelector = _a.resultSelector, destination = _a.destination;
+        var result;
+        try {
+            result = resultSelector(outerValue, innerValue, outerIndex, innerIndex);
+        }
+        catch (err) {
+            destination.error(err);
+            return;
+        }
+        destination.next(result);
+    };
+    MergeMapToSubscriber.prototype.notifyError = function (err) {
+        this.destination.error(err);
+    };
+    MergeMapToSubscriber.prototype.notifyComplete = function (innerSub) {
+        var buffer = this.buffer;
+        this.remove(innerSub);
+        this.active--;
+        if (buffer.length > 0) {
+            this._next(buffer.shift());
+        }
+        else if (this.active === 0 && this.hasCompleted) {
+            this.destination.complete();
+        }
+    };
+    return MergeMapToSubscriber;
+}(OuterSubscriber_1.OuterSubscriber));
+exports.MergeMapToSubscriber = MergeMapToSubscriber;
+//# sourceMappingURL=mergeMapTo.js.map
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var FromObservable_1 = __webpack_require__(65);
+var isArray_1 = __webpack_require__(11);
+var OuterSubscriber_1 = __webpack_require__(2);
+var subscribeToResult_1 = __webpack_require__(3);
+/* tslint:enable:max-line-length */
+function onErrorResumeNext() {
+    var nextSources = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        nextSources[_i - 0] = arguments[_i];
+    }
+    if (nextSources.length === 1 && isArray_1.isArray(nextSources[0])) {
+        nextSources = nextSources[0];
+    }
+    return this.lift(new OnErrorResumeNextOperator(nextSources));
+}
+exports.onErrorResumeNext = onErrorResumeNext;
+/* tslint:enable:max-line-length */
+function onErrorResumeNextStatic() {
+    var nextSources = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        nextSources[_i - 0] = arguments[_i];
+    }
+    var source = null;
+    if (nextSources.length === 1 && isArray_1.isArray(nextSources[0])) {
+        nextSources = nextSources[0];
+    }
+    source = nextSources.shift();
+    return new FromObservable_1.FromObservable(source, null).lift(new OnErrorResumeNextOperator(nextSources));
+}
+exports.onErrorResumeNextStatic = onErrorResumeNextStatic;
+var OnErrorResumeNextOperator = (function () {
+    function OnErrorResumeNextOperator(nextSources) {
+        this.nextSources = nextSources;
+    }
+    OnErrorResumeNextOperator.prototype.call = function (subscriber, source) {
+        return source.subscribe(new OnErrorResumeNextSubscriber(subscriber, this.nextSources));
+    };
+    return OnErrorResumeNextOperator;
+}());
+var OnErrorResumeNextSubscriber = (function (_super) {
+    __extends(OnErrorResumeNextSubscriber, _super);
+    function OnErrorResumeNextSubscriber(destination, nextSources) {
+        _super.call(this, destination);
+        this.destination = destination;
+        this.nextSources = nextSources;
+    }
+    OnErrorResumeNextSubscriber.prototype.notifyError = function (error, innerSub) {
+        this.subscribeToNextSource();
+    };
+    OnErrorResumeNextSubscriber.prototype.notifyComplete = function (innerSub) {
+        this.subscribeToNextSource();
+    };
+    OnErrorResumeNextSubscriber.prototype._error = function (err) {
+        this.subscribeToNextSource();
+    };
+    OnErrorResumeNextSubscriber.prototype._complete = function () {
+        this.subscribeToNextSource();
+    };
+    OnErrorResumeNextSubscriber.prototype.subscribeToNextSource = function () {
+        var next = this.nextSources.shift();
+        if (next) {
+            this.add(subscribeToResult_1.subscribeToResult(this, next));
+        }
+        else {
+            this.destination.complete();
+        }
+    };
+    return OnErrorResumeNextSubscriber;
+}(OuterSubscriber_1.OuterSubscriber));
+//# sourceMappingURL=onErrorResumeNext.js.map
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var isArray_1 = __webpack_require__(11);
+var ArrayObservable_1 = __webpack_require__(10);
+var OuterSubscriber_1 = __webpack_require__(2);
+var subscribeToResult_1 = __webpack_require__(3);
+/* tslint:enable:max-line-length */
+/**
+ * Returns an Observable that mirrors the first source Observable to emit an item
+ * from the combination of this Observable and supplied Observables.
+ * @param {...Observables} ...observables Sources used to race for which Observable emits first.
+ * @return {Observable} An Observable that mirrors the output of the first Observable to emit an item.
+ * @method race
+ * @owner Observable
+ */
+function race() {
+    var observables = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        observables[_i - 0] = arguments[_i];
+    }
+    // if the only argument is an array, it was most likely called with
+    // `pair([obs1, obs2, ...])`
+    if (observables.length === 1 && isArray_1.isArray(observables[0])) {
+        observables = observables[0];
+    }
+    return this.lift.call(raceStatic.apply(void 0, [this].concat(observables)));
+}
+exports.race = race;
+function raceStatic() {
+    var observables = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        observables[_i - 0] = arguments[_i];
+    }
+    // if the only argument is an array, it was most likely called with
+    // `pair([obs1, obs2, ...])`
+    if (observables.length === 1) {
+        if (isArray_1.isArray(observables[0])) {
+            observables = observables[0];
+        }
+        else {
+            return observables[0];
+        }
+    }
+    return new ArrayObservable_1.ArrayObservable(observables).lift(new RaceOperator());
+}
+exports.raceStatic = raceStatic;
+var RaceOperator = (function () {
+    function RaceOperator() {
+    }
+    RaceOperator.prototype.call = function (subscriber, source) {
+        return source.subscribe(new RaceSubscriber(subscriber));
+    };
+    return RaceOperator;
+}());
+exports.RaceOperator = RaceOperator;
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var RaceSubscriber = (function (_super) {
+    __extends(RaceSubscriber, _super);
+    function RaceSubscriber(destination) {
+        _super.call(this, destination);
+        this.hasFirst = false;
+        this.observables = [];
+        this.subscriptions = [];
+    }
+    RaceSubscriber.prototype._next = function (observable) {
+        this.observables.push(observable);
+    };
+    RaceSubscriber.prototype._complete = function () {
+        var observables = this.observables;
+        var len = observables.length;
+        if (len === 0) {
+            this.destination.complete();
+        }
+        else {
+            for (var i = 0; i < len && !this.hasFirst; i++) {
+                var observable = observables[i];
+                var subscription = subscribeToResult_1.subscribeToResult(this, observable, observable, i);
+                if (this.subscriptions) {
+                    this.subscriptions.push(subscription);
+                }
+                this.add(subscription);
+            }
+            this.observables = null;
+        }
+    };
+    RaceSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+        if (!this.hasFirst) {
+            this.hasFirst = true;
+            for (var i = 0; i < this.subscriptions.length; i++) {
+                if (i !== outerIndex) {
+                    var subscription = this.subscriptions[i];
+                    subscription.unsubscribe();
+                    this.remove(subscription);
+                }
+            }
+            this.subscriptions = null;
+        }
+        this.destination.next(innerValue);
+    };
+    return RaceSubscriber;
+}(OuterSubscriber_1.OuterSubscriber));
+exports.RaceSubscriber = RaceSubscriber;
+//# sourceMappingURL=race.js.map
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscriber_1 = __webpack_require__(1);
+var async_1 = __webpack_require__(9);
+/**
+ * @param scheduler
+ * @return {Observable<TimeInterval<any>>|WebSocketSubject<T>|Observable<T>}
+ * @method timeInterval
+ * @owner Observable
+ */
+function timeInterval(scheduler) {
+    if (scheduler === void 0) { scheduler = async_1.async; }
+    return this.lift(new TimeIntervalOperator(scheduler));
+}
+exports.timeInterval = timeInterval;
+var TimeInterval = (function () {
+    function TimeInterval(value, interval) {
+        this.value = value;
+        this.interval = interval;
+    }
+    return TimeInterval;
+}());
+exports.TimeInterval = TimeInterval;
+;
+var TimeIntervalOperator = (function () {
+    function TimeIntervalOperator(scheduler) {
+        this.scheduler = scheduler;
+    }
+    TimeIntervalOperator.prototype.call = function (observer, source) {
+        return source.subscribe(new TimeIntervalSubscriber(observer, this.scheduler));
+    };
+    return TimeIntervalOperator;
+}());
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var TimeIntervalSubscriber = (function (_super) {
+    __extends(TimeIntervalSubscriber, _super);
+    function TimeIntervalSubscriber(destination, scheduler) {
+        _super.call(this, destination);
+        this.scheduler = scheduler;
+        this.lastTime = 0;
+        this.lastTime = scheduler.now();
+    }
+    TimeIntervalSubscriber.prototype._next = function (value) {
+        var now = this.scheduler.now();
+        var span = now - this.lastTime;
+        this.lastTime = now;
+        this.destination.next(new TimeInterval(value, span));
+    };
+    return TimeIntervalSubscriber;
+}(Subscriber_1.Subscriber));
+//# sourceMappingURL=timeInterval.js.map
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscriber_1 = __webpack_require__(1);
+var async_1 = __webpack_require__(9);
+/**
+ * @param scheduler
+ * @return {Observable<Timestamp<any>>|WebSocketSubject<T>|Observable<T>}
+ * @method timestamp
+ * @owner Observable
+ */
+function timestamp(scheduler) {
+    if (scheduler === void 0) { scheduler = async_1.async; }
+    return this.lift(new TimestampOperator(scheduler));
+}
+exports.timestamp = timestamp;
+var Timestamp = (function () {
+    function Timestamp(value, timestamp) {
+        this.value = value;
+        this.timestamp = timestamp;
+    }
+    return Timestamp;
+}());
+exports.Timestamp = Timestamp;
+;
+var TimestampOperator = (function () {
+    function TimestampOperator(scheduler) {
+        this.scheduler = scheduler;
+    }
+    TimestampOperator.prototype.call = function (observer, source) {
+        return source.subscribe(new TimestampSubscriber(observer, this.scheduler));
+    };
+    return TimestampOperator;
+}());
+var TimestampSubscriber = (function (_super) {
+    __extends(TimestampSubscriber, _super);
+    function TimestampSubscriber(destination, scheduler) {
+        _super.call(this, destination);
+        this.scheduler = scheduler;
+    }
+    TimestampSubscriber.prototype._next = function (value) {
+        var now = this.scheduler.now();
+        this.destination.next(new Timestamp(value, now));
+    };
+    return TimestampSubscriber;
+}(Subscriber_1.Subscriber));
+//# sourceMappingURL=timestamp.js.map
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var AsyncAction_1 = __webpack_require__(20);
+var AsyncScheduler_1 = __webpack_require__(21);
+var VirtualTimeScheduler = (function (_super) {
+    __extends(VirtualTimeScheduler, _super);
+    function VirtualTimeScheduler(SchedulerAction, maxFrames) {
+        var _this = this;
+        if (SchedulerAction === void 0) { SchedulerAction = VirtualAction; }
+        if (maxFrames === void 0) { maxFrames = Number.POSITIVE_INFINITY; }
+        _super.call(this, SchedulerAction, function () { return _this.frame; });
+        this.maxFrames = maxFrames;
+        this.frame = 0;
+        this.index = -1;
+    }
+    /**
+     * Prompt the Scheduler to execute all of its queued actions, therefore
+     * clearing its queue.
+     * @return {void}
+     */
+    VirtualTimeScheduler.prototype.flush = function () {
+        var _a = this, actions = _a.actions, maxFrames = _a.maxFrames;
+        var error, action;
+        while ((action = actions.shift()) && (this.frame = action.delay) <= maxFrames) {
+            if (error = action.execute(action.state, action.delay)) {
+                break;
+            }
+        }
+        if (error) {
+            while (action = actions.shift()) {
+                action.unsubscribe();
+            }
+            throw error;
+        }
+    };
+    VirtualTimeScheduler.frameTimeFactor = 10;
+    return VirtualTimeScheduler;
+}(AsyncScheduler_1.AsyncScheduler));
+exports.VirtualTimeScheduler = VirtualTimeScheduler;
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var VirtualAction = (function (_super) {
+    __extends(VirtualAction, _super);
+    function VirtualAction(scheduler, work, index) {
+        if (index === void 0) { index = scheduler.index += 1; }
+        _super.call(this, scheduler, work);
+        this.scheduler = scheduler;
+        this.work = work;
+        this.index = index;
+        this.index = scheduler.index = index;
+    }
+    VirtualAction.prototype.schedule = function (state, delay) {
+        if (delay === void 0) { delay = 0; }
+        if (!this.id) {
+            return _super.prototype.schedule.call(this, state, delay);
+        }
+        // If an action is rescheduled, we save allocations by mutating its state,
+        // pushing it to the end of the scheduler queue, and recycling the action.
+        // But since the VirtualTimeScheduler is used for testing, VirtualActions
+        // must be immutable so they can be inspected later.
+        var action = new VirtualAction(this.scheduler, this.work);
+        this.add(action);
+        return action.schedule(state, delay);
+    };
+    VirtualAction.prototype.requestAsyncId = function (scheduler, id, delay) {
+        if (delay === void 0) { delay = 0; }
+        this.delay = scheduler.frame + delay;
+        var actions = scheduler.actions;
+        actions.push(this);
+        actions.sort(VirtualAction.sortActions);
+        return true;
+    };
+    VirtualAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
+        if (delay === void 0) { delay = 0; }
+        return undefined;
+    };
+    VirtualAction.sortActions = function (a, b) {
+        if (a.delay === b.delay) {
+            if (a.index === b.index) {
+                return 0;
+            }
+            else if (a.index > b.index) {
+                return 1;
+            }
+            else {
+                return -1;
+            }
+        }
+        else if (a.delay > b.delay) {
+            return 1;
+        }
+        else {
+            return -1;
+        }
+    };
+    return VirtualAction;
+}(AsyncAction_1.AsyncAction));
+exports.VirtualAction = VirtualAction;
+//# sourceMappingURL=VirtualTimeScheduler.js.map
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var AsapAction_1 = __webpack_require__(382);
+var AsapScheduler_1 = __webpack_require__(383);
+/**
+ *
+ * Asap Scheduler
+ *
+ * <span class="informal">Perform task as fast as it can be performed asynchronously</span>
+ *
+ * `asap` scheduler behaves the same as {@link async} scheduler when you use it to delay task
+ * in time. If however you set delay to `0`, `asap` will wait for current synchronously executing
+ * code to end and then it will try to execute given task as fast as possible.
+ *
+ * `asap` scheduler will do its best to minimize time between end of currently executing code
+ * and start of scheduled task. This makes it best candidate for performing so called "deferring".
+ * Traditionally this was achieved by calling `setTimeout(deferredTask, 0)`, but that technique involves
+ * some (although minimal) unwanted delay.
+ *
+ * Note that using `asap` scheduler does not necessarily mean that your task will be first to process
+ * after currently executing code. In particular, if some task was also scheduled with `asap` before,
+ * that task will execute first. That being said, if you need to schedule task asynchronously, but
+ * as soon as possible, `asap` scheduler is your best bet.
+ *
+ * @example <caption>Compare async and asap scheduler</caption>
+ *
+ * Rx.Scheduler.async.schedule(() => console.log('async')); // scheduling 'async' first...
+ * Rx.Scheduler.asap.schedule(() => console.log('asap'));
+ *
+ * // Logs:
+ * // "asap"
+ * // "async"
+ * // ... but 'asap' goes first!
+ *
+ * @static true
+ * @name asap
+ * @owner Scheduler
+ */
+exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
+//# sourceMappingURL=asap.js.map
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var QueueAction_1 = __webpack_require__(384);
+var QueueScheduler_1 = __webpack_require__(385);
+/**
+ *
+ * Queue Scheduler
+ *
+ * <span class="informal">Put every next task on a queue, instead of executing it immediately</span>
+ *
+ * `queue` scheduler, when used with delay, behaves the same as {@link async} scheduler.
+ *
+ * When used without delay, it schedules given task synchronously - executes it right when
+ * it is scheduled. However when called recursively, that is when inside the scheduled task,
+ * another task is scheduled with queue scheduler, instead of executing immediately as well,
+ * that task will be put on a queue and wait for current one to finish.
+ *
+ * This means that when you execute task with `queue` scheduler, you are sure it will end
+ * before any other task scheduled with that scheduler will start.
+ *
+ * @examples <caption>Schedule recursively first, then do something</caption>
+ *
+ * Rx.Scheduler.queue.schedule(() => {
+ *   Rx.Scheduler.queue.schedule(() => console.log('second')); // will not happen now, but will be put on a queue
+ *
+ *   console.log('first');
+ * });
+ *
+ * // Logs:
+ * // "first"
+ * // "second"
+ *
+ *
+ * @example <caption>Reschedule itself recursively</caption>
+ *
+ * Rx.Scheduler.queue.schedule(function(state) {
+ *   if (state !== 0) {
+ *     console.log('before', state);
+ *     this.schedule(state - 1); // `this` references currently executing Action,
+ *                               // which we reschedule with new state
+ *     console.log('after', state);
+ *   }
+ * }, 0, 3);
+ *
+ * // In scheduler that runs recursively, you would expect:
+ * // "before", 3
+ * // "before", 2
+ * // "before", 1
+ * // "after", 1
+ * // "after", 2
+ * // "after", 3
+ *
+ * // But with queue it logs:
+ * // "before", 3
+ * // "after", 3
+ * // "before", 2
+ * // "after", 2
+ * // "before", 1
+ * // "after", 1
+ *
+ *
+ * @static true
+ * @name queue
+ * @owner Scheduler
+ */
+exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
+//# sourceMappingURL=queue.js.map
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var SubscriptionLog = (function () {
+    function SubscriptionLog(subscribedFrame, unsubscribedFrame) {
+        if (unsubscribedFrame === void 0) { unsubscribedFrame = Number.POSITIVE_INFINITY; }
+        this.subscribedFrame = subscribedFrame;
+        this.unsubscribedFrame = unsubscribedFrame;
+    }
+    return SubscriptionLog;
+}());
+exports.SubscriptionLog = SubscriptionLog;
+//# sourceMappingURL=SubscriptionLog.js.map
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var SubscriptionLog_1 = __webpack_require__(81);
+var SubscriptionLoggable = (function () {
+    function SubscriptionLoggable() {
+        this.subscriptions = [];
+    }
+    SubscriptionLoggable.prototype.logSubscribedFrame = function () {
+        this.subscriptions.push(new SubscriptionLog_1.SubscriptionLog(this.scheduler.now()));
+        return this.subscriptions.length - 1;
+    };
+    SubscriptionLoggable.prototype.logUnsubscribedFrame = function (index) {
+        var subscriptionLogs = this.subscriptions;
+        var oldSubscriptionLog = subscriptionLogs[index];
+        subscriptionLogs[index] = new SubscriptionLog_1.SubscriptionLog(oldSubscriptionLog.subscribedFrame, this.scheduler.now());
+    };
+    return SubscriptionLoggable;
+}());
+exports.SubscriptionLoggable = SubscriptionLoggable;
+//# sourceMappingURL=SubscriptionLoggable.js.map
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+/**
+ * An error thrown when duetime elapses.
+ *
+ * @see {@link timeout}
+ *
+ * @class TimeoutError
+ */
+var TimeoutError = (function (_super) {
+    __extends(TimeoutError, _super);
+    function TimeoutError() {
+        var err = _super.call(this, 'Timeout has occurred');
+        this.name = err.name = 'TimeoutError';
+        this.stack = err.stack;
+        this.message = err.message;
+    }
+    return TimeoutError;
+}(Error));
+exports.TimeoutError = TimeoutError;
+//# sourceMappingURL=TimeoutError.js.map
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+/**
+ * An error thrown when one or more errors have occurred during the
+ * `unsubscribe` of a {@link Subscription}.
+ */
+var UnsubscriptionError = (function (_super) {
+    __extends(UnsubscriptionError, _super);
+    function UnsubscriptionError(errors) {
+        _super.call(this);
+        this.errors = errors;
+        var err = Error.call(this, errors ?
+            errors.length + " errors occurred during unsubscription:\n  " + errors.map(function (err, i) { return ((i + 1) + ") " + err.toString()); }).join('\n  ') : '');
+        this.name = err.name = 'UnsubscriptionError';
+        this.stack = err.stack;
+        this.message = err.message;
+    }
+    return UnsubscriptionError;
+}(Error));
+exports.UnsubscriptionError = UnsubscriptionError;
+//# sourceMappingURL=UnsubscriptionError.js.map
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function applyMixins(derivedCtor, baseCtors) {
+    for (var i = 0, len = baseCtors.length; i < len; i++) {
+        var baseCtor = baseCtors[i];
+        var propertyKeys = Object.getOwnPropertyNames(baseCtor.prototype);
+        for (var j = 0, len2 = propertyKeys.length; j < len2; j++) {
+            var name_1 = propertyKeys[j];
+            derivedCtor.prototype[name_1] = baseCtor.prototype[name_1];
+        }
+    }
+}
+exports.applyMixins = applyMixins;
+//# sourceMappingURL=applyMixins.js.map
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+exports.isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
+//# sourceMappingURL=isArrayLike.js.map
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function isObject(x) {
+    return x != null && typeof x === 'object';
+}
+exports.isObject = isObject;
+//# sourceMappingURL=isObject.js.map
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function isPromise(value) {
+    return value && typeof value.subscribe !== 'function' && typeof value.then === 'function';
+}
+exports.isPromise = isPromise;
+//# sourceMappingURL=isPromise.js.map
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/* tslint:disable:no-empty */
+function noop() { }
+exports.noop = noop;
+//# sourceMappingURL=noop.js.map
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var localforage_1 = __webpack_require__(400);
+exports.LocalForageStore = localforage_1.LocalForageStore;
+
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var testType_1 = __webpack_require__(49);
+var plump_1 = __webpack_require__(35);
+var Bluebird = __webpack_require__(15);
+var mergeOptions = __webpack_require__(18);
+Bluebird.config({
+    longStackTraces: true,
+});
+var chai = __webpack_require__(47);
+var chaiAsPromised = __webpack_require__(95);
+chai.use(chaiAsPromised);
+var expect = chai.expect;
+var sampleObject = {
+    typeName: 'tests',
+    attributes: {
+        name: 'potato',
+        extended: {
+            actual: 'rutabaga',
+            otherValue: 42,
+        },
+    },
+    relationships: {},
+};
+function testSuite(context, storeOpts) {
+    var store = Object.assign({}, {
+        before: function () { return Bluebird.resolve(); },
+        after: function () { return Bluebird.resolve(); },
+    }, storeOpts);
+    context.describe(store.name, function () {
+        var actualStore;
+        context.before(function () {
+            return (store.before || (function () { return Bluebird.resolve(); }))(actualStore)
+                .then(function () {
+                actualStore = new store.ctor(store.opts);
+                actualStore.addSchema(testType_1.TestType);
+            });
+        });
+        context.describe('core CRUD', function () {
+            context.it('supports creating values with no id field, and retrieving values', function () {
+                return actualStore.writeAttributes(sampleObject)
+                    .then(function (createdObject) {
+                    return actualStore.read({ typeName: 'tests', id: createdObject.id }, ['attributes', 'relationships'])
+                        .then(function (v) {
+                        return expect(v)
+                            .to.deep.equal(mergeOptions({}, sampleObject, {
+                            id: createdObject.id,
+                            relationships: {
+                                parents: [],
+                                children: [],
+                                valenceParents: [],
+                                valenceChildren: [],
+                                queryParents: [],
+                                queryChildren: [],
+                            },
+                            attributes: {
+                                id: createdObject.id,
+                                otherName: '',
+                            },
+                        }));
+                    });
+                });
+            });
+            context.it('allows objects to be stored by id', function () {
+                return actualStore.writeAttributes(sampleObject)
+                    .then(function (createdObject) {
+                    var modObject = mergeOptions({}, createdObject, { attributes: { name: 'carrot' } });
+                    return actualStore.writeAttributes(modObject)
+                        .then(function (updatedObject) {
+                        return expect(actualStore.read({ typeName: 'tests', id: updatedObject.id }, 'attributes'))
+                            .to.eventually.deep.equal(mergeOptions({}, modObject, {
+                            id: createdObject.id,
+                            relationships: {},
+                            attributes: {
+                                id: createdObject.id,
+                                otherName: '',
+                            },
+                        }));
+                    });
+                });
+            });
+            context.it('allows for deletion of objects by id', function () {
+                return actualStore.writeAttributes(sampleObject)
+                    .then(function (createdObject) {
+                    return expect(actualStore.read({ typeName: 'tests', id: createdObject.id }))
+                        .to.eventually.have.deep.property('attributes.name', 'potato')
+                        .then(function () { return actualStore.delete({ typeName: 'tests', id: createdObject.id }); })
+                        .then(function () { return expect(actualStore.read({ typeName: 'tests', id: createdObject.id })).to.eventually.be.null; });
+                });
+            });
+        });
+        context.describe('relationships', function () {
+            context.it('can fetch a base and hasmany in one read', function () {
+                return actualStore.writeAttributes(sampleObject)
+                    .then(function (createdObject) {
+                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 200 })
+                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 201 }); })
+                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 202 }); })
+                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 203 }); })
+                        .then(function () {
+                        return actualStore.read({ typeName: 'tests', id: createdObject.id }, ['attributes', 'relationships.children']);
+                    })
+                        .then(function (v) {
+                        expect(v).to.have.deep.property('attributes.name', 'potato');
+                        expect(v.relationships.children).to.deep.equal([{ id: 200 }, { id: 201 }, { id: 202 }, { id: 203 }]);
+                    });
+                });
+            });
+            context.it('can add to a hasMany relationship', function () {
+                return actualStore.writeAttributes(sampleObject)
+                    .then(function (createdObject) {
+                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 100 })
+                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 101 }); })
+                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 102 }); })
+                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 103 }); })
+                        .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: 100 }, 'children', { id: createdObject.id }); })
+                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, ['relationships.children']); })
+                        .then(function (v) {
+                        expect(v.relationships.children).to.deep.equal([
+                            { id: 100 },
+                            { id: 101 },
+                            { id: 102 },
+                            { id: 103 },
+                        ]);
+                        return actualStore.read({ typeName: 'tests', id: createdObject.id }, ['relationships.parents']);
+                    })
+                        .then(function (v) { return expect(v.relationships.parents).to.deep.equal([{ id: 100 }]); });
+                });
+            });
+            context.it('can add to a hasMany relationship with extras', function () {
+                return actualStore.writeAttributes(sampleObject)
+                    .then(function (createdObject) {
+                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'valenceChildren', { id: 100, meta: { perm: 1 } })
+                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.valenceChildren'); })
+                        .then(function (v) { return expect(v.relationships.valenceChildren).to.deep.equal([{ id: 100, meta: { perm: 1 } }]); });
+                });
+            });
+            context.it('can modify valence on a hasMany relationship', function () {
+                return actualStore.writeAttributes(sampleObject)
+                    .then(function (createdObject) {
+                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'valenceChildren', { id: 100, meta: { perm: 1 } })
+                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.valenceChildren'); })
+                        .then(function (v) { return expect(v.relationships.valenceChildren).to.deep.equal([{ id: 100, meta: { perm: 1 } }]); })
+                        .then(function () {
+                        return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'valenceChildren', { id: 100, meta: { perm: 2 } });
+                    })
+                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.valenceChildren'); })
+                        .then(function (v) { return expect(v.relationships.valenceChildren).to.deep.equal([{ id: 100, meta: { perm: 2 } }]); });
+                });
+            });
+            context.it('can remove from a hasMany relationship', function () {
+                return actualStore.writeAttributes(sampleObject)
+                    .then(function (createdObject) {
+                    return actualStore.writeRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 100 })
+                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.children'); })
+                        .then(function (v) { return expect(v.relationships.children).to.deep.equal([{ id: 100 }]); })
+                        .then(function () { return actualStore.deleteRelationshipItem({ typeName: 'tests', id: createdObject.id }, 'children', { id: 100 }); })
+                        .then(function () { return actualStore.read({ typeName: 'tests', id: createdObject.id }, 'relationships.children'); })
+                        .then(function (v) { return expect(v.relationships.children).to.deep.equal([]); });
+                });
+            });
+        });
+        context.describe('events', function () {
+            context.it('should pass basic write-invalidation events to other datastores', function () {
+                var memstore = new plump_1.MemoryStore();
+                var testPlump = new plump_1.Plump();
+                return testPlump.addStore(memstore)
+                    .then(function () { return testPlump.addStore(actualStore); })
+                    .then(function () { return testPlump.addType(testType_1.TestType); })
+                    .then(function () { return actualStore.writeAttributes({ typeName: 'tests', attributes: { name: 'potato' } }); })
+                    .then(function (createdObject) {
+                    return actualStore.read({ typeName: 'tests', id: createdObject.id })
+                        .then(function () {
+                        return new Bluebird(function (resolve) { return setTimeout(resolve, 100); })
+                            .then(function () {
+                            return expect(memstore.read({ typeName: 'tests', id: createdObject.id }))
+                                .to.eventually.have.deep.property('attributes.name', 'potato');
+                        }).then(function () {
+                            return actualStore.writeAttributes({
+                                typeName: 'tests',
+                                id: createdObject.id,
+                                attributes: {
+                                    name: 'grotato',
+                                },
+                            });
+                        }).then(function () {
+                            return new Bluebird(function (resolve) { return setTimeout(resolve, 100); });
+                        }).then(function () {
+                            return expect(memstore.read({ typeName: 'tests', id: createdObject.id }))
+                                .to.eventually.be.null;
+                        });
+                    });
+                })
+                    .finally(function () {
+                    return testPlump.teardown();
+                });
+            });
+            context.it('should pass basic cacheable-read events up the stack', function () {
+                var testPlump = new plump_1.Plump();
+                var testItem;
+                var memstore;
+                return testPlump.addType(testType_1.TestType)
+                    .then(function () { return actualStore.writeAttributes({ typeName: 'tests', attributes: { name: 'potato' } }); })
+                    .then(function (createdObject) {
+                    testItem = createdObject;
+                    return expect(actualStore.read({ typeName: 'tests', id: testItem.id }))
+                        .to.eventually.have.deep.property('attributes.name', 'potato');
+                }).then(function () {
+                    memstore = new plump_1.MemoryStore();
+                    testPlump.addStore(memstore);
+                    testPlump.addStore(actualStore);
+                    return expect(memstore.read({ typeName: 'tests', id: testItem.id })).to.eventually.be.null;
+                }).then(function () {
+                    return actualStore.read({ typeName: 'tests', id: testItem.id });
+                })
+                    .then(function () {
+                    return new Bluebird(function (resolve) { return setTimeout(resolve, 100); });
+                })
+                    .then(function () {
+                    return expect(memstore.read({ typeName: 'tests', id: testItem.id }))
+                        .to.eventually.have.deep.property('attributes.name', 'potato');
+                }).finally(function () { return testPlump.teardown(); });
+            });
+            context.it('should pass write-invalidation events on hasMany relationships to other datastores', function () {
+                var testItem;
+                var memstore = new plump_1.MemoryStore();
+                var testPlump = new plump_1.Plump();
+                return testPlump.addType(testType_1.TestType)
+                    .then(function () { return testPlump.addStore(memstore); })
+                    .then(function () { return testPlump.addStore(actualStore); })
+                    .then(function () { return actualStore.writeAttributes({ typeName: 'tests', attributes: { name: 'potato' } }); })
+                    .then(function (createdObject) {
+                    testItem = createdObject;
+                    return expect(actualStore.read({ typeName: 'tests', id: testItem.id }))
+                        .to.eventually.have.deep.property('attributes.name', 'potato');
+                }).then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: testItem.id }, 'children', { id: 100 }); })
+                    .then(function () {
+                    return expect(memstore.read({ typeName: 'tests', id: testItem.id }))
+                        .to.eventually.not.have.deep.property('relationships.children');
+                }).then(function () {
+                    return actualStore.read({ typeName: 'tests', id: testItem.id }, 'children');
+                }).then(function () {
+                    return new Bluebird(function (resolve) { return setTimeout(resolve, 100); });
+                })
+                    .then(function () { return memstore.read({ typeName: 'tests', id: testItem.id }, 'children'); })
+                    .then(function (v) { return expect(v.relationships.children).to.deep.equal([{ id: 100 }]); })
+                    .then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: testItem.id }, 'children', { id: 101 }); })
+                    .then(function () { return new Bluebird(function (resolve) { return setTimeout(resolve, 100); }); })
+                    .then(function () { return memstore.read({ typeName: 'tests', id: testItem.id }); })
+                    .then(function (v) { return expect(v).to.not.have.deep.property('relationships.children'); })
+                    .finally(function () { return testPlump.teardown(); });
+            });
+            context.it('should pass cacheable-read events on hasMany relationships to other datastores', function () {
+                var testItem;
+                var memstore;
+                var testPlump = new plump_1.Plump();
+                return testPlump.addType(testType_1.TestType)
+                    .then(function () { return actualStore.writeAttributes({ typeName: 'tests', attributes: { name: 'potato' } }); })
+                    .then(function (createdObject) {
+                    testItem = createdObject;
+                    return expect(actualStore.read({ typeName: 'tests', id: testItem.id }))
+                        .to.eventually.have.deep.property('attributes.name', 'potato');
+                }).then(function () { return actualStore.writeRelationshipItem({ typeName: 'tests', id: testItem.id }, 'children', { id: 100 }); })
+                    .then(function () {
+                    memstore = new plump_1.MemoryStore();
+                    testPlump.addStore(actualStore);
+                    testPlump.addStore(memstore);
+                    return expect(memstore.read({ typeName: 'tests', id: testItem.id })).to.eventually.be.null;
+                }).then(function () {
+                    return actualStore.read({ typeName: 'tests', id: testItem.id }, 'children');
+                }).then(function () { return new Bluebird(function (resolve) { return setTimeout(resolve, 100); }); })
+                    .then(function () { return memstore.read({ typeName: 'tests', id: testItem.id }, 'children'); })
+                    .then(function (v) { return expect(v.relationships.children).to.deep.equal([{ id: 100 }]); })
+                    .finally(function () { return testPlump.teardown(); });
+            });
+        });
+        context.after(function () {
+            return (store.after || (function () { return; }))(actualStore);
+        });
+    });
+}
+exports.testSuite = testSuite;
+
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+
+var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+for (var i = 0, len = code.length; i < len; ++i) {
+  lookup[i] = code[i]
+  revLookup[code.charCodeAt(i)] = i
+}
+
+revLookup['-'.charCodeAt(0)] = 62
+revLookup['_'.charCodeAt(0)] = 63
+
+function placeHoldersCount (b64) {
+  var len = b64.length
+  if (len % 4 > 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // the number of equal signs (place holders)
+  // if there are two placeholders, than the two characters before it
+  // represent one byte
+  // if there is only one, then the three characters before it represent 2 bytes
+  // this is just a cheap hack to not do indexOf twice
+  return b64[len - 2] === '=' ? 2 : b64[len - 1] === '=' ? 1 : 0
+}
+
+function byteLength (b64) {
+  // base64 is 4/3 + up to two characters of the original data
+  return b64.length * 3 / 4 - placeHoldersCount(b64)
+}
+
+function toByteArray (b64) {
+  var i, j, l, tmp, placeHolders, arr
+  var len = b64.length
+  placeHolders = placeHoldersCount(b64)
+
+  arr = new Arr(len * 3 / 4 - placeHolders)
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  l = placeHolders > 0 ? len - 4 : len
+
+  var L = 0
+
+  for (i = 0, j = 0; i < l; i += 4, j += 3) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 18) | (revLookup[b64.charCodeAt(i + 1)] << 12) | (revLookup[b64.charCodeAt(i + 2)] << 6) | revLookup[b64.charCodeAt(i + 3)]
+    arr[L++] = (tmp >> 16) & 0xFF
+    arr[L++] = (tmp >> 8) & 0xFF
+    arr[L++] = tmp & 0xFF
+  }
+
+  if (placeHolders === 2) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 2) | (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[L++] = tmp & 0xFF
+  } else if (placeHolders === 1) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 10) | (revLookup[b64.charCodeAt(i + 1)] << 4) | (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[L++] = (tmp >> 8) & 0xFF
+    arr[L++] = tmp & 0xFF
+  }
+
+  return arr
+}
+
+function tripletToBase64 (num) {
+  return lookup[num >> 18 & 0x3F] + lookup[num >> 12 & 0x3F] + lookup[num >> 6 & 0x3F] + lookup[num & 0x3F]
+}
+
+function encodeChunk (uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i < end; i += 3) {
+    tmp = (uint8[i] << 16) + (uint8[i + 1] << 8) + (uint8[i + 2])
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+function fromByteArray (uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var output = ''
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
+    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    output += lookup[tmp >> 2]
+    output += lookup[(tmp << 4) & 0x3F]
+    output += '=='
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] << 8) + (uint8[len - 1])
+    output += lookup[tmp >> 10]
+    output += lookup[(tmp >> 4) & 0x3F]
+    output += lookup[(tmp << 2) & 0x3F]
+    output += '='
+  }
+
+  parts.push(output)
+
+  return parts.join('')
+}
+
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+
+
+
+var base64 = __webpack_require__(92)
+var ieee754 = __webpack_require__(119)
+var isArray = __webpack_require__(94)
+
+exports.Buffer = Buffer
+exports.SlowBuffer = SlowBuffer
+exports.INSPECT_MAX_BYTES = 50
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Use Object implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * Due to various browser bugs, sometimes the Object implementation will be used even
+ * when the browser supports typed arrays.
+ *
+ * Note:
+ *
+ *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *
+ *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
+ *
+ *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *     incorrect length in some situations.
+
+ * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
+ * get the Object implementation, which is slower but behaves correctly.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = global.TYPED_ARRAY_SUPPORT !== undefined
+  ? global.TYPED_ARRAY_SUPPORT
+  : typedArraySupport()
+
+/*
+ * Export kMaxLength after typed array support is determined.
+ */
+exports.kMaxLength = kMaxLength()
+
+function typedArraySupport () {
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
+    return arr.foo() === 42 && // typed array instances can be augmented
+        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
+        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
+  } catch (e) {
+    return false
+  }
+}
+
+function kMaxLength () {
+  return Buffer.TYPED_ARRAY_SUPPORT
+    ? 0x7fffffff
+    : 0x3fffffff
+}
+
+function createBuffer (that, length) {
+  if (kMaxLength() < length) {
+    throw new RangeError('Invalid typed array length')
+  }
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(length)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    if (that === null) {
+      that = new Buffer(length)
+    }
+    that.length = length
+  }
+
+  return that
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
+    return new Buffer(arg, encodingOrOffset, length)
+  }
+
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new Error(
+        'If encoding is specified then the first argument must be a string'
+      )
+    }
+    return allocUnsafe(this, arg)
+  }
+  return from(this, arg, encodingOrOffset, length)
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+// TODO: Legacy, not needed anymore. Remove in next major version.
+Buffer._augment = function (arr) {
+  arr.__proto__ = Buffer.prototype
+  return arr
+}
+
+function from (that, value, encodingOrOffset, length) {
+  if (typeof value === 'number') {
+    throw new TypeError('"value" argument must not be a number')
+  }
+
+  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
+    return fromArrayBuffer(that, value, encodingOrOffset, length)
+  }
+
+  if (typeof value === 'string') {
+    return fromString(that, value, encodingOrOffset)
+  }
+
+  return fromObject(that, value)
+}
+
+/**
+ * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
+ * if value is a number.
+ * Buffer.from(str[, encoding])
+ * Buffer.from(array)
+ * Buffer.from(buffer)
+ * Buffer.from(arrayBuffer[, byteOffset[, length]])
+ **/
+Buffer.from = function (value, encodingOrOffset, length) {
+  return from(null, value, encodingOrOffset, length)
+}
+
+if (Buffer.TYPED_ARRAY_SUPPORT) {
+  Buffer.prototype.__proto__ = Uint8Array.prototype
+  Buffer.__proto__ = Uint8Array
+  if (typeof Symbol !== 'undefined' && Symbol.species &&
+      Buffer[Symbol.species] === Buffer) {
+    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+    Object.defineProperty(Buffer, Symbol.species, {
+      value: null,
+      configurable: true
+    })
+  }
+}
+
+function assertSize (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('"size" argument must be a number')
+  } else if (size < 0) {
+    throw new RangeError('"size" argument must not be negative')
+  }
+}
+
+function alloc (that, size, fill, encoding) {
+  assertSize(size)
+  if (size <= 0) {
+    return createBuffer(that, size)
+  }
+  if (fill !== undefined) {
+    // Only pay attention to encoding if it's a string. This
+    // prevents accidentally sending in a number that would
+    // be interpretted as a start offset.
+    return typeof encoding === 'string'
+      ? createBuffer(that, size).fill(fill, encoding)
+      : createBuffer(that, size).fill(fill)
+  }
+  return createBuffer(that, size)
+}
+
+/**
+ * Creates a new filled Buffer instance.
+ * alloc(size[, fill[, encoding]])
+ **/
+Buffer.alloc = function (size, fill, encoding) {
+  return alloc(null, size, fill, encoding)
+}
+
+function allocUnsafe (that, size) {
+  assertSize(size)
+  that = createBuffer(that, size < 0 ? 0 : checked(size) | 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) {
+    for (var i = 0; i < size; ++i) {
+      that[i] = 0
+    }
+  }
+  return that
+}
+
+/**
+ * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
+ * */
+Buffer.allocUnsafe = function (size) {
+  return allocUnsafe(null, size)
+}
+/**
+ * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
+ */
+Buffer.allocUnsafeSlow = function (size) {
+  return allocUnsafe(null, size)
+}
+
+function fromString (that, string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
+  }
+
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('"encoding" must be a valid string encoding')
+  }
+
+  var length = byteLength(string, encoding) | 0
+  that = createBuffer(that, length)
+
+  var actual = that.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    that = that.slice(0, actual)
+  }
+
+  return that
+}
+
+function fromArrayLike (that, array) {
+  var length = array.length < 0 ? 0 : checked(array.length) | 0
+  that = createBuffer(that, length)
+  for (var i = 0; i < length; i += 1) {
+    that[i] = array[i] & 255
+  }
+  return that
+}
+
+function fromArrayBuffer (that, array, byteOffset, length) {
+  array.byteLength // this throws if `array` is not a valid ArrayBuffer
+
+  if (byteOffset < 0 || array.byteLength < byteOffset) {
+    throw new RangeError('\'offset\' is out of bounds')
+  }
+
+  if (array.byteLength < byteOffset + (length || 0)) {
+    throw new RangeError('\'length\' is out of bounds')
+  }
+
+  if (byteOffset === undefined && length === undefined) {
+    array = new Uint8Array(array)
+  } else if (length === undefined) {
+    array = new Uint8Array(array, byteOffset)
+  } else {
+    array = new Uint8Array(array, byteOffset, length)
+  }
+
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = array
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    that = fromArrayLike(that, array)
+  }
+  return that
+}
+
+function fromObject (that, obj) {
+  if (Buffer.isBuffer(obj)) {
+    var len = checked(obj.length) | 0
+    that = createBuffer(that, len)
+
+    if (that.length === 0) {
+      return that
+    }
+
+    obj.copy(that, 0, 0, len)
+    return that
+  }
+
+  if (obj) {
+    if ((typeof ArrayBuffer !== 'undefined' &&
+        obj.buffer instanceof ArrayBuffer) || 'length' in obj) {
+      if (typeof obj.length !== 'number' || isnan(obj.length)) {
+        return createBuffer(that, 0)
+      }
+      return fromArrayLike(that, obj)
+    }
+
+    if (obj.type === 'Buffer' && isArray(obj.data)) {
+      return fromArrayLike(that, obj.data)
+    }
+  }
+
+  throw new TypeError('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.')
+}
+
+function checked (length) {
+  // Note: cannot use `length < kMaxLength()` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length >= kMaxLength()) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (length) {
+  if (+length != length) { // eslint-disable-line eqeqeq
+    length = 0
+  }
+  return Buffer.alloc(+length)
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return !!(b != null && b._isBuffer)
+}
+
+Buffer.compare = function compare (a, b) {
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError('Arguments must be Buffers')
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'latin1':
+    case 'binary':
+    case 'base64':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!isArray(list)) {
+    throw new TypeError('"list" argument must be an Array of Buffers')
+  }
+
+  if (list.length === 0) {
+    return Buffer.alloc(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i < list.length; ++i) {
+      length += list[i].length
+    }
+  }
+
+  var buffer = Buffer.allocUnsafe(length)
+  var pos = 0
+  for (i = 0; i < list.length; ++i) {
+    var buf = list[i]
+    if (!Buffer.isBuffer(buf)) {
+      throw new TypeError('"list" argument must be an Array of Buffers')
+    }
+    buf.copy(buffer, pos)
+    pos += buf.length
+  }
+  return buffer
+}
+
+function byteLength (string, encoding) {
+  if (Buffer.isBuffer(string)) {
+    return string.length
+  }
+  if (typeof ArrayBuffer !== 'undefined' && typeof ArrayBuffer.isView === 'function' &&
+      (ArrayBuffer.isView(string) || string instanceof ArrayBuffer)) {
+    return string.byteLength
+  }
+  if (typeof string !== 'string') {
+    string = '' + string
+  }
+
+  var len = string.length
+  if (len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'latin1':
+      case 'binary':
+        return len
+      case 'utf8':
+      case 'utf-8':
+      case undefined:
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len >>> 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) return utf8ToBytes(string).length // assume utf8
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
+  // property of a typed array.
+
+  // This behaves neither like String nor Uint8Array in that we set start/end
+  // to their upper/lower bounds if the value passed is out of range.
+  // undefined is handled specially as per ECMA-262 6th Edition,
+  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
+  if (start === undefined || start < 0) {
+    start = 0
+  }
+  // Return early if start > this.length. Done here to prevent potential uint32
+  // coercion fail below.
+  if (start > this.length) {
+    return ''
+  }
+
+  if (end === undefined || end > this.length) {
+    end = this.length
+  }
+
+  if (end <= 0) {
+    return ''
+  }
+
+  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
+  end >>>= 0
+  start >>>= 0
+
+  if (end <= start) {
+    return ''
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Slice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
+// Buffer instances.
+Buffer.prototype._isBuffer = true
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
+
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length | 0
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  if (this.length > 0) {
+    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
+    if (this.length > max) str += ' ... '
+  }
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError('Argument must be a Buffer')
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset  // Coerce to Number.
+  if (isNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (Buffer.TYPED_ARRAY_SUPPORT &&
+        typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  // must be an even number of digits
+  var strLen = string.length
+  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (isNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset | 0
+    if (isFinite(length)) {
+      length = length | 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  // legacy write(string, encoding, offset, length) - remove in v0.13
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+      : (firstByte > 0xBF) ? 2
+      : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+  var newBuf
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    newBuf = this.subarray(start, end)
+    newBuf.__proto__ = Buffer.prototype
+  } else {
+    var sliceLen = end - start
+    newBuf = new Buffer(sliceLen, undefined)
+    for (var i = 0; i < sliceLen; ++i) {
+      newBuf[i] = this[i + start]
+    }
+  }
+
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
+  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength > 0 && (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] << 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] << 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] << 8) |
+      (this[offset + 2] << 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i > 0 && (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] & 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset]) |
+    (this[offset + 1] << 8) |
+    (this[offset + 2] << 16) |
+    (this[offset + 3] << 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] << 24) |
+    (this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
+  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var mul = 1
+  var i = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+function objectWriteUInt16 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 2); i < j; ++i) {
+    buf[offset + i] = (value & (0xff << (8 * (littleEndian ? i : 1 - i)))) >>>
+      (littleEndian ? i : 1 - i) * 8
+  }
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+function objectWriteUInt32 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffffffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 4); i < j; ++i) {
+    buf[offset + i] = (value >>> (littleEndian ? i : 3 - i) * 8) & 0xff
+  }
+}
+
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset + 3] = (value >>> 24)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 1] = (value >>> 8)
+    this[offset] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = 0
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  if (value < 0) value = 0xff + value + 1
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 3] = (value >>> 24)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value < 0) value = 0xffffffff + value + 1
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+  if (offset < 0) throw new RangeError('Index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!start) start = 0
+  if (!end && end !== 0) end = this.length
+  if (targetStart >= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end > 0 && end < start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart < 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start < 0 || start >= this.length) throw new RangeError('sourceStart out of bounds')
+  if (end < 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end > this.length) end = this.length
+  if (target.length - targetStart < end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+  var i
+
+  if (this === target && start < targetStart && targetStart < end) {
+    // descending copy from end
+    for (i = len - 1; i >= 0; --i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else if (len < 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
+    // ascending copy from start
+    for (i = 0; i < len; ++i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, start + len),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// Usage:
+//    buffer.fill(number[, offset[, end]])
+//    buffer.fill(buffer[, offset[, end]])
+//    buffer.fill(string[, offset[, end]][, encoding])
+Buffer.prototype.fill = function fill (val, start, end, encoding) {
+  // Handle string cases:
+  if (typeof val === 'string') {
+    if (typeof start === 'string') {
+      encoding = start
+      start = 0
+      end = this.length
+    } else if (typeof end === 'string') {
+      encoding = end
+      end = this.length
+    }
+    if (val.length === 1) {
+      var code = val.charCodeAt(0)
+      if (code < 256) {
+        val = code
+      }
+    }
+    if (encoding !== undefined && typeof encoding !== 'string') {
+      throw new TypeError('encoding must be a string')
+    }
+    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
+      throw new TypeError('Unknown encoding: ' + encoding)
+    }
+  } else if (typeof val === 'number') {
+    val = val & 255
+  }
+
+  // Invalid ranges are not set to a default, so can range check early.
+  if (start < 0 || this.length < start || this.length < end) {
+    throw new RangeError('Out of range index')
+  }
+
+  if (end <= start) {
+    return this
+  }
+
+  start = start >>> 0
+  end = end === undefined ? this.length : end >>> 0
+
+  if (!val) val = 0
+
+  var i
+  if (typeof val === 'number') {
+    for (i = start; i < end; ++i) {
+      this[i] = val
+    }
+  } else {
+    var bytes = Buffer.isBuffer(val)
+      ? val
+      : utf8ToBytes(new Buffer(val, encoding).toString())
+    var len = bytes.length
+    for (i = 0; i < end - start; ++i) {
+      this[i + start] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length < 2 to ''
+  if (str.length < 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function stringtrim (str) {
+  if (str.trim) return str.trim()
+  return str.replace(/^\s+|\s+$/g, '')
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i < length; ++i) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint > 0xD7FF && codePoint < 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint > 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint < 0xDC00) {
+        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint < 0x80) {
+      if ((units -= 1) < 0) break
+      bytes.push(codePoint)
+    } else if (codePoint < 0x800) {
+      if ((units -= 2) < 0) break
+      bytes.push(
+        codePoint >> 0x6 | 0xC0,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x10000) {
+      if ((units -= 3) < 0) break
+      bytes.push(
+        codePoint >> 0xC | 0xE0,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x110000) {
+      if ((units -= 4) < 0) break
+      bytes.push(
+        codePoint >> 0x12 | 0xF0,
+        codePoint >> 0xC & 0x3F | 0x80,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    // Node's code seems to be doing this and not & 0x7F..
+    byteArray.push(str.charCodeAt(i) & 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    if ((units -= 2) < 0) break
+
+    c = str.charCodeAt(i)
+    hi = c >> 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i < length; ++i) {
+    if ((i + offset >= dst.length) || (i >= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}
+
+function isnan (val) {
+  return val !== val // eslint-disable-line no-self-compare
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23)))
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function () {
+    "use strict";
+
+    // Module systems magic dance.
+
+    /* istanbul ignore else */
+    if (true) {
+        // NodeJS
+        module.exports = chaiAsPromised;
+    } else if (typeof define === "function" && define.amd) {
+        // AMD
+        define(function () {
+            return chaiAsPromised;
+        });
+    } else {
+        /*global self: false */
+
+        // Other environment (usually <script> tag): plug in to global chai instance directly.
+        chai.use(chaiAsPromised);
+
+        // Expose as a property of the global object so that consumers can configure the `transferPromiseness` property.
+        self.chaiAsPromised = chaiAsPromised;
+    }
+
+    chaiAsPromised.transferPromiseness = function (assertion, promise) {
+        assertion.then = promise.then.bind(promise);
+    };
+
+    chaiAsPromised.transformAsserterArgs = function (values) {
+        return values;
+    };
+
+    function chaiAsPromised(chai, utils) {
+        var Assertion = chai.Assertion;
+        var assert = chai.assert;
+
+        function isLegacyJQueryPromise(thenable) {
+            // jQuery promises are Promises/A+-compatible since 3.0.0. jQuery 3.0.0 is also the first version
+            // to define the catch method.
+            return typeof thenable.catch !== "function" &&
+                   typeof thenable.always === "function" &&
+                   typeof thenable.done === "function" &&
+                   typeof thenable.fail === "function" &&
+                   typeof thenable.pipe === "function" &&
+                   typeof thenable.progress === "function" &&
+                   typeof thenable.state === "function";
+        }
+
+        function assertIsAboutPromise(assertion) {
+            if (typeof assertion._obj.then !== "function") {
+                throw new TypeError(utils.inspect(assertion._obj) + " is not a thenable.");
+            }
+            if (isLegacyJQueryPromise(assertion._obj)) {
+                throw new TypeError("Chai as Promised is incompatible with thenables of jQuery<3.0.0, sorry! Please " +
+                                    "upgrade jQuery or use another Promises/A+ compatible library (see " +
+                                    "http://promisesaplus.com/).");
+            }
+        }
+
+        function method(name, asserter) {
+            utils.addMethod(Assertion.prototype, name, function () {
+                assertIsAboutPromise(this);
+                return asserter.apply(this, arguments);
+            });
+        }
+
+        function property(name, asserter) {
+            utils.addProperty(Assertion.prototype, name, function () {
+                assertIsAboutPromise(this);
+                return asserter.apply(this, arguments);
+            });
+        }
+
+        function doNotify(promise, done) {
+            promise.then(function () { done(); }, done);
+        }
+
+        // These are for clarity and to bypass Chai refusing to allow `undefined` as actual when used with `assert`.
+        function assertIfNegated(assertion, message, extra) {
+            assertion.assert(true, null, message, extra.expected, extra.actual);
+        }
+
+        function assertIfNotNegated(assertion, message, extra) {
+            assertion.assert(false, message, null, extra.expected, extra.actual);
+        }
+
+        function getBasePromise(assertion) {
+            // We need to chain subsequent asserters on top of ones in the chain already (consider
+            // `eventually.have.property("foo").that.equals("bar")`), only running them after the existing ones pass.
+            // So the first base-promise is `assertion._obj`, but after that we use the assertions themselves, i.e.
+            // previously derived promises, to chain off of.
+            return typeof assertion.then === "function" ? assertion : assertion._obj;
+        }
+
+        // Grab these first, before we modify `Assertion.prototype`.
+
+        var propertyNames = Object.getOwnPropertyNames(Assertion.prototype);
+
+        var propertyDescs = {};
+        propertyNames.forEach(function (name) {
+            propertyDescs[name] = Object.getOwnPropertyDescriptor(Assertion.prototype, name);
+        });
+
+        property("fulfilled", function () {
+            var that = this;
+            var derivedPromise = getBasePromise(that).then(
+                function (value) {
+                    that._obj = value;
+                    assertIfNegated(that,
+                                    "expected promise not to be fulfilled but it was fulfilled with #{act}",
+                                    { actual: value });
+                    return value;
+                },
+                function (reason) {
+                    assertIfNotNegated(that,
+                                       "expected promise to be fulfilled but it was rejected with #{act}",
+                                       { actual: reason });
+                }
+            );
+
+            chaiAsPromised.transferPromiseness(that, derivedPromise);
+        });
+
+        property("rejected", function () {
+            var that = this;
+            var derivedPromise = getBasePromise(that).then(
+                function (value) {
+                    that._obj = value;
+                    assertIfNotNegated(that,
+                                       "expected promise to be rejected but it was fulfilled with #{act}",
+                                       { actual: value });
+                    return value;
+                },
+                function (reason) {
+                    assertIfNegated(that,
+                                    "expected promise not to be rejected but it was rejected with #{act}",
+                                    { actual: reason });
+
+                    // Return the reason, transforming this into a fulfillment, to allow further assertions, e.g.
+                    // `promise.should.be.rejected.and.eventually.equal("reason")`.
+                    return reason;
+                }
+            );
+
+            chaiAsPromised.transferPromiseness(that, derivedPromise);
+        });
+
+        method("rejectedWith", function (Constructor, message) {
+            var desiredReason = null;
+            var constructorName = null;
+
+            if (Constructor instanceof RegExp || typeof Constructor === "string") {
+                message = Constructor;
+                Constructor = null;
+            } else if (Constructor && Constructor instanceof Error) {
+                desiredReason = Constructor;
+                Constructor = null;
+                message = null;
+            } else if (typeof Constructor === "function") {
+                constructorName = (new Constructor()).name;
+            } else {
+                Constructor = null;
+            }
+
+            var that = this;
+            var derivedPromise = getBasePromise(that).then(
+                function (value) {
+                    var assertionMessage = null;
+                    var expected = null;
+
+                    if (Constructor) {
+                        assertionMessage = "expected promise to be rejected with #{exp} but it was fulfilled with " +
+                                           "#{act}";
+                        expected = constructorName;
+                    } else if (message) {
+                        var verb = message instanceof RegExp ? "matching" : "including";
+                        assertionMessage = "expected promise to be rejected with an error " + verb + " #{exp} but it " +
+                                           "was fulfilled with #{act}";
+                        expected = message;
+                    } else if (desiredReason) {
+                        assertionMessage = "expected promise to be rejected with #{exp} but it was fulfilled with " +
+                                           "#{act}";
+                        expected = desiredReason;
+                    }
+
+                    that._obj = value;
+
+                    assertIfNotNegated(that, assertionMessage, { expected: expected, actual: value });
+                },
+                function (reason) {
+                    if (Constructor) {
+                        that.assert(reason instanceof Constructor,
+                                    "expected promise to be rejected with #{exp} but it was rejected with #{act}",
+                                    "expected promise not to be rejected with #{exp} but it was rejected with #{act}",
+                                    constructorName,
+                                    reason);
+                    }
+
+                    var reasonMessage = utils.type(reason) === "object" && "message" in reason ?
+                                            reason.message :
+                                            "" + reason;
+                    if (message && reasonMessage !== null && reasonMessage !== undefined) {
+                        if (message instanceof RegExp) {
+                            that.assert(message.test(reasonMessage),
+                                        "expected promise to be rejected with an error matching #{exp} but got #{act}",
+                                        "expected promise not to be rejected with an error matching #{exp}",
+                                        message,
+                                        reasonMessage);
+                        }
+                        if (typeof message === "string") {
+                            that.assert(reasonMessage.indexOf(message) !== -1,
+                                        "expected promise to be rejected with an error including #{exp} but got #{act}",
+                                        "expected promise not to be rejected with an error including #{exp}",
+                                        message,
+                                        reasonMessage);
+                        }
+                    }
+
+                    if (desiredReason) {
+                        that.assert(reason === desiredReason,
+                                    "expected promise to be rejected with #{exp} but it was rejected with #{act}",
+                                    "expected promise not to be rejected with #{exp}",
+                                    desiredReason,
+                                    reason);
+                    }
+                }
+            );
+
+            chaiAsPromised.transferPromiseness(that, derivedPromise);
+        });
+
+        property("eventually", function () {
+            utils.flag(this, "eventually", true);
+        });
+
+        method("notify", function (done) {
+            doNotify(getBasePromise(this), done);
+        });
+
+        method("become", function (value, message) {
+            return this.eventually.deep.equal(value, message);
+        });
+
+        ////////
+        // `eventually`
+
+        // We need to be careful not to trigger any getters, thus `Object.getOwnPropertyDescriptor` usage.
+        var methodNames = propertyNames.filter(function (name) {
+            return name !== "assert" && typeof propertyDescs[name].value === "function";
+        });
+
+        methodNames.forEach(function (methodName) {
+            Assertion.overwriteMethod(methodName, function (originalMethod) {
+                return function () {
+                    doAsserterAsyncAndAddThen(originalMethod, this, arguments);
+                };
+            });
+        });
+
+        var getterNames = propertyNames.filter(function (name) {
+            return name !== "_obj" && typeof propertyDescs[name].get === "function";
+        });
+
+        getterNames.forEach(function (getterName) {
+            // Chainable methods are things like `an`, which can work both for `.should.be.an.instanceOf` and as
+            // `should.be.an("object")`. We need to handle those specially.
+            var isChainableMethod = Assertion.prototype.__methods.hasOwnProperty(getterName);
+
+            if (isChainableMethod) {
+                Assertion.overwriteChainableMethod(
+                    getterName,
+                    function (originalMethod) {
+                        return function() {
+                            doAsserterAsyncAndAddThen(originalMethod, this, arguments);
+                        };
+                    },
+                    function (originalGetter) {
+                        return function() {
+                            doAsserterAsyncAndAddThen(originalGetter, this);
+                        };
+                    }
+                );
+            } else {
+                Assertion.overwriteProperty(getterName, function (originalGetter) {
+                    return function () {
+                        doAsserterAsyncAndAddThen(originalGetter, this);
+                    };
+                });
+            }
+        });
+
+        function doAsserterAsyncAndAddThen(asserter, assertion, args) {
+            // Since we're intercepting all methods/properties, we need to just pass through if they don't want
+            // `eventually`, or if we've already fulfilled the promise (see below).
+            if (!utils.flag(assertion, "eventually")) {
+                return asserter.apply(assertion, args);
+            }
+
+            var derivedPromise = getBasePromise(assertion).then(function (value) {
+                // Set up the environment for the asserter to actually run: `_obj` should be the fulfillment value, and
+                // now that we have the value, we're no longer in "eventually" mode, so we won't run any of this code,
+                // just the base Chai code that we get to via the short-circuit above.
+                assertion._obj = value;
+                utils.flag(assertion, "eventually", false);
+
+                return args ? chaiAsPromised.transformAsserterArgs(args) : args;
+            }).then(function (args) {
+                asserter.apply(assertion, args);
+
+                // Because asserters, for example `property`, can change the value of `_obj` (i.e. change the "object"
+                // flag), we need to communicate this value change to subsequent chained asserters. Since we build a
+                // promise chain paralleling the asserter chain, we can use it to communicate such changes.
+                return assertion._obj;
+            });
+
+            chaiAsPromised.transferPromiseness(assertion, derivedPromise);
+        }
+
+        ///////
+        // Now use the `Assertion` framework to build an `assert` interface.
+        var originalAssertMethods = Object.getOwnPropertyNames(assert).filter(function (propName) {
+            return typeof assert[propName] === "function";
+        });
+
+        assert.isFulfilled = function (promise, message) {
+            return (new Assertion(promise, message)).to.be.fulfilled;
+        };
+
+        assert.isRejected = function (promise, toTestAgainst, message) {
+            if (typeof toTestAgainst === "string") {
+                message = toTestAgainst;
+                toTestAgainst = undefined;
+            }
+
+            var assertion = (new Assertion(promise, message));
+            return toTestAgainst !== undefined ? assertion.to.be.rejectedWith(toTestAgainst) : assertion.to.be.rejected;
+        };
+
+        assert.becomes = function (promise, value, message) {
+            return assert.eventually.deepEqual(promise, value, message);
+        };
+
+        assert.doesNotBecome = function (promise, value, message) {
+            return assert.eventually.notDeepEqual(promise, value, message);
+        };
+
+        assert.eventually = {};
+        originalAssertMethods.forEach(function (assertMethodName) {
+            assert.eventually[assertMethodName] = function (promise) {
+                var otherArgs = Array.prototype.slice.call(arguments, 1);
+
+                var customRejectionHandler;
+                var message = arguments[assert[assertMethodName].length - 1];
+                if (typeof message === "string") {
+                    customRejectionHandler = function (reason) {
+                        throw new chai.AssertionError(message + "\n\nOriginal reason: " + utils.inspect(reason));
+                    };
+                }
+
+                var returnedPromise = promise.then(
+                    function (fulfillmentValue) {
+                        return assert[assertMethodName].apply(assert, [fulfillmentValue].concat(otherArgs));
+                    },
+                    customRejectionHandler
+                );
+
+                returnedPromise.notify = function (done) {
+                    doNotify(returnedPromise, done);
+                };
+
+                return returnedPromise;
+            };
+        });
+    }
+}());
+
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * chai
+ * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+var used = []
+  , exports = module.exports = {};
+
+/*!
+ * Chai version
+ */
+
+exports.version = '3.5.0';
+
+/*!
+ * Assertion Error
+ */
+
+exports.AssertionError = __webpack_require__(50);
+
+/*!
+ * Utils for plugins (not exported)
+ */
+
+var util = __webpack_require__(110);
+
+/**
+ * # .use(function)
+ *
+ * Provides a way to extend the internals of Chai
+ *
+ * @param {Function}
+ * @returns {this} for chaining
+ * @api public
+ */
+
+exports.use = function (fn) {
+  if (!~used.indexOf(fn)) {
+    fn(this, util);
+    used.push(fn);
+  }
+
+  return this;
+};
+
+/*!
+ * Utility Functions
+ */
+
+exports.util = util;
+
+/*!
+ * Configuration
+ */
+
+var config = __webpack_require__(16);
+exports.config = config;
+
+/*!
+ * Primary `Assertion` prototype
+ */
+
+var assertion = __webpack_require__(97);
+exports.use(assertion);
+
+/*!
+ * Core Assertions
+ */
+
+var core = __webpack_require__(98);
+exports.use(core);
+
+/*!
+ * Expect interface
+ */
+
+var expect = __webpack_require__(100);
+exports.use(expect);
+
+/*!
+ * Should interface
+ */
+
+var should = __webpack_require__(101);
+exports.use(should);
+
+/*!
+ * Assert interface
+ */
+
+var assert = __webpack_require__(99);
+exports.use(assert);
+
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * chai
+ * http://chaijs.com
+ * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+var config = __webpack_require__(16);
+
+module.exports = function (_chai, util) {
+  /*!
+   * Module dependencies.
+   */
+
+  var AssertionError = _chai.AssertionError
+    , flag = util.flag;
+
+  /*!
+   * Module export.
+   */
+
+  _chai.Assertion = Assertion;
+
+  /*!
+   * Assertion Constructor
+   *
+   * Creates object for chaining.
+   *
+   * @api private
+   */
+
+  function Assertion (obj, msg, stack) {
+    flag(this, 'ssfi', stack || arguments.callee);
+    flag(this, 'object', obj);
+    flag(this, 'message', msg);
+  }
+
+  Object.defineProperty(Assertion, 'includeStack', {
+    get: function() {
+      console.warn('Assertion.includeStack is deprecated, use chai.config.includeStack instead.');
+      return config.includeStack;
+    },
+    set: function(value) {
+      console.warn('Assertion.includeStack is deprecated, use chai.config.includeStack instead.');
+      config.includeStack = value;
+    }
+  });
+
+  Object.defineProperty(Assertion, 'showDiff', {
+    get: function() {
+      console.warn('Assertion.showDiff is deprecated, use chai.config.showDiff instead.');
+      return config.showDiff;
+    },
+    set: function(value) {
+      console.warn('Assertion.showDiff is deprecated, use chai.config.showDiff instead.');
+      config.showDiff = value;
+    }
+  });
+
+  Assertion.addProperty = function (name, fn) {
+    util.addProperty(this.prototype, name, fn);
+  };
+
+  Assertion.addMethod = function (name, fn) {
+    util.addMethod(this.prototype, name, fn);
+  };
+
+  Assertion.addChainableMethod = function (name, fn, chainingBehavior) {
+    util.addChainableMethod(this.prototype, name, fn, chainingBehavior);
+  };
+
+  Assertion.overwriteProperty = function (name, fn) {
+    util.overwriteProperty(this.prototype, name, fn);
+  };
+
+  Assertion.overwriteMethod = function (name, fn) {
+    util.overwriteMethod(this.prototype, name, fn);
+  };
+
+  Assertion.overwriteChainableMethod = function (name, fn, chainingBehavior) {
+    util.overwriteChainableMethod(this.prototype, name, fn, chainingBehavior);
+  };
+
+  /**
+   * ### .assert(expression, message, negateMessage, expected, actual, showDiff)
+   *
+   * Executes an expression and check expectations. Throws AssertionError for reporting if test doesn't pass.
+   *
+   * @name assert
+   * @param {Philosophical} expression to be tested
+   * @param {String|Function} message or function that returns message to display if expression fails
+   * @param {String|Function} negatedMessage or function that returns negatedMessage to display if negated expression fails
+   * @param {Mixed} expected value (remember to check for negation)
+   * @param {Mixed} actual (optional) will default to `this.obj`
+   * @param {Boolean} showDiff (optional) when set to `true`, assert will display a diff in addition to the message if expression fails
+   * @api private
+   */
+
+  Assertion.prototype.assert = function (expr, msg, negateMsg, expected, _actual, showDiff) {
+    var ok = util.test(this, arguments);
+    if (true !== showDiff) showDiff = false;
+    if (true !== config.showDiff) showDiff = false;
+
+    if (!ok) {
+      var msg = util.getMessage(this, arguments)
+        , actual = util.getActual(this, arguments);
+      throw new AssertionError(msg, {
+          actual: actual
+        , expected: expected
+        , showDiff: showDiff
+      }, (config.includeStack) ? this.assert : flag(this, 'ssfi'));
+    }
+  };
+
+  /*!
+   * ### ._obj
+   *
+   * Quick reference to stored `actual` value for plugin developers.
+   *
+   * @api private
+   */
+
+  Object.defineProperty(Assertion.prototype, '_obj',
+    { get: function () {
+        return flag(this, 'object');
+      }
+    , set: function (val) {
+        flag(this, 'object', val);
+      }
+  });
+};
+
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports) {
+
+/*!
+ * chai
+ * http://chaijs.com
+ * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+module.exports = function (chai, _) {
+  var Assertion = chai.Assertion
+    , toString = Object.prototype.toString
+    , flag = _.flag;
+
+  /**
+   * ### Language Chains
+   *
+   * The following are provided as chainable getters to
+   * improve the readability of your assertions. They
+   * do not provide testing capabilities unless they
+   * have been overwritten by a plugin.
+   *
+   * **Chains**
+   *
+   * - to
+   * - be
+   * - been
+   * - is
+   * - that
+   * - which
+   * - and
+   * - has
+   * - have
+   * - with
+   * - at
+   * - of
+   * - same
+   *
+   * @name language chains
+   * @namespace BDD
+   * @api public
+   */
+
+  [ 'to', 'be', 'been'
+  , 'is', 'and', 'has', 'have'
+  , 'with', 'that', 'which', 'at'
+  , 'of', 'same' ].forEach(function (chain) {
+    Assertion.addProperty(chain, function () {
+      return this;
+    });
+  });
+
+  /**
+   * ### .not
+   *
+   * Negates any of assertions following in the chain.
+   *
+   *     expect(foo).to.not.equal('bar');
+   *     expect(goodFn).to.not.throw(Error);
+   *     expect({ foo: 'baz' }).to.have.property('foo')
+   *       .and.not.equal('bar');
+   *
+   * @name not
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('not', function () {
+    flag(this, 'negate', true);
+  });
+
+  /**
+   * ### .deep
+   *
+   * Sets the `deep` flag, later used by the `equal` and
+   * `property` assertions.
+   *
+   *     expect(foo).to.deep.equal({ bar: 'baz' });
+   *     expect({ foo: { bar: { baz: 'quux' } } })
+   *       .to.have.deep.property('foo.bar.baz', 'quux');
+   *
+   * `.deep.property` special characters can be escaped
+   * by adding two slashes before the `.` or `[]`.
+   *
+   *     var deepCss = { '.link': { '[target]': 42 }};
+   *     expect(deepCss).to.have.deep.property('\\.link.\\[target\\]', 42);
+   *
+   * @name deep
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('deep', function () {
+    flag(this, 'deep', true);
+  });
+
+  /**
+   * ### .any
+   *
+   * Sets the `any` flag, (opposite of the `all` flag)
+   * later used in the `keys` assertion.
+   *
+   *     expect(foo).to.have.any.keys('bar', 'baz');
+   *
+   * @name any
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('any', function () {
+    flag(this, 'any', true);
+    flag(this, 'all', false)
+  });
+
+
+  /**
+   * ### .all
+   *
+   * Sets the `all` flag (opposite of the `any` flag)
+   * later used by the `keys` assertion.
+   *
+   *     expect(foo).to.have.all.keys('bar', 'baz');
+   *
+   * @name all
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('all', function () {
+    flag(this, 'all', true);
+    flag(this, 'any', false);
+  });
+
+  /**
+   * ### .a(type)
+   *
+   * The `a` and `an` assertions are aliases that can be
+   * used either as language chains or to assert a value's
+   * type.
+   *
+   *     // typeof
+   *     expect('test').to.be.a('string');
+   *     expect({ foo: 'bar' }).to.be.an('object');
+   *     expect(null).to.be.a('null');
+   *     expect(undefined).to.be.an('undefined');
+   *     expect(new Error).to.be.an('error');
+   *     expect(new Promise).to.be.a('promise');
+   *     expect(new Float32Array()).to.be.a('float32array');
+   *     expect(Symbol()).to.be.a('symbol');
+   *
+   *     // es6 overrides
+   *     expect({[Symbol.toStringTag]:()=>'foo'}).to.be.a('foo');
+   *
+   *     // language chain
+   *     expect(foo).to.be.an.instanceof(Foo);
+   *
+   * @name a
+   * @alias an
+   * @param {String} type
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function an (type, msg) {
+    if (msg) flag(this, 'message', msg);
+    type = type.toLowerCase();
+    var obj = flag(this, 'object')
+      , article = ~[ 'a', 'e', 'i', 'o', 'u' ].indexOf(type.charAt(0)) ? 'an ' : 'a ';
+
+    this.assert(
+        type === _.type(obj)
+      , 'expected #{this} to be ' + article + type
+      , 'expected #{this} not to be ' + article + type
+    );
+  }
+
+  Assertion.addChainableMethod('an', an);
+  Assertion.addChainableMethod('a', an);
+
+  /**
+   * ### .include(value)
+   *
+   * The `include` and `contain` assertions can be used as either property
+   * based language chains or as methods to assert the inclusion of an object
+   * in an array or a substring in a string. When used as language chains,
+   * they toggle the `contains` flag for the `keys` assertion.
+   *
+   *     expect([1,2,3]).to.include(2);
+   *     expect('foobar').to.contain('foo');
+   *     expect({ foo: 'bar', hello: 'universe' }).to.include.keys('foo');
+   *
+   * @name include
+   * @alias contain
+   * @alias includes
+   * @alias contains
+   * @param {Object|String|Number} obj
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function includeChainingBehavior () {
+    flag(this, 'contains', true);
+  }
+
+  function include (val, msg) {
+    _.expectTypes(this, ['array', 'object', 'string']);
+
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    var expected = false;
+
+    if (_.type(obj) === 'array' && _.type(val) === 'object') {
+      for (var i in obj) {
+        if (_.eql(obj[i], val)) {
+          expected = true;
+          break;
+        }
+      }
+    } else if (_.type(val) === 'object') {
+      if (!flag(this, 'negate')) {
+        for (var k in val) new Assertion(obj).property(k, val[k]);
+        return;
+      }
+      var subset = {};
+      for (var k in val) subset[k] = obj[k];
+      expected = _.eql(subset, val);
+    } else {
+      expected = (obj != undefined) && ~obj.indexOf(val);
+    }
+    this.assert(
+        expected
+      , 'expected #{this} to include ' + _.inspect(val)
+      , 'expected #{this} to not include ' + _.inspect(val));
+  }
+
+  Assertion.addChainableMethod('include', include, includeChainingBehavior);
+  Assertion.addChainableMethod('contain', include, includeChainingBehavior);
+  Assertion.addChainableMethod('contains', include, includeChainingBehavior);
+  Assertion.addChainableMethod('includes', include, includeChainingBehavior);
+
+  /**
+   * ### .ok
+   *
+   * Asserts that the target is truthy.
+   *
+   *     expect('everything').to.be.ok;
+   *     expect(1).to.be.ok;
+   *     expect(false).to.not.be.ok;
+   *     expect(undefined).to.not.be.ok;
+   *     expect(null).to.not.be.ok;
+   *
+   * @name ok
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('ok', function () {
+    this.assert(
+        flag(this, 'object')
+      , 'expected #{this} to be truthy'
+      , 'expected #{this} to be falsy');
+  });
+
+  /**
+   * ### .true
+   *
+   * Asserts that the target is `true`.
+   *
+   *     expect(true).to.be.true;
+   *     expect(1).to.not.be.true;
+   *
+   * @name true
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('true', function () {
+    this.assert(
+        true === flag(this, 'object')
+      , 'expected #{this} to be true'
+      , 'expected #{this} to be false'
+      , this.negate ? false : true
+    );
+  });
+
+  /**
+   * ### .false
+   *
+   * Asserts that the target is `false`.
+   *
+   *     expect(false).to.be.false;
+   *     expect(0).to.not.be.false;
+   *
+   * @name false
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('false', function () {
+    this.assert(
+        false === flag(this, 'object')
+      , 'expected #{this} to be false'
+      , 'expected #{this} to be true'
+      , this.negate ? true : false
+    );
+  });
+
+  /**
+   * ### .null
+   *
+   * Asserts that the target is `null`.
+   *
+   *     expect(null).to.be.null;
+   *     expect(undefined).to.not.be.null;
+   *
+   * @name null
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('null', function () {
+    this.assert(
+        null === flag(this, 'object')
+      , 'expected #{this} to be null'
+      , 'expected #{this} not to be null'
+    );
+  });
+
+  /**
+   * ### .undefined
+   *
+   * Asserts that the target is `undefined`.
+   *
+   *     expect(undefined).to.be.undefined;
+   *     expect(null).to.not.be.undefined;
+   *
+   * @name undefined
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('undefined', function () {
+    this.assert(
+        undefined === flag(this, 'object')
+      , 'expected #{this} to be undefined'
+      , 'expected #{this} not to be undefined'
+    );
+  });
+
+  /**
+   * ### .NaN
+   * Asserts that the target is `NaN`.
+   *
+   *     expect('foo').to.be.NaN;
+   *     expect(4).not.to.be.NaN;
+   *
+   * @name NaN
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('NaN', function () {
+    this.assert(
+        isNaN(flag(this, 'object'))
+        , 'expected #{this} to be NaN'
+        , 'expected #{this} not to be NaN'
+    );
+  });
+
+  /**
+   * ### .exist
+   *
+   * Asserts that the target is neither `null` nor `undefined`.
+   *
+   *     var foo = 'hi'
+   *       , bar = null
+   *       , baz;
+   *
+   *     expect(foo).to.exist;
+   *     expect(bar).to.not.exist;
+   *     expect(baz).to.not.exist;
+   *
+   * @name exist
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('exist', function () {
+    this.assert(
+        null != flag(this, 'object')
+      , 'expected #{this} to exist'
+      , 'expected #{this} to not exist'
+    );
+  });
+
+
+  /**
+   * ### .empty
+   *
+   * Asserts that the target's length is `0`. For arrays and strings, it checks
+   * the `length` property. For objects, it gets the count of
+   * enumerable keys.
+   *
+   *     expect([]).to.be.empty;
+   *     expect('').to.be.empty;
+   *     expect({}).to.be.empty;
+   *
+   * @name empty
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('empty', function () {
+    var obj = flag(this, 'object')
+      , expected = obj;
+
+    if (Array.isArray(obj) || 'string' === typeof object) {
+      expected = obj.length;
+    } else if (typeof obj === 'object') {
+      expected = Object.keys(obj).length;
+    }
+
+    this.assert(
+        !expected
+      , 'expected #{this} to be empty'
+      , 'expected #{this} not to be empty'
+    );
+  });
+
+  /**
+   * ### .arguments
+   *
+   * Asserts that the target is an arguments object.
+   *
+   *     function test () {
+   *       expect(arguments).to.be.arguments;
+   *     }
+   *
+   * @name arguments
+   * @alias Arguments
+   * @namespace BDD
+   * @api public
+   */
+
+  function checkArguments () {
+    var obj = flag(this, 'object')
+      , type = Object.prototype.toString.call(obj);
+    this.assert(
+        '[object Arguments]' === type
+      , 'expected #{this} to be arguments but got ' + type
+      , 'expected #{this} to not be arguments'
+    );
+  }
+
+  Assertion.addProperty('arguments', checkArguments);
+  Assertion.addProperty('Arguments', checkArguments);
+
+  /**
+   * ### .equal(value)
+   *
+   * Asserts that the target is strictly equal (`===`) to `value`.
+   * Alternately, if the `deep` flag is set, asserts that
+   * the target is deeply equal to `value`.
+   *
+   *     expect('hello').to.equal('hello');
+   *     expect(42).to.equal(42);
+   *     expect(1).to.not.equal(true);
+   *     expect({ foo: 'bar' }).to.not.equal({ foo: 'bar' });
+   *     expect({ foo: 'bar' }).to.deep.equal({ foo: 'bar' });
+   *
+   * @name equal
+   * @alias equals
+   * @alias eq
+   * @alias deep.equal
+   * @param {Mixed} value
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertEqual (val, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    if (flag(this, 'deep')) {
+      return this.eql(val);
+    } else {
+      this.assert(
+          val === obj
+        , 'expected #{this} to equal #{exp}'
+        , 'expected #{this} to not equal #{exp}'
+        , val
+        , this._obj
+        , true
+      );
+    }
+  }
+
+  Assertion.addMethod('equal', assertEqual);
+  Assertion.addMethod('equals', assertEqual);
+  Assertion.addMethod('eq', assertEqual);
+
+  /**
+   * ### .eql(value)
+   *
+   * Asserts that the target is deeply equal to `value`.
+   *
+   *     expect({ foo: 'bar' }).to.eql({ foo: 'bar' });
+   *     expect([ 1, 2, 3 ]).to.eql([ 1, 2, 3 ]);
+   *
+   * @name eql
+   * @alias eqls
+   * @param {Mixed} value
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertEql(obj, msg) {
+    if (msg) flag(this, 'message', msg);
+    this.assert(
+        _.eql(obj, flag(this, 'object'))
+      , 'expected #{this} to deeply equal #{exp}'
+      , 'expected #{this} to not deeply equal #{exp}'
+      , obj
+      , this._obj
+      , true
+    );
+  }
+
+  Assertion.addMethod('eql', assertEql);
+  Assertion.addMethod('eqls', assertEql);
+
+  /**
+   * ### .above(value)
+   *
+   * Asserts that the target is greater than `value`.
+   *
+   *     expect(10).to.be.above(5);
+   *
+   * Can also be used in conjunction with `length` to
+   * assert a minimum length. The benefit being a
+   * more informative error message than if the length
+   * was supplied directly.
+   *
+   *     expect('foo').to.have.length.above(2);
+   *     expect([ 1, 2, 3 ]).to.have.length.above(2);
+   *
+   * @name above
+   * @alias gt
+   * @alias greaterThan
+   * @param {Number} value
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertAbove (n, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    if (flag(this, 'doLength')) {
+      new Assertion(obj, msg).to.have.property('length');
+      var len = obj.length;
+      this.assert(
+          len > n
+        , 'expected #{this} to have a length above #{exp} but got #{act}'
+        , 'expected #{this} to not have a length above #{exp}'
+        , n
+        , len
+      );
+    } else {
+      this.assert(
+          obj > n
+        , 'expected #{this} to be above ' + n
+        , 'expected #{this} to be at most ' + n
+      );
+    }
+  }
+
+  Assertion.addMethod('above', assertAbove);
+  Assertion.addMethod('gt', assertAbove);
+  Assertion.addMethod('greaterThan', assertAbove);
+
+  /**
+   * ### .least(value)
+   *
+   * Asserts that the target is greater than or equal to `value`.
+   *
+   *     expect(10).to.be.at.least(10);
+   *
+   * Can also be used in conjunction with `length` to
+   * assert a minimum length. The benefit being a
+   * more informative error message than if the length
+   * was supplied directly.
+   *
+   *     expect('foo').to.have.length.of.at.least(2);
+   *     expect([ 1, 2, 3 ]).to.have.length.of.at.least(3);
+   *
+   * @name least
+   * @alias gte
+   * @param {Number} value
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertLeast (n, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    if (flag(this, 'doLength')) {
+      new Assertion(obj, msg).to.have.property('length');
+      var len = obj.length;
+      this.assert(
+          len >= n
+        , 'expected #{this} to have a length at least #{exp} but got #{act}'
+        , 'expected #{this} to have a length below #{exp}'
+        , n
+        , len
+      );
+    } else {
+      this.assert(
+          obj >= n
+        , 'expected #{this} to be at least ' + n
+        , 'expected #{this} to be below ' + n
+      );
+    }
+  }
+
+  Assertion.addMethod('least', assertLeast);
+  Assertion.addMethod('gte', assertLeast);
+
+  /**
+   * ### .below(value)
+   *
+   * Asserts that the target is less than `value`.
+   *
+   *     expect(5).to.be.below(10);
+   *
+   * Can also be used in conjunction with `length` to
+   * assert a maximum length. The benefit being a
+   * more informative error message than if the length
+   * was supplied directly.
+   *
+   *     expect('foo').to.have.length.below(4);
+   *     expect([ 1, 2, 3 ]).to.have.length.below(4);
+   *
+   * @name below
+   * @alias lt
+   * @alias lessThan
+   * @param {Number} value
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertBelow (n, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    if (flag(this, 'doLength')) {
+      new Assertion(obj, msg).to.have.property('length');
+      var len = obj.length;
+      this.assert(
+          len < n
+        , 'expected #{this} to have a length below #{exp} but got #{act}'
+        , 'expected #{this} to not have a length below #{exp}'
+        , n
+        , len
+      );
+    } else {
+      this.assert(
+          obj < n
+        , 'expected #{this} to be below ' + n
+        , 'expected #{this} to be at least ' + n
+      );
+    }
+  }
+
+  Assertion.addMethod('below', assertBelow);
+  Assertion.addMethod('lt', assertBelow);
+  Assertion.addMethod('lessThan', assertBelow);
+
+  /**
+   * ### .most(value)
+   *
+   * Asserts that the target is less than or equal to `value`.
+   *
+   *     expect(5).to.be.at.most(5);
+   *
+   * Can also be used in conjunction with `length` to
+   * assert a maximum length. The benefit being a
+   * more informative error message than if the length
+   * was supplied directly.
+   *
+   *     expect('foo').to.have.length.of.at.most(4);
+   *     expect([ 1, 2, 3 ]).to.have.length.of.at.most(3);
+   *
+   * @name most
+   * @alias lte
+   * @param {Number} value
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertMost (n, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    if (flag(this, 'doLength')) {
+      new Assertion(obj, msg).to.have.property('length');
+      var len = obj.length;
+      this.assert(
+          len <= n
+        , 'expected #{this} to have a length at most #{exp} but got #{act}'
+        , 'expected #{this} to have a length above #{exp}'
+        , n
+        , len
+      );
+    } else {
+      this.assert(
+          obj <= n
+        , 'expected #{this} to be at most ' + n
+        , 'expected #{this} to be above ' + n
+      );
+    }
+  }
+
+  Assertion.addMethod('most', assertMost);
+  Assertion.addMethod('lte', assertMost);
+
+  /**
+   * ### .within(start, finish)
+   *
+   * Asserts that the target is within a range.
+   *
+   *     expect(7).to.be.within(5,10);
+   *
+   * Can also be used in conjunction with `length` to
+   * assert a length range. The benefit being a
+   * more informative error message than if the length
+   * was supplied directly.
+   *
+   *     expect('foo').to.have.length.within(2,4);
+   *     expect([ 1, 2, 3 ]).to.have.length.within(2,4);
+   *
+   * @name within
+   * @param {Number} start lowerbound inclusive
+   * @param {Number} finish upperbound inclusive
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addMethod('within', function (start, finish, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object')
+      , range = start + '..' + finish;
+    if (flag(this, 'doLength')) {
+      new Assertion(obj, msg).to.have.property('length');
+      var len = obj.length;
+      this.assert(
+          len >= start && len <= finish
+        , 'expected #{this} to have a length within ' + range
+        , 'expected #{this} to not have a length within ' + range
+      );
+    } else {
+      this.assert(
+          obj >= start && obj <= finish
+        , 'expected #{this} to be within ' + range
+        , 'expected #{this} to not be within ' + range
+      );
+    }
+  });
+
+  /**
+   * ### .instanceof(constructor)
+   *
+   * Asserts that the target is an instance of `constructor`.
+   *
+   *     var Tea = function (name) { this.name = name; }
+   *       , Chai = new Tea('chai');
+   *
+   *     expect(Chai).to.be.an.instanceof(Tea);
+   *     expect([ 1, 2, 3 ]).to.be.instanceof(Array);
+   *
+   * @name instanceof
+   * @param {Constructor} constructor
+   * @param {String} message _optional_
+   * @alias instanceOf
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertInstanceOf (constructor, msg) {
+    if (msg) flag(this, 'message', msg);
+    var name = _.getName(constructor);
+    this.assert(
+        flag(this, 'object') instanceof constructor
+      , 'expected #{this} to be an instance of ' + name
+      , 'expected #{this} to not be an instance of ' + name
+    );
+  };
+
+  Assertion.addMethod('instanceof', assertInstanceOf);
+  Assertion.addMethod('instanceOf', assertInstanceOf);
+
+  /**
+   * ### .property(name, [value])
+   *
+   * Asserts that the target has a property `name`, optionally asserting that
+   * the value of that property is strictly equal to  `value`.
+   * If the `deep` flag is set, you can use dot- and bracket-notation for deep
+   * references into objects and arrays.
+   *
+   *     // simple referencing
+   *     var obj = { foo: 'bar' };
+   *     expect(obj).to.have.property('foo');
+   *     expect(obj).to.have.property('foo', 'bar');
+   *
+   *     // deep referencing
+   *     var deepObj = {
+   *         green: { tea: 'matcha' }
+   *       , teas: [ 'chai', 'matcha', { tea: 'konacha' } ]
+   *     };
+   *
+   *     expect(deepObj).to.have.deep.property('green.tea', 'matcha');
+   *     expect(deepObj).to.have.deep.property('teas[1]', 'matcha');
+   *     expect(deepObj).to.have.deep.property('teas[2].tea', 'konacha');
+   *
+   * You can also use an array as the starting point of a `deep.property`
+   * assertion, or traverse nested arrays.
+   *
+   *     var arr = [
+   *         [ 'chai', 'matcha', 'konacha' ]
+   *       , [ { tea: 'chai' }
+   *         , { tea: 'matcha' }
+   *         , { tea: 'konacha' } ]
+   *     ];
+   *
+   *     expect(arr).to.have.deep.property('[0][1]', 'matcha');
+   *     expect(arr).to.have.deep.property('[1][2].tea', 'konacha');
+   *
+   * Furthermore, `property` changes the subject of the assertion
+   * to be the value of that property from the original object. This
+   * permits for further chainable assertions on that property.
+   *
+   *     expect(obj).to.have.property('foo')
+   *       .that.is.a('string');
+   *     expect(deepObj).to.have.property('green')
+   *       .that.is.an('object')
+   *       .that.deep.equals({ tea: 'matcha' });
+   *     expect(deepObj).to.have.property('teas')
+   *       .that.is.an('array')
+   *       .with.deep.property('[2]')
+   *         .that.deep.equals({ tea: 'konacha' });
+   *
+   * Note that dots and bracket in `name` must be backslash-escaped when
+   * the `deep` flag is set, while they must NOT be escaped when the `deep`
+   * flag is not set.
+   *
+   *     // simple referencing
+   *     var css = { '.link[target]': 42 };
+   *     expect(css).to.have.property('.link[target]', 42);
+   *
+   *     // deep referencing
+   *     var deepCss = { '.link': { '[target]': 42 }};
+   *     expect(deepCss).to.have.deep.property('\\.link.\\[target\\]', 42);
+   *
+   * @name property
+   * @alias deep.property
+   * @param {String} name
+   * @param {Mixed} value (optional)
+   * @param {String} message _optional_
+   * @returns value of property for chaining
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addMethod('property', function (name, val, msg) {
+    if (msg) flag(this, 'message', msg);
+
+    var isDeep = !!flag(this, 'deep')
+      , descriptor = isDeep ? 'deep property ' : 'property '
+      , negate = flag(this, 'negate')
+      , obj = flag(this, 'object')
+      , pathInfo = isDeep ? _.getPathInfo(name, obj) : null
+      , hasProperty = isDeep
+        ? pathInfo.exists
+        : _.hasProperty(name, obj)
+      , value = isDeep
+        ? pathInfo.value
+        : obj[name];
+
+    if (negate && arguments.length > 1) {
+      if (undefined === value) {
+        msg = (msg != null) ? msg + ': ' : '';
+        throw new Error(msg + _.inspect(obj) + ' has no ' + descriptor + _.inspect(name));
+      }
+    } else {
+      this.assert(
+          hasProperty
+        , 'expected #{this} to have a ' + descriptor + _.inspect(name)
+        , 'expected #{this} to not have ' + descriptor + _.inspect(name));
+    }
+
+    if (arguments.length > 1) {
+      this.assert(
+          val === value
+        , 'expected #{this} to have a ' + descriptor + _.inspect(name) + ' of #{exp}, but got #{act}'
+        , 'expected #{this} to not have a ' + descriptor + _.inspect(name) + ' of #{act}'
+        , val
+        , value
+      );
+    }
+
+    flag(this, 'object', value);
+  });
+
+
+  /**
+   * ### .ownProperty(name)
+   *
+   * Asserts that the target has an own property `name`.
+   *
+   *     expect('test').to.have.ownProperty('length');
+   *
+   * @name ownProperty
+   * @alias haveOwnProperty
+   * @param {String} name
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertOwnProperty (name, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    this.assert(
+        obj.hasOwnProperty(name)
+      , 'expected #{this} to have own property ' + _.inspect(name)
+      , 'expected #{this} to not have own property ' + _.inspect(name)
+    );
+  }
+
+  Assertion.addMethod('ownProperty', assertOwnProperty);
+  Assertion.addMethod('haveOwnProperty', assertOwnProperty);
+
+  /**
+   * ### .ownPropertyDescriptor(name[, descriptor[, message]])
+   *
+   * Asserts that the target has an own property descriptor `name`, that optionally matches `descriptor`.
+   *
+   *     expect('test').to.have.ownPropertyDescriptor('length');
+   *     expect('test').to.have.ownPropertyDescriptor('length', { enumerable: false, configurable: false, writable: false, value: 4 });
+   *     expect('test').not.to.have.ownPropertyDescriptor('length', { enumerable: false, configurable: false, writable: false, value: 3 });
+   *     expect('test').ownPropertyDescriptor('length').to.have.property('enumerable', false);
+   *     expect('test').ownPropertyDescriptor('length').to.have.keys('value');
+   *
+   * @name ownPropertyDescriptor
+   * @alias haveOwnPropertyDescriptor
+   * @param {String} name
+   * @param {Object} descriptor _optional_
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertOwnPropertyDescriptor (name, descriptor, msg) {
+    if (typeof descriptor === 'string') {
+      msg = descriptor;
+      descriptor = null;
+    }
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    var actualDescriptor = Object.getOwnPropertyDescriptor(Object(obj), name);
+    if (actualDescriptor && descriptor) {
+      this.assert(
+          _.eql(descriptor, actualDescriptor)
+        , 'expected the own property descriptor for ' + _.inspect(name) + ' on #{this} to match ' + _.inspect(descriptor) + ', got ' + _.inspect(actualDescriptor)
+        , 'expected the own property descriptor for ' + _.inspect(name) + ' on #{this} to not match ' + _.inspect(descriptor)
+        , descriptor
+        , actualDescriptor
+        , true
+      );
+    } else {
+      this.assert(
+          actualDescriptor
+        , 'expected #{this} to have an own property descriptor for ' + _.inspect(name)
+        , 'expected #{this} to not have an own property descriptor for ' + _.inspect(name)
+      );
+    }
+    flag(this, 'object', actualDescriptor);
+  }
+
+  Assertion.addMethod('ownPropertyDescriptor', assertOwnPropertyDescriptor);
+  Assertion.addMethod('haveOwnPropertyDescriptor', assertOwnPropertyDescriptor);
+
+  /**
+   * ### .length
+   *
+   * Sets the `doLength` flag later used as a chain precursor to a value
+   * comparison for the `length` property.
+   *
+   *     expect('foo').to.have.length.above(2);
+   *     expect([ 1, 2, 3 ]).to.have.length.above(2);
+   *     expect('foo').to.have.length.below(4);
+   *     expect([ 1, 2, 3 ]).to.have.length.below(4);
+   *     expect('foo').to.have.length.within(2,4);
+   *     expect([ 1, 2, 3 ]).to.have.length.within(2,4);
+   *
+   * *Deprecation notice:* Using `length` as an assertion will be deprecated
+   * in version 2.4.0 and removed in 3.0.0. Code using the old style of
+   * asserting for `length` property value using `length(value)` should be
+   * switched to use `lengthOf(value)` instead.
+   *
+   * @name length
+   * @namespace BDD
+   * @api public
+   */
+
+  /**
+   * ### .lengthOf(value[, message])
+   *
+   * Asserts that the target's `length` property has
+   * the expected value.
+   *
+   *     expect([ 1, 2, 3]).to.have.lengthOf(3);
+   *     expect('foobar').to.have.lengthOf(6);
+   *
+   * @name lengthOf
+   * @param {Number} length
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertLengthChain () {
+    flag(this, 'doLength', true);
+  }
+
+  function assertLength (n, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    new Assertion(obj, msg).to.have.property('length');
+    var len = obj.length;
+
+    this.assert(
+        len == n
+      , 'expected #{this} to have a length of #{exp} but got #{act}'
+      , 'expected #{this} to not have a length of #{act}'
+      , n
+      , len
+    );
+  }
+
+  Assertion.addChainableMethod('length', assertLength, assertLengthChain);
+  Assertion.addMethod('lengthOf', assertLength);
+
+  /**
+   * ### .match(regexp)
+   *
+   * Asserts that the target matches a regular expression.
+   *
+   *     expect('foobar').to.match(/^foo/);
+   *
+   * @name match
+   * @alias matches
+   * @param {RegExp} RegularExpression
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+  function assertMatch(re, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    this.assert(
+        re.exec(obj)
+      , 'expected #{this} to match ' + re
+      , 'expected #{this} not to match ' + re
+    );
+  }
+
+  Assertion.addMethod('match', assertMatch);
+  Assertion.addMethod('matches', assertMatch);
+
+  /**
+   * ### .string(string)
+   *
+   * Asserts that the string target contains another string.
+   *
+   *     expect('foobar').to.have.string('bar');
+   *
+   * @name string
+   * @param {String} string
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addMethod('string', function (str, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    new Assertion(obj, msg).is.a('string');
+
+    this.assert(
+        ~obj.indexOf(str)
+      , 'expected #{this} to contain ' + _.inspect(str)
+      , 'expected #{this} to not contain ' + _.inspect(str)
+    );
+  });
+
+
+  /**
+   * ### .keys(key1, [key2], [...])
+   *
+   * Asserts that the target contains any or all of the passed-in keys.
+   * Use in combination with `any`, `all`, `contains`, or `have` will affect
+   * what will pass.
+   *
+   * When used in conjunction with `any`, at least one key that is passed
+   * in must exist in the target object. This is regardless whether or not
+   * the `have` or `contain` qualifiers are used. Note, either `any` or `all`
+   * should be used in the assertion. If neither are used, the assertion is
+   * defaulted to `all`.
+   *
+   * When both `all` and `contain` are used, the target object must have at
+   * least all of the passed-in keys but may have more keys not listed.
+   *
+   * When both `all` and `have` are used, the target object must both contain
+   * all of the passed-in keys AND the number of keys in the target object must
+   * match the number of keys passed in (in other words, a target object must
+   * have all and only all of the passed-in keys).
+   *
+   *     expect({ foo: 1, bar: 2 }).to.have.any.keys('foo', 'baz');
+   *     expect({ foo: 1, bar: 2 }).to.have.any.keys('foo');
+   *     expect({ foo: 1, bar: 2 }).to.contain.any.keys('bar', 'baz');
+   *     expect({ foo: 1, bar: 2 }).to.contain.any.keys(['foo']);
+   *     expect({ foo: 1, bar: 2 }).to.contain.any.keys({'foo': 6});
+   *     expect({ foo: 1, bar: 2 }).to.have.all.keys(['bar', 'foo']);
+   *     expect({ foo: 1, bar: 2 }).to.have.all.keys({'bar': 6, 'foo': 7});
+   *     expect({ foo: 1, bar: 2, baz: 3 }).to.contain.all.keys(['bar', 'foo']);
+   *     expect({ foo: 1, bar: 2, baz: 3 }).to.contain.all.keys({'bar': 6});
+   *
+   *
+   * @name keys
+   * @alias key
+   * @param {...String|Array|Object} keys
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertKeys (keys) {
+    var obj = flag(this, 'object')
+      , str
+      , ok = true
+      , mixedArgsMsg = 'keys must be given single argument of Array|Object|String, or multiple String arguments';
+
+    switch (_.type(keys)) {
+      case "array":
+        if (arguments.length > 1) throw (new Error(mixedArgsMsg));
+        break;
+      case "object":
+        if (arguments.length > 1) throw (new Error(mixedArgsMsg));
+        keys = Object.keys(keys);
+        break;
+      default:
+        keys = Array.prototype.slice.call(arguments);
+    }
+
+    if (!keys.length) throw new Error('keys required');
+
+    var actual = Object.keys(obj)
+      , expected = keys
+      , len = keys.length
+      , any = flag(this, 'any')
+      , all = flag(this, 'all');
+
+    if (!any && !all) {
+      all = true;
+    }
+
+    // Has any
+    if (any) {
+      var intersection = expected.filter(function(key) {
+        return ~actual.indexOf(key);
+      });
+      ok = intersection.length > 0;
+    }
+
+    // Has all
+    if (all) {
+      ok = keys.every(function(key){
+        return ~actual.indexOf(key);
+      });
+      if (!flag(this, 'negate') && !flag(this, 'contains')) {
+        ok = ok && keys.length == actual.length;
+      }
+    }
+
+    // Key string
+    if (len > 1) {
+      keys = keys.map(function(key){
+        return _.inspect(key);
+      });
+      var last = keys.pop();
+      if (all) {
+        str = keys.join(', ') + ', and ' + last;
+      }
+      if (any) {
+        str = keys.join(', ') + ', or ' + last;
+      }
+    } else {
+      str = _.inspect(keys[0]);
+    }
+
+    // Form
+    str = (len > 1 ? 'keys ' : 'key ') + str;
+
+    // Have / include
+    str = (flag(this, 'contains') ? 'contain ' : 'have ') + str;
+
+    // Assertion
+    this.assert(
+        ok
+      , 'expected #{this} to ' + str
+      , 'expected #{this} to not ' + str
+      , expected.slice(0).sort()
+      , actual.sort()
+      , true
+    );
+  }
+
+  Assertion.addMethod('keys', assertKeys);
+  Assertion.addMethod('key', assertKeys);
+
+  /**
+   * ### .throw(constructor)
+   *
+   * Asserts that the function target will throw a specific error, or specific type of error
+   * (as determined using `instanceof`), optionally with a RegExp or string inclusion test
+   * for the error's message.
+   *
+   *     var err = new ReferenceError('This is a bad function.');
+   *     var fn = function () { throw err; }
+   *     expect(fn).to.throw(ReferenceError);
+   *     expect(fn).to.throw(Error);
+   *     expect(fn).to.throw(/bad function/);
+   *     expect(fn).to.not.throw('good function');
+   *     expect(fn).to.throw(ReferenceError, /bad function/);
+   *     expect(fn).to.throw(err);
+   *
+   * Please note that when a throw expectation is negated, it will check each
+   * parameter independently, starting with error constructor type. The appropriate way
+   * to check for the existence of a type of error but for a message that does not match
+   * is to use `and`.
+   *
+   *     expect(fn).to.throw(ReferenceError)
+   *        .and.not.throw(/good function/);
+   *
+   * @name throw
+   * @alias throws
+   * @alias Throw
+   * @param {ErrorConstructor} constructor
+   * @param {String|RegExp} expected error message
+   * @param {String} message _optional_
+   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+   * @returns error for chaining (null if no error)
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertThrows (constructor, errMsg, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    new Assertion(obj, msg).is.a('function');
+
+    var thrown = false
+      , desiredError = null
+      , name = null
+      , thrownError = null;
+
+    if (arguments.length === 0) {
+      errMsg = null;
+      constructor = null;
+    } else if (constructor && (constructor instanceof RegExp || 'string' === typeof constructor)) {
+      errMsg = constructor;
+      constructor = null;
+    } else if (constructor && constructor instanceof Error) {
+      desiredError = constructor;
+      constructor = null;
+      errMsg = null;
+    } else if (typeof constructor === 'function') {
+      name = constructor.prototype.name;
+      if (!name || (name === 'Error' && constructor !== Error)) {
+        name = constructor.name || (new constructor()).name;
+      }
+    } else {
+      constructor = null;
+    }
+
+    try {
+      obj();
+    } catch (err) {
+      // first, check desired error
+      if (desiredError) {
+        this.assert(
+            err === desiredError
+          , 'expected #{this} to throw #{exp} but #{act} was thrown'
+          , 'expected #{this} to not throw #{exp}'
+          , (desiredError instanceof Error ? desiredError.toString() : desiredError)
+          , (err instanceof Error ? err.toString() : err)
+        );
+
+        flag(this, 'object', err);
+        return this;
+      }
+
+      // next, check constructor
+      if (constructor) {
+        this.assert(
+            err instanceof constructor
+          , 'expected #{this} to throw #{exp} but #{act} was thrown'
+          , 'expected #{this} to not throw #{exp} but #{act} was thrown'
+          , name
+          , (err instanceof Error ? err.toString() : err)
+        );
+
+        if (!errMsg) {
+          flag(this, 'object', err);
+          return this;
+        }
+      }
+
+      // next, check message
+      var message = 'error' === _.type(err) && "message" in err
+        ? err.message
+        : '' + err;
+
+      if ((message != null) && errMsg && errMsg instanceof RegExp) {
+        this.assert(
+            errMsg.exec(message)
+          , 'expected #{this} to throw error matching #{exp} but got #{act}'
+          , 'expected #{this} to throw error not matching #{exp}'
+          , errMsg
+          , message
+        );
+
+        flag(this, 'object', err);
+        return this;
+      } else if ((message != null) && errMsg && 'string' === typeof errMsg) {
+        this.assert(
+            ~message.indexOf(errMsg)
+          , 'expected #{this} to throw error including #{exp} but got #{act}'
+          , 'expected #{this} to throw error not including #{act}'
+          , errMsg
+          , message
+        );
+
+        flag(this, 'object', err);
+        return this;
+      } else {
+        thrown = true;
+        thrownError = err;
+      }
+    }
+
+    var actuallyGot = ''
+      , expectedThrown = name !== null
+        ? name
+        : desiredError
+          ? '#{exp}' //_.inspect(desiredError)
+          : 'an error';
+
+    if (thrown) {
+      actuallyGot = ' but #{act} was thrown'
+    }
+
+    this.assert(
+        thrown === true
+      , 'expected #{this} to throw ' + expectedThrown + actuallyGot
+      , 'expected #{this} to not throw ' + expectedThrown + actuallyGot
+      , (desiredError instanceof Error ? desiredError.toString() : desiredError)
+      , (thrownError instanceof Error ? thrownError.toString() : thrownError)
+    );
+
+    flag(this, 'object', thrownError);
+  };
+
+  Assertion.addMethod('throw', assertThrows);
+  Assertion.addMethod('throws', assertThrows);
+  Assertion.addMethod('Throw', assertThrows);
+
+  /**
+   * ### .respondTo(method)
+   *
+   * Asserts that the object or class target will respond to a method.
+   *
+   *     Klass.prototype.bar = function(){};
+   *     expect(Klass).to.respondTo('bar');
+   *     expect(obj).to.respondTo('bar');
+   *
+   * To check if a constructor will respond to a static function,
+   * set the `itself` flag.
+   *
+   *     Klass.baz = function(){};
+   *     expect(Klass).itself.to.respondTo('baz');
+   *
+   * @name respondTo
+   * @alias respondsTo
+   * @param {String} method
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function respondTo (method, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object')
+      , itself = flag(this, 'itself')
+      , context = ('function' === _.type(obj) && !itself)
+        ? obj.prototype[method]
+        : obj[method];
+
+    this.assert(
+        'function' === typeof context
+      , 'expected #{this} to respond to ' + _.inspect(method)
+      , 'expected #{this} to not respond to ' + _.inspect(method)
+    );
+  }
+
+  Assertion.addMethod('respondTo', respondTo);
+  Assertion.addMethod('respondsTo', respondTo);
+
+  /**
+   * ### .itself
+   *
+   * Sets the `itself` flag, later used by the `respondTo` assertion.
+   *
+   *     function Foo() {}
+   *     Foo.bar = function() {}
+   *     Foo.prototype.baz = function() {}
+   *
+   *     expect(Foo).itself.to.respondTo('bar');
+   *     expect(Foo).itself.not.to.respondTo('baz');
+   *
+   * @name itself
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('itself', function () {
+    flag(this, 'itself', true);
+  });
+
+  /**
+   * ### .satisfy(method)
+   *
+   * Asserts that the target passes a given truth test.
+   *
+   *     expect(1).to.satisfy(function(num) { return num > 0; });
+   *
+   * @name satisfy
+   * @alias satisfies
+   * @param {Function} matcher
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function satisfy (matcher, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+    var result = matcher(obj);
+    this.assert(
+        result
+      , 'expected #{this} to satisfy ' + _.objDisplay(matcher)
+      , 'expected #{this} to not satisfy' + _.objDisplay(matcher)
+      , this.negate ? false : true
+      , result
+    );
+  }
+
+  Assertion.addMethod('satisfy', satisfy);
+  Assertion.addMethod('satisfies', satisfy);
+
+  /**
+   * ### .closeTo(expected, delta)
+   *
+   * Asserts that the target is equal `expected`, to within a +/- `delta` range.
+   *
+   *     expect(1.5).to.be.closeTo(1, 0.5);
+   *
+   * @name closeTo
+   * @alias approximately
+   * @param {Number} expected
+   * @param {Number} delta
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function closeTo(expected, delta, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+
+    new Assertion(obj, msg).is.a('number');
+    if (_.type(expected) !== 'number' || _.type(delta) !== 'number') {
+      throw new Error('the arguments to closeTo or approximately must be numbers');
+    }
+
+    this.assert(
+        Math.abs(obj - expected) <= delta
+      , 'expected #{this} to be close to ' + expected + ' +/- ' + delta
+      , 'expected #{this} not to be close to ' + expected + ' +/- ' + delta
+    );
+  }
+
+  Assertion.addMethod('closeTo', closeTo);
+  Assertion.addMethod('approximately', closeTo);
+
+  function isSubsetOf(subset, superset, cmp) {
+    return subset.every(function(elem) {
+      if (!cmp) return superset.indexOf(elem) !== -1;
+
+      return superset.some(function(elem2) {
+        return cmp(elem, elem2);
+      });
+    })
+  }
+
+  /**
+   * ### .members(set)
+   *
+   * Asserts that the target is a superset of `set`,
+   * or that the target and `set` have the same strictly-equal (===) members.
+   * Alternately, if the `deep` flag is set, set members are compared for deep
+   * equality.
+   *
+   *     expect([1, 2, 3]).to.include.members([3, 2]);
+   *     expect([1, 2, 3]).to.not.include.members([3, 2, 8]);
+   *
+   *     expect([4, 2]).to.have.members([2, 4]);
+   *     expect([5, 2]).to.not.have.members([5, 2, 1]);
+   *
+   *     expect([{ id: 1 }]).to.deep.include.members([{ id: 1 }]);
+   *
+   * @name members
+   * @param {Array} set
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addMethod('members', function (subset, msg) {
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
+
+    new Assertion(obj).to.be.an('array');
+    new Assertion(subset).to.be.an('array');
+
+    var cmp = flag(this, 'deep') ? _.eql : undefined;
+
+    if (flag(this, 'contains')) {
+      return this.assert(
+          isSubsetOf(subset, obj, cmp)
+        , 'expected #{this} to be a superset of #{act}'
+        , 'expected #{this} to not be a superset of #{act}'
+        , obj
+        , subset
+      );
+    }
+
+    this.assert(
+        isSubsetOf(obj, subset, cmp) && isSubsetOf(subset, obj, cmp)
+        , 'expected #{this} to have the same members as #{act}'
+        , 'expected #{this} to not have the same members as #{act}'
+        , obj
+        , subset
+    );
+  });
+
+  /**
+   * ### .oneOf(list)
+   *
+   * Assert that a value appears somewhere in the top level of array `list`.
+   *
+   *     expect('a').to.be.oneOf(['a', 'b', 'c']);
+   *     expect(9).to.not.be.oneOf(['z']);
+   *     expect([3]).to.not.be.oneOf([1, 2, [3]]);
+   *
+   *     var three = [3];
+   *     // for object-types, contents are not compared
+   *     expect(three).to.not.be.oneOf([1, 2, [3]]);
+   *     // comparing references works
+   *     expect(three).to.be.oneOf([1, 2, three]);
+   *
+   * @name oneOf
+   * @param {Array<*>} list
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function oneOf (list, msg) {
+    if (msg) flag(this, 'message', msg);
+    var expected = flag(this, 'object');
+    new Assertion(list).to.be.an('array');
+
+    this.assert(
+        list.indexOf(expected) > -1
+      , 'expected #{this} to be one of #{exp}'
+      , 'expected #{this} to not be one of #{exp}'
+      , list
+      , expected
+    );
+  }
+
+  Assertion.addMethod('oneOf', oneOf);
+
+
+  /**
+   * ### .change(function)
+   *
+   * Asserts that a function changes an object property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { obj.val += 3 };
+   *     var noChangeFn = function() { return 'foo' + 'bar'; }
+   *     expect(fn).to.change(obj, 'val');
+   *     expect(noChangeFn).to.not.change(obj, 'val')
+   *
+   * @name change
+   * @alias changes
+   * @alias Change
+   * @param {String} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertChanges (object, prop, msg) {
+    if (msg) flag(this, 'message', msg);
+    var fn = flag(this, 'object');
+    new Assertion(object, msg).to.have.property(prop);
+    new Assertion(fn).is.a('function');
+
+    var initial = object[prop];
+    fn();
+
+    this.assert(
+      initial !== object[prop]
+      , 'expected .' + prop + ' to change'
+      , 'expected .' + prop + ' to not change'
+    );
+  }
+
+  Assertion.addChainableMethod('change', assertChanges);
+  Assertion.addChainableMethod('changes', assertChanges);
+
+  /**
+   * ### .increase(function)
+   *
+   * Asserts that a function increases an object property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { obj.val = 15 };
+   *     expect(fn).to.increase(obj, 'val');
+   *
+   * @name increase
+   * @alias increases
+   * @alias Increase
+   * @param {String} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertIncreases (object, prop, msg) {
+    if (msg) flag(this, 'message', msg);
+    var fn = flag(this, 'object');
+    new Assertion(object, msg).to.have.property(prop);
+    new Assertion(fn).is.a('function');
+
+    var initial = object[prop];
+    fn();
+
+    this.assert(
+      object[prop] - initial > 0
+      , 'expected .' + prop + ' to increase'
+      , 'expected .' + prop + ' to not increase'
+    );
+  }
+
+  Assertion.addChainableMethod('increase', assertIncreases);
+  Assertion.addChainableMethod('increases', assertIncreases);
+
+  /**
+   * ### .decrease(function)
+   *
+   * Asserts that a function decreases an object property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { obj.val = 5 };
+   *     expect(fn).to.decrease(obj, 'val');
+   *
+   * @name decrease
+   * @alias decreases
+   * @alias Decrease
+   * @param {String} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace BDD
+   * @api public
+   */
+
+  function assertDecreases (object, prop, msg) {
+    if (msg) flag(this, 'message', msg);
+    var fn = flag(this, 'object');
+    new Assertion(object, msg).to.have.property(prop);
+    new Assertion(fn).is.a('function');
+
+    var initial = object[prop];
+    fn();
+
+    this.assert(
+      object[prop] - initial < 0
+      , 'expected .' + prop + ' to decrease'
+      , 'expected .' + prop + ' to not decrease'
+    );
+  }
+
+  Assertion.addChainableMethod('decrease', assertDecreases);
+  Assertion.addChainableMethod('decreases', assertDecreases);
+
+  /**
+   * ### .extensible
+   *
+   * Asserts that the target is extensible (can have new properties added to
+   * it).
+   *
+   *     var nonExtensibleObject = Object.preventExtensions({});
+   *     var sealedObject = Object.seal({});
+   *     var frozenObject = Object.freeze({});
+   *
+   *     expect({}).to.be.extensible;
+   *     expect(nonExtensibleObject).to.not.be.extensible;
+   *     expect(sealedObject).to.not.be.extensible;
+   *     expect(frozenObject).to.not.be.extensible;
+   *
+   * @name extensible
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('extensible', function() {
+    var obj = flag(this, 'object');
+
+    // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
+    // In ES6, a non-object argument will be treated as if it was a non-extensible ordinary object, simply return false.
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible
+    // The following provides ES6 behavior when a TypeError is thrown under ES5.
+
+    var isExtensible;
+
+    try {
+      isExtensible = Object.isExtensible(obj);
+    } catch (err) {
+      if (err instanceof TypeError) isExtensible = false;
+      else throw err;
+    }
+
+    this.assert(
+      isExtensible
+      , 'expected #{this} to be extensible'
+      , 'expected #{this} to not be extensible'
+    );
+  });
+
+  /**
+   * ### .sealed
+   *
+   * Asserts that the target is sealed (cannot have new properties added to it
+   * and its existing properties cannot be removed).
+   *
+   *     var sealedObject = Object.seal({});
+   *     var frozenObject = Object.freeze({});
+   *
+   *     expect(sealedObject).to.be.sealed;
+   *     expect(frozenObject).to.be.sealed;
+   *     expect({}).to.not.be.sealed;
+   *
+   * @name sealed
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('sealed', function() {
+    var obj = flag(this, 'object');
+
+    // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
+    // In ES6, a non-object argument will be treated as if it was a sealed ordinary object, simply return true.
+    // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed
+    // The following provides ES6 behavior when a TypeError is thrown under ES5.
+
+    var isSealed;
+
+    try {
+      isSealed = Object.isSealed(obj);
+    } catch (err) {
+      if (err instanceof TypeError) isSealed = true;
+      else throw err;
+    }
+
+    this.assert(
+      isSealed
+      , 'expected #{this} to be sealed'
+      , 'expected #{this} to not be sealed'
+    );
+  });
+
+  /**
+   * ### .frozen
+   *
+   * Asserts that the target is frozen (cannot have new properties added to it
+   * and its existing properties cannot be modified).
+   *
+   *     var frozenObject = Object.freeze({});
+   *
+   *     expect(frozenObject).to.be.frozen;
+   *     expect({}).to.not.be.frozen;
+   *
+   * @name frozen
+   * @namespace BDD
+   * @api public
+   */
+
+  Assertion.addProperty('frozen', function() {
+    var obj = flag(this, 'object');
+
+    // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
+    // In ES6, a non-object argument will be treated as if it was a frozen ordinary object, simply return true.
+    // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen
+    // The following provides ES6 behavior when a TypeError is thrown under ES5.
+
+    var isFrozen;
+
+    try {
+      isFrozen = Object.isFrozen(obj);
+    } catch (err) {
+      if (err instanceof TypeError) isFrozen = true;
+      else throw err;
+    }
+
+    this.assert(
+      isFrozen
+      , 'expected #{this} to be frozen'
+      , 'expected #{this} to not be frozen'
+    );
+  });
+};
+
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports) {
+
+/*!
+ * chai
+ * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+
+module.exports = function (chai, util) {
+
+  /*!
+   * Chai dependencies.
+   */
+
+  var Assertion = chai.Assertion
+    , flag = util.flag;
+
+  /*!
+   * Module export.
+   */
+
+  /**
+   * ### assert(expression, message)
+   *
+   * Write your own test expressions.
+   *
+   *     assert('foo' !== 'bar', 'foo is not bar');
+   *     assert(Array.isArray([]), 'empty arrays are arrays');
+   *
+   * @param {Mixed} expression to test for truthiness
+   * @param {String} message to display on error
+   * @name assert
+   * @namespace Assert
+   * @api public
+   */
+
+  var assert = chai.assert = function (express, errmsg) {
+    var test = new Assertion(null, null, chai.assert);
+    test.assert(
+        express
+      , errmsg
+      , '[ negation message unavailable ]'
+    );
+  };
+
+  /**
+   * ### .fail(actual, expected, [message], [operator])
+   *
+   * Throw a failure. Node.js `assert` module-compatible.
+   *
+   * @name fail
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @param {String} operator
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.fail = function (actual, expected, message, operator) {
+    message = message || 'assert.fail()';
+    throw new chai.AssertionError(message, {
+        actual: actual
+      , expected: expected
+      , operator: operator
+    }, assert.fail);
+  };
+
+  /**
+   * ### .isOk(object, [message])
+   *
+   * Asserts that `object` is truthy.
+   *
+   *     assert.isOk('everything', 'everything is ok');
+   *     assert.isOk(false, 'this will fail');
+   *
+   * @name isOk
+   * @alias ok
+   * @param {Mixed} object to test
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isOk = function (val, msg) {
+    new Assertion(val, msg).is.ok;
+  };
+
+  /**
+   * ### .isNotOk(object, [message])
+   *
+   * Asserts that `object` is falsy.
+   *
+   *     assert.isNotOk('everything', 'this will fail');
+   *     assert.isNotOk(false, 'this will pass');
+   *
+   * @name isNotOk
+   * @alias notOk
+   * @param {Mixed} object to test
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotOk = function (val, msg) {
+    new Assertion(val, msg).is.not.ok;
+  };
+
+  /**
+   * ### .equal(actual, expected, [message])
+   *
+   * Asserts non-strict equality (`==`) of `actual` and `expected`.
+   *
+   *     assert.equal(3, '3', '== coerces values to strings');
+   *
+   * @name equal
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.equal = function (act, exp, msg) {
+    var test = new Assertion(act, msg, assert.equal);
+
+    test.assert(
+        exp == flag(test, 'object')
+      , 'expected #{this} to equal #{exp}'
+      , 'expected #{this} to not equal #{act}'
+      , exp
+      , act
+    );
+  };
+
+  /**
+   * ### .notEqual(actual, expected, [message])
+   *
+   * Asserts non-strict inequality (`!=`) of `actual` and `expected`.
+   *
+   *     assert.notEqual(3, 4, 'these numbers are not equal');
+   *
+   * @name notEqual
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notEqual = function (act, exp, msg) {
+    var test = new Assertion(act, msg, assert.notEqual);
+
+    test.assert(
+        exp != flag(test, 'object')
+      , 'expected #{this} to not equal #{exp}'
+      , 'expected #{this} to equal #{act}'
+      , exp
+      , act
+    );
+  };
+
+  /**
+   * ### .strictEqual(actual, expected, [message])
+   *
+   * Asserts strict equality (`===`) of `actual` and `expected`.
+   *
+   *     assert.strictEqual(true, true, 'these booleans are strictly equal');
+   *
+   * @name strictEqual
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.strictEqual = function (act, exp, msg) {
+    new Assertion(act, msg).to.equal(exp);
+  };
+
+  /**
+   * ### .notStrictEqual(actual, expected, [message])
+   *
+   * Asserts strict inequality (`!==`) of `actual` and `expected`.
+   *
+   *     assert.notStrictEqual(3, '3', 'no coercion for strict equality');
+   *
+   * @name notStrictEqual
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notStrictEqual = function (act, exp, msg) {
+    new Assertion(act, msg).to.not.equal(exp);
+  };
+
+  /**
+   * ### .deepEqual(actual, expected, [message])
+   *
+   * Asserts that `actual` is deeply equal to `expected`.
+   *
+   *     assert.deepEqual({ tea: 'green' }, { tea: 'green' });
+   *
+   * @name deepEqual
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.deepEqual = function (act, exp, msg) {
+    new Assertion(act, msg).to.eql(exp);
+  };
+
+  /**
+   * ### .notDeepEqual(actual, expected, [message])
+   *
+   * Assert that `actual` is not deeply equal to `expected`.
+   *
+   *     assert.notDeepEqual({ tea: 'green' }, { tea: 'jasmine' });
+   *
+   * @name notDeepEqual
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notDeepEqual = function (act, exp, msg) {
+    new Assertion(act, msg).to.not.eql(exp);
+  };
+
+   /**
+   * ### .isAbove(valueToCheck, valueToBeAbove, [message])
+   *
+   * Asserts `valueToCheck` is strictly greater than (>) `valueToBeAbove`
+   *
+   *     assert.isAbove(5, 2, '5 is strictly greater than 2');
+   *
+   * @name isAbove
+   * @param {Mixed} valueToCheck
+   * @param {Mixed} valueToBeAbove
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isAbove = function (val, abv, msg) {
+    new Assertion(val, msg).to.be.above(abv);
+  };
+
+   /**
+   * ### .isAtLeast(valueToCheck, valueToBeAtLeast, [message])
+   *
+   * Asserts `valueToCheck` is greater than or equal to (>=) `valueToBeAtLeast`
+   *
+   *     assert.isAtLeast(5, 2, '5 is greater or equal to 2');
+   *     assert.isAtLeast(3, 3, '3 is greater or equal to 3');
+   *
+   * @name isAtLeast
+   * @param {Mixed} valueToCheck
+   * @param {Mixed} valueToBeAtLeast
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isAtLeast = function (val, atlst, msg) {
+    new Assertion(val, msg).to.be.least(atlst);
+  };
+
+   /**
+   * ### .isBelow(valueToCheck, valueToBeBelow, [message])
+   *
+   * Asserts `valueToCheck` is strictly less than (<) `valueToBeBelow`
+   *
+   *     assert.isBelow(3, 6, '3 is strictly less than 6');
+   *
+   * @name isBelow
+   * @param {Mixed} valueToCheck
+   * @param {Mixed} valueToBeBelow
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isBelow = function (val, blw, msg) {
+    new Assertion(val, msg).to.be.below(blw);
+  };
+
+   /**
+   * ### .isAtMost(valueToCheck, valueToBeAtMost, [message])
+   *
+   * Asserts `valueToCheck` is less than or equal to (<=) `valueToBeAtMost`
+   *
+   *     assert.isAtMost(3, 6, '3 is less than or equal to 6');
+   *     assert.isAtMost(4, 4, '4 is less than or equal to 4');
+   *
+   * @name isAtMost
+   * @param {Mixed} valueToCheck
+   * @param {Mixed} valueToBeAtMost
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isAtMost = function (val, atmst, msg) {
+    new Assertion(val, msg).to.be.most(atmst);
+  };
+
+  /**
+   * ### .isTrue(value, [message])
+   *
+   * Asserts that `value` is true.
+   *
+   *     var teaServed = true;
+   *     assert.isTrue(teaServed, 'the tea has been served');
+   *
+   * @name isTrue
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isTrue = function (val, msg) {
+    new Assertion(val, msg).is['true'];
+  };
+
+  /**
+   * ### .isNotTrue(value, [message])
+   *
+   * Asserts that `value` is not true.
+   *
+   *     var tea = 'tasty chai';
+   *     assert.isNotTrue(tea, 'great, time for tea!');
+   *
+   * @name isNotTrue
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotTrue = function (val, msg) {
+    new Assertion(val, msg).to.not.equal(true);
+  };
+
+  /**
+   * ### .isFalse(value, [message])
+   *
+   * Asserts that `value` is false.
+   *
+   *     var teaServed = false;
+   *     assert.isFalse(teaServed, 'no tea yet? hmm...');
+   *
+   * @name isFalse
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isFalse = function (val, msg) {
+    new Assertion(val, msg).is['false'];
+  };
+
+  /**
+   * ### .isNotFalse(value, [message])
+   *
+   * Asserts that `value` is not false.
+   *
+   *     var tea = 'tasty chai';
+   *     assert.isNotFalse(tea, 'great, time for tea!');
+   *
+   * @name isNotFalse
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotFalse = function (val, msg) {
+    new Assertion(val, msg).to.not.equal(false);
+  };
+
+  /**
+   * ### .isNull(value, [message])
+   *
+   * Asserts that `value` is null.
+   *
+   *     assert.isNull(err, 'there was no error');
+   *
+   * @name isNull
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNull = function (val, msg) {
+    new Assertion(val, msg).to.equal(null);
+  };
+
+  /**
+   * ### .isNotNull(value, [message])
+   *
+   * Asserts that `value` is not null.
+   *
+   *     var tea = 'tasty chai';
+   *     assert.isNotNull(tea, 'great, time for tea!');
+   *
+   * @name isNotNull
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotNull = function (val, msg) {
+    new Assertion(val, msg).to.not.equal(null);
+  };
+
+  /**
+   * ### .isNaN
+   * Asserts that value is NaN
+   *
+   *    assert.isNaN('foo', 'foo is NaN');
+   *
+   * @name isNaN
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNaN = function (val, msg) {
+    new Assertion(val, msg).to.be.NaN;
+  };
+
+  /**
+   * ### .isNotNaN
+   * Asserts that value is not NaN
+   *
+   *    assert.isNotNaN(4, '4 is not NaN');
+   *
+   * @name isNotNaN
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+  assert.isNotNaN = function (val, msg) {
+    new Assertion(val, msg).not.to.be.NaN;
+  };
+
+  /**
+   * ### .isUndefined(value, [message])
+   *
+   * Asserts that `value` is `undefined`.
+   *
+   *     var tea;
+   *     assert.isUndefined(tea, 'no tea defined');
+   *
+   * @name isUndefined
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isUndefined = function (val, msg) {
+    new Assertion(val, msg).to.equal(undefined);
+  };
+
+  /**
+   * ### .isDefined(value, [message])
+   *
+   * Asserts that `value` is not `undefined`.
+   *
+   *     var tea = 'cup of chai';
+   *     assert.isDefined(tea, 'tea has been defined');
+   *
+   * @name isDefined
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isDefined = function (val, msg) {
+    new Assertion(val, msg).to.not.equal(undefined);
+  };
+
+  /**
+   * ### .isFunction(value, [message])
+   *
+   * Asserts that `value` is a function.
+   *
+   *     function serveTea() { return 'cup of tea'; };
+   *     assert.isFunction(serveTea, 'great, we can have tea now');
+   *
+   * @name isFunction
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isFunction = function (val, msg) {
+    new Assertion(val, msg).to.be.a('function');
+  };
+
+  /**
+   * ### .isNotFunction(value, [message])
+   *
+   * Asserts that `value` is _not_ a function.
+   *
+   *     var serveTea = [ 'heat', 'pour', 'sip' ];
+   *     assert.isNotFunction(serveTea, 'great, we have listed the steps');
+   *
+   * @name isNotFunction
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotFunction = function (val, msg) {
+    new Assertion(val, msg).to.not.be.a('function');
+  };
+
+  /**
+   * ### .isObject(value, [message])
+   *
+   * Asserts that `value` is an object of type 'Object' (as revealed by `Object.prototype.toString`).
+   * _The assertion does not match subclassed objects._
+   *
+   *     var selection = { name: 'Chai', serve: 'with spices' };
+   *     assert.isObject(selection, 'tea selection is an object');
+   *
+   * @name isObject
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isObject = function (val, msg) {
+    new Assertion(val, msg).to.be.a('object');
+  };
+
+  /**
+   * ### .isNotObject(value, [message])
+   *
+   * Asserts that `value` is _not_ an object of type 'Object' (as revealed by `Object.prototype.toString`).
+   *
+   *     var selection = 'chai'
+   *     assert.isNotObject(selection, 'tea selection is not an object');
+   *     assert.isNotObject(null, 'null is not an object');
+   *
+   * @name isNotObject
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotObject = function (val, msg) {
+    new Assertion(val, msg).to.not.be.a('object');
+  };
+
+  /**
+   * ### .isArray(value, [message])
+   *
+   * Asserts that `value` is an array.
+   *
+   *     var menu = [ 'green', 'chai', 'oolong' ];
+   *     assert.isArray(menu, 'what kind of tea do we want?');
+   *
+   * @name isArray
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isArray = function (val, msg) {
+    new Assertion(val, msg).to.be.an('array');
+  };
+
+  /**
+   * ### .isNotArray(value, [message])
+   *
+   * Asserts that `value` is _not_ an array.
+   *
+   *     var menu = 'green|chai|oolong';
+   *     assert.isNotArray(menu, 'what kind of tea do we want?');
+   *
+   * @name isNotArray
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotArray = function (val, msg) {
+    new Assertion(val, msg).to.not.be.an('array');
+  };
+
+  /**
+   * ### .isString(value, [message])
+   *
+   * Asserts that `value` is a string.
+   *
+   *     var teaOrder = 'chai';
+   *     assert.isString(teaOrder, 'order placed');
+   *
+   * @name isString
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isString = function (val, msg) {
+    new Assertion(val, msg).to.be.a('string');
+  };
+
+  /**
+   * ### .isNotString(value, [message])
+   *
+   * Asserts that `value` is _not_ a string.
+   *
+   *     var teaOrder = 4;
+   *     assert.isNotString(teaOrder, 'order placed');
+   *
+   * @name isNotString
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotString = function (val, msg) {
+    new Assertion(val, msg).to.not.be.a('string');
+  };
+
+  /**
+   * ### .isNumber(value, [message])
+   *
+   * Asserts that `value` is a number.
+   *
+   *     var cups = 2;
+   *     assert.isNumber(cups, 'how many cups');
+   *
+   * @name isNumber
+   * @param {Number} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNumber = function (val, msg) {
+    new Assertion(val, msg).to.be.a('number');
+  };
+
+  /**
+   * ### .isNotNumber(value, [message])
+   *
+   * Asserts that `value` is _not_ a number.
+   *
+   *     var cups = '2 cups please';
+   *     assert.isNotNumber(cups, 'how many cups');
+   *
+   * @name isNotNumber
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotNumber = function (val, msg) {
+    new Assertion(val, msg).to.not.be.a('number');
+  };
+
+  /**
+   * ### .isBoolean(value, [message])
+   *
+   * Asserts that `value` is a boolean.
+   *
+   *     var teaReady = true
+   *       , teaServed = false;
+   *
+   *     assert.isBoolean(teaReady, 'is the tea ready');
+   *     assert.isBoolean(teaServed, 'has tea been served');
+   *
+   * @name isBoolean
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isBoolean = function (val, msg) {
+    new Assertion(val, msg).to.be.a('boolean');
+  };
+
+  /**
+   * ### .isNotBoolean(value, [message])
+   *
+   * Asserts that `value` is _not_ a boolean.
+   *
+   *     var teaReady = 'yep'
+   *       , teaServed = 'nope';
+   *
+   *     assert.isNotBoolean(teaReady, 'is the tea ready');
+   *     assert.isNotBoolean(teaServed, 'has tea been served');
+   *
+   * @name isNotBoolean
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotBoolean = function (val, msg) {
+    new Assertion(val, msg).to.not.be.a('boolean');
+  };
+
+  /**
+   * ### .typeOf(value, name, [message])
+   *
+   * Asserts that `value`'s type is `name`, as determined by
+   * `Object.prototype.toString`.
+   *
+   *     assert.typeOf({ tea: 'chai' }, 'object', 'we have an object');
+   *     assert.typeOf(['chai', 'jasmine'], 'array', 'we have an array');
+   *     assert.typeOf('tea', 'string', 'we have a string');
+   *     assert.typeOf(/tea/, 'regexp', 'we have a regular expression');
+   *     assert.typeOf(null, 'null', 'we have a null');
+   *     assert.typeOf(undefined, 'undefined', 'we have an undefined');
+   *
+   * @name typeOf
+   * @param {Mixed} value
+   * @param {String} name
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.typeOf = function (val, type, msg) {
+    new Assertion(val, msg).to.be.a(type);
+  };
+
+  /**
+   * ### .notTypeOf(value, name, [message])
+   *
+   * Asserts that `value`'s type is _not_ `name`, as determined by
+   * `Object.prototype.toString`.
+   *
+   *     assert.notTypeOf('tea', 'number', 'strings are not numbers');
+   *
+   * @name notTypeOf
+   * @param {Mixed} value
+   * @param {String} typeof name
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notTypeOf = function (val, type, msg) {
+    new Assertion(val, msg).to.not.be.a(type);
+  };
+
+  /**
+   * ### .instanceOf(object, constructor, [message])
+   *
+   * Asserts that `value` is an instance of `constructor`.
+   *
+   *     var Tea = function (name) { this.name = name; }
+   *       , chai = new Tea('chai');
+   *
+   *     assert.instanceOf(chai, Tea, 'chai is an instance of tea');
+   *
+   * @name instanceOf
+   * @param {Object} object
+   * @param {Constructor} constructor
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.instanceOf = function (val, type, msg) {
+    new Assertion(val, msg).to.be.instanceOf(type);
+  };
+
+  /**
+   * ### .notInstanceOf(object, constructor, [message])
+   *
+   * Asserts `value` is not an instance of `constructor`.
+   *
+   *     var Tea = function (name) { this.name = name; }
+   *       , chai = new String('chai');
+   *
+   *     assert.notInstanceOf(chai, Tea, 'chai is not an instance of tea');
+   *
+   * @name notInstanceOf
+   * @param {Object} object
+   * @param {Constructor} constructor
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notInstanceOf = function (val, type, msg) {
+    new Assertion(val, msg).to.not.be.instanceOf(type);
+  };
+
+  /**
+   * ### .include(haystack, needle, [message])
+   *
+   * Asserts that `haystack` includes `needle`. Works
+   * for strings and arrays.
+   *
+   *     assert.include('foobar', 'bar', 'foobar contains string "bar"');
+   *     assert.include([ 1, 2, 3 ], 3, 'array contains value');
+   *
+   * @name include
+   * @param {Array|String} haystack
+   * @param {Mixed} needle
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.include = function (exp, inc, msg) {
+    new Assertion(exp, msg, assert.include).include(inc);
+  };
+
+  /**
+   * ### .notInclude(haystack, needle, [message])
+   *
+   * Asserts that `haystack` does not include `needle`. Works
+   * for strings and arrays.
+   *
+   *     assert.notInclude('foobar', 'baz', 'string not include substring');
+   *     assert.notInclude([ 1, 2, 3 ], 4, 'array not include contain value');
+   *
+   * @name notInclude
+   * @param {Array|String} haystack
+   * @param {Mixed} needle
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notInclude = function (exp, inc, msg) {
+    new Assertion(exp, msg, assert.notInclude).not.include(inc);
+  };
+
+  /**
+   * ### .match(value, regexp, [message])
+   *
+   * Asserts that `value` matches the regular expression `regexp`.
+   *
+   *     assert.match('foobar', /^foo/, 'regexp matches');
+   *
+   * @name match
+   * @param {Mixed} value
+   * @param {RegExp} regexp
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.match = function (exp, re, msg) {
+    new Assertion(exp, msg).to.match(re);
+  };
+
+  /**
+   * ### .notMatch(value, regexp, [message])
+   *
+   * Asserts that `value` does not match the regular expression `regexp`.
+   *
+   *     assert.notMatch('foobar', /^foo/, 'regexp does not match');
+   *
+   * @name notMatch
+   * @param {Mixed} value
+   * @param {RegExp} regexp
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notMatch = function (exp, re, msg) {
+    new Assertion(exp, msg).to.not.match(re);
+  };
+
+  /**
+   * ### .property(object, property, [message])
+   *
+   * Asserts that `object` has a property named by `property`.
+   *
+   *     assert.property({ tea: { green: 'matcha' }}, 'tea');
+   *
+   * @name property
+   * @param {Object} object
+   * @param {String} property
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.property = function (obj, prop, msg) {
+    new Assertion(obj, msg).to.have.property(prop);
+  };
+
+  /**
+   * ### .notProperty(object, property, [message])
+   *
+   * Asserts that `object` does _not_ have a property named by `property`.
+   *
+   *     assert.notProperty({ tea: { green: 'matcha' }}, 'coffee');
+   *
+   * @name notProperty
+   * @param {Object} object
+   * @param {String} property
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notProperty = function (obj, prop, msg) {
+    new Assertion(obj, msg).to.not.have.property(prop);
+  };
+
+  /**
+   * ### .deepProperty(object, property, [message])
+   *
+   * Asserts that `object` has a property named by `property`, which can be a
+   * string using dot- and bracket-notation for deep reference.
+   *
+   *     assert.deepProperty({ tea: { green: 'matcha' }}, 'tea.green');
+   *
+   * @name deepProperty
+   * @param {Object} object
+   * @param {String} property
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.deepProperty = function (obj, prop, msg) {
+    new Assertion(obj, msg).to.have.deep.property(prop);
+  };
+
+  /**
+   * ### .notDeepProperty(object, property, [message])
+   *
+   * Asserts that `object` does _not_ have a property named by `property`, which
+   * can be a string using dot- and bracket-notation for deep reference.
+   *
+   *     assert.notDeepProperty({ tea: { green: 'matcha' }}, 'tea.oolong');
+   *
+   * @name notDeepProperty
+   * @param {Object} object
+   * @param {String} property
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.notDeepProperty = function (obj, prop, msg) {
+    new Assertion(obj, msg).to.not.have.deep.property(prop);
+  };
+
+  /**
+   * ### .propertyVal(object, property, value, [message])
+   *
+   * Asserts that `object` has a property named by `property` with value given
+   * by `value`.
+   *
+   *     assert.propertyVal({ tea: 'is good' }, 'tea', 'is good');
+   *
+   * @name propertyVal
+   * @param {Object} object
+   * @param {String} property
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.propertyVal = function (obj, prop, val, msg) {
+    new Assertion(obj, msg).to.have.property(prop, val);
+  };
+
+  /**
+   * ### .propertyNotVal(object, property, value, [message])
+   *
+   * Asserts that `object` has a property named by `property`, but with a value
+   * different from that given by `value`.
+   *
+   *     assert.propertyNotVal({ tea: 'is good' }, 'tea', 'is bad');
+   *
+   * @name propertyNotVal
+   * @param {Object} object
+   * @param {String} property
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.propertyNotVal = function (obj, prop, val, msg) {
+    new Assertion(obj, msg).to.not.have.property(prop, val);
+  };
+
+  /**
+   * ### .deepPropertyVal(object, property, value, [message])
+   *
+   * Asserts that `object` has a property named by `property` with value given
+   * by `value`. `property` can use dot- and bracket-notation for deep
+   * reference.
+   *
+   *     assert.deepPropertyVal({ tea: { green: 'matcha' }}, 'tea.green', 'matcha');
+   *
+   * @name deepPropertyVal
+   * @param {Object} object
+   * @param {String} property
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.deepPropertyVal = function (obj, prop, val, msg) {
+    new Assertion(obj, msg).to.have.deep.property(prop, val);
+  };
+
+  /**
+   * ### .deepPropertyNotVal(object, property, value, [message])
+   *
+   * Asserts that `object` has a property named by `property`, but with a value
+   * different from that given by `value`. `property` can use dot- and
+   * bracket-notation for deep reference.
+   *
+   *     assert.deepPropertyNotVal({ tea: { green: 'matcha' }}, 'tea.green', 'konacha');
+   *
+   * @name deepPropertyNotVal
+   * @param {Object} object
+   * @param {String} property
+   * @param {Mixed} value
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.deepPropertyNotVal = function (obj, prop, val, msg) {
+    new Assertion(obj, msg).to.not.have.deep.property(prop, val);
+  };
+
+  /**
+   * ### .lengthOf(object, length, [message])
+   *
+   * Asserts that `object` has a `length` property with the expected value.
+   *
+   *     assert.lengthOf([1,2,3], 3, 'array has length of 3');
+   *     assert.lengthOf('foobar', 6, 'string has length of 6');
+   *
+   * @name lengthOf
+   * @param {Mixed} object
+   * @param {Number} length
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.lengthOf = function (exp, len, msg) {
+    new Assertion(exp, msg).to.have.length(len);
+  };
+
+  /**
+   * ### .throws(function, [constructor/string/regexp], [string/regexp], [message])
+   *
+   * Asserts that `function` will throw an error that is an instance of
+   * `constructor`, or alternately that it will throw an error with message
+   * matching `regexp`.
+   *
+   *     assert.throws(fn, 'function throws a reference error');
+   *     assert.throws(fn, /function throws a reference error/);
+   *     assert.throws(fn, ReferenceError);
+   *     assert.throws(fn, ReferenceError, 'function throws a reference error');
+   *     assert.throws(fn, ReferenceError, /function throws a reference error/);
+   *
+   * @name throws
+   * @alias throw
+   * @alias Throw
+   * @param {Function} function
+   * @param {ErrorConstructor} constructor
+   * @param {RegExp} regexp
+   * @param {String} message
+   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.throws = function (fn, errt, errs, msg) {
+    if ('string' === typeof errt || errt instanceof RegExp) {
+      errs = errt;
+      errt = null;
+    }
+
+    var assertErr = new Assertion(fn, msg).to.throw(errt, errs);
+    return flag(assertErr, 'object');
+  };
+
+  /**
+   * ### .doesNotThrow(function, [constructor/regexp], [message])
+   *
+   * Asserts that `function` will _not_ throw an error that is an instance of
+   * `constructor`, or alternately that it will not throw an error with message
+   * matching `regexp`.
+   *
+   *     assert.doesNotThrow(fn, Error, 'function does not throw');
+   *
+   * @name doesNotThrow
+   * @param {Function} function
+   * @param {ErrorConstructor} constructor
+   * @param {RegExp} regexp
+   * @param {String} message
+   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.doesNotThrow = function (fn, type, msg) {
+    if ('string' === typeof type) {
+      msg = type;
+      type = null;
+    }
+
+    new Assertion(fn, msg).to.not.Throw(type);
+  };
+
+  /**
+   * ### .operator(val1, operator, val2, [message])
+   *
+   * Compares two values using `operator`.
+   *
+   *     assert.operator(1, '<', 2, 'everything is ok');
+   *     assert.operator(1, '>', 2, 'this will fail');
+   *
+   * @name operator
+   * @param {Mixed} val1
+   * @param {String} operator
+   * @param {Mixed} val2
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.operator = function (val, operator, val2, msg) {
+    var ok;
+    switch(operator) {
+      case '==':
+        ok = val == val2;
+        break;
+      case '===':
+        ok = val === val2;
+        break;
+      case '>':
+        ok = val > val2;
+        break;
+      case '>=':
+        ok = val >= val2;
+        break;
+      case '<':
+        ok = val < val2;
+        break;
+      case '<=':
+        ok = val <= val2;
+        break;
+      case '!=':
+        ok = val != val2;
+        break;
+      case '!==':
+        ok = val !== val2;
+        break;
+      default:
+        throw new Error('Invalid operator "' + operator + '"');
+    }
+    var test = new Assertion(ok, msg);
+    test.assert(
+        true === flag(test, 'object')
+      , 'expected ' + util.inspect(val) + ' to be ' + operator + ' ' + util.inspect(val2)
+      , 'expected ' + util.inspect(val) + ' to not be ' + operator + ' ' + util.inspect(val2) );
+  };
+
+  /**
+   * ### .closeTo(actual, expected, delta, [message])
+   *
+   * Asserts that the target is equal `expected`, to within a +/- `delta` range.
+   *
+   *     assert.closeTo(1.5, 1, 0.5, 'numbers are close');
+   *
+   * @name closeTo
+   * @param {Number} actual
+   * @param {Number} expected
+   * @param {Number} delta
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.closeTo = function (act, exp, delta, msg) {
+    new Assertion(act, msg).to.be.closeTo(exp, delta);
+  };
+
+  /**
+   * ### .approximately(actual, expected, delta, [message])
+   *
+   * Asserts that the target is equal `expected`, to within a +/- `delta` range.
+   *
+   *     assert.approximately(1.5, 1, 0.5, 'numbers are close');
+   *
+   * @name approximately
+   * @param {Number} actual
+   * @param {Number} expected
+   * @param {Number} delta
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.approximately = function (act, exp, delta, msg) {
+    new Assertion(act, msg).to.be.approximately(exp, delta);
+  };
+
+  /**
+   * ### .sameMembers(set1, set2, [message])
+   *
+   * Asserts that `set1` and `set2` have the same members.
+   * Order is not taken into account.
+   *
+   *     assert.sameMembers([ 1, 2, 3 ], [ 2, 1, 3 ], 'same members');
+   *
+   * @name sameMembers
+   * @param {Array} set1
+   * @param {Array} set2
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.sameMembers = function (set1, set2, msg) {
+    new Assertion(set1, msg).to.have.same.members(set2);
+  }
+
+  /**
+   * ### .sameDeepMembers(set1, set2, [message])
+   *
+   * Asserts that `set1` and `set2` have the same members - using a deep equality checking.
+   * Order is not taken into account.
+   *
+   *     assert.sameDeepMembers([ {b: 3}, {a: 2}, {c: 5} ], [ {c: 5}, {b: 3}, {a: 2} ], 'same deep members');
+   *
+   * @name sameDeepMembers
+   * @param {Array} set1
+   * @param {Array} set2
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.sameDeepMembers = function (set1, set2, msg) {
+    new Assertion(set1, msg).to.have.same.deep.members(set2);
+  }
+
+  /**
+   * ### .includeMembers(superset, subset, [message])
+   *
+   * Asserts that `subset` is included in `superset`.
+   * Order is not taken into account.
+   *
+   *     assert.includeMembers([ 1, 2, 3 ], [ 2, 1 ], 'include members');
+   *
+   * @name includeMembers
+   * @param {Array} superset
+   * @param {Array} subset
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.includeMembers = function (superset, subset, msg) {
+    new Assertion(superset, msg).to.include.members(subset);
+  }
+
+  /**
+   * ### .includeDeepMembers(superset, subset, [message])
+   *
+   * Asserts that `subset` is included in `superset` - using deep equality checking.
+   * Order is not taken into account.
+   * Duplicates are ignored.
+   *
+   *     assert.includeDeepMembers([ {a: 1}, {b: 2}, {c: 3} ], [ {b: 2}, {a: 1}, {b: 2} ], 'include deep members');
+   *
+   * @name includeDeepMembers
+   * @param {Array} superset
+   * @param {Array} subset
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.includeDeepMembers = function (superset, subset, msg) {
+    new Assertion(superset, msg).to.include.deep.members(subset);
+  }
+
+  /**
+   * ### .oneOf(inList, list, [message])
+   *
+   * Asserts that non-object, non-array value `inList` appears in the flat array `list`.
+   *
+   *     assert.oneOf(1, [ 2, 1 ], 'Not found in list');
+   *
+   * @name oneOf
+   * @param {*} inList
+   * @param {Array<*>} list
+   * @param {String} message
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.oneOf = function (inList, list, msg) {
+    new Assertion(inList, msg).to.be.oneOf(list);
+  }
+
+   /**
+   * ### .changes(function, object, property)
+   *
+   * Asserts that a function changes the value of a property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { obj.val = 22 };
+   *     assert.changes(fn, obj, 'val');
+   *
+   * @name changes
+   * @param {Function} modifier function
+   * @param {Object} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.changes = function (fn, obj, prop) {
+    new Assertion(fn).to.change(obj, prop);
+  }
+
+   /**
+   * ### .doesNotChange(function, object, property)
+   *
+   * Asserts that a function does not changes the value of a property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { console.log('foo'); };
+   *     assert.doesNotChange(fn, obj, 'val');
+   *
+   * @name doesNotChange
+   * @param {Function} modifier function
+   * @param {Object} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.doesNotChange = function (fn, obj, prop) {
+    new Assertion(fn).to.not.change(obj, prop);
+  }
+
+   /**
+   * ### .increases(function, object, property)
+   *
+   * Asserts that a function increases an object property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { obj.val = 13 };
+   *     assert.increases(fn, obj, 'val');
+   *
+   * @name increases
+   * @param {Function} modifier function
+   * @param {Object} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.increases = function (fn, obj, prop) {
+    new Assertion(fn).to.increase(obj, prop);
+  }
+
+   /**
+   * ### .doesNotIncrease(function, object, property)
+   *
+   * Asserts that a function does not increase object property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { obj.val = 8 };
+   *     assert.doesNotIncrease(fn, obj, 'val');
+   *
+   * @name doesNotIncrease
+   * @param {Function} modifier function
+   * @param {Object} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.doesNotIncrease = function (fn, obj, prop) {
+    new Assertion(fn).to.not.increase(obj, prop);
+  }
+
+   /**
+   * ### .decreases(function, object, property)
+   *
+   * Asserts that a function decreases an object property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { obj.val = 5 };
+   *     assert.decreases(fn, obj, 'val');
+   *
+   * @name decreases
+   * @param {Function} modifier function
+   * @param {Object} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.decreases = function (fn, obj, prop) {
+    new Assertion(fn).to.decrease(obj, prop);
+  }
+
+   /**
+   * ### .doesNotDecrease(function, object, property)
+   *
+   * Asserts that a function does not decreases an object property
+   *
+   *     var obj = { val: 10 };
+   *     var fn = function() { obj.val = 15 };
+   *     assert.doesNotDecrease(fn, obj, 'val');
+   *
+   * @name doesNotDecrease
+   * @param {Function} modifier function
+   * @param {Object} object
+   * @param {String} property name
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.doesNotDecrease = function (fn, obj, prop) {
+    new Assertion(fn).to.not.decrease(obj, prop);
+  }
+
+  /*!
+   * ### .ifError(object)
+   *
+   * Asserts if value is not a false value, and throws if it is a true value.
+   * This is added to allow for chai to be a drop-in replacement for Node's
+   * assert class.
+   *
+   *     var err = new Error('I am a custom error');
+   *     assert.ifError(err); // Rethrows err!
+   *
+   * @name ifError
+   * @param {Object} object
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.ifError = function (val) {
+    if (val) {
+      throw(val);
+    }
+  };
+
+  /**
+   * ### .isExtensible(object)
+   *
+   * Asserts that `object` is extensible (can have new properties added to it).
+   *
+   *     assert.isExtensible({});
+   *
+   * @name isExtensible
+   * @alias extensible
+   * @param {Object} object
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isExtensible = function (obj, msg) {
+    new Assertion(obj, msg).to.be.extensible;
+  };
+
+  /**
+   * ### .isNotExtensible(object)
+   *
+   * Asserts that `object` is _not_ extensible.
+   *
+   *     var nonExtensibleObject = Object.preventExtensions({});
+   *     var sealedObject = Object.seal({});
+   *     var frozenObject = Object.freese({});
+   *
+   *     assert.isNotExtensible(nonExtensibleObject);
+   *     assert.isNotExtensible(sealedObject);
+   *     assert.isNotExtensible(frozenObject);
+   *
+   * @name isNotExtensible
+   * @alias notExtensible
+   * @param {Object} object
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotExtensible = function (obj, msg) {
+    new Assertion(obj, msg).to.not.be.extensible;
+  };
+
+  /**
+   * ### .isSealed(object)
+   *
+   * Asserts that `object` is sealed (cannot have new properties added to it
+   * and its existing properties cannot be removed).
+   *
+   *     var sealedObject = Object.seal({});
+   *     var frozenObject = Object.seal({});
+   *
+   *     assert.isSealed(sealedObject);
+   *     assert.isSealed(frozenObject);
+   *
+   * @name isSealed
+   * @alias sealed
+   * @param {Object} object
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isSealed = function (obj, msg) {
+    new Assertion(obj, msg).to.be.sealed;
+  };
+
+  /**
+   * ### .isNotSealed(object)
+   *
+   * Asserts that `object` is _not_ sealed.
+   *
+   *     assert.isNotSealed({});
+   *
+   * @name isNotSealed
+   * @alias notSealed
+   * @param {Object} object
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotSealed = function (obj, msg) {
+    new Assertion(obj, msg).to.not.be.sealed;
+  };
+
+  /**
+   * ### .isFrozen(object)
+   *
+   * Asserts that `object` is frozen (cannot have new properties added to it
+   * and its existing properties cannot be modified).
+   *
+   *     var frozenObject = Object.freeze({});
+   *     assert.frozen(frozenObject);
+   *
+   * @name isFrozen
+   * @alias frozen
+   * @param {Object} object
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isFrozen = function (obj, msg) {
+    new Assertion(obj, msg).to.be.frozen;
+  };
+
+  /**
+   * ### .isNotFrozen(object)
+   *
+   * Asserts that `object` is _not_ frozen.
+   *
+   *     assert.isNotFrozen({});
+   *
+   * @name isNotFrozen
+   * @alias notFrozen
+   * @param {Object} object
+   * @param {String} message _optional_
+   * @namespace Assert
+   * @api public
+   */
+
+  assert.isNotFrozen = function (obj, msg) {
+    new Assertion(obj, msg).to.not.be.frozen;
+  };
+
+  /*!
+   * Aliases.
+   */
+
+  (function alias(name, as){
+    assert[as] = assert[name];
+    return alias;
+  })
+  ('isOk', 'ok')
+  ('isNotOk', 'notOk')
+  ('throws', 'throw')
+  ('throws', 'Throw')
+  ('isExtensible', 'extensible')
+  ('isNotExtensible', 'notExtensible')
+  ('isSealed', 'sealed')
+  ('isNotSealed', 'notSealed')
+  ('isFrozen', 'frozen')
+  ('isNotFrozen', 'notFrozen');
+};
+
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports) {
+
+/*!
+ * chai
+ * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+module.exports = function (chai, util) {
+  chai.expect = function (val, message) {
+    return new chai.Assertion(val, message);
+  };
+
+  /**
+   * ### .fail(actual, expected, [message], [operator])
+   *
+   * Throw a failure.
+   *
+   * @name fail
+   * @param {Mixed} actual
+   * @param {Mixed} expected
+   * @param {String} message
+   * @param {String} operator
+   * @namespace Expect
+   * @api public
+   */
+
+  chai.expect.fail = function (actual, expected, message, operator) {
+    message = message || 'expect.fail()';
+    throw new chai.AssertionError(message, {
+        actual: actual
+      , expected: expected
+      , operator: operator
+    }, chai.expect.fail);
+  };
+};
+
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports) {
+
+/*!
+ * chai
+ * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+module.exports = function (chai, util) {
+  var Assertion = chai.Assertion;
+
+  function loadShould () {
+    // explicitly define this method as function as to have it's name to include as `ssfi`
+    function shouldGetter() {
+      if (this instanceof String || this instanceof Number || this instanceof Boolean ) {
+        return new Assertion(this.valueOf(), null, shouldGetter);
+      }
+      return new Assertion(this, null, shouldGetter);
+    }
+    function shouldSetter(value) {
+      // See https://github.com/chaijs/chai/issues/86: this makes
+      // `whatever.should = someValue` actually set `someValue`, which is
+      // especially useful for `global.should = require('chai').should()`.
+      //
+      // Note that we have to use [[DefineProperty]] instead of [[Put]]
+      // since otherwise we would trigger this very setter!
+      Object.defineProperty(this, 'should', {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    }
+    // modify Object.prototype to have `should`
+    Object.defineProperty(Object.prototype, 'should', {
+      set: shouldSetter
+      , get: shouldGetter
+      , configurable: true
+    });
+
+    var should = {};
+
+    /**
+     * ### .fail(actual, expected, [message], [operator])
+     *
+     * Throw a failure.
+     *
+     * @name fail
+     * @param {Mixed} actual
+     * @param {Mixed} expected
+     * @param {String} message
+     * @param {String} operator
+     * @namespace Should
+     * @api public
+     */
+
+    should.fail = function (actual, expected, message, operator) {
+      message = message || 'should.fail()';
+      throw new chai.AssertionError(message, {
+          actual: actual
+        , expected: expected
+        , operator: operator
+      }, should.fail);
+    };
+
+    /**
+     * ### .equal(actual, expected, [message])
+     *
+     * Asserts non-strict equality (`==`) of `actual` and `expected`.
+     *
+     *     should.equal(3, '3', '== coerces values to strings');
+     *
+     * @name equal
+     * @param {Mixed} actual
+     * @param {Mixed} expected
+     * @param {String} message
+     * @namespace Should
+     * @api public
+     */
+
+    should.equal = function (val1, val2, msg) {
+      new Assertion(val1, msg).to.equal(val2);
+    };
+
+    /**
+     * ### .throw(function, [constructor/string/regexp], [string/regexp], [message])
+     *
+     * Asserts that `function` will throw an error that is an instance of
+     * `constructor`, or alternately that it will throw an error with message
+     * matching `regexp`.
+     *
+     *     should.throw(fn, 'function throws a reference error');
+     *     should.throw(fn, /function throws a reference error/);
+     *     should.throw(fn, ReferenceError);
+     *     should.throw(fn, ReferenceError, 'function throws a reference error');
+     *     should.throw(fn, ReferenceError, /function throws a reference error/);
+     *
+     * @name throw
+     * @alias Throw
+     * @param {Function} function
+     * @param {ErrorConstructor} constructor
+     * @param {RegExp} regexp
+     * @param {String} message
+     * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+     * @namespace Should
+     * @api public
+     */
+
+    should.Throw = function (fn, errt, errs, msg) {
+      new Assertion(fn, msg).to.Throw(errt, errs);
+    };
+
+    /**
+     * ### .exist
+     *
+     * Asserts that the target is neither `null` nor `undefined`.
+     *
+     *     var foo = 'hi';
+     *
+     *     should.exist(foo, 'foo exists');
+     *
+     * @name exist
+     * @namespace Should
+     * @api public
+     */
+
+    should.exist = function (val, msg) {
+      new Assertion(val, msg).to.exist;
+    }
+
+    // negation
+    should.not = {}
+
+    /**
+     * ### .not.equal(actual, expected, [message])
+     *
+     * Asserts non-strict inequality (`!=`) of `actual` and `expected`.
+     *
+     *     should.not.equal(3, 4, 'these numbers are not equal');
+     *
+     * @name not.equal
+     * @param {Mixed} actual
+     * @param {Mixed} expected
+     * @param {String} message
+     * @namespace Should
+     * @api public
+     */
+
+    should.not.equal = function (val1, val2, msg) {
+      new Assertion(val1, msg).to.not.equal(val2);
+    };
+
+    /**
+     * ### .throw(function, [constructor/regexp], [message])
+     *
+     * Asserts that `function` will _not_ throw an error that is an instance of
+     * `constructor`, or alternately that it will not throw an error with message
+     * matching `regexp`.
+     *
+     *     should.not.throw(fn, Error, 'function does not throw');
+     *
+     * @name not.throw
+     * @alias not.Throw
+     * @param {Function} function
+     * @param {ErrorConstructor} constructor
+     * @param {RegExp} regexp
+     * @param {String} message
+     * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+     * @namespace Should
+     * @api public
+     */
+
+    should.not.Throw = function (fn, errt, errs, msg) {
+      new Assertion(fn, msg).to.not.Throw(errt, errs);
+    };
+
+    /**
+     * ### .not.exist
+     *
+     * Asserts that the target is neither `null` nor `undefined`.
+     *
+     *     var bar = null;
+     *
+     *     should.not.exist(bar, 'bar does not exist');
+     *
+     * @name not.exist
+     * @namespace Should
+     * @api public
+     */
+
+    should.not.exist = function (val, msg) {
+      new Assertion(val, msg).to.not.exist;
+    }
+
+    should['throw'] = should['Throw'];
+    should.not['throw'] = should.not['Throw'];
+
+    return should;
+  };
+
+  chai.should = loadShould;
+  chai.Should = loadShould;
+};
+
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - addChainingMethod utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Module dependencies
+ */
+
+var transferFlags = __webpack_require__(56);
+var flag = __webpack_require__(14);
+var config = __webpack_require__(16);
+
+/*!
+ * Module variables
+ */
+
+// Check whether `__proto__` is supported
+var hasProtoSupport = '__proto__' in Object;
+
+// Without `__proto__` support, this module will need to add properties to a function.
+// However, some Function.prototype methods cannot be overwritten,
+// and there seems no easy cross-platform way to detect them (@see chaijs/chai/issues/69).
+var excludeNames = /^(?:length|name|arguments|caller)$/;
+
+// Cache `Function` properties
+var call  = Function.prototype.call,
+    apply = Function.prototype.apply;
+
+/**
+ * ### addChainableMethod (ctx, name, method, chainingBehavior)
+ *
+ * Adds a method to an object, such that the method can also be chained.
+ *
+ *     utils.addChainableMethod(chai.Assertion.prototype, 'foo', function (str) {
+ *       var obj = utils.flag(this, 'object');
+ *       new chai.Assertion(obj).to.be.equal(str);
+ *     });
+ *
+ * Can also be accessed directly from `chai.Assertion`.
+ *
+ *     chai.Assertion.addChainableMethod('foo', fn, chainingBehavior);
+ *
+ * The result can then be used as both a method assertion, executing both `method` and
+ * `chainingBehavior`, or as a language chain, which only executes `chainingBehavior`.
+ *
+ *     expect(fooStr).to.be.foo('bar');
+ *     expect(fooStr).to.be.foo.equal('foo');
+ *
+ * @param {Object} ctx object to which the method is added
+ * @param {String} name of method to add
+ * @param {Function} method function to be used for `name`, when called
+ * @param {Function} chainingBehavior function to be called every time the property is accessed
+ * @namespace Utils
+ * @name addChainableMethod
+ * @api public
+ */
+
+module.exports = function (ctx, name, method, chainingBehavior) {
+  if (typeof chainingBehavior !== 'function') {
+    chainingBehavior = function () { };
+  }
+
+  var chainableBehavior = {
+      method: method
+    , chainingBehavior: chainingBehavior
+  };
+
+  // save the methods so we can overwrite them later, if we need to.
+  if (!ctx.__methods) {
+    ctx.__methods = {};
+  }
+  ctx.__methods[name] = chainableBehavior;
+
+  Object.defineProperty(ctx, name,
+    { get: function () {
+        chainableBehavior.chainingBehavior.call(this);
+
+        var assert = function assert() {
+          var old_ssfi = flag(this, 'ssfi');
+          if (old_ssfi && config.includeStack === false)
+            flag(this, 'ssfi', assert);
+          var result = chainableBehavior.method.apply(this, arguments);
+          return result === undefined ? this : result;
+        };
+
+        // Use `__proto__` if available
+        if (hasProtoSupport) {
+          // Inherit all properties from the object by replacing the `Function` prototype
+          var prototype = assert.__proto__ = Object.create(this);
+          // Restore the `call` and `apply` methods from `Function`
+          prototype.call = call;
+          prototype.apply = apply;
+        }
+        // Otherwise, redefine all properties (slow!)
+        else {
+          var asserterNames = Object.getOwnPropertyNames(ctx);
+          asserterNames.forEach(function (asserterName) {
+            if (!excludeNames.test(asserterName)) {
+              var pd = Object.getOwnPropertyDescriptor(ctx, asserterName);
+              Object.defineProperty(assert, asserterName, pd);
+            }
+          });
+        }
+
+        transferFlags(this, assert);
+        return assert;
+      }
+    , configurable: true
+  });
+};
+
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - addMethod utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+var config = __webpack_require__(16);
+
+/**
+ * ### .addMethod (ctx, name, method)
+ *
+ * Adds a method to the prototype of an object.
+ *
+ *     utils.addMethod(chai.Assertion.prototype, 'foo', function (str) {
+ *       var obj = utils.flag(this, 'object');
+ *       new chai.Assertion(obj).to.be.equal(str);
+ *     });
+ *
+ * Can also be accessed directly from `chai.Assertion`.
+ *
+ *     chai.Assertion.addMethod('foo', fn);
+ *
+ * Then can be used as any other assertion.
+ *
+ *     expect(fooStr).to.be.foo('bar');
+ *
+ * @param {Object} ctx object to which the method is added
+ * @param {String} name of method to add
+ * @param {Function} method function to be used for name
+ * @namespace Utils
+ * @name addMethod
+ * @api public
+ */
+var flag = __webpack_require__(14);
+
+module.exports = function (ctx, name, method) {
+  ctx[name] = function () {
+    var old_ssfi = flag(this, 'ssfi');
+    if (old_ssfi && config.includeStack === false)
+      flag(this, 'ssfi', ctx[name]);
+    var result = method.apply(this, arguments);
+    return result === undefined ? this : result;
+  };
+};
+
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - addProperty utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+var config = __webpack_require__(16);
+var flag = __webpack_require__(14);
+
+/**
+ * ### addProperty (ctx, name, getter)
+ *
+ * Adds a property to the prototype of an object.
+ *
+ *     utils.addProperty(chai.Assertion.prototype, 'foo', function () {
+ *       var obj = utils.flag(this, 'object');
+ *       new chai.Assertion(obj).to.be.instanceof(Foo);
+ *     });
+ *
+ * Can also be accessed directly from `chai.Assertion`.
+ *
+ *     chai.Assertion.addProperty('foo', fn);
+ *
+ * Then can be used as any other assertion.
+ *
+ *     expect(myFoo).to.be.foo;
+ *
+ * @param {Object} ctx object to which the property is added
+ * @param {String} name of property to add
+ * @param {Function} getter function to be used for name
+ * @namespace Utils
+ * @name addProperty
+ * @api public
+ */
+
+module.exports = function (ctx, name, getter) {
+  Object.defineProperty(ctx, name,
+    { get: function addProperty() {
+        var old_ssfi = flag(this, 'ssfi');
+        if (old_ssfi && config.includeStack === false)
+          flag(this, 'ssfi', addProperty);
+
+        var result = getter.call(this);
+        return result === undefined ? this : result;
+      }
+    , configurable: true
+  });
+};
+
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - expectTypes utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * ### expectTypes(obj, types)
+ *
+ * Ensures that the object being tested against is of a valid type.
+ *
+ *     utils.expectTypes(this, ['array', 'object', 'string']);
+ *
+ * @param {Mixed} obj constructed Assertion
+ * @param {Array} type A list of allowed types for this assertion
+ * @namespace Utils
+ * @name expectTypes
+ * @api public
+ */
+
+var AssertionError = __webpack_require__(50);
+var flag = __webpack_require__(14);
+var type = __webpack_require__(46);
+
+module.exports = function (obj, types) {
+  var obj = flag(obj, 'object');
+  types = types.map(function (t) { return t.toLowerCase(); });
+  types.sort();
+
+  // Transforms ['lorem', 'ipsum'] into 'a lirum, or an ipsum'
+  var str = types.map(function (t, index) {
+    var art = ~[ 'a', 'e', 'i', 'o', 'u' ].indexOf(t.charAt(0)) ? 'an' : 'a';
+    var or = types.length > 1 && index === types.length - 1 ? 'or ' : '';
+    return or + art + ' ' + t;
+  }).join(', ');
+
+  if (!types.some(function (expected) { return type(obj) === expected; })) {
+    throw new AssertionError(
+      'object tested must be ' + str + ', but ' + type(obj) + ' given'
+    );
+  }
+};
+
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports) {
+
+/*!
+ * Chai - getEnumerableProperties utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * ### .getEnumerableProperties(object)
+ *
+ * This allows the retrieval of enumerable property names of an object,
+ * inherited or not.
+ *
+ * @param {Object} object
+ * @returns {Array}
+ * @namespace Utils
+ * @name getEnumerableProperties
+ * @api public
+ */
+
+module.exports = function getEnumerableProperties(object) {
+  var result = [];
+  for (var name in object) {
+    result.push(name);
+  }
+  return result;
+};
+
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - message composition utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Module dependancies
+ */
+
+var flag = __webpack_require__(14)
+  , getActual = __webpack_require__(51)
+  , inspect = __webpack_require__(34)
+  , objDisplay = __webpack_require__(55);
+
+/**
+ * ### .getMessage(object, message, negateMessage)
+ *
+ * Construct the error message based on flags
+ * and template tags. Template tags will return
+ * a stringified inspection of the object referenced.
+ *
+ * Message template tags:
+ * - `#{this}` current asserted object
+ * - `#{act}` actual value
+ * - `#{exp}` expected value
+ *
+ * @param {Object} object (constructed Assertion)
+ * @param {Arguments} chai.Assertion.prototype.assert arguments
+ * @namespace Utils
+ * @name getMessage
+ * @api public
+ */
+
+module.exports = function (obj, args) {
+  var negate = flag(obj, 'negate')
+    , val = flag(obj, 'object')
+    , expected = args[3]
+    , actual = getActual(obj, args)
+    , msg = negate ? args[2] : args[1]
+    , flagMsg = flag(obj, 'message');
+
+  if(typeof msg === "function") msg = msg();
+  msg = msg || '';
+  msg = msg
+    .replace(/#\{this\}/g, function () { return objDisplay(val); })
+    .replace(/#\{act\}/g, function () { return objDisplay(actual); })
+    .replace(/#\{exp\}/g, function () { return objDisplay(expected); });
+
+  return flagMsg ? flagMsg + ': ' + msg : msg;
+};
+
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - getPathValue utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * @see https://github.com/logicalparadox/filtr
+ * MIT Licensed
+ */
+
+var getPathInfo = __webpack_require__(53);
+
+/**
+ * ### .getPathValue(path, object)
+ *
+ * This allows the retrieval of values in an
+ * object given a string path.
+ *
+ *     var obj = {
+ *         prop1: {
+ *             arr: ['a', 'b', 'c']
+ *           , str: 'Hello'
+ *         }
+ *       , prop2: {
+ *             arr: [ { nested: 'Universe' } ]
+ *           , str: 'Hello again!'
+ *         }
+ *     }
+ *
+ * The following would be the results.
+ *
+ *     getPathValue('prop1.str', obj); // Hello
+ *     getPathValue('prop1.att[2]', obj); // b
+ *     getPathValue('prop2.arr[0].nested', obj); // Universe
+ *
+ * @param {String} path
+ * @param {Object} object
+ * @returns {Object} value or `undefined`
+ * @namespace Utils
+ * @name getPathValue
+ * @api public
+ */
+module.exports = function(path, obj) {
+  var info = getPathInfo(path, obj);
+  return info.value;
+};
+
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports) {
+
+/*!
+ * Chai - getProperties utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * ### .getProperties(object)
+ *
+ * This allows the retrieval of property names of an object, enumerable or not,
+ * inherited or not.
+ *
+ * @param {Object} object
+ * @returns {Array}
+ * @namespace Utils
+ * @name getProperties
+ * @api public
+ */
+
+module.exports = function getProperties(object) {
+  var result = Object.getOwnPropertyNames(object);
+
+  function addProperty(property) {
+    if (result.indexOf(property) === -1) {
+      result.push(property);
+    }
+  }
+
+  var proto = Object.getPrototypeOf(object);
+  while (proto !== null) {
+    Object.getOwnPropertyNames(proto).forEach(addProperty);
+    proto = Object.getPrototypeOf(proto);
+  }
+
+  return result;
+};
+
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * chai
+ * Copyright(c) 2011 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Main exports
+ */
+
+var exports = module.exports = {};
+
+/*!
+ * test utility
+ */
+
+exports.test = __webpack_require__(114);
+
+/*!
+ * type utility
+ */
+
+exports.type = __webpack_require__(46);
+
+/*!
+ * expectTypes utility
+ */
+exports.expectTypes = __webpack_require__(105);
+
+/*!
+ * message utility
+ */
+
+exports.getMessage = __webpack_require__(107);
+
+/*!
+ * actual utility
+ */
+
+exports.getActual = __webpack_require__(51);
+
+/*!
+ * Inspect util
+ */
+
+exports.inspect = __webpack_require__(34);
+
+/*!
+ * Object Display util
+ */
+
+exports.objDisplay = __webpack_require__(55);
+
+/*!
+ * Flag utility
+ */
+
+exports.flag = __webpack_require__(14);
+
+/*!
+ * Flag transferring utility
+ */
+
+exports.transferFlags = __webpack_require__(56);
+
+/*!
+ * Deep equal utility
+ */
+
+exports.eql = __webpack_require__(115);
+
+/*!
+ * Deep path value
+ */
+
+exports.getPathValue = __webpack_require__(108);
+
+/*!
+ * Deep path info
+ */
+
+exports.getPathInfo = __webpack_require__(53);
+
+/*!
+ * Check if a property exists
+ */
+
+exports.hasProperty = __webpack_require__(54);
+
+/*!
+ * Function name
+ */
+
+exports.getName = __webpack_require__(52);
+
+/*!
+ * add Property
+ */
+
+exports.addProperty = __webpack_require__(104);
+
+/*!
+ * add Method
+ */
+
+exports.addMethod = __webpack_require__(103);
+
+/*!
+ * overwrite Property
+ */
+
+exports.overwriteProperty = __webpack_require__(113);
+
+/*!
+ * overwrite Method
+ */
+
+exports.overwriteMethod = __webpack_require__(112);
+
+/*!
+ * Add a chainable method
+ */
+
+exports.addChainableMethod = __webpack_require__(102);
+
+/*!
+ * Overwrite chainable method
+ */
+
+exports.overwriteChainableMethod = __webpack_require__(111);
+
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports) {
+
+/*!
+ * Chai - overwriteChainableMethod utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * ### overwriteChainableMethod (ctx, name, method, chainingBehavior)
+ *
+ * Overwites an already existing chainable method
+ * and provides access to the previous function or
+ * property.  Must return functions to be used for
+ * name.
+ *
+ *     utils.overwriteChainableMethod(chai.Assertion.prototype, 'length',
+ *       function (_super) {
+ *       }
+ *     , function (_super) {
+ *       }
+ *     );
+ *
+ * Can also be accessed directly from `chai.Assertion`.
+ *
+ *     chai.Assertion.overwriteChainableMethod('foo', fn, fn);
+ *
+ * Then can be used as any other assertion.
+ *
+ *     expect(myFoo).to.have.length(3);
+ *     expect(myFoo).to.have.length.above(3);
+ *
+ * @param {Object} ctx object whose method / property is to be overwritten
+ * @param {String} name of method / property to overwrite
+ * @param {Function} method function that returns a function to be used for name
+ * @param {Function} chainingBehavior function that returns a function to be used for property
+ * @namespace Utils
+ * @name overwriteChainableMethod
+ * @api public
+ */
+
+module.exports = function (ctx, name, method, chainingBehavior) {
+  var chainableBehavior = ctx.__methods[name];
+
+  var _chainingBehavior = chainableBehavior.chainingBehavior;
+  chainableBehavior.chainingBehavior = function () {
+    var result = chainingBehavior(_chainingBehavior).call(this);
+    return result === undefined ? this : result;
+  };
+
+  var _method = chainableBehavior.method;
+  chainableBehavior.method = function () {
+    var result = method(_method).apply(this, arguments);
+    return result === undefined ? this : result;
+  };
+};
+
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports) {
+
+/*!
+ * Chai - overwriteMethod utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * ### overwriteMethod (ctx, name, fn)
+ *
+ * Overwites an already existing method and provides
+ * access to previous function. Must return function
+ * to be used for name.
+ *
+ *     utils.overwriteMethod(chai.Assertion.prototype, 'equal', function (_super) {
+ *       return function (str) {
+ *         var obj = utils.flag(this, 'object');
+ *         if (obj instanceof Foo) {
+ *           new chai.Assertion(obj.value).to.equal(str);
+ *         } else {
+ *           _super.apply(this, arguments);
+ *         }
+ *       }
+ *     });
+ *
+ * Can also be accessed directly from `chai.Assertion`.
+ *
+ *     chai.Assertion.overwriteMethod('foo', fn);
+ *
+ * Then can be used as any other assertion.
+ *
+ *     expect(myFoo).to.equal('bar');
+ *
+ * @param {Object} ctx object whose method is to be overwritten
+ * @param {String} name of method to overwrite
+ * @param {Function} method function that returns a function to be used for name
+ * @namespace Utils
+ * @name overwriteMethod
+ * @api public
+ */
+
+module.exports = function (ctx, name, method) {
+  var _method = ctx[name]
+    , _super = function () { return this; };
+
+  if (_method && 'function' === typeof _method)
+    _super = _method;
+
+  ctx[name] = function () {
+    var result = method(_super).apply(this, arguments);
+    return result === undefined ? this : result;
+  }
+};
+
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports) {
+
+/*!
+ * Chai - overwriteProperty utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/**
+ * ### overwriteProperty (ctx, name, fn)
+ *
+ * Overwites an already existing property getter and provides
+ * access to previous value. Must return function to use as getter.
+ *
+ *     utils.overwriteProperty(chai.Assertion.prototype, 'ok', function (_super) {
+ *       return function () {
+ *         var obj = utils.flag(this, 'object');
+ *         if (obj instanceof Foo) {
+ *           new chai.Assertion(obj.name).to.equal('bar');
+ *         } else {
+ *           _super.call(this);
+ *         }
+ *       }
+ *     });
+ *
+ *
+ * Can also be accessed directly from `chai.Assertion`.
+ *
+ *     chai.Assertion.overwriteProperty('foo', fn);
+ *
+ * Then can be used as any other assertion.
+ *
+ *     expect(myFoo).to.be.ok;
+ *
+ * @param {Object} ctx object whose property is to be overwritten
+ * @param {String} name of property to overwrite
+ * @param {Function} getter function that returns a getter function to be used for name
+ * @namespace Utils
+ * @name overwriteProperty
+ * @api public
+ */
+
+module.exports = function (ctx, name, getter) {
+  var _get = Object.getOwnPropertyDescriptor(ctx, name)
+    , _super = function () {};
+
+  if (_get && 'function' === typeof _get.get)
+    _super = _get.get
+
+  Object.defineProperty(ctx, name,
+    { get: function () {
+        var result = getter(_super).call(this);
+        return result === undefined ? this : result;
+      }
+    , configurable: true
+  });
+};
+
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Chai - test utility
+ * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Module dependancies
+ */
+
+var flag = __webpack_require__(14);
+
+/**
+ * # test(object, expression)
+ *
+ * Test and object for expression.
+ *
+ * @param {Object} object (constructed Assertion)
+ * @param {Arguments} chai.Assertion.prototype.assert arguments
+ * @namespace Utils
+ * @name test
+ */
+
+module.exports = function (obj, args) {
+  var negate = flag(obj, 'negate')
+    , expr = args[0];
+  return negate ? !expr : expr;
+};
+
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(116);
+
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * deep-eql
+ * Copyright(c) 2013 Jake Luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Module dependencies
+ */
+
+var type = __webpack_require__(117);
+
+/*!
+ * Buffer.isBuffer browser shim
+ */
+
+var Buffer;
+try { Buffer = __webpack_require__(93).Buffer; }
+catch(ex) {
+  Buffer = {};
+  Buffer.isBuffer = function() { return false; }
+}
+
+/*!
+ * Primary Export
+ */
+
+module.exports = deepEqual;
+
+/**
+ * Assert super-strict (egal) equality between
+ * two objects of any type.
+ *
+ * @param {Mixed} a
+ * @param {Mixed} b
+ * @param {Array} memoised (optional)
+ * @return {Boolean} equal match
+ */
+
+function deepEqual(a, b, m) {
+  if (sameValue(a, b)) {
+    return true;
+  } else if ('date' === type(a)) {
+    return dateEqual(a, b);
+  } else if ('regexp' === type(a)) {
+    return regexpEqual(a, b);
+  } else if (Buffer.isBuffer(a)) {
+    return bufferEqual(a, b);
+  } else if ('arguments' === type(a)) {
+    return argumentsEqual(a, b, m);
+  } else if (!typeEqual(a, b)) {
+    return false;
+  } else if (('object' !== type(a) && 'object' !== type(b))
+  && ('array' !== type(a) && 'array' !== type(b))) {
+    return sameValue(a, b);
+  } else {
+    return objectEqual(a, b, m);
+  }
+}
+
+/*!
+ * Strict (egal) equality test. Ensures that NaN always
+ * equals NaN and `-0` does not equal `+0`.
+ *
+ * @param {Mixed} a
+ * @param {Mixed} b
+ * @return {Boolean} equal match
+ */
+
+function sameValue(a, b) {
+  if (a === b) return a !== 0 || 1 / a === 1 / b;
+  return a !== a && b !== b;
+}
+
+/*!
+ * Compare the types of two given objects and
+ * return if they are equal. Note that an Array
+ * has a type of `array` (not `object`) and arguments
+ * have a type of `arguments` (not `array`/`object`).
+ *
+ * @param {Mixed} a
+ * @param {Mixed} b
+ * @return {Boolean} result
+ */
+
+function typeEqual(a, b) {
+  return type(a) === type(b);
+}
+
+/*!
+ * Compare two Date objects by asserting that
+ * the time values are equal using `saveValue`.
+ *
+ * @param {Date} a
+ * @param {Date} b
+ * @return {Boolean} result
+ */
+
+function dateEqual(a, b) {
+  if ('date' !== type(b)) return false;
+  return sameValue(a.getTime(), b.getTime());
+}
+
+/*!
+ * Compare two regular expressions by converting them
+ * to string and checking for `sameValue`.
+ *
+ * @param {RegExp} a
+ * @param {RegExp} b
+ * @return {Boolean} result
+ */
+
+function regexpEqual(a, b) {
+  if ('regexp' !== type(b)) return false;
+  return sameValue(a.toString(), b.toString());
+}
+
+/*!
+ * Assert deep equality of two `arguments` objects.
+ * Unfortunately, these must be sliced to arrays
+ * prior to test to ensure no bad behavior.
+ *
+ * @param {Arguments} a
+ * @param {Arguments} b
+ * @param {Array} memoize (optional)
+ * @return {Boolean} result
+ */
+
+function argumentsEqual(a, b, m) {
+  if ('arguments' !== type(b)) return false;
+  a = [].slice.call(a);
+  b = [].slice.call(b);
+  return deepEqual(a, b, m);
+}
+
+/*!
+ * Get enumerable properties of a given object.
+ *
+ * @param {Object} a
+ * @return {Array} property names
+ */
+
+function enumerable(a) {
+  var res = [];
+  for (var key in a) res.push(key);
+  return res;
+}
+
+/*!
+ * Simple equality for flat iterable objects
+ * such as Arrays or Node.js buffers.
+ *
+ * @param {Iterable} a
+ * @param {Iterable} b
+ * @return {Boolean} result
+ */
+
+function iterableEqual(a, b) {
+  if (a.length !==  b.length) return false;
+
+  var i = 0;
+  var match = true;
+
+  for (; i < a.length; i++) {
+    if (a[i] !== b[i]) {
+      match = false;
+      break;
+    }
+  }
+
+  return match;
+}
+
+/*!
+ * Extension to `iterableEqual` specifically
+ * for Node.js Buffers.
+ *
+ * @param {Buffer} a
+ * @param {Mixed} b
+ * @return {Boolean} result
+ */
+
+function bufferEqual(a, b) {
+  if (!Buffer.isBuffer(b)) return false;
+  return iterableEqual(a, b);
+}
+
+/*!
+ * Block for `objectEqual` ensuring non-existing
+ * values don't get in.
+ *
+ * @param {Mixed} object
+ * @return {Boolean} result
+ */
+
+function isValue(a) {
+  return a !== null && a !== undefined;
+}
+
+/*!
+ * Recursively check the equality of two objects.
+ * Once basic sameness has been established it will
+ * defer to `deepEqual` for each enumerable key
+ * in the object.
+ *
+ * @param {Mixed} a
+ * @param {Mixed} b
+ * @return {Boolean} result
+ */
+
+function objectEqual(a, b, m) {
+  if (!isValue(a) || !isValue(b)) {
+    return false;
+  }
+
+  if (a.prototype !== b.prototype) {
+    return false;
+  }
+
+  var i;
+  if (m) {
+    for (i = 0; i < m.length; i++) {
+      if ((m[i][0] === a && m[i][1] === b)
+      ||  (m[i][0] === b && m[i][1] === a)) {
+        return true;
+      }
+    }
+  } else {
+    m = [];
+  }
+
+  try {
+    var ka = enumerable(a);
+    var kb = enumerable(b);
+  } catch (ex) {
+    return false;
+  }
+
+  ka.sort();
+  kb.sort();
+
+  if (!iterableEqual(ka, kb)) {
+    return false;
+  }
+
+  m.push([ a, b ]);
+
+  var key;
+  for (i = ka.length - 1; i >= 0; i--) {
+    key = ka[i];
+    if (!deepEqual(a[key], b[key], m)) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+
+/***/ }),
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(118);
+
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports) {
+
+/*!
+ * type-detect
+ * Copyright(c) 2013 jake luer <jake@alogicalparadox.com>
+ * MIT Licensed
+ */
+
+/*!
+ * Primary Exports
+ */
+
+var exports = module.exports = getType;
+
+/*!
+ * Detectable javascript natives
+ */
+
+var natives = {
+    '[object Array]': 'array'
+  , '[object RegExp]': 'regexp'
+  , '[object Function]': 'function'
+  , '[object Arguments]': 'arguments'
+  , '[object Date]': 'date'
+};
+
+/**
+ * ### typeOf (obj)
+ *
+ * Use several different techniques to determine
+ * the type of object being tested.
+ *
+ *
+ * @param {Mixed} object
+ * @return {String} object type
+ * @api public
+ */
+
+function getType (obj) {
+  var str = Object.prototype.toString.call(obj);
+  if (natives[str]) return natives[str];
+  if (obj === null) return 'null';
+  if (obj === undefined) return 'undefined';
+  if (obj === Object(obj)) return 'object';
+  return typeof obj;
+}
+
+exports.Library = Library;
+
+/**
+ * ### Library
+ *
+ * Create a repository for custom type detection.
+ *
+ * ```js
+ * var lib = new type.Library;
+ * ```
+ *
+ */
+
+function Library () {
+  this.tests = {};
+}
+
+/**
+ * #### .of (obj)
+ *
+ * Expose replacement `typeof` detection to the library.
+ *
+ * ```js
+ * if ('string' === lib.of('hello world')) {
+ *   // ...
+ * }
+ * ```
+ *
+ * @param {Mixed} object to test
+ * @return {String} type
+ */
+
+Library.prototype.of = getType;
+
+/**
+ * #### .define (type, test)
+ *
+ * Add a test to for the `.test()` assertion.
+ *
+ * Can be defined as a regular expression:
+ *
+ * ```js
+ * lib.define('int', /^[0-9]+$/);
+ * ```
+ *
+ * ... or as a function:
+ *
+ * ```js
+ * lib.define('bln', function (obj) {
+ *   if ('boolean' === lib.of(obj)) return true;
+ *   var blns = [ 'yes', 'no', 'true', 'false', 1, 0 ];
+ *   if ('string' === lib.of(obj)) obj = obj.toLowerCase();
+ *   return !! ~blns.indexOf(obj);
+ * });
+ * ```
+ *
+ * @param {String} type
+ * @param {RegExp|Function} test
+ * @api public
+ */
+
+Library.prototype.define = function (type, test) {
+  if (arguments.length === 1) return this.tests[type];
+  this.tests[type] = test;
+  return this;
+};
+
+/**
+ * #### .test (obj, test)
+ *
+ * Assert that an object is of type. Will first
+ * check natives, and if that does not pass it will
+ * use the user defined custom tests.
+ *
+ * ```js
+ * assert(lib.test('1', 'int'));
+ * assert(lib.test('yes', 'bln'));
+ * ```
+ *
+ * @param {Mixed} object
+ * @param {String} type
+ * @return {Boolean} result
+ * @api public
+ */
+
+Library.prototype.test = function (obj, type) {
+  if (type === getType(obj)) return true;
+  var test = this.tests[type];
+
+  if (test && 'regexp' === getType(test)) {
+    return test.test(obj);
+  } else if (test && 'function' === getType(test)) {
+    return test(obj);
+  } else {
+    throw new ReferenceError('Type test "' + type + '" not defined or invalid.');
+  }
+};
+
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports) {
+
+exports.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = nBytes * 8 - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+
+  i += d
+
+  e = s & ((1 << (-nBits)) - 1)
+  s >>= (-nBits)
+  nBits += eLen
+  for (; nBits > 0; e = e * 256 + buffer[offset + i], i += d, nBits -= 8) {}
+
+  m = e & ((1 << (-nBits)) - 1)
+  e >>= (-nBits)
+  nBits += mLen
+  for (; nBits > 0; m = m * 256 + buffer[offset + i], i += d, nBits -= 8) {}
+
+  if (e === 0) {
+    e = 1 - eBias
+  } else if (e === eMax) {
+    return m ? NaN : ((s ? -1 : 1) * Infinity)
+  } else {
+    m = m + Math.pow(2, mLen)
+    e = e - eBias
+  }
+  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
+}
+
+exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
+  var e, m, c
+  var eLen = nBytes * 8 - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  var i = isLE ? 0 : (nBytes - 1)
+  var d = isLE ? 1 : -1
+  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
+
+  value = Math.abs(value)
+
+  if (isNaN(value) || value === Infinity) {
+    m = isNaN(value) ? 1 : 0
+    e = eMax
+  } else {
+    e = Math.floor(Math.log(value) / Math.LN2)
+    if (value * (c = Math.pow(2, -e)) < 1) {
+      e--
+      c *= 2
+    }
+    if (e + eBias >= 1) {
+      value += rt / c
+    } else {
+      value += rt * Math.pow(2, 1 - eBias)
+    }
+    if (value * c >= 2) {
+      e++
+      c /= 2
+    }
+
+    if (e + eBias >= eMax) {
+      m = 0
+      e = eMax
+    } else if (e + eBias >= 1) {
+      m = (value * c - 1) * Math.pow(2, mLen)
+      e = e + eBias
+    } else {
+      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
+      e = 0
+    }
+  }
+
+  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
+
+  e = (e << mLen) | m
+  eLen += mLen
+  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
+
+  buffer[offset + i - d] |= s * 128
+}
+
+
+/***/ }),
 /* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var toString = Object.prototype.toString;
+
+module.exports = function (x) {
+	var prototype;
+	return toString.call(x) === '[object Object]' && (prototype = Object.getPrototypeOf(x), prototype === null || prototype === Object.getPrototypeOf({}));
+};
+
+
+/***/ }),
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23726,7 +23843,7 @@ module.exports = localforage_js;
 Object.defineProperty(exports, "__esModule", { value: true });
 var mergeOptions = __webpack_require__(18);
 var Rx_1 = __webpack_require__(37);
-var util_1 = __webpack_require__(56);
+var util_1 = __webpack_require__(59);
 // TODO: figure out where error events originate (storage or model)
 // and who keeps a roll-backable delta
 var Model = (function () {
@@ -24050,7 +24167,7 @@ exports.Model = Model;
 
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24242,7 +24359,7 @@ exports.Plump = Plump;
 
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24262,7 +24379,7 @@ exports.Relationship = Relationship;
 
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24279,7 +24396,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var Bluebird = __webpack_require__(15);
-var keyValueStore_1 = __webpack_require__(54);
+var keyValueStore_1 = __webpack_require__(57);
 var MemoryStore = (function (_super) {
     __extends(MemoryStore, _super);
     function MemoryStore(opts) {
@@ -24327,7 +24444,7 @@ exports.MemoryStore = MemoryStore;
 
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24369,7 +24486,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24424,26 +24541,15 @@ exports.Scheduler = Scheduler;
 //# sourceMappingURL=Scheduler.js.map
 
 /***/ }),
-/* 126 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var bindCallback_1 = __webpack_require__(271);
-Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
-//# sourceMappingURL=bindCallback.js.map
-
-/***/ }),
 /* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bindNodeCallback_1 = __webpack_require__(272);
-Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
-//# sourceMappingURL=bindNodeCallback.js.map
+var bindCallback_1 = __webpack_require__(272);
+Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
+//# sourceMappingURL=bindCallback.js.map
 
 /***/ }),
 /* 128 */
@@ -24452,9 +24558,9 @@ Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var combineLatest_1 = __webpack_require__(273);
-Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
-//# sourceMappingURL=combineLatest.js.map
+var bindNodeCallback_1 = __webpack_require__(273);
+Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
+//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ }),
 /* 129 */
@@ -24463,9 +24569,9 @@ Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concat_1 = __webpack_require__(274);
-Observable_1.Observable.concat = concat_1.concat;
-//# sourceMappingURL=concat.js.map
+var combineLatest_1 = __webpack_require__(274);
+Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
+//# sourceMappingURL=combineLatest.js.map
 
 /***/ }),
 /* 130 */
@@ -24474,9 +24580,9 @@ Observable_1.Observable.concat = concat_1.concat;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var defer_1 = __webpack_require__(275);
-Observable_1.Observable.defer = defer_1.defer;
-//# sourceMappingURL=defer.js.map
+var concat_1 = __webpack_require__(275);
+Observable_1.Observable.concat = concat_1.concat;
+//# sourceMappingURL=concat.js.map
 
 /***/ }),
 /* 131 */
@@ -24485,9 +24591,9 @@ Observable_1.Observable.defer = defer_1.defer;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var ajax_1 = __webpack_require__(277);
-Observable_1.Observable.ajax = ajax_1.ajax;
-//# sourceMappingURL=ajax.js.map
+var defer_1 = __webpack_require__(276);
+Observable_1.Observable.defer = defer_1.defer;
+//# sourceMappingURL=defer.js.map
 
 /***/ }),
 /* 132 */
@@ -24496,9 +24602,9 @@ Observable_1.Observable.ajax = ajax_1.ajax;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var webSocket_1 = __webpack_require__(278);
-Observable_1.Observable.webSocket = webSocket_1.webSocket;
-//# sourceMappingURL=webSocket.js.map
+var ajax_1 = __webpack_require__(278);
+Observable_1.Observable.ajax = ajax_1.ajax;
+//# sourceMappingURL=ajax.js.map
 
 /***/ }),
 /* 133 */
@@ -24507,9 +24613,9 @@ Observable_1.Observable.webSocket = webSocket_1.webSocket;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var empty_1 = __webpack_require__(279);
-Observable_1.Observable.empty = empty_1.empty;
-//# sourceMappingURL=empty.js.map
+var webSocket_1 = __webpack_require__(279);
+Observable_1.Observable.webSocket = webSocket_1.webSocket;
+//# sourceMappingURL=webSocket.js.map
 
 /***/ }),
 /* 134 */
@@ -24518,9 +24624,9 @@ Observable_1.Observable.empty = empty_1.empty;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var forkJoin_1 = __webpack_require__(280);
-Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
-//# sourceMappingURL=forkJoin.js.map
+var empty_1 = __webpack_require__(280);
+Observable_1.Observable.empty = empty_1.empty;
+//# sourceMappingURL=empty.js.map
 
 /***/ }),
 /* 135 */
@@ -24529,9 +24635,9 @@ Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var from_1 = __webpack_require__(281);
-Observable_1.Observable.from = from_1.from;
-//# sourceMappingURL=from.js.map
+var forkJoin_1 = __webpack_require__(281);
+Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
+//# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
 /* 136 */
@@ -24540,9 +24646,9 @@ Observable_1.Observable.from = from_1.from;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var fromEvent_1 = __webpack_require__(282);
-Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
-//# sourceMappingURL=fromEvent.js.map
+var from_1 = __webpack_require__(282);
+Observable_1.Observable.from = from_1.from;
+//# sourceMappingURL=from.js.map
 
 /***/ }),
 /* 137 */
@@ -24551,9 +24657,9 @@ Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var fromEventPattern_1 = __webpack_require__(283);
-Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
-//# sourceMappingURL=fromEventPattern.js.map
+var fromEvent_1 = __webpack_require__(283);
+Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
+//# sourceMappingURL=fromEvent.js.map
 
 /***/ }),
 /* 138 */
@@ -24562,9 +24668,9 @@ Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var fromPromise_1 = __webpack_require__(284);
-Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
-//# sourceMappingURL=fromPromise.js.map
+var fromEventPattern_1 = __webpack_require__(284);
+Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
+//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ }),
 /* 139 */
@@ -24573,9 +24679,9 @@ Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var GenerateObservable_1 = __webpack_require__(261);
-Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
-//# sourceMappingURL=generate.js.map
+var fromPromise_1 = __webpack_require__(285);
+Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
+//# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
 /* 140 */
@@ -24584,9 +24690,9 @@ Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.creat
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var if_1 = __webpack_require__(285);
-Observable_1.Observable.if = if_1._if;
-//# sourceMappingURL=if.js.map
+var GenerateObservable_1 = __webpack_require__(262);
+Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
+//# sourceMappingURL=generate.js.map
 
 /***/ }),
 /* 141 */
@@ -24595,9 +24701,9 @@ Observable_1.Observable.if = if_1._if;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var interval_1 = __webpack_require__(286);
-Observable_1.Observable.interval = interval_1.interval;
-//# sourceMappingURL=interval.js.map
+var if_1 = __webpack_require__(286);
+Observable_1.Observable.if = if_1._if;
+//# sourceMappingURL=if.js.map
 
 /***/ }),
 /* 142 */
@@ -24606,9 +24712,9 @@ Observable_1.Observable.interval = interval_1.interval;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var merge_1 = __webpack_require__(287);
-Observable_1.Observable.merge = merge_1.merge;
-//# sourceMappingURL=merge.js.map
+var interval_1 = __webpack_require__(287);
+Observable_1.Observable.interval = interval_1.interval;
+//# sourceMappingURL=interval.js.map
 
 /***/ }),
 /* 143 */
@@ -24617,9 +24723,9 @@ Observable_1.Observable.merge = merge_1.merge;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var never_1 = __webpack_require__(288);
-Observable_1.Observable.never = never_1.never;
-//# sourceMappingURL=never.js.map
+var merge_1 = __webpack_require__(288);
+Observable_1.Observable.merge = merge_1.merge;
+//# sourceMappingURL=merge.js.map
 
 /***/ }),
 /* 144 */
@@ -24628,9 +24734,9 @@ Observable_1.Observable.never = never_1.never;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var of_1 = __webpack_require__(289);
-Observable_1.Observable.of = of_1.of;
-//# sourceMappingURL=of.js.map
+var never_1 = __webpack_require__(289);
+Observable_1.Observable.never = never_1.never;
+//# sourceMappingURL=never.js.map
 
 /***/ }),
 /* 145 */
@@ -24639,9 +24745,9 @@ Observable_1.Observable.of = of_1.of;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var onErrorResumeNext_1 = __webpack_require__(71);
-Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
-//# sourceMappingURL=onErrorResumeNext.js.map
+var of_1 = __webpack_require__(290);
+Observable_1.Observable.of = of_1.of;
+//# sourceMappingURL=of.js.map
 
 /***/ }),
 /* 146 */
@@ -24650,9 +24756,9 @@ Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNex
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var pairs_1 = __webpack_require__(290);
-Observable_1.Observable.pairs = pairs_1.pairs;
-//# sourceMappingURL=pairs.js.map
+var onErrorResumeNext_1 = __webpack_require__(74);
+Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
+//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ }),
 /* 147 */
@@ -24661,9 +24767,9 @@ Observable_1.Observable.pairs = pairs_1.pairs;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var race_1 = __webpack_require__(72);
-Observable_1.Observable.race = race_1.raceStatic;
-//# sourceMappingURL=race.js.map
+var pairs_1 = __webpack_require__(291);
+Observable_1.Observable.pairs = pairs_1.pairs;
+//# sourceMappingURL=pairs.js.map
 
 /***/ }),
 /* 148 */
@@ -24672,9 +24778,9 @@ Observable_1.Observable.race = race_1.raceStatic;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var range_1 = __webpack_require__(291);
-Observable_1.Observable.range = range_1.range;
-//# sourceMappingURL=range.js.map
+var race_1 = __webpack_require__(75);
+Observable_1.Observable.race = race_1.raceStatic;
+//# sourceMappingURL=race.js.map
 
 /***/ }),
 /* 149 */
@@ -24683,9 +24789,9 @@ Observable_1.Observable.range = range_1.range;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var throw_1 = __webpack_require__(292);
-Observable_1.Observable.throw = throw_1._throw;
-//# sourceMappingURL=throw.js.map
+var range_1 = __webpack_require__(292);
+Observable_1.Observable.range = range_1.range;
+//# sourceMappingURL=range.js.map
 
 /***/ }),
 /* 150 */
@@ -24694,9 +24800,9 @@ Observable_1.Observable.throw = throw_1._throw;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timer_1 = __webpack_require__(293);
-Observable_1.Observable.timer = timer_1.timer;
-//# sourceMappingURL=timer.js.map
+var throw_1 = __webpack_require__(293);
+Observable_1.Observable.throw = throw_1._throw;
+//# sourceMappingURL=throw.js.map
 
 /***/ }),
 /* 151 */
@@ -24705,9 +24811,9 @@ Observable_1.Observable.timer = timer_1.timer;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var using_1 = __webpack_require__(294);
-Observable_1.Observable.using = using_1.using;
-//# sourceMappingURL=using.js.map
+var timer_1 = __webpack_require__(294);
+Observable_1.Observable.timer = timer_1.timer;
+//# sourceMappingURL=timer.js.map
 
 /***/ }),
 /* 152 */
@@ -24716,9 +24822,9 @@ Observable_1.Observable.using = using_1.using;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var zip_1 = __webpack_require__(295);
-Observable_1.Observable.zip = zip_1.zip;
-//# sourceMappingURL=zip.js.map
+var using_1 = __webpack_require__(295);
+Observable_1.Observable.using = using_1.using;
+//# sourceMappingURL=using.js.map
 
 /***/ }),
 /* 153 */
@@ -24727,9 +24833,9 @@ Observable_1.Observable.zip = zip_1.zip;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var audit_1 = __webpack_require__(296);
-Observable_1.Observable.prototype.audit = audit_1.audit;
-//# sourceMappingURL=audit.js.map
+var zip_1 = __webpack_require__(296);
+Observable_1.Observable.zip = zip_1.zip;
+//# sourceMappingURL=zip.js.map
 
 /***/ }),
 /* 154 */
@@ -24738,9 +24844,9 @@ Observable_1.Observable.prototype.audit = audit_1.audit;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var auditTime_1 = __webpack_require__(297);
-Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
-//# sourceMappingURL=auditTime.js.map
+var audit_1 = __webpack_require__(297);
+Observable_1.Observable.prototype.audit = audit_1.audit;
+//# sourceMappingURL=audit.js.map
 
 /***/ }),
 /* 155 */
@@ -24749,9 +24855,9 @@ Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var buffer_1 = __webpack_require__(298);
-Observable_1.Observable.prototype.buffer = buffer_1.buffer;
-//# sourceMappingURL=buffer.js.map
+var auditTime_1 = __webpack_require__(298);
+Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
+//# sourceMappingURL=auditTime.js.map
 
 /***/ }),
 /* 156 */
@@ -24760,9 +24866,9 @@ Observable_1.Observable.prototype.buffer = buffer_1.buffer;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bufferCount_1 = __webpack_require__(299);
-Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
-//# sourceMappingURL=bufferCount.js.map
+var buffer_1 = __webpack_require__(299);
+Observable_1.Observable.prototype.buffer = buffer_1.buffer;
+//# sourceMappingURL=buffer.js.map
 
 /***/ }),
 /* 157 */
@@ -24771,9 +24877,9 @@ Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bufferTime_1 = __webpack_require__(300);
-Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
-//# sourceMappingURL=bufferTime.js.map
+var bufferCount_1 = __webpack_require__(300);
+Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
+//# sourceMappingURL=bufferCount.js.map
 
 /***/ }),
 /* 158 */
@@ -24782,9 +24888,9 @@ Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bufferToggle_1 = __webpack_require__(301);
-Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
-//# sourceMappingURL=bufferToggle.js.map
+var bufferTime_1 = __webpack_require__(301);
+Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
+//# sourceMappingURL=bufferTime.js.map
 
 /***/ }),
 /* 159 */
@@ -24793,9 +24899,9 @@ Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bufferWhen_1 = __webpack_require__(302);
-Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
-//# sourceMappingURL=bufferWhen.js.map
+var bufferToggle_1 = __webpack_require__(302);
+Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
+//# sourceMappingURL=bufferToggle.js.map
 
 /***/ }),
 /* 160 */
@@ -24804,10 +24910,9 @@ Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var catch_1 = __webpack_require__(303);
-Observable_1.Observable.prototype.catch = catch_1._catch;
-Observable_1.Observable.prototype._catch = catch_1._catch;
-//# sourceMappingURL=catch.js.map
+var bufferWhen_1 = __webpack_require__(303);
+Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
+//# sourceMappingURL=bufferWhen.js.map
 
 /***/ }),
 /* 161 */
@@ -24816,12 +24921,24 @@ Observable_1.Observable.prototype._catch = catch_1._catch;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var combineAll_1 = __webpack_require__(304);
+var catch_1 = __webpack_require__(304);
+Observable_1.Observable.prototype.catch = catch_1._catch;
+Observable_1.Observable.prototype._catch = catch_1._catch;
+//# sourceMappingURL=catch.js.map
+
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var combineAll_1 = __webpack_require__(305);
 Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 //# sourceMappingURL=combineAll.js.map
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24832,7 +24949,7 @@ Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
 //# sourceMappingURL=combineLatest.js.map
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24843,26 +24960,15 @@ Observable_1.Observable.prototype.concat = concat_1.concat;
 //# sourceMappingURL=concat.js.map
 
 /***/ }),
-/* 164 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var concatAll_1 = __webpack_require__(305);
-Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
-//# sourceMappingURL=concatAll.js.map
-
-/***/ }),
 /* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concatMap_1 = __webpack_require__(306);
-Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
-//# sourceMappingURL=concatMap.js.map
+var concatAll_1 = __webpack_require__(306);
+Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
+//# sourceMappingURL=concatAll.js.map
 
 /***/ }),
 /* 166 */
@@ -24871,9 +24977,9 @@ Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concatMapTo_1 = __webpack_require__(307);
-Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
-//# sourceMappingURL=concatMapTo.js.map
+var concatMap_1 = __webpack_require__(307);
+Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
+//# sourceMappingURL=concatMap.js.map
 
 /***/ }),
 /* 167 */
@@ -24882,9 +24988,9 @@ Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var count_1 = __webpack_require__(308);
-Observable_1.Observable.prototype.count = count_1.count;
-//# sourceMappingURL=count.js.map
+var concatMapTo_1 = __webpack_require__(308);
+Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
+//# sourceMappingURL=concatMapTo.js.map
 
 /***/ }),
 /* 168 */
@@ -24893,9 +24999,9 @@ Observable_1.Observable.prototype.count = count_1.count;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var debounce_1 = __webpack_require__(309);
-Observable_1.Observable.prototype.debounce = debounce_1.debounce;
-//# sourceMappingURL=debounce.js.map
+var count_1 = __webpack_require__(309);
+Observable_1.Observable.prototype.count = count_1.count;
+//# sourceMappingURL=count.js.map
 
 /***/ }),
 /* 169 */
@@ -24904,9 +25010,9 @@ Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var debounceTime_1 = __webpack_require__(310);
-Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
-//# sourceMappingURL=debounceTime.js.map
+var debounce_1 = __webpack_require__(310);
+Observable_1.Observable.prototype.debounce = debounce_1.debounce;
+//# sourceMappingURL=debounce.js.map
 
 /***/ }),
 /* 170 */
@@ -24915,9 +25021,9 @@ Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var defaultIfEmpty_1 = __webpack_require__(311);
-Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
-//# sourceMappingURL=defaultIfEmpty.js.map
+var debounceTime_1 = __webpack_require__(311);
+Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
+//# sourceMappingURL=debounceTime.js.map
 
 /***/ }),
 /* 171 */
@@ -24926,9 +25032,9 @@ Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmp
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var delay_1 = __webpack_require__(312);
-Observable_1.Observable.prototype.delay = delay_1.delay;
-//# sourceMappingURL=delay.js.map
+var defaultIfEmpty_1 = __webpack_require__(312);
+Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
+//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ }),
 /* 172 */
@@ -24937,9 +25043,9 @@ Observable_1.Observable.prototype.delay = delay_1.delay;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var delayWhen_1 = __webpack_require__(313);
-Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
-//# sourceMappingURL=delayWhen.js.map
+var delay_1 = __webpack_require__(313);
+Observable_1.Observable.prototype.delay = delay_1.delay;
+//# sourceMappingURL=delay.js.map
 
 /***/ }),
 /* 173 */
@@ -24948,9 +25054,9 @@ Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var dematerialize_1 = __webpack_require__(314);
-Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
-//# sourceMappingURL=dematerialize.js.map
+var delayWhen_1 = __webpack_require__(314);
+Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
+//# sourceMappingURL=delayWhen.js.map
 
 /***/ }),
 /* 174 */
@@ -24959,9 +25065,9 @@ Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var distinct_1 = __webpack_require__(315);
-Observable_1.Observable.prototype.distinct = distinct_1.distinct;
-//# sourceMappingURL=distinct.js.map
+var dematerialize_1 = __webpack_require__(315);
+Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
+//# sourceMappingURL=dematerialize.js.map
 
 /***/ }),
 /* 175 */
@@ -24970,9 +25076,9 @@ Observable_1.Observable.prototype.distinct = distinct_1.distinct;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var distinctUntilChanged_1 = __webpack_require__(65);
-Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
-//# sourceMappingURL=distinctUntilChanged.js.map
+var distinct_1 = __webpack_require__(316);
+Observable_1.Observable.prototype.distinct = distinct_1.distinct;
+//# sourceMappingURL=distinct.js.map
 
 /***/ }),
 /* 176 */
@@ -24981,9 +25087,9 @@ Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var distinctUntilKeyChanged_1 = __webpack_require__(316);
-Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
-//# sourceMappingURL=distinctUntilKeyChanged.js.map
+var distinctUntilChanged_1 = __webpack_require__(68);
+Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
+//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ }),
 /* 177 */
@@ -24992,10 +25098,9 @@ Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChan
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var do_1 = __webpack_require__(317);
-Observable_1.Observable.prototype.do = do_1._do;
-Observable_1.Observable.prototype._do = do_1._do;
-//# sourceMappingURL=do.js.map
+var distinctUntilKeyChanged_1 = __webpack_require__(317);
+Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
+//# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ }),
 /* 178 */
@@ -25004,9 +25109,10 @@ Observable_1.Observable.prototype._do = do_1._do;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var elementAt_1 = __webpack_require__(318);
-Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
-//# sourceMappingURL=elementAt.js.map
+var do_1 = __webpack_require__(318);
+Observable_1.Observable.prototype.do = do_1._do;
+Observable_1.Observable.prototype._do = do_1._do;
+//# sourceMappingURL=do.js.map
 
 /***/ }),
 /* 179 */
@@ -25015,9 +25121,9 @@ Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var every_1 = __webpack_require__(319);
-Observable_1.Observable.prototype.every = every_1.every;
-//# sourceMappingURL=every.js.map
+var elementAt_1 = __webpack_require__(319);
+Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
+//# sourceMappingURL=elementAt.js.map
 
 /***/ }),
 /* 180 */
@@ -25026,9 +25132,9 @@ Observable_1.Observable.prototype.every = every_1.every;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var exhaust_1 = __webpack_require__(320);
-Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
-//# sourceMappingURL=exhaust.js.map
+var every_1 = __webpack_require__(320);
+Observable_1.Observable.prototype.every = every_1.every;
+//# sourceMappingURL=every.js.map
 
 /***/ }),
 /* 181 */
@@ -25037,9 +25143,9 @@ Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var exhaustMap_1 = __webpack_require__(321);
-Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
-//# sourceMappingURL=exhaustMap.js.map
+var exhaust_1 = __webpack_require__(321);
+Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
+//# sourceMappingURL=exhaust.js.map
 
 /***/ }),
 /* 182 */
@@ -25048,9 +25154,9 @@ Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var expand_1 = __webpack_require__(322);
-Observable_1.Observable.prototype.expand = expand_1.expand;
-//# sourceMappingURL=expand.js.map
+var exhaustMap_1 = __webpack_require__(322);
+Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
+//# sourceMappingURL=exhaustMap.js.map
 
 /***/ }),
 /* 183 */
@@ -25059,9 +25165,9 @@ Observable_1.Observable.prototype.expand = expand_1.expand;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var filter_1 = __webpack_require__(66);
-Observable_1.Observable.prototype.filter = filter_1.filter;
-//# sourceMappingURL=filter.js.map
+var expand_1 = __webpack_require__(323);
+Observable_1.Observable.prototype.expand = expand_1.expand;
+//# sourceMappingURL=expand.js.map
 
 /***/ }),
 /* 184 */
@@ -25070,10 +25176,9 @@ Observable_1.Observable.prototype.filter = filter_1.filter;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var finally_1 = __webpack_require__(323);
-Observable_1.Observable.prototype.finally = finally_1._finally;
-Observable_1.Observable.prototype._finally = finally_1._finally;
-//# sourceMappingURL=finally.js.map
+var filter_1 = __webpack_require__(69);
+Observable_1.Observable.prototype.filter = filter_1.filter;
+//# sourceMappingURL=filter.js.map
 
 /***/ }),
 /* 185 */
@@ -25082,9 +25187,10 @@ Observable_1.Observable.prototype._finally = finally_1._finally;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var find_1 = __webpack_require__(67);
-Observable_1.Observable.prototype.find = find_1.find;
-//# sourceMappingURL=find.js.map
+var finally_1 = __webpack_require__(324);
+Observable_1.Observable.prototype.finally = finally_1._finally;
+Observable_1.Observable.prototype._finally = finally_1._finally;
+//# sourceMappingURL=finally.js.map
 
 /***/ }),
 /* 186 */
@@ -25093,9 +25199,9 @@ Observable_1.Observable.prototype.find = find_1.find;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var findIndex_1 = __webpack_require__(324);
-Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
-//# sourceMappingURL=findIndex.js.map
+var find_1 = __webpack_require__(70);
+Observable_1.Observable.prototype.find = find_1.find;
+//# sourceMappingURL=find.js.map
 
 /***/ }),
 /* 187 */
@@ -25104,9 +25210,9 @@ Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var first_1 = __webpack_require__(325);
-Observable_1.Observable.prototype.first = first_1.first;
-//# sourceMappingURL=first.js.map
+var findIndex_1 = __webpack_require__(325);
+Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
+//# sourceMappingURL=findIndex.js.map
 
 /***/ }),
 /* 188 */
@@ -25115,9 +25221,9 @@ Observable_1.Observable.prototype.first = first_1.first;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var groupBy_1 = __webpack_require__(326);
-Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
-//# sourceMappingURL=groupBy.js.map
+var first_1 = __webpack_require__(326);
+Observable_1.Observable.prototype.first = first_1.first;
+//# sourceMappingURL=first.js.map
 
 /***/ }),
 /* 189 */
@@ -25126,9 +25232,9 @@ Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var ignoreElements_1 = __webpack_require__(327);
-Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
-//# sourceMappingURL=ignoreElements.js.map
+var groupBy_1 = __webpack_require__(327);
+Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
+//# sourceMappingURL=groupBy.js.map
 
 /***/ }),
 /* 190 */
@@ -25137,9 +25243,9 @@ Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElemen
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var isEmpty_1 = __webpack_require__(328);
-Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
-//# sourceMappingURL=isEmpty.js.map
+var ignoreElements_1 = __webpack_require__(328);
+Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
+//# sourceMappingURL=ignoreElements.js.map
 
 /***/ }),
 /* 191 */
@@ -25148,9 +25254,9 @@ Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var last_1 = __webpack_require__(329);
-Observable_1.Observable.prototype.last = last_1.last;
-//# sourceMappingURL=last.js.map
+var isEmpty_1 = __webpack_require__(329);
+Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
+//# sourceMappingURL=isEmpty.js.map
 
 /***/ }),
 /* 192 */
@@ -25159,13 +25265,24 @@ Observable_1.Observable.prototype.last = last_1.last;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var let_1 = __webpack_require__(330);
+var last_1 = __webpack_require__(330);
+Observable_1.Observable.prototype.last = last_1.last;
+//# sourceMappingURL=last.js.map
+
+/***/ }),
+/* 193 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var let_1 = __webpack_require__(331);
 Observable_1.Observable.prototype.let = let_1.letProto;
 Observable_1.Observable.prototype.letBind = let_1.letProto;
 //# sourceMappingURL=let.js.map
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25176,26 +25293,15 @@ Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
 /***/ }),
-/* 194 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var mapTo_1 = __webpack_require__(331);
-Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
-//# sourceMappingURL=mapTo.js.map
-
-/***/ }),
 /* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var materialize_1 = __webpack_require__(332);
-Observable_1.Observable.prototype.materialize = materialize_1.materialize;
-//# sourceMappingURL=materialize.js.map
+var mapTo_1 = __webpack_require__(332);
+Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
+//# sourceMappingURL=mapTo.js.map
 
 /***/ }),
 /* 196 */
@@ -25204,9 +25310,9 @@ Observable_1.Observable.prototype.materialize = materialize_1.materialize;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var max_1 = __webpack_require__(333);
-Observable_1.Observable.prototype.max = max_1.max;
-//# sourceMappingURL=max.js.map
+var materialize_1 = __webpack_require__(333);
+Observable_1.Observable.prototype.materialize = materialize_1.materialize;
+//# sourceMappingURL=materialize.js.map
 
 /***/ }),
 /* 197 */
@@ -25215,12 +25321,23 @@ Observable_1.Observable.prototype.max = max_1.max;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var merge_1 = __webpack_require__(68);
+var max_1 = __webpack_require__(334);
+Observable_1.Observable.prototype.max = max_1.max;
+//# sourceMappingURL=max.js.map
+
+/***/ }),
+/* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var merge_1 = __webpack_require__(71);
 Observable_1.Observable.prototype.merge = merge_1.merge;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25231,28 +25348,16 @@ Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 //# sourceMappingURL=mergeAll.js.map
 
 /***/ }),
-/* 199 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var mergeMap_1 = __webpack_require__(69);
-Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
-Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
-//# sourceMappingURL=mergeMap.js.map
-
-/***/ }),
 /* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var mergeMapTo_1 = __webpack_require__(70);
-Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
-Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
-//# sourceMappingURL=mergeMapTo.js.map
+var mergeMap_1 = __webpack_require__(72);
+Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
+Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
+//# sourceMappingURL=mergeMap.js.map
 
 /***/ }),
 /* 201 */
@@ -25261,9 +25366,10 @@ Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var mergeScan_1 = __webpack_require__(334);
-Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
-//# sourceMappingURL=mergeScan.js.map
+var mergeMapTo_1 = __webpack_require__(73);
+Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
+Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
+//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ }),
 /* 202 */
@@ -25272,12 +25378,23 @@ Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var min_1 = __webpack_require__(335);
+var mergeScan_1 = __webpack_require__(335);
+Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
+//# sourceMappingURL=mergeScan.js.map
+
+/***/ }),
+/* 203 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var min_1 = __webpack_require__(336);
 Observable_1.Observable.prototype.min = min_1.min;
 //# sourceMappingURL=min.js.map
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25288,7 +25405,7 @@ Observable_1.Observable.prototype.multicast = multicast_1.multicast;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25299,26 +25416,15 @@ Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ }),
-/* 205 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var onErrorResumeNext_1 = __webpack_require__(71);
-Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
-//# sourceMappingURL=onErrorResumeNext.js.map
-
-/***/ }),
 /* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var pairwise_1 = __webpack_require__(336);
-Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
-//# sourceMappingURL=pairwise.js.map
+var onErrorResumeNext_1 = __webpack_require__(74);
+Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
+//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ }),
 /* 207 */
@@ -25327,9 +25433,9 @@ Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var partition_1 = __webpack_require__(337);
-Observable_1.Observable.prototype.partition = partition_1.partition;
-//# sourceMappingURL=partition.js.map
+var pairwise_1 = __webpack_require__(337);
+Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
+//# sourceMappingURL=pairwise.js.map
 
 /***/ }),
 /* 208 */
@@ -25338,9 +25444,9 @@ Observable_1.Observable.prototype.partition = partition_1.partition;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var pluck_1 = __webpack_require__(338);
-Observable_1.Observable.prototype.pluck = pluck_1.pluck;
-//# sourceMappingURL=pluck.js.map
+var partition_1 = __webpack_require__(338);
+Observable_1.Observable.prototype.partition = partition_1.partition;
+//# sourceMappingURL=partition.js.map
 
 /***/ }),
 /* 209 */
@@ -25349,9 +25455,9 @@ Observable_1.Observable.prototype.pluck = pluck_1.pluck;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var publish_1 = __webpack_require__(339);
-Observable_1.Observable.prototype.publish = publish_1.publish;
-//# sourceMappingURL=publish.js.map
+var pluck_1 = __webpack_require__(339);
+Observable_1.Observable.prototype.pluck = pluck_1.pluck;
+//# sourceMappingURL=pluck.js.map
 
 /***/ }),
 /* 210 */
@@ -25360,9 +25466,9 @@ Observable_1.Observable.prototype.publish = publish_1.publish;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var publishBehavior_1 = __webpack_require__(340);
-Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
-//# sourceMappingURL=publishBehavior.js.map
+var publish_1 = __webpack_require__(340);
+Observable_1.Observable.prototype.publish = publish_1.publish;
+//# sourceMappingURL=publish.js.map
 
 /***/ }),
 /* 211 */
@@ -25371,9 +25477,9 @@ Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBeh
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var publishLast_1 = __webpack_require__(341);
-Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
-//# sourceMappingURL=publishLast.js.map
+var publishBehavior_1 = __webpack_require__(341);
+Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
+//# sourceMappingURL=publishBehavior.js.map
 
 /***/ }),
 /* 212 */
@@ -25382,9 +25488,9 @@ Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var publishReplay_1 = __webpack_require__(342);
-Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
-//# sourceMappingURL=publishReplay.js.map
+var publishLast_1 = __webpack_require__(342);
+Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
+//# sourceMappingURL=publishLast.js.map
 
 /***/ }),
 /* 213 */
@@ -25393,12 +25499,23 @@ Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var race_1 = __webpack_require__(72);
+var publishReplay_1 = __webpack_require__(343);
+Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
+//# sourceMappingURL=publishReplay.js.map
+
+/***/ }),
+/* 214 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var race_1 = __webpack_require__(75);
 Observable_1.Observable.prototype.race = race_1.race;
 //# sourceMappingURL=race.js.map
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25409,26 +25526,15 @@ Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 //# sourceMappingURL=reduce.js.map
 
 /***/ }),
-/* 215 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var repeat_1 = __webpack_require__(343);
-Observable_1.Observable.prototype.repeat = repeat_1.repeat;
-//# sourceMappingURL=repeat.js.map
-
-/***/ }),
 /* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var repeatWhen_1 = __webpack_require__(344);
-Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
-//# sourceMappingURL=repeatWhen.js.map
+var repeat_1 = __webpack_require__(344);
+Observable_1.Observable.prototype.repeat = repeat_1.repeat;
+//# sourceMappingURL=repeat.js.map
 
 /***/ }),
 /* 217 */
@@ -25437,9 +25543,9 @@ Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var retry_1 = __webpack_require__(345);
-Observable_1.Observable.prototype.retry = retry_1.retry;
-//# sourceMappingURL=retry.js.map
+var repeatWhen_1 = __webpack_require__(345);
+Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
+//# sourceMappingURL=repeatWhen.js.map
 
 /***/ }),
 /* 218 */
@@ -25448,9 +25554,9 @@ Observable_1.Observable.prototype.retry = retry_1.retry;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var retryWhen_1 = __webpack_require__(346);
-Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
-//# sourceMappingURL=retryWhen.js.map
+var retry_1 = __webpack_require__(346);
+Observable_1.Observable.prototype.retry = retry_1.retry;
+//# sourceMappingURL=retry.js.map
 
 /***/ }),
 /* 219 */
@@ -25459,9 +25565,9 @@ Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var sample_1 = __webpack_require__(347);
-Observable_1.Observable.prototype.sample = sample_1.sample;
-//# sourceMappingURL=sample.js.map
+var retryWhen_1 = __webpack_require__(347);
+Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
+//# sourceMappingURL=retryWhen.js.map
 
 /***/ }),
 /* 220 */
@@ -25470,9 +25576,9 @@ Observable_1.Observable.prototype.sample = sample_1.sample;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var sampleTime_1 = __webpack_require__(348);
-Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
-//# sourceMappingURL=sampleTime.js.map
+var sample_1 = __webpack_require__(348);
+Observable_1.Observable.prototype.sample = sample_1.sample;
+//# sourceMappingURL=sample.js.map
 
 /***/ }),
 /* 221 */
@@ -25481,9 +25587,9 @@ Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var scan_1 = __webpack_require__(349);
-Observable_1.Observable.prototype.scan = scan_1.scan;
-//# sourceMappingURL=scan.js.map
+var sampleTime_1 = __webpack_require__(349);
+Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
+//# sourceMappingURL=sampleTime.js.map
 
 /***/ }),
 /* 222 */
@@ -25492,9 +25598,9 @@ Observable_1.Observable.prototype.scan = scan_1.scan;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var sequenceEqual_1 = __webpack_require__(350);
-Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
-//# sourceMappingURL=sequenceEqual.js.map
+var scan_1 = __webpack_require__(350);
+Observable_1.Observable.prototype.scan = scan_1.scan;
+//# sourceMappingURL=scan.js.map
 
 /***/ }),
 /* 223 */
@@ -25503,9 +25609,9 @@ Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var share_1 = __webpack_require__(351);
-Observable_1.Observable.prototype.share = share_1.share;
-//# sourceMappingURL=share.js.map
+var sequenceEqual_1 = __webpack_require__(351);
+Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
+//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ }),
 /* 224 */
@@ -25514,9 +25620,9 @@ Observable_1.Observable.prototype.share = share_1.share;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var single_1 = __webpack_require__(352);
-Observable_1.Observable.prototype.single = single_1.single;
-//# sourceMappingURL=single.js.map
+var share_1 = __webpack_require__(352);
+Observable_1.Observable.prototype.share = share_1.share;
+//# sourceMappingURL=share.js.map
 
 /***/ }),
 /* 225 */
@@ -25525,9 +25631,9 @@ Observable_1.Observable.prototype.single = single_1.single;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var skip_1 = __webpack_require__(353);
-Observable_1.Observable.prototype.skip = skip_1.skip;
-//# sourceMappingURL=skip.js.map
+var single_1 = __webpack_require__(353);
+Observable_1.Observable.prototype.single = single_1.single;
+//# sourceMappingURL=single.js.map
 
 /***/ }),
 /* 226 */
@@ -25536,9 +25642,9 @@ Observable_1.Observable.prototype.skip = skip_1.skip;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var skipUntil_1 = __webpack_require__(354);
-Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
-//# sourceMappingURL=skipUntil.js.map
+var skip_1 = __webpack_require__(354);
+Observable_1.Observable.prototype.skip = skip_1.skip;
+//# sourceMappingURL=skip.js.map
 
 /***/ }),
 /* 227 */
@@ -25547,9 +25653,9 @@ Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var skipWhile_1 = __webpack_require__(355);
-Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
-//# sourceMappingURL=skipWhile.js.map
+var skipUntil_1 = __webpack_require__(355);
+Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
+//# sourceMappingURL=skipUntil.js.map
 
 /***/ }),
 /* 228 */
@@ -25558,9 +25664,9 @@ Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var startWith_1 = __webpack_require__(356);
-Observable_1.Observable.prototype.startWith = startWith_1.startWith;
-//# sourceMappingURL=startWith.js.map
+var skipWhile_1 = __webpack_require__(356);
+Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
+//# sourceMappingURL=skipWhile.js.map
 
 /***/ }),
 /* 229 */
@@ -25569,9 +25675,9 @@ Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var subscribeOn_1 = __webpack_require__(357);
-Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
-//# sourceMappingURL=subscribeOn.js.map
+var startWith_1 = __webpack_require__(357);
+Observable_1.Observable.prototype.startWith = startWith_1.startWith;
+//# sourceMappingURL=startWith.js.map
 
 /***/ }),
 /* 230 */
@@ -25580,10 +25686,9 @@ Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var switch_1 = __webpack_require__(358);
-Observable_1.Observable.prototype.switch = switch_1._switch;
-Observable_1.Observable.prototype._switch = switch_1._switch;
-//# sourceMappingURL=switch.js.map
+var subscribeOn_1 = __webpack_require__(358);
+Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
+//# sourceMappingURL=subscribeOn.js.map
 
 /***/ }),
 /* 231 */
@@ -25592,9 +25697,10 @@ Observable_1.Observable.prototype._switch = switch_1._switch;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var switchMap_1 = __webpack_require__(359);
-Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
-//# sourceMappingURL=switchMap.js.map
+var switch_1 = __webpack_require__(359);
+Observable_1.Observable.prototype.switch = switch_1._switch;
+Observable_1.Observable.prototype._switch = switch_1._switch;
+//# sourceMappingURL=switch.js.map
 
 /***/ }),
 /* 232 */
@@ -25603,9 +25709,9 @@ Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var switchMapTo_1 = __webpack_require__(360);
-Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
-//# sourceMappingURL=switchMapTo.js.map
+var switchMap_1 = __webpack_require__(360);
+Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
+//# sourceMappingURL=switchMap.js.map
 
 /***/ }),
 /* 233 */
@@ -25614,9 +25720,9 @@ Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var take_1 = __webpack_require__(361);
-Observable_1.Observable.prototype.take = take_1.take;
-//# sourceMappingURL=take.js.map
+var switchMapTo_1 = __webpack_require__(361);
+Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
+//# sourceMappingURL=switchMapTo.js.map
 
 /***/ }),
 /* 234 */
@@ -25625,9 +25731,9 @@ Observable_1.Observable.prototype.take = take_1.take;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var takeLast_1 = __webpack_require__(362);
-Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
-//# sourceMappingURL=takeLast.js.map
+var take_1 = __webpack_require__(362);
+Observable_1.Observable.prototype.take = take_1.take;
+//# sourceMappingURL=take.js.map
 
 /***/ }),
 /* 235 */
@@ -25636,9 +25742,9 @@ Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var takeUntil_1 = __webpack_require__(363);
-Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
-//# sourceMappingURL=takeUntil.js.map
+var takeLast_1 = __webpack_require__(363);
+Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
+//# sourceMappingURL=takeLast.js.map
 
 /***/ }),
 /* 236 */
@@ -25647,9 +25753,9 @@ Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var takeWhile_1 = __webpack_require__(364);
-Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
-//# sourceMappingURL=takeWhile.js.map
+var takeUntil_1 = __webpack_require__(364);
+Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
+//# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
 /* 237 */
@@ -25658,9 +25764,9 @@ Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var throttle_1 = __webpack_require__(365);
-Observable_1.Observable.prototype.throttle = throttle_1.throttle;
-//# sourceMappingURL=throttle.js.map
+var takeWhile_1 = __webpack_require__(365);
+Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
+//# sourceMappingURL=takeWhile.js.map
 
 /***/ }),
 /* 238 */
@@ -25669,9 +25775,9 @@ Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var throttleTime_1 = __webpack_require__(366);
-Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
-//# sourceMappingURL=throttleTime.js.map
+var throttle_1 = __webpack_require__(366);
+Observable_1.Observable.prototype.throttle = throttle_1.throttle;
+//# sourceMappingURL=throttle.js.map
 
 /***/ }),
 /* 239 */
@@ -25680,9 +25786,9 @@ Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timeInterval_1 = __webpack_require__(73);
-Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
-//# sourceMappingURL=timeInterval.js.map
+var throttleTime_1 = __webpack_require__(367);
+Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
+//# sourceMappingURL=throttleTime.js.map
 
 /***/ }),
 /* 240 */
@@ -25691,9 +25797,9 @@ Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timeout_1 = __webpack_require__(367);
-Observable_1.Observable.prototype.timeout = timeout_1.timeout;
-//# sourceMappingURL=timeout.js.map
+var timeInterval_1 = __webpack_require__(76);
+Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
+//# sourceMappingURL=timeInterval.js.map
 
 /***/ }),
 /* 241 */
@@ -25702,9 +25808,9 @@ Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timeoutWith_1 = __webpack_require__(368);
-Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
-//# sourceMappingURL=timeoutWith.js.map
+var timeout_1 = __webpack_require__(368);
+Observable_1.Observable.prototype.timeout = timeout_1.timeout;
+//# sourceMappingURL=timeout.js.map
 
 /***/ }),
 /* 242 */
@@ -25713,9 +25819,9 @@ Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timestamp_1 = __webpack_require__(74);
-Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
-//# sourceMappingURL=timestamp.js.map
+var timeoutWith_1 = __webpack_require__(369);
+Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
+//# sourceMappingURL=timeoutWith.js.map
 
 /***/ }),
 /* 243 */
@@ -25724,9 +25830,9 @@ Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var toArray_1 = __webpack_require__(369);
-Observable_1.Observable.prototype.toArray = toArray_1.toArray;
-//# sourceMappingURL=toArray.js.map
+var timestamp_1 = __webpack_require__(77);
+Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
+//# sourceMappingURL=timestamp.js.map
 
 /***/ }),
 /* 244 */
@@ -25735,9 +25841,9 @@ Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var toPromise_1 = __webpack_require__(370);
-Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
-//# sourceMappingURL=toPromise.js.map
+var toArray_1 = __webpack_require__(370);
+Observable_1.Observable.prototype.toArray = toArray_1.toArray;
+//# sourceMappingURL=toArray.js.map
 
 /***/ }),
 /* 245 */
@@ -25746,9 +25852,9 @@ Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var window_1 = __webpack_require__(371);
-Observable_1.Observable.prototype.window = window_1.window;
-//# sourceMappingURL=window.js.map
+var toPromise_1 = __webpack_require__(371);
+Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
+//# sourceMappingURL=toPromise.js.map
 
 /***/ }),
 /* 246 */
@@ -25757,9 +25863,9 @@ Observable_1.Observable.prototype.window = window_1.window;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var windowCount_1 = __webpack_require__(372);
-Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
-//# sourceMappingURL=windowCount.js.map
+var window_1 = __webpack_require__(372);
+Observable_1.Observable.prototype.window = window_1.window;
+//# sourceMappingURL=window.js.map
 
 /***/ }),
 /* 247 */
@@ -25768,9 +25874,9 @@ Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var windowTime_1 = __webpack_require__(373);
-Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
-//# sourceMappingURL=windowTime.js.map
+var windowCount_1 = __webpack_require__(373);
+Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
+//# sourceMappingURL=windowCount.js.map
 
 /***/ }),
 /* 248 */
@@ -25779,9 +25885,9 @@ Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var windowToggle_1 = __webpack_require__(374);
-Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
-//# sourceMappingURL=windowToggle.js.map
+var windowTime_1 = __webpack_require__(374);
+Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
+//# sourceMappingURL=windowTime.js.map
 
 /***/ }),
 /* 249 */
@@ -25790,9 +25896,9 @@ Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var windowWhen_1 = __webpack_require__(375);
-Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
-//# sourceMappingURL=windowWhen.js.map
+var windowToggle_1 = __webpack_require__(375);
+Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
+//# sourceMappingURL=windowToggle.js.map
 
 /***/ }),
 /* 250 */
@@ -25801,12 +25907,23 @@ Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var withLatestFrom_1 = __webpack_require__(376);
+var windowWhen_1 = __webpack_require__(376);
+Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
+//# sourceMappingURL=windowWhen.js.map
+
+/***/ }),
+/* 251 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var withLatestFrom_1 = __webpack_require__(377);
 Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
 //# sourceMappingURL=withLatestFrom.js.map
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25817,18 +25934,18 @@ Observable_1.Observable.prototype.zip = zip_1.zipProto;
 //# sourceMappingURL=zip.js.map
 
 /***/ }),
-/* 252 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var zipAll_1 = __webpack_require__(377);
+var zipAll_1 = __webpack_require__(378);
 Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 //# sourceMappingURL=zipAll.js.map
 
 /***/ }),
-/* 253 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25904,7 +26021,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ }),
-/* 254 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26178,7 +26295,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=BoundCallbackObservable.js.map
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26447,7 +26564,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26552,7 +26669,7 @@ var DeferSubscriber = (function (_super) {
 //# sourceMappingURL=DeferObservable.js.map
 
 /***/ }),
-/* 257 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26640,7 +26757,7 @@ exports.ErrorObservable = ErrorObservable;
 //# sourceMappingURL=ErrorObservable.js.map
 
 /***/ }),
-/* 258 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26758,7 +26875,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ }),
-/* 259 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26904,7 +27021,7 @@ exports.FromEventObservable = FromEventObservable;
 //# sourceMappingURL=FromEventObservable.js.map
 
 /***/ }),
-/* 260 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27023,7 +27140,7 @@ exports.FromEventPatternObservable = FromEventPatternObservable;
 //# sourceMappingURL=FromEventPatternObservable.js.map
 
 /***/ }),
-/* 261 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27164,7 +27281,7 @@ exports.GenerateObservable = GenerateObservable;
 //# sourceMappingURL=GenerateObservable.js.map
 
 /***/ }),
-/* 262 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27231,7 +27348,7 @@ var IfSubscriber = (function (_super) {
 //# sourceMappingURL=IfObservable.js.map
 
 /***/ }),
-/* 263 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27325,7 +27442,7 @@ exports.IntervalObservable = IntervalObservable;
 //# sourceMappingURL=IntervalObservable.js.map
 
 /***/ }),
-/* 264 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27494,7 +27611,7 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ }),
-/* 265 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27505,7 +27622,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var noop_1 = __webpack_require__(86);
+var noop_1 = __webpack_require__(89);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -27559,7 +27676,7 @@ exports.NeverObservable = NeverObservable;
 //# sourceMappingURL=NeverObservable.js.map
 
 /***/ }),
-/* 266 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27650,7 +27767,7 @@ exports.PairsObservable = PairsObservable;
 //# sourceMappingURL=PairsObservable.js.map
 
 /***/ }),
-/* 267 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27752,7 +27869,7 @@ exports.RangeObservable = RangeObservable;
 //# sourceMappingURL=RangeObservable.js.map
 
 /***/ }),
-/* 268 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27763,7 +27880,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var asap_1 = __webpack_require__(76);
+var asap_1 = __webpack_require__(79);
 var isNumeric_1 = __webpack_require__(33);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -27809,7 +27926,7 @@ exports.SubscribeOnObservable = SubscribeOnObservable;
 //# sourceMappingURL=SubscribeOnObservable.js.map
 
 /***/ }),
-/* 269 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27922,7 +28039,7 @@ exports.TimerObservable = TimerObservable;
 //# sourceMappingURL=TimerObservable.js.map
 
 /***/ }),
-/* 270 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27989,27 +28106,27 @@ var UsingSubscriber = (function (_super) {
 //# sourceMappingURL=UsingObservable.js.map
 
 /***/ }),
-/* 271 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var BoundCallbackObservable_1 = __webpack_require__(254);
-exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
-//# sourceMappingURL=bindCallback.js.map
-
-/***/ }),
 /* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var BoundNodeCallbackObservable_1 = __webpack_require__(255);
+var BoundCallbackObservable_1 = __webpack_require__(255);
+exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
+//# sourceMappingURL=bindCallback.js.map
+
+/***/ }),
+/* 273 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var BoundNodeCallbackObservable_1 = __webpack_require__(256);
 exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 //# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ }),
-/* 273 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28151,7 +28268,7 @@ exports.combineLatest = combineLatest;
 //# sourceMappingURL=combineLatest.js.map
 
 /***/ }),
-/* 274 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28161,17 +28278,17 @@ exports.concat = concat_1.concatStatic;
 //# sourceMappingURL=concat.js.map
 
 /***/ }),
-/* 275 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var DeferObservable_1 = __webpack_require__(256);
+var DeferObservable_1 = __webpack_require__(257);
 exports.defer = DeferObservable_1.DeferObservable.create;
 //# sourceMappingURL=defer.js.map
 
 /***/ }),
-/* 276 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28189,7 +28306,7 @@ var root_1 = __webpack_require__(7);
 var ReplaySubject_1 = __webpack_require__(36);
 var tryCatch_1 = __webpack_require__(8);
 var errorObject_1 = __webpack_require__(6);
-var assign_1 = __webpack_require__(395);
+var assign_1 = __webpack_require__(396);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -28425,27 +28542,27 @@ exports.WebSocketSubject = WebSocketSubject;
 //# sourceMappingURL=WebSocketSubject.js.map
 
 /***/ }),
-/* 277 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var AjaxObservable_1 = __webpack_require__(64);
-exports.ajax = AjaxObservable_1.AjaxObservable.create;
-//# sourceMappingURL=ajax.js.map
-
-/***/ }),
 /* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var WebSocketSubject_1 = __webpack_require__(276);
+var AjaxObservable_1 = __webpack_require__(67);
+exports.ajax = AjaxObservable_1.AjaxObservable.create;
+//# sourceMappingURL=ajax.js.map
+
+/***/ }),
+/* 279 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var WebSocketSubject_1 = __webpack_require__(277);
 exports.webSocket = WebSocketSubject_1.WebSocketSubject.create;
 //# sourceMappingURL=webSocket.js.map
 
 /***/ }),
-/* 279 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28455,24 +28572,14 @@ exports.empty = EmptyObservable_1.EmptyObservable.create;
 //# sourceMappingURL=empty.js.map
 
 /***/ }),
-/* 280 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var ForkJoinObservable_1 = __webpack_require__(258);
-exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
-//# sourceMappingURL=forkJoin.js.map
-
-/***/ }),
 /* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var FromObservable_1 = __webpack_require__(62);
-exports.from = FromObservable_1.FromObservable.create;
-//# sourceMappingURL=from.js.map
+var ForkJoinObservable_1 = __webpack_require__(259);
+exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
+//# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
 /* 282 */
@@ -28480,9 +28587,9 @@ exports.from = FromObservable_1.FromObservable.create;
 
 "use strict";
 
-var FromEventObservable_1 = __webpack_require__(259);
-exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
-//# sourceMappingURL=fromEvent.js.map
+var FromObservable_1 = __webpack_require__(65);
+exports.from = FromObservable_1.FromObservable.create;
+//# sourceMappingURL=from.js.map
 
 /***/ }),
 /* 283 */
@@ -28490,9 +28597,9 @@ exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 
 "use strict";
 
-var FromEventPatternObservable_1 = __webpack_require__(260);
-exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
-//# sourceMappingURL=fromEventPattern.js.map
+var FromEventObservable_1 = __webpack_require__(260);
+exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
+//# sourceMappingURL=fromEvent.js.map
 
 /***/ }),
 /* 284 */
@@ -28500,9 +28607,9 @@ exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservab
 
 "use strict";
 
-var PromiseObservable_1 = __webpack_require__(63);
-exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
-//# sourceMappingURL=fromPromise.js.map
+var FromEventPatternObservable_1 = __webpack_require__(261);
+exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
+//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ }),
 /* 285 */
@@ -28510,9 +28617,9 @@ exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 
 "use strict";
 
-var IfObservable_1 = __webpack_require__(262);
-exports._if = IfObservable_1.IfObservable.create;
-//# sourceMappingURL=if.js.map
+var PromiseObservable_1 = __webpack_require__(66);
+exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
+//# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
 /* 286 */
@@ -28520,9 +28627,9 @@ exports._if = IfObservable_1.IfObservable.create;
 
 "use strict";
 
-var IntervalObservable_1 = __webpack_require__(263);
-exports.interval = IntervalObservable_1.IntervalObservable.create;
-//# sourceMappingURL=interval.js.map
+var IfObservable_1 = __webpack_require__(263);
+exports._if = IfObservable_1.IfObservable.create;
+//# sourceMappingURL=if.js.map
 
 /***/ }),
 /* 287 */
@@ -28530,9 +28637,9 @@ exports.interval = IntervalObservable_1.IntervalObservable.create;
 
 "use strict";
 
-var merge_1 = __webpack_require__(68);
-exports.merge = merge_1.mergeStatic;
-//# sourceMappingURL=merge.js.map
+var IntervalObservable_1 = __webpack_require__(264);
+exports.interval = IntervalObservable_1.IntervalObservable.create;
+//# sourceMappingURL=interval.js.map
 
 /***/ }),
 /* 288 */
@@ -28540,12 +28647,22 @@ exports.merge = merge_1.mergeStatic;
 
 "use strict";
 
-var NeverObservable_1 = __webpack_require__(265);
+var merge_1 = __webpack_require__(71);
+exports.merge = merge_1.mergeStatic;
+//# sourceMappingURL=merge.js.map
+
+/***/ }),
+/* 289 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var NeverObservable_1 = __webpack_require__(266);
 exports.never = NeverObservable_1.NeverObservable.create;
 //# sourceMappingURL=never.js.map
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28555,24 +28672,14 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 //# sourceMappingURL=of.js.map
 
 /***/ }),
-/* 290 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var PairsObservable_1 = __webpack_require__(266);
-exports.pairs = PairsObservable_1.PairsObservable.create;
-//# sourceMappingURL=pairs.js.map
-
-/***/ }),
 /* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var RangeObservable_1 = __webpack_require__(267);
-exports.range = RangeObservable_1.RangeObservable.create;
-//# sourceMappingURL=range.js.map
+var PairsObservable_1 = __webpack_require__(267);
+exports.pairs = PairsObservable_1.PairsObservable.create;
+//# sourceMappingURL=pairs.js.map
 
 /***/ }),
 /* 292 */
@@ -28580,9 +28687,9 @@ exports.range = RangeObservable_1.RangeObservable.create;
 
 "use strict";
 
-var ErrorObservable_1 = __webpack_require__(257);
-exports._throw = ErrorObservable_1.ErrorObservable.create;
-//# sourceMappingURL=throw.js.map
+var RangeObservable_1 = __webpack_require__(268);
+exports.range = RangeObservable_1.RangeObservable.create;
+//# sourceMappingURL=range.js.map
 
 /***/ }),
 /* 293 */
@@ -28590,9 +28697,9 @@ exports._throw = ErrorObservable_1.ErrorObservable.create;
 
 "use strict";
 
-var TimerObservable_1 = __webpack_require__(269);
-exports.timer = TimerObservable_1.TimerObservable.create;
-//# sourceMappingURL=timer.js.map
+var ErrorObservable_1 = __webpack_require__(258);
+exports._throw = ErrorObservable_1.ErrorObservable.create;
+//# sourceMappingURL=throw.js.map
 
 /***/ }),
 /* 294 */
@@ -28600,12 +28707,22 @@ exports.timer = TimerObservable_1.TimerObservable.create;
 
 "use strict";
 
-var UsingObservable_1 = __webpack_require__(270);
+var TimerObservable_1 = __webpack_require__(270);
+exports.timer = TimerObservable_1.TimerObservable.create;
+//# sourceMappingURL=timer.js.map
+
+/***/ }),
+/* 295 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var UsingObservable_1 = __webpack_require__(271);
 exports.using = UsingObservable_1.UsingObservable.create;
 //# sourceMappingURL=using.js.map
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28615,7 +28732,7 @@ exports.zip = zip_1.zipStatic;
 //# sourceMappingURL=zip.js.map
 
 /***/ }),
-/* 296 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28731,7 +28848,7 @@ var AuditSubscriber = (function (_super) {
 //# sourceMappingURL=audit.js.map
 
 /***/ }),
-/* 297 */
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28841,7 +28958,7 @@ function dispatchNext(subscriber) {
 //# sourceMappingURL=auditTime.js.map
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28923,7 +29040,7 @@ var BufferSubscriber = (function (_super) {
 //# sourceMappingURL=buffer.js.map
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29036,7 +29153,7 @@ var BufferCountSubscriber = (function (_super) {
 //# sourceMappingURL=bufferCount.js.map
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29241,7 +29358,7 @@ function dispatchBufferClose(arg) {
 //# sourceMappingURL=bufferTime.js.map
 
 /***/ }),
-/* 301 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29399,7 +29516,7 @@ var BufferToggleSubscriber = (function (_super) {
 //# sourceMappingURL=bufferToggle.js.map
 
 /***/ }),
-/* 302 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29527,7 +29644,7 @@ var BufferWhenSubscriber = (function (_super) {
 //# sourceMappingURL=bufferWhen.js.map
 
 /***/ }),
-/* 303 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29649,7 +29766,7 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29702,7 +29819,7 @@ exports.combineAll = combineAll;
 //# sourceMappingURL=combineAll.js.map
 
 /***/ }),
-/* 305 */
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29764,12 +29881,12 @@ exports.concatAll = concatAll;
 //# sourceMappingURL=concatAll.js.map
 
 /***/ }),
-/* 306 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMap_1 = __webpack_require__(69);
+var mergeMap_1 = __webpack_require__(72);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -29840,12 +29957,12 @@ exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
 /***/ }),
-/* 307 */
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMapTo_1 = __webpack_require__(70);
+var mergeMapTo_1 = __webpack_require__(73);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to the same Observable which is merged multiple
@@ -29910,7 +30027,7 @@ exports.concatMapTo = concatMapTo;
 //# sourceMappingURL=concatMapTo.js.map
 
 /***/ }),
-/* 308 */
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30027,7 +30144,7 @@ var CountSubscriber = (function (_super) {
 //# sourceMappingURL=count.js.map
 
 /***/ }),
-/* 309 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30160,7 +30277,7 @@ var DebounceSubscriber = (function (_super) {
 //# sourceMappingURL=debounce.js.map
 
 /***/ }),
-/* 310 */
+/* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30282,7 +30399,7 @@ function dispatchNext(subscriber) {
 //# sourceMappingURL=debounceTime.js.map
 
 /***/ }),
-/* 311 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30365,7 +30482,7 @@ var DefaultIfEmptySubscriber = (function (_super) {
 //# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ }),
-/* 312 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30506,7 +30623,7 @@ var DelayMessage = (function () {
 //# sourceMappingURL=delay.js.map
 
 /***/ }),
-/* 313 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30702,7 +30819,7 @@ var SubscriptionDelaySubscriber = (function (_super) {
 //# sourceMappingURL=delayWhen.js.map
 
 /***/ }),
-/* 314 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30783,7 +30900,7 @@ var DeMaterializeSubscriber = (function (_super) {
 //# sourceMappingURL=dematerialize.js.map
 
 /***/ }),
-/* 315 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30795,7 +30912,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var OuterSubscriber_1 = __webpack_require__(2);
 var subscribeToResult_1 = __webpack_require__(3);
-var Set_1 = __webpack_require__(394);
+var Set_1 = __webpack_require__(395);
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.
  *
@@ -30909,12 +31026,12 @@ exports.DistinctSubscriber = DistinctSubscriber;
 //# sourceMappingURL=distinct.js.map
 
 /***/ }),
-/* 316 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var distinctUntilChanged_1 = __webpack_require__(65);
+var distinctUntilChanged_1 = __webpack_require__(68);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item,
@@ -30985,7 +31102,7 @@ exports.distinctUntilKeyChanged = distinctUntilKeyChanged;
 //# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ }),
-/* 317 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31104,7 +31221,7 @@ var DoSubscriber = (function (_super) {
 //# sourceMappingURL=do.js.map
 
 /***/ }),
-/* 318 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31210,7 +31327,7 @@ var ElementAtSubscriber = (function (_super) {
 //# sourceMappingURL=elementAt.js.map
 
 /***/ }),
-/* 319 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31290,7 +31407,7 @@ var EverySubscriber = (function (_super) {
 //# sourceMappingURL=every.js.map
 
 /***/ }),
-/* 320 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31385,7 +31502,7 @@ var SwitchFirstSubscriber = (function (_super) {
 //# sourceMappingURL=exhaust.js.map
 
 /***/ }),
-/* 321 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31529,7 +31646,7 @@ var SwitchFirstMapSubscriber = (function (_super) {
 //# sourceMappingURL=exhaustMap.js.map
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31686,7 +31803,7 @@ exports.ExpandSubscriber = ExpandSubscriber;
 //# sourceMappingURL=expand.js.map
 
 /***/ }),
-/* 323 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31735,12 +31852,12 @@ var FinallySubscriber = (function (_super) {
 //# sourceMappingURL=finally.js.map
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var find_1 = __webpack_require__(67);
+var find_1 = __webpack_require__(70);
 /**
  * Emits only the index of the first value emitted by the source Observable that
  * meets some condition.
@@ -31782,7 +31899,7 @@ exports.findIndex = findIndex;
 //# sourceMappingURL=findIndex.js.map
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31940,7 +32057,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31954,8 +32071,8 @@ var Subscriber_1 = __webpack_require__(1);
 var Subscription_1 = __webpack_require__(4);
 var Observable_1 = __webpack_require__(0);
 var Subject_1 = __webpack_require__(5);
-var Map_1 = __webpack_require__(392);
-var FastMap_1 = __webpack_require__(390);
+var Map_1 = __webpack_require__(393);
+var FastMap_1 = __webpack_require__(391);
 /* tslint:enable:max-line-length */
 /**
  * Groups the items emitted by an Observable according to a specified criterion,
@@ -32181,7 +32298,7 @@ var InnerRefCountSubscription = (function (_super) {
 //# sourceMappingURL=groupBy.js.map
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32192,7 +32309,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(1);
-var noop_1 = __webpack_require__(86);
+var noop_1 = __webpack_require__(89);
 /**
  * Ignores all items emitted by the source Observable and only passes calls of `complete` or `error`.
  *
@@ -32234,7 +32351,7 @@ var IgnoreElementsSubscriber = (function (_super) {
 //# sourceMappingURL=ignoreElements.js.map
 
 /***/ }),
-/* 328 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32292,7 +32409,7 @@ var IsEmptySubscriber = (function (_super) {
 //# sourceMappingURL=isEmpty.js.map
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32417,7 +32534,7 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32435,7 +32552,7 @@ exports.letProto = letProto;
 //# sourceMappingURL=let.js.map
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32504,7 +32621,7 @@ var MapToSubscriber = (function (_super) {
 //# sourceMappingURL=mapTo.js.map
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32600,7 +32717,7 @@ var MaterializeSubscriber = (function (_super) {
 //# sourceMappingURL=materialize.js.map
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32647,7 +32764,7 @@ exports.max = max;
 //# sourceMappingURL=max.js.map
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32782,7 +32899,7 @@ exports.MergeScanSubscriber = MergeScanSubscriber;
 //# sourceMappingURL=mergeScan.js.map
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32829,7 +32946,7 @@ exports.min = min;
 //# sourceMappingURL=min.js.map
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32912,13 +33029,13 @@ var PairwiseSubscriber = (function (_super) {
 //# sourceMappingURL=pairwise.js.map
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var not_1 = __webpack_require__(396);
-var filter_1 = __webpack_require__(66);
+var not_1 = __webpack_require__(397);
+var filter_1 = __webpack_require__(69);
 /**
  * Splits the source Observable into two, one with values that satisfy a
  * predicate, and another with values that don't satisfy the predicate.
@@ -32970,7 +33087,7 @@ exports.partition = partition;
 //# sourceMappingURL=partition.js.map
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33033,7 +33150,7 @@ function plucker(props, length) {
 //# sourceMappingURL=pluck.js.map
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33062,12 +33179,12 @@ exports.publish = publish;
 //# sourceMappingURL=publish.js.map
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var BehaviorSubject_1 = __webpack_require__(58);
+var BehaviorSubject_1 = __webpack_require__(61);
 var multicast_1 = __webpack_require__(17);
 /**
  * @param value
@@ -33082,7 +33199,7 @@ exports.publishBehavior = publishBehavior;
 //# sourceMappingURL=publishBehavior.js.map
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33101,7 +33218,7 @@ exports.publishLast = publishLast;
 //# sourceMappingURL=publishLast.js.map
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33125,7 +33242,7 @@ exports.publishReplay = publishReplay;
 //# sourceMappingURL=publishReplay.js.map
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33201,7 +33318,7 @@ var RepeatSubscriber = (function (_super) {
 //# sourceMappingURL=repeat.js.map
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33315,7 +33432,7 @@ var RepeatWhenSubscriber = (function (_super) {
 //# sourceMappingURL=repeatWhen.js.map
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33386,7 +33503,7 @@ var RetrySubscriber = (function (_super) {
 //# sourceMappingURL=retry.js.map
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33493,7 +33610,7 @@ var RetryWhenSubscriber = (function (_super) {
 //# sourceMappingURL=retryWhen.js.map
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33587,7 +33704,7 @@ var SampleSubscriber = (function (_super) {
 //# sourceMappingURL=sample.js.map
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33684,7 +33801,7 @@ function dispatchNotification(state) {
 //# sourceMappingURL=sampleTime.js.map
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33809,7 +33926,7 @@ var ScanSubscriber = (function (_super) {
 //# sourceMappingURL=scan.js.map
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33979,7 +34096,7 @@ var SequenceEqualCompareToSubscriber = (function (_super) {
 //# sourceMappingURL=sequenceEqual.js.map
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34009,7 +34126,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34108,7 +34225,7 @@ var SingleSubscriber = (function (_super) {
 //# sourceMappingURL=single.js.map
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34165,7 +34282,7 @@ var SkipSubscriber = (function (_super) {
 //# sourceMappingURL=skip.js.map
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34242,7 +34359,7 @@ var SkipUntilSubscriber = (function (_super) {
 //# sourceMappingURL=skipUntil.js.map
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34314,7 +34431,7 @@ var SkipWhileSubscriber = (function (_super) {
 //# sourceMappingURL=skipWhile.js.map
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34366,12 +34483,12 @@ exports.startWith = startWith;
 //# sourceMappingURL=startWith.js.map
 
 /***/ }),
-/* 357 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var SubscribeOnObservable_1 = __webpack_require__(268);
+var SubscribeOnObservable_1 = __webpack_require__(269);
 /**
  * Asynchronously subscribes Observers to this Observable on the specified IScheduler.
  *
@@ -34401,7 +34518,7 @@ var SubscribeOnOperator = (function () {
 //# sourceMappingURL=subscribeOn.js.map
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34515,7 +34632,7 @@ var SwitchSubscriber = (function (_super) {
 //# sourceMappingURL=switch.js.map
 
 /***/ }),
-/* 359 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34661,7 +34778,7 @@ var SwitchMapSubscriber = (function (_super) {
 //# sourceMappingURL=switchMap.js.map
 
 /***/ }),
-/* 360 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34792,7 +34909,7 @@ var SwitchMapToSubscriber = (function (_super) {
 //# sourceMappingURL=switchMapTo.js.map
 
 /***/ }),
-/* 361 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34887,7 +35004,7 @@ var TakeSubscriber = (function (_super) {
 //# sourceMappingURL=take.js.map
 
 /***/ }),
-/* 362 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35000,7 +35117,7 @@ var TakeLastSubscriber = (function (_super) {
 //# sourceMappingURL=takeLast.js.map
 
 /***/ }),
-/* 363 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35081,7 +35198,7 @@ var TakeUntilSubscriber = (function (_super) {
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
-/* 364 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35179,7 +35296,7 @@ var TakeWhileSubscriber = (function (_super) {
 //# sourceMappingURL=takeWhile.js.map
 
 /***/ }),
-/* 365 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35293,7 +35410,7 @@ var ThrottleSubscriber = (function (_super) {
 //# sourceMappingURL=throttle.js.map
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35394,7 +35511,7 @@ function dispatchNext(arg) {
 //# sourceMappingURL=throttleTime.js.map
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35407,7 +35524,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var async_1 = __webpack_require__(9);
 var isDate_1 = __webpack_require__(31);
 var Subscriber_1 = __webpack_require__(1);
-var TimeoutError_1 = __webpack_require__(80);
+var TimeoutError_1 = __webpack_require__(83);
 /**
  * @param {number} due
  * @param {Scheduler} [scheduler]
@@ -35501,7 +35618,7 @@ var TimeoutSubscriber = (function (_super) {
 //# sourceMappingURL=timeout.js.map
 
 /***/ }),
-/* 368 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35618,7 +35735,7 @@ var TimeoutWithSubscriber = (function (_super) {
 //# sourceMappingURL=timeoutWith.js.map
 
 /***/ }),
-/* 369 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35669,7 +35786,7 @@ var ToArraySubscriber = (function (_super) {
 //# sourceMappingURL=toArray.js.map
 
 /***/ }),
-/* 370 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35747,7 +35864,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ }),
-/* 371 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35863,7 +35980,7 @@ var WindowSubscriber = (function (_super) {
 //# sourceMappingURL=window.js.map
 
 /***/ }),
-/* 372 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36000,7 +36117,7 @@ var WindowCountSubscriber = (function (_super) {
 //# sourceMappingURL=windowCount.js.map
 
 /***/ }),
-/* 373 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36167,7 +36284,7 @@ function dispatchWindowClose(state) {
 //# sourceMappingURL=windowTime.js.map
 
 /***/ }),
-/* 374 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36353,7 +36470,7 @@ var WindowToggleSubscriber = (function (_super) {
 //# sourceMappingURL=windowToggle.js.map
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36486,7 +36603,7 @@ var WindowSubscriber = (function (_super) {
 //# sourceMappingURL=windowWhen.js.map
 
 /***/ }),
-/* 376 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36622,7 +36739,7 @@ var WithLatestFromSubscriber = (function (_super) {
 //# sourceMappingURL=withLatestFrom.js.map
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36641,7 +36758,7 @@ exports.zipAll = zipAll;
 //# sourceMappingURL=zipAll.js.map
 
 /***/ }),
-/* 378 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36691,7 +36808,7 @@ exports.Action = Action;
 //# sourceMappingURL=Action.js.map
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36702,7 +36819,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var AsyncAction_1 = __webpack_require__(20);
-var AnimationFrame_1 = __webpack_require__(389);
+var AnimationFrame_1 = __webpack_require__(390);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -36752,7 +36869,7 @@ exports.AnimationFrameAction = AnimationFrameAction;
 //# sourceMappingURL=AnimationFrameAction.js.map
 
 /***/ }),
-/* 380 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36795,7 +36912,7 @@ exports.AnimationFrameScheduler = AnimationFrameScheduler;
 //# sourceMappingURL=AnimationFrameScheduler.js.map
 
 /***/ }),
-/* 381 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36805,7 +36922,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Immediate_1 = __webpack_require__(391);
+var Immediate_1 = __webpack_require__(392);
 var AsyncAction_1 = __webpack_require__(20);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -36856,7 +36973,7 @@ exports.AsapAction = AsapAction;
 //# sourceMappingURL=AsapAction.js.map
 
 /***/ }),
-/* 382 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36899,7 +37016,7 @@ exports.AsapScheduler = AsapScheduler;
 //# sourceMappingURL=AsapScheduler.js.map
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36954,7 +37071,7 @@ exports.QueueAction = QueueAction;
 //# sourceMappingURL=QueueAction.js.map
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36976,13 +37093,13 @@ exports.QueueScheduler = QueueScheduler;
 //# sourceMappingURL=QueueScheduler.js.map
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var AnimationFrameAction_1 = __webpack_require__(379);
-var AnimationFrameScheduler_1 = __webpack_require__(380);
+var AnimationFrameAction_1 = __webpack_require__(380);
+var AnimationFrameScheduler_1 = __webpack_require__(381);
 /**
  *
  * Animation Frame Scheduler
@@ -37017,7 +37134,7 @@ exports.animationFrame = new AnimationFrameScheduler_1.AnimationFrameScheduler(A
 //# sourceMappingURL=animationFrame.js.map
 
 /***/ }),
-/* 386 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37029,8 +37146,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var Subscription_1 = __webpack_require__(4);
-var SubscriptionLoggable_1 = __webpack_require__(79);
-var applyMixins_1 = __webpack_require__(82);
+var SubscriptionLoggable_1 = __webpack_require__(82);
+var applyMixins_1 = __webpack_require__(85);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -37069,7 +37186,7 @@ applyMixins_1.applyMixins(ColdObservable, [SubscriptionLoggable_1.SubscriptionLo
 //# sourceMappingURL=ColdObservable.js.map
 
 /***/ }),
-/* 387 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37081,8 +37198,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subject_1 = __webpack_require__(5);
 var Subscription_1 = __webpack_require__(4);
-var SubscriptionLoggable_1 = __webpack_require__(79);
-var applyMixins_1 = __webpack_require__(82);
+var SubscriptionLoggable_1 = __webpack_require__(82);
+var applyMixins_1 = __webpack_require__(85);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -37123,7 +37240,7 @@ applyMixins_1.applyMixins(HotObservable, [SubscriptionLoggable_1.SubscriptionLog
 //# sourceMappingURL=HotObservable.js.map
 
 /***/ }),
-/* 388 */
+/* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37135,10 +37252,10 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var Notification_1 = __webpack_require__(19);
-var ColdObservable_1 = __webpack_require__(386);
-var HotObservable_1 = __webpack_require__(387);
-var SubscriptionLog_1 = __webpack_require__(78);
-var VirtualTimeScheduler_1 = __webpack_require__(75);
+var ColdObservable_1 = __webpack_require__(387);
+var HotObservable_1 = __webpack_require__(388);
+var SubscriptionLog_1 = __webpack_require__(81);
+var VirtualTimeScheduler_1 = __webpack_require__(78);
 var defaultMaxFrame = 750;
 var TestScheduler = (function (_super) {
     __extends(TestScheduler, _super);
@@ -37352,7 +37469,7 @@ exports.TestScheduler = TestScheduler;
 //# sourceMappingURL=TestScheduler.js.map
 
 /***/ }),
-/* 389 */
+/* 390 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37392,7 +37509,7 @@ exports.AnimationFrame = new RequestAnimationFrameDefinition(root_1.root);
 //# sourceMappingURL=AnimationFrame.js.map
 
 /***/ }),
-/* 390 */
+/* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37429,7 +37546,7 @@ exports.FastMap = FastMap;
 //# sourceMappingURL=FastMap.js.map
 
 /***/ }),
-/* 391 */
+/* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37645,18 +37762,18 @@ exports.Immediate = new ImmediateDefinition(root_1.root);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(45).clearImmediate, __webpack_require__(45).setImmediate))
 
 /***/ }),
-/* 392 */
+/* 393 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var root_1 = __webpack_require__(7);
-var MapPolyfill_1 = __webpack_require__(393);
+var MapPolyfill_1 = __webpack_require__(394);
 exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 //# sourceMappingURL=Map.js.map
 
 /***/ }),
-/* 393 */
+/* 394 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37709,7 +37826,7 @@ exports.MapPolyfill = MapPolyfill;
 //# sourceMappingURL=MapPolyfill.js.map
 
 /***/ }),
-/* 394 */
+/* 395 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37748,7 +37865,7 @@ exports.Set = root_1.root.Set || minimalSetImpl();
 //# sourceMappingURL=Set.js.map
 
 /***/ }),
-/* 395 */
+/* 396 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37780,7 +37897,7 @@ exports.assign = getAssign(root_1.root);
 //# sourceMappingURL=assign.js.map
 
 /***/ }),
-/* 396 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37797,14 +37914,14 @@ exports.not = not;
 //# sourceMappingURL=not.js.map
 
 /***/ }),
-/* 397 */
+/* 398 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Subscriber_1 = __webpack_require__(1);
 var rxSubscriber_1 = __webpack_require__(27);
-var Observer_1 = __webpack_require__(59);
+var Observer_1 = __webpack_require__(62);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -37823,7 +37940,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ }),
-/* 398 */
+/* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -38013,57 +38130,7 @@ exports.toSubscriber = toSubscriber;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23), __webpack_require__(57)))
-
-/***/ }),
-/* 399 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var localforage = __webpack_require__(119);
-var plump_1 = __webpack_require__(35);
-var Bluebird = __webpack_require__(15);
-Bluebird.config({ warnings: false });
-var LocalForageStore = (function (_super) {
-    __extends(LocalForageStore, _super);
-    function LocalForageStore(opts) {
-        if (opts === void 0) { opts = {}; }
-        var _this = _super.call(this, opts) || this;
-        localforage.config({
-            name: opts.name || 'Trellis Storage',
-            storeName: opts.storeName || 'localCache',
-        });
-        return _this;
-    }
-    LocalForageStore.prototype._keys = function (typeName) {
-        return Bluebird.resolve(localforage.keys())
-            .then(function (keyArray) { return keyArray.filter(function (k) { return k.indexOf(typeName + ":") === 0; }); });
-    };
-    LocalForageStore.prototype._get = function (k) {
-        return Bluebird.resolve(localforage.getItem(k));
-    };
-    LocalForageStore.prototype._set = function (k, v) {
-        return Bluebird.resolve(localforage.setItem(k, v));
-    };
-    LocalForageStore.prototype._del = function (k) {
-        return Bluebird.resolve(localforage.removeItem(k)).then(function () { return null; });
-    };
-    return LocalForageStore;
-}(plump_1.KeyValueStore));
-exports.LocalForageStore = LocalForageStore;
-
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23), __webpack_require__(60)))
 
 /***/ }),
 /* 400 */
@@ -38082,104 +38149,60 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+var localforage = __webpack_require__(48);
 var plump_1 = __webpack_require__(35);
-exports.ChildrenSchema = {
-    sides: {
-        parents: { otherType: 'tests', otherName: 'children' },
-        children: { otherType: 'tests', otherName: 'parents' },
-    },
-    storeData: {
-        sql: {
-            tableName: 'parent_child_relationship',
-            joinFields: {
-                parents: 'child_id',
-                children: 'parent_id',
-            },
-        },
+var Bluebird = __webpack_require__(15);
+Bluebird.config({ warnings: false });
+function saneNumber(i) {
+    return ((typeof i === 'number') && (!isNaN(i)) && (i !== Infinity) && (i !== -Infinity));
+}
+var LocalForageStore = (function (_super) {
+    __extends(LocalForageStore, _super);
+    function LocalForageStore(opts) {
+        if (opts === void 0) { opts = {}; }
+        var _this = _super.call(this, opts) || this;
+        localforage.config({
+            name: opts.name || 'Plump Storage',
+            storeName: opts.storeName || 'localCache',
+        });
+        return _this;
     }
-};
-exports.ValenceChildrenSchema = {
-    sides: {
-        valenceParents: { otherType: 'tests', otherName: 'valenceChildren' },
-        valenceChildren: { otherType: 'tests', otherName: 'valenceParents' },
-    },
-    storeData: {
-        sql: {
-            tableName: 'valence_children',
-            joinFields: {
-                valenceParents: 'child_id',
-                valenceChildren: 'parent_id',
-            },
-        },
-    },
-    extras: {
-        perm: {
-            type: 'number',
-        },
-    },
-};
-exports.QueryChildrenSchema = {
-    sides: {
-        queryParents: { otherType: 'tests', otherName: 'queryChildren' },
-        queryChildren: { otherType: 'tests', otherName: 'queryParents' },
-    },
-    storeData: {
-        sql: {
-            tableName: 'query_children',
-            joinFields: {
-                queryParents: 'child_id',
-                queryChildren: 'parent_id',
-            },
-            joinQuery: {
-                queryParents: 'on "tests"."id" = "queryParents"."child_id" and "queryParents"."perm" >= 2',
-                queryChildren: 'on "tests"."id" = "queryChildren"."parent_id" and "queryChildren"."perm" >= 2',
-            },
-            where: {
-                queryParents: 'where "queryParents"."child_id" = ? and "queryParents"."perm" >= 2',
-                queryChildren: 'where "queryChildren"."parent_id" = ? and "queryChildren"."perm" >= 2',
-            },
-        },
-    },
-    extras: {
-        perm: {
-            type: 'number',
-        },
-    },
-};
-exports.TestSchema = {
-    name: 'tests',
-    idAttribute: 'id',
-    attributes: {
-        id: { type: 'number', readOnly: true },
-        name: { type: 'string', readOnly: false },
-        otherName: { type: 'string', default: '', readOnly: false },
-        extended: { type: 'object', default: {}, readOnly: false },
-    },
-    relationships: {
-        children: { type: exports.ChildrenSchema },
-        parents: { type: exports.ChildrenSchema },
-        valenceChildren: { type: exports.ValenceChildrenSchema },
-        valenceParents: { type: exports.ValenceChildrenSchema },
-        queryChildren: { type: exports.QueryChildrenSchema, readOnly: true },
-        queryParents: { type: exports.QueryChildrenSchema, readOnly: true },
-    },
-    storeData: {
-        sql: {
-            tableName: 'tests',
-            bulkQuery: 'where "tests"."id" >= ?',
-        },
-    }
-};
-var TestType = (function (_super) {
-    __extends(TestType, _super);
-    function TestType() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    return TestType;
-}(plump_1.Model));
-TestType.typeName = 'tests';
-TestType.schema = exports.TestSchema;
-exports.TestType = TestType;
+    LocalForageStore.prototype.addSchema = function (t) {
+        var _this = this;
+        return _super.prototype.addSchema.call(this, t)
+            .then(function () {
+            return _this._keys(t.typeName)
+                .then(function (keyArray) {
+                if (keyArray.length === 0) {
+                    return 0;
+                }
+                else {
+                    return keyArray.map(function (k) { return k.split(':')[1]; })
+                        .map(function (k) { return parseInt(k, 10); })
+                        .filter(function (i) { return saneNumber(i); })
+                        .reduce(function (max, current) { return (current > max) ? current : max; }, 0);
+                }
+            }).then(function (n) {
+                _this.maxKeys[t.typeName] = n;
+            });
+        });
+    };
+    LocalForageStore.prototype._keys = function (typeName) {
+        return Bluebird.resolve(localforage.keys())
+            .then(function (keyArray) { return keyArray.filter(function (k) { return k.indexOf(typeName + ":") === 0; }); });
+    };
+    LocalForageStore.prototype._get = function (k) {
+        return Bluebird.resolve(localforage.getItem(k));
+    };
+    LocalForageStore.prototype._set = function (k, v) {
+        return Bluebird.resolve(localforage.setItem(k, v));
+    };
+    LocalForageStore.prototype._del = function (k) {
+        return Bluebird.resolve(localforage.removeItem(k)).then(function () { return null; });
+    };
+    return LocalForageStore;
+}(plump_1.KeyValueStore));
+exports.LocalForageStore = LocalForageStore;
 
 
 /***/ }),
@@ -38329,16 +38352,53 @@ Library.prototype.test = function(obj, type) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var index_1 = __webpack_require__(87);
-var storageTests_1 = __webpack_require__(88);
+var index_1 = __webpack_require__(90);
+var storageTests_1 = __webpack_require__(91);
+var testType_1 = __webpack_require__(49);
+var localforage = __webpack_require__(48);
+var chai = __webpack_require__(47);
+var expect = chai.expect;
 storageTests_1.testSuite({
     describe: describe, it: it, before: before, after: after,
 }, {
     ctor: index_1.LocalForageStore,
     opts: {
         terminal: true,
+        name: 'Plump TEST Storage',
+        storeName: 'localCache',
     },
     name: 'Plump Localforage Store',
+    before: function () {
+        localforage.config({
+            name: 'Plump TEST Storage',
+            storeName: 'localCache',
+        });
+        return localforage.clear();
+    },
+    after: function () {
+        return localforage.clear();
+    },
+});
+describe('Redis-specific functionality', function () {
+    it('should pre-allocate id values based on the store contents', function () {
+        localforage.config({
+            name: 'Plump TEST Storage',
+            storeName: 'localCache',
+        });
+        var testStore = new index_1.LocalForageStore({
+            terminal: true,
+            name: 'Plump TEST Storage',
+            storeName: 'localCache',
+        });
+        return localforage.clear()
+            .then(function () { return localforage.setItem(testStore.keyString({ typeName: testType_1.TestType.typeName, id: 1 }), 'foo'); })
+            .then(function () { return localforage.setItem(testStore.keyString({ typeName: testType_1.TestType.typeName, id: 7 }), 'foo'); })
+            .then(function () { return testStore.addSchema(testType_1.TestType); })
+            .then(function () { return testStore.allocateId(testType_1.TestType.typeName); })
+            .then(function (n) { return expect(n).to.equal(8); })
+            .then(function () { return testStore.allocateId(testType_1.TestType.typeName); })
+            .then(function (n) { return expect(n).to.equal(9); });
+    });
 });
 
 
