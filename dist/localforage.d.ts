@@ -1,18 +1,16 @@
-/// <reference types="bluebird" />
-import { KeyValueStore, ModelData, ModelSchema } from 'plump';
-import * as Bluebird from 'bluebird';
+import { KeyValueStore, ModelData, ModelSchema, StorageOptions } from 'plump';
 export declare class LocalForageStore extends KeyValueStore {
-    constructor(opts?: {
-        terminal?: boolean;
+    private localforage;
+    constructor(opts?: StorageOptions & {
         name?: string;
         storeName?: string;
     });
     addSchema(t: {
         typeName: string;
         schema: ModelSchema;
-    }): Bluebird<void>;
-    _keys(typeName: string): Bluebird<string[]>;
-    _get(k: string): Bluebird<ModelData>;
-    _set(k: string, v: ModelData): Bluebird<ModelData>;
-    _del(k: string): Bluebird<ModelData>;
+    }): Promise<void>;
+    _keys(typeName: string): Promise<string[]>;
+    _get(k: string): Promise<ModelData>;
+    _set(k: string, v: ModelData): Promise<any>;
+    _del(k: string): Promise<ModelData>;
 }
