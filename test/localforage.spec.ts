@@ -1,12 +1,9 @@
-/* eslint-env node, mocha*/
-/* eslint no-shadow: 0 */
 
 import { LocalForageStore } from '../src/index';
 import { testSuite } from './storageTests';
 import { TestType } from './testType';
 import * as localforage from 'localforage';
 
-// import 'mocha';
 import * as chai from 'chai';
 const expect = chai.expect;
 
