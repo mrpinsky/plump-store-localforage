@@ -1,8 +1,5 @@
 import * as localforage from 'localforage';
-import { KeyValueStore, ModelData, ModelSchema } from 'plump';
-import * as Bluebird from 'bluebird';
-Bluebird.config({ warnings: false });
-
+import { KeyValueStore, ModelData, ModelSchema, StorageOptions } from 'plump';
 
 function saneNumber(i) {
   return ((typeof i === 'number') && (!isNaN(i)) && (i !== Infinity) && (i !== -Infinity));
@@ -10,9 +7,11 @@ function saneNumber(i) {
 
 export class LocalForageStore extends KeyValueStore {
 
-  constructor(opts: {terminal?: boolean, name?: string, storeName?: string} = {}) {
+  private localforage;
+
+  constructor(opts: StorageOptions & {name?: string, storeName?: string} = {}) {
     super(opts);
-    localforage.config({
+    this.localforage = localforage.createInstance({
       name: opts.name || 'Plump Storage',
       storeName: opts.storeName || 'localCache',
     });
@@ -38,20 +37,20 @@ export class LocalForageStore extends KeyValueStore {
   }
 
 
-  _keys(typeName: string): Bluebird<string[]> {
-    return Bluebird.resolve(localforage.keys())
+  _keys(typeName: string): Promise<string[]> {
+    return Promise.resolve(this.localforage.keys())
     .then((keyArray) => keyArray.filter((k) => k.indexOf(`${typeName}:`) === 0));
   }
 
-  _get(k: string): Bluebird<ModelData> {
-    return Bluebird.resolve(localforage.getItem(k)) as Bluebird<ModelData>;
+  _get(k: string): Promise<ModelData> {
+    return Promise.resolve(this.localforage.getItem(k)) as Promise<ModelData>;
   }
 
   _set(k: string, v: ModelData) {
-    return Bluebird.resolve(localforage.setItem(k, v));
+    return Promise.resolve(this.localforage.setItem(k, v));
   }
 
-  _del(k: string): Bluebird<ModelData> {
-    return Bluebird.resolve(localforage.removeItem(k)).then(() => null) as Bluebird<ModelData>;
+  _del(k: string): Promise<ModelData> {
+    return Promise.resolve(this.localforage.removeItem(k)).then(() => null) as Promise<ModelData>;
   }
 }
